@@ -6,3 +6,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 theme: uswds-jekyll
+
+styles:
+  - /css/main.css
+
+scripts:
+  - /assets/uswds/js/uswds.min.js
+  - /dist/main.js

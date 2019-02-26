@@ -1,0 +1,27 @@
+{
+  "name": "pra.gov",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSA/pra.gov.git"
+  },
+  "author": "18F",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSA/pra.gov/issues"
+  },
+  "homepage": "https://github.com/GSA/pra.gov#readme",
+  "dependencies": {
+    "glossary-panel": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
