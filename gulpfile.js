@@ -1,16 +1,3 @@
-/*
-* * * * * ==============================
-* * * * * ==============================
-* * * * * ==============================
-* * * * * ==============================
-========================================
-========================================
-========================================
-----------------------------------------
-USWDS SASS GULPFILE
-----------------------------------------
-*/
-
 var autoprefixer = require("autoprefixer");
 var autoprefixerOptions = require("./node_modules/uswds-gulp/config/browsers");
 var cssnano = require("cssnano");
@@ -25,16 +12,18 @@ var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
 var uswds = require("./node_modules/uswds-gulp/config/uswds");
 
-/*
-----------------------------------------
-PATHS
-----------------------------------------
-- All paths are relative to the
-  project root
-- Don't use a trailing `/` for path
-  names
-----------------------------------------
-*/
+var watchify = require("watchify");
+var browserify = require("browserify");
+var source = require("vinyl-source-stream");
+var buffer = require("vinyl-buffer");
+var log = require("gulplog");
+var assign = require("lodash.assign");
+
+// Project Javascript source directory
+const PROJECT_JS_SRC = "./_js";
+
+// Javascript destination
+const PROJECT_JS_DEST = "./_site/assets/js";
 
 // Project Sass source directory
 const PROJECT_SASS_SRC = "./_scss";
@@ -71,11 +60,8 @@ gulp.task("copy-uswds-js", () => {
 
 gulp.task("build-sass", function(done) {
   var plugins = [
-    // Autoprefix
     autoprefixer(autoprefixerOptions),
-    // Pack media queries
     mqpacker({ sort: true }),
-    // Minify
     cssnano({ autoprefixer: { browsers: autoprefixerOptions } })
   ];
   return gulp
@@ -96,15 +82,44 @@ gulp.task("build-sass", function(done) {
     .pipe(gulp.dest(CSS_DEST));
 });
 
+var customOpts = {
+  entries: [`${PROJECT_JS_SRC}/index.js`]
+};
+var opts = assign({}, watchify.args, customOpts);
+var b = function() {
+  return browserify(opts);
+};
+var w = watchify(b());
+
+var bundle = function(pkg) {
+  return pkg
+    .bundle()
+    .on("error", log.error.bind(log, "Browserify Error"))
+    .pipe(source("bundle.js"))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest(PROJECT_JS_DEST));
+};
+
+gulp.task("build-js", bundle.bind(null, b()));
+
 gulp.task(
   "init",
   gulp.series(
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",
+    "build-js",
     "build-sass"
   )
 );
+
+gulp.task("watch-js", function() {
+  bundle(w);
+  w.on("update", bundle.bind(null, w));
+  w.on("log", log.info);
+});
 
 gulp.task("watch-sass", function() {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));
