@@ -58,11 +58,11 @@ TASKS
 ----------------------------------------
 */
 
-gulp.task("copy-uswds-setup", () => {
-  return gulp
-    .src(`${uswds}/scss/theme/**/**`)
-    .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
-});
+// gulp.task("copy-uswds-setup", () => {
+//   return gulp
+//     .src(`${uswds}/scss/theme/**/**`)
+//     .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
+// });
 
 gulp.task("copy-uswds-fonts", () => {
   return gulp.src(`${uswds}/fonts/**/**`).pipe(gulp.dest(`${FONTS_DEST}`));
@@ -111,7 +111,7 @@ gulp.task("build-sass", function(done) {
 gulp.task(
   "init",
   gulp.series(
-    "copy-uswds-setup",
+    // "copy-uswds-setup",
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",

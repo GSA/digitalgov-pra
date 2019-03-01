@@ -4,6 +4,7 @@
   "description": "",
   "dependencies": {
     "autoprefixer": "^9.4.9",
+    "concurrently": "^4.1.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.0",
@@ -18,7 +19,8 @@
     "uswds-gulp": "github:uswds/uswds-gulp"
   },
   "scripts": {
-    "federalist": "gulp init"
+    "federalist": "gulp init",
+    "start": "concurrently \"gulp init && gulp watch-sass\" \"bundle exec jekyll serve\""
   },
   "repository": {
     "type": "git",
