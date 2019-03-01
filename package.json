@@ -15,12 +15,14 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "path": "^0.12.7",
-    "uswds": "^2.0.0-beta.5",
+    "uswds": "2.0.0-beta.5",
     "uswds-gulp": "github:uswds/uswds-gulp"
   },
   "scripts": {
-    "federalist": "gulp init",
-    "start": "concurrently \"gulp init && gulp watch-sass\" \"bundle exec jekyll serve\""
+    "build": "gulp init",
+    "federalist": "npm run build",
+    "prestart": "npm run build",
+    "start": "concurrently \"gulp watch-sass\" \"bundle exec jekyll serve\""
   },
   "repository": {
     "type": "git",

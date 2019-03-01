@@ -1,13 +1,21 @@
 # Site settings
 title: pra.gov
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-markdown: kramdown
-
 scripts:
   - assets/js/uswds.min.js
 
 styles:
   - assets/css/styles.css
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package-lock.json
+  - package.json
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
