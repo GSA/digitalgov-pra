@@ -40,16 +40,16 @@ PATHS
 const PROJECT_SASS_SRC = "./_scss";
 
 // Images destination
-const IMG_DEST = "./assets/img";
+const IMG_DEST = "./_site/assets/uswds/img";
 
 // Fonts destination
-const FONTS_DEST = "./assets/fonts";
+const FONTS_DEST = "./_site/assets/uswds/fonts";
 
 // Javascript destination
-const JS_DEST = "./assets/js";
+const JS_DEST = "./_site/assets/uswds/js";
 
 // Compiled CSS destination
-const CSS_DEST = "./assets/css";
+const CSS_DEST = "./_site/assets/uswds/css";
 
 /*
 ----------------------------------------
@@ -79,12 +79,12 @@ gulp.task("build-sass", function(done) {
     cssnano({ autoprefixer: { browsers: autoprefixerOptions } })
   ];
   return gulp
-    .src([`${PROJECT_SASS_SRC}/*.scss`])
+    .src(`${PROJECT_SASS_SRC}/styles.scss`)
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
         includePaths: [
-          `${PROJECT_SASS_SRC}`,
+          PROJECT_SASS_SRC,
           `${uswds}/scss`,
           `${uswds}/scss/packages`
         ]
@@ -93,7 +93,7 @@ gulp.task("build-sass", function(done) {
     .pipe(replace(/\buswds @version\b/g, "based on uswds v" + pkg.version))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest(`${CSS_DEST}`))
+    .pipe(gulp.dest(CSS_DEST));
 });
 
 gulp.task(

@@ -19,3 +19,11 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
+
+.notice {
+  @include u-bg("yellow-20v");
+
+  a {
+    @include u-text("gray-90");
+  }
+}

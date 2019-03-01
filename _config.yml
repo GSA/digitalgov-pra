@@ -3,12 +3,13 @@ title: pra.gov
 
 # Build settings
 scripts:
-  - assets/js/uswds.min.js
+  - assets/uswds/js/uswds.min.js
 
 styles:
-  - assets/css/styles.css
+  - assets/uswds/css/styles.css
 
 exclude:
+  - _scss
   - Gemfile
   - Gemfile.lock
   - gulpfile.js
@@ -19,3 +20,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+keep_files:
+  - assets/uswds
