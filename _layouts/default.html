@@ -1,0 +1,30 @@
+---
+---
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!-- [if gt IE 8]><! -->
+<html lang="en">
+  <!-- <![endif] -->
+  <head>
+    {% include meta.html %}
+    {% include styles.html %}
+  </head>
+  <body class="page-documentation-template layout-demo ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    {% include banner.html %}
+    <div class="usa-overlay"></div>
+    {% include header.html %}
+    <main class="usa-layout-docs usa-section" id="main-content">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          {% include sidenav.html %}
+          <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include scripts.html %}
+  </body>
+</html>
