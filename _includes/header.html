@@ -1,19 +1,18 @@
 <div class="usa-overlay"></div>
-<header class="usa-header usa-header-basic" role="banner">
-  <div class="usa-nav-container">
-    <div class="usa-navbar">
-      <div class="usa-logo" id="basic-logo">
-        <em class="usa-logo-text"
-          ><a href="/" title="Home" aria-label="Home">{{ site.title }} </a></em
-        >
-      </div>
-      <button class="usa-menu-btn">Menu</button>
+<header class="usa-header usa-header-extended" role="banner">
+  <div class="usa-navbar">
+    <div class="usa-logo" id="extended-logo">
+      <em class="usa-logo-text"
+        ><a href="/" title="Home" aria-label="Home">{{ site.title }}</a></em
+      >
     </div>
-    <nav role="navigation" class="usa-nav">
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav-inner">
       <button class="usa-nav-close">
         <img
-          src="{{ '/assets/uswds/img/close.svg' | relative_url }}
-"
+          src="{{ '/assets/uswds/img/close.svg' | relative_url }}"
           alt="close"
         />
       </button>
@@ -22,11 +21,11 @@
           <button
             class="usa-accordion-button usa-nav-link  usa-current"
             aria-expanded="false"
-            aria-controls="basic-nav-section-one"
+            aria-controls="extended-nav-section-one"
           >
             <span>Current section</span>
           </button>
-          <ul id="basic-nav-section-one" class="usa-nav-submenu">
+          <ul id="extended-nav-section-one" class="usa-nav-submenu">
             <li class="usa-nav-submenu-item">
               <a href="#">Navigation link</a>
             </li>
@@ -42,11 +41,11 @@
           <button
             class="usa-accordion-button usa-nav-link"
             aria-expanded="false"
-            aria-controls="basic-nav-section-two"
+            aria-controls="extended-nav-section-two"
           >
             <span>Section</span>
           </button>
-          <ul id="basic-nav-section-two" class="usa-nav-submenu">
+          <ul id="extended-nav-section-two" class="usa-nav-submenu">
             <li class="usa-nav-submenu-item">
               <a href="#">Navigation link</a>
             </li>
@@ -64,22 +63,30 @@
           >
         </li>
       </ul>
-      <form class="usa-search usa-search-small ">
-        <div role="search">
-          <label class="usa-sr-only" for="basic-search-field-small"
-            >Search small</label
-          >
-          <input
-            class="usa-input"
-            id="basic-search-field-small"
-            type="search"
-            name="search"
-          />
-          <button class="usa-button" type="submit">
-            <span class="usa-sr-only">Search</span>
-          </button>
-        </div>
-      </form>
-    </nav>
-  </div>
+      <div class="usa-nav-secondary">
+        <ul class="usa-nav-secondary-links">
+          <li class="js-glossary-toggle usa-nav-secondary-item">
+            <a href="javascript:void(0)">Glossary</a>
+          </li>
+          <li class="usa-nav-secondary-item"><a href="">Secondary link</a></li>
+        </ul>
+        <form class="usa-search usa-search-small ">
+          <div role="search">
+            <label class="usa-sr-only" for="extended-search-field-small"
+              >Search small</label
+            >
+            <input
+              class="usa-input"
+              id="extended-search-field-small"
+              type="search"
+              name="search"
+            />
+            <button class="usa-button" type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>

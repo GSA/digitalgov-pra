@@ -19,12 +19,14 @@
       <div class="grid-container">
         <div class="grid-row grid-gap">
           {% include sidenav.html %}
-          <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+          <div
+            class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
             {{ content }}
           </div>
         </div>
       </div>
     </main>
+    {% include glossary.html %}
     {% include scripts.html %}
   </body>
 </html>

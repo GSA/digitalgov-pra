@@ -5,38 +5,23 @@
 layout: default
 ---
 
+## What is the PRA?
 
-<h1>Page heading (h1)</h1>
+<p class="usa-font-lead">The Paperwork Reduction Act (PRA) is a law governing how federal agencies collect information from the American public. Important goals of the PRA include:</p>
 
-<p class="usa-font-lead">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
+### Managing information agencies request of the public
 
-<h2 id="section-heading-h2">Section heading (h2)</h2>
+- We want to be good stewards of the public’s time, and not overwhelm them with unnecessary or duplicative requests for information.
+- The PRA clearance process involves calculating burden hours. It’s important to understand how long it will take members of the public to complete your request.
 
-<p>These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise.</p>
+### Making decisions based on high-quality data
 
-<h3 id="section-heading-h3">Subsection heading (h3)</h3>
+- We want to make sure the data we collect is accurate, helpful, and a good fit for its proposed use.
+- Part of the PRA process involves OIRA reviewing details about how the information you plan to collect fits with your goals.
 
-<p>The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance.</p>
+### Protecting private information
 
-<p>Keep each section and subsection focused — a good approach is to include one theme (topic) per section.</p>
-
-<h4 id="section-heading-h4">Subsection heading (h4)</h4>
-
-<p>Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.</p>
-
-<p>Read the full documentation on our side navigation on the component page.</p>
+- To respect privacy, we avoid asking for personal information that’s not relevant or necessary.
+- The Office of Information and Regulatory Affairs (OIRA) asks for extra detail if you’re collecting personally identifying information (PII)
 
 <p><span data-term="candidate">Candidate</span> is an example of a term.</p>
-
-<button class="js-glossary-toggle button">Glossary</button>
-<div id="glossary" class="glossary" aria-describedby="glossary-result" aria-hidden="true">
-  <button title="Close glossary" class="js-glossary-close button button--close toggle">
-    <span class="u-visually-hidden">Hide glossary</span>
-  </button>
-  <h2>Glossary</h2>
-  <label for="glossary-search" class="label">Filter glossary terms</label>
-  <input id="glossary-search" class="js-glossary-search" type="search" placeholder="e.g. Committee">
-  <div class="glossary__content" id="glossary-result">
-    <ul class="js-glossary-list"></ul>
-  </div>
-</div>
