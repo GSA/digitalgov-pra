@@ -1,5 +1,17 @@
 # Site settings
-title: pra.gov
+title: PRA.gov
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 # Build settings
 scripts:

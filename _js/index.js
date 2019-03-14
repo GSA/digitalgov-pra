@@ -1,4 +1,5 @@
 var Glossary = require("glossary-panel");
+var SmoothScroll = require("smooth-scroll");
 var terms = require("../terms.json");
 
 function decorator(glossary) {
@@ -16,3 +17,5 @@ function decorator(glossary) {
 
 var g = new Glossary(terms);
 decorator(g);
+
+var scroll = new SmoothScroll('a[href*="#"]');
