@@ -13,7 +13,7 @@ Not every request or collection falls under the PRA’s scope, and you may not n
 - How will you be collecting it, and
 - Why are you collecting this information
 
-This is just a starting point to see if your collection needs PRA clearance. We encourage getting in touch with your [link to contact page] agency PRA lead or OIRA Desk Officer to answer more in-depth questions.
+This is just a starting point to see if your collection needs PRA clearance. We encourage [getting in touch with your agency's PRA contact]("../contact/") to answer more in-depth questions.
 
 ### What type of information are you collecting?
 
