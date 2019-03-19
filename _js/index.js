@@ -2,6 +2,16 @@ var Glossary = require("glossary-panel");
 var SmoothScroll = require("smooth-scroll");
 var terms = require("../terms.json");
 
+var body = document.querySelector(".usa-layout-docs-main_content");
+if (body) {
+  Object.keys(terms).forEach(function(key) {
+    body.innerHTML = body.innerHTML.replace(
+      terms[key].term,
+      `<span data-term=${terms[key].term}>${terms[key].term}</span>`
+    );
+  });
+}
+
 function decorator(glossary) {
   var accordion = glossary.accordion;
 
