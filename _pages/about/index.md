@@ -1,11 +1,46 @@
 ---
-title: About the PRA
+title: About
 permalink: /about/
 anchors:
-  - name: Why do we need the PRA?
-  - name: What is the PRA?
+  - name: What is the PRA and why do we need it?
   - name: Who approves PRA clearances?
-  - name: Which agencies have to comply with the PRA?
   - name: When doesn't the PRA apply?
   - name: What happens if I don't comply with the PRA?
 ---
+
+## What is the PRA and why do we need it?
+
+The Paperwork Reduction Act (PRA) is a law governing how federal agencies collect information from the American public. Important goals of the PRA include:
+
+### Managing the information agencies request of the public
+* We want to be good stewards of the public’s time, and not overwhelm them with unnecessary or duplicative requests for information.
+* The PRA clearance process involves calculating burden hours. It’s important to understand how long it will take members of the public to complete your request.
+
+### Making decisions based on high-quality data
+* We want to make sure the data we collect is accurate, helpful, and a good fit for its proposed use.
+* Part of the PRA process involves the Office of Information and Regulatory Affairs (OIRA) reviewing details about how the information you plan to collect fits with your goals.
+
+### Protecting private information
+* To respect privacy, we avoid asking for personal information that’s not relevant or necessary.
+* OIRA asks for extra detail if you’re collecting personally identifying information (PII)
+
+## Who approves PRA clearances?
+The Office of Information and Regulatory Affairs (OIRA), under the Office of Management and Budget (OMB). 
+
+## When doesn't the PRA apply?
+You don't need PRA approval every time you collect information from the public. Some of the more common exemptions to PRA include:
+
+* Requesting from fewer than 10 people,
+* Open-ended requests for comments or feedback,
+* Only collecting information from federal employees as part of their work duties, or
+* Discussions and questions at a public hearing, meeting, or online
+
+Some information collections are generally not subject to the PRA, including: federal investigations and civil actions, antitrust actions, and intelligence activities. 
+
+## What happens if I don't comply with PRA? 
+
+lorem ipsum dolor sit amet
+
+
+
+
