@@ -1,5 +1,5 @@
 ---
-title: About
+title: About the PRA
 permalink: /about/
 anchors:
   - name: Why do we need the PRA?
