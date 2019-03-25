@@ -2,14 +2,18 @@ var Glossary = require("glossary-panel");
 var SmoothScroll = require("smooth-scroll");
 var terms = require("../terms.json");
 
-var body = document.querySelector(".usa-layout-docs-main_content");
+var body = document.querySelectorAll(
+  ".usa-layout-docs-main_content p, .usa-layout-docs-main_content ul, .usa-layout-docs-main_content ol"
+);
 if (body) {
-  Object.keys(terms).forEach(function(key) {
-    body.innerHTML = body.innerHTML.replace(
-      terms[key].term,
-      `<span data-term=${terms[key].term}>${terms[key].term}</span>`
-    );
-  });
+  for (var i = 0; i < body.length; i++) {
+    Object.keys(terms).forEach(function(key) {
+      body[i].innerHTML = body[i].innerHTML.replace(
+        new RegExp("(\\b" + terms[key].term + "\\b)(?![^<]*>|[^<>]*</)", "gi"),
+        `<span data-term=${terms[key].term}>${terms[key].term}</span>`
+      );
+    });
+  }
 }
 
 function decorator(glossary) {
