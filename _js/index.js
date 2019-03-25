@@ -1,6 +1,6 @@
 var Glossary = require("glossary-panel");
 var SmoothScroll = require("smooth-scroll");
-var terms = require("../terms.json");
+var terms = require("../_data/terms.json");
 
 var body = document.querySelectorAll(
   ".usa-layout-docs-main_content p, .usa-layout-docs-main_content ul, .usa-layout-docs-main_content ol"

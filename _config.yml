@@ -1,6 +1,9 @@
 # Site settings
 title: PRA.gov
 
+plugins:
+  - jekyll-sitemap
+
 defaults:
   - scope:
       path: ""
