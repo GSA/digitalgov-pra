@@ -21,11 +21,3 @@ i.e.
 */
 
 @import "components/glossary";
-
-.notice {
-  @include u-bg("yellow-20v");
-
-  a {
-    @include u-text("gray-90");
-  }
-}

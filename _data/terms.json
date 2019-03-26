@@ -1,0 +1,46 @@
+[
+  {
+    "term": "burden",
+    "definition": "Time, effort, or financial resources required to generate, maintain, or provide information for a collection."
+  },
+  {
+    "term": "clearance",
+    "definition": "Permission to collect a specific set of data from the American public."
+  },
+  {
+    "term": "control number",
+    "definition": "Two four-digit numbers separated by a hyphen. The first four digits identify the sponsoring agency and bureau, and the last four identify the particular collection."
+  },
+  {
+    "term": "desk officer",
+    "definition": "The OIRA staff member reviewing an information collection request."
+  },
+  {
+    "term": "IC",
+    "definition": "A proposal and process for requesting information. PRA approval is granted to collections."
+  },
+  {
+    "term": "ICB",
+    "definition": "OIRA's annual report sent to Congress summarizing the major activies under PRA, and the total burden of information collection"
+  },
+  {
+    "term": "OIRA",
+    "definition": "Office of Information and Regulatory Affairs, part of the Office of Management and Budget"
+  },
+  {
+    "term": "OMB",
+    "definition": "Office of Management and Budget"
+  },
+  {
+    "term": "PRA",
+    "definition": "A law governing how federal agencies collect information from the American public."
+  },
+  {
+    "term": "PII",
+    "definition": "Personally Identifying Information"
+  },
+  {
+    "term": "ROCIS",
+    "definition": "The digital platform used by agencies to submit PRA clearance requests to OIRA."
+  }
+]

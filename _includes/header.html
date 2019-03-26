@@ -2,85 +2,42 @@
 <header class="usa-header usa-header-extended" role="banner">
   <div class="usa-navbar">
     <div class="usa-logo" id="extended-logo">
-      <em class="usa-logo-text"
-        ><a href="/" title="Home" aria-label="Home">{{ site.title }}</a></em
-      >
+      <em class="usa-logo-text">
+        <a href="{{ '/' | relative_url }}" title="Home" aria-label="Home">
+          {{ site.title }}
+        </a></em>
     </div>
     <button class="usa-menu-btn">Menu</button>
   </div>
   <nav role="navigation" class="usa-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img
-          src="{{ '/assets/uswds/img/close.svg' | relative_url }}"
-          alt="close"
-        />
+        <img src="{{ '/assets/uswds/img/close.svg' | relative_url }}" alt="close" />
       </button>
+      {% assign primary_links = site.data.navigation %} {% if primary_links %}
       <ul class="usa-nav-primary usa-accordion">
+        {% for _section in primary_links %}
         <li class="usa-nav-primary-item">
-          <button
-            class="usa-accordion-button usa-nav-link  usa-current"
-            aria-expanded="false"
-            aria-controls="extended-nav-section-one"
-          >
-            <span>Current section</span>
-          </button>
-          <ul id="extended-nav-section-one" class="usa-nav-submenu">
-            <li class="usa-nav-submenu-item">
-              <a href="#">Navigation link</a>
-            </li>
-            <li class="usa-nav-submenu-item">
-              <a href="#">Navigation link</a>
-            </li>
-            <li class="usa-nav-submenu-item">
-              <a href="#">Navigation link</a>
-            </li>
-          </ul>
+          <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav-link {% endif %} {% if _section.href == page.permalink %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
+            <span>{{ _section.text }}</span>
+          </a>
         </li>
-        <li class="usa-nav-primary-item">
-          <button
-            class="usa-accordion-button usa-nav-link"
-            aria-expanded="false"
-            aria-controls="extended-nav-section-two"
-          >
-            <span>Section</span>
-          </button>
-          <ul id="extended-nav-section-two" class="usa-nav-submenu">
-            <li class="usa-nav-submenu-item">
-              <a href="#">Navigation link</a>
-            </li>
-            <li class="usa-nav-submenu-item">
-              <a href="#">Navigation link</a>
-            </li>
-            <li class="usa-nav-submenu-item">
-              <a href="#">Navigation link</a>
-            </li>
-          </ul>
-        </li>
-        <li class="usa-nav-primary-item">
-          <a class="usa-nav-link" href="javascript:void(0)"
-            ><span>Simple link</span></a
-          >
-        </li>
+        {% endfor %}
       </ul>
+      {% endif %}
       <div class="usa-nav-secondary">
         <ul class="usa-nav-secondary-links">
-          <li class="js-glossary-toggle usa-nav-secondary-item">
+          <li class="usa-nav-secondary-item js-glossary-toggle">
             <a href="javascript:void(0)">Glossary</a>
           </li>
-          <li class="usa-nav-secondary-item"><a href="">Secondary link</a></li>
+          <li class="usa-nav-secondary-item">
+            <a href="{{ '/contact' | relative_url}}">Get help</a>
+          </li>
         </ul>
         <form class="usa-search usa-search-small ">
           <div role="search">
-            <label class="usa-sr-only" for="extended-search-field-small"
-              >Search small</label
-            >
-            <input
-              class="usa-input"
-              id="extended-search-field-small"
-              type="search"
-              name="search"
-            />
+            <label class="usa-sr-only" for="extended-search-field-small">Search</label>
+            <input class="usa-input" id="extended-search-field-small" type="search" name="search" />
             <button class="usa-button" type="submit">
               <span class="usa-sr-only">Search</span>
             </button>
