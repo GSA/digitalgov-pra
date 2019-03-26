@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main class="usa-layout-docs usa-section" id="main-content">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      {% include sidenav.html %}
+      <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
+        <h1>{{ page.term }}</h1>
+        <p>
+          {{ page.definition }}
+        </p>
+      </div>
+    </div>
+  </div>
+</main>

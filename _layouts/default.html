@@ -5,28 +5,16 @@
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
 <!-- [if gt IE 8]><! -->
 <html lang="en">
-  <!-- <![endif] -->
-  <head>
-    {% include meta.html %}
-    {% include styles.html %}
-  </head>
-  <body class="page-documentation-template layout-demo ">
-    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-    {% include notice.html %}
-    {% include banner.html %}
-    {% include header.html %}
-    <main class="usa-layout-docs usa-section" id="main-content">
-      <div class="grid-container">
-        <div class="grid-row grid-gap">
-          {% include sidenav.html %}
-          <div
-            class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
-            {{ content }}
-          </div>
-        </div>
-      </div>
-    </main>
-    {% include glossary.html %}
-    {% include scripts.html %}
-  </body>
+<!-- <![endif] -->
+
+<head>
+  {% include meta.html %} {% include styles.html %}
+</head>
+
+<body class="page-documentation-template layout-demo ">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a> {%
+  include banner.html %} {% include header.html %} {{ content }} {% include footer.html %} {% include
+  glossary.html %} {% include scripts.html %}
+</body>
+
 </html>
