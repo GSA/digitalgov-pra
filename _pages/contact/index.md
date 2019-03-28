@@ -27,7 +27,9 @@ At larger agencies, there is often someone who is responsible for managing the a
 
 In the future, PRA responsibilities may sit with a new Chief Data Officer position in accordance with The Foundations for Evidence-Based Policymaking Act.
 
-Search below to find the PRA office for larger agencies. ([demo link](https://gsa.invisionapp.com/share/UYR6YCKEC9F#/354249476_Results-Options))
+Search below to find the PRA office for larger agencies.
+
+{% include contacts.html %}
 
 If you know of a PRA office that should be added, [please email us](mailto:futureemailbox) so that we can add it to the list.
 
