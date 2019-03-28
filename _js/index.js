@@ -1,35 +1,5 @@
-var Glossary = require("glossary-panel");
 var SmoothScroll = require("smooth-scroll");
-var terms = require("../_data/terms.json");
+require("./contacts.js");
+require("./glossary.js");
 
-var body = document.querySelectorAll(
-  ".usa-layout-docs-main_content p, .usa-layout-docs-main_content ul, .usa-layout-docs-main_content ol"
-);
-if (body) {
-  for (var i = 0; i < body.length; i++) {
-    Object.keys(terms).forEach(function(key) {
-      body[i].innerHTML = body[i].innerHTML.replace(
-        new RegExp("(\\b" + terms[key].term + "\\b)(?![^<]*>|[^<>]*</)", "gi"),
-        `<span data-term=${terms[key].term}>${terms[key].term}</span>`
-      );
-    });
-  }
-}
-
-function decorator(glossary) {
-  var accordion = glossary.accordion;
-
-  accordion.opts.collapseOthers = true;
-  accordion.collapse = function(button) {
-    var content = document.getElementById(button.getAttribute("aria-controls"));
-    if (!content) return;
-    button.setAttribute("aria-expanded", "false");
-    content.setAttribute("aria-hidden", "true");
-    this.setStyles(content);
-  };
-}
-
-var g = new Glossary(terms);
-decorator(g);
-
-var scroll = new SmoothScroll('a[href*="#"]');
+new SmoothScroll('a[href*="#"]');
