@@ -7,7 +7,7 @@
 }
 
 .usa-footer-secondary-section {
-  background-color: #000;
+  @include u-bg("base-darkest");
 }
 
 .usa-footer-logo-img.digital-gov{
