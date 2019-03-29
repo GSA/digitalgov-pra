@@ -1,14 +1,14 @@
-# pra.gov
+# PRA.gov
 
-This is the public repo for pra.gov, which is an online resource to help federal employees understand and comply with the Paperwork Reduction Act (PRA).
+This is the public repo for PRA.gov, which is an online resource to help federal employees understand and comply with the Paperwork Reduction Act (PRA).
 
 ## About the site
 
-* This site uses [Jekyll](https://jekyllrb.com), a Ruby-based static site generator. For more information about using Jekyll, refer to the [Jekyll documentation](http://jekyllrb.com/docs/home/).
+- This site uses [Jekyll](https://jekyllrb.com), a Ruby-based static site generator. For more information about using Jekyll, refer to the [Jekyll documentation](http://jekyllrb.com/docs/home/).
 
-* The site is built with the [U.S. Web Design System](https://designsystem.digital.gov/), a set of reusable, high-quality components for modern websites.
+- The site is built with the [U.S. Web Design System](https://designsystem.digital.gov/), a set of reusable, high-quality components for modern websites.
 
-* The site is optimized for deployment on 18F's [Federalist](https://federalist.18f.gov) publishing service.
+- The site is optimized for deployment on 18F's [Federalist](https://federalist.18f.gov) publishing service.
 
 ## Running the site locally
 
@@ -32,7 +32,7 @@ If all goes well, visit the site at `http://localhost:4000`.
 
 ## Contributing
 
-To provide feedback on pra.gov, follow this repository and [open an issue in the repo](https://github.com/GSA/pra.gov/issues/new).
+To provide feedback on PRA.gov, follow this repository and [open an issue in the repo](https://github.com/GSA/pra.gov/issues/new).
 
 ### Public domain
 
