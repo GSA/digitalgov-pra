@@ -18,7 +18,7 @@ While the PRA approval process takes at least 90 days, you don’t have to exten
 
 Most agencies estimate 6 to 9 for PRA clearance from start to finish. By law, this process takes at least 3 months of public comment.
 
-![pra process]({{'/assets/img/pra-process--for-site.jpg' | {{relative_url}})
+![pra process]({{'/assets/img/pra-process--for-site.jpg' | relative_url}})
 
 ### Develop the information collection request within your agency
 
