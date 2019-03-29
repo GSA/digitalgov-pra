@@ -21,3 +21,8 @@ i.e.
 */
 
 @import "components/glossary";
+
+
+.usa-footer--text {
+  @include u-font("sans", "xs");
+}
