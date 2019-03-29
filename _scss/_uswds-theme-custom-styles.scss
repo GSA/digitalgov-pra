@@ -21,19 +21,4 @@ i.e.
 */
 
 @import "components/glossary";
-
-.usa-footer-primary-section {
-  padding: 1rem 0;
-}
-
-.usa-footer--text {
-  @include u-font("sans", "xs");
-}
-
-.usa-footer-secondary-section {
-  background-color: #000;
-}
-
-.usa-footer-logo-img.digital-gov{
-  max-width: 10rem;
-}
+@import "components/footer";
