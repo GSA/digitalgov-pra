@@ -9,10 +9,10 @@ anchors:
 
 Not every request or collection falls under the PRA’s scope, and you may not need clearance at all. When figuring out if PRA clearance is needed, consider the following:
 
-- What type of information are you collecting
-- Who are you collecting it from
+- What type of information are you collecting,
+- Who are you collecting it from,
 - How will you be collecting it, and
-- Why are you collecting this information
+- Why you are collecting this information.
 
 This is just a starting point to see if your collection needs PRA clearance. We encourage [getting in touch with your agency's PRA contact]({{'/contact/' | relative_url}}) to answer more in-depth questions.
 
@@ -47,14 +47,14 @@ The type of information you’re collecting will help determine if you need PRA 
 
 Asking for information to be sent to the government, including:
 
-- Forms, such as the IRS 1040
-- Written reports, such as grantee performance reports
-- Surveys, such as customer satisfaction or behavioral surveys
+- Forms, such as the IRS 1040.
+- Written reports, such as grantee performance reports.
+- Surveys, such as customer satisfaction or behavioral surveys.
 - Recordkeeping requirements, such as small businesses keeping all tax-related documents for 3 years.
 - Third-party or public disclosures, such as nutrition labeling requirements for food.
-- Program evaluations
-- Research studies, focus groups and customer satisfaction surveys,
-- Applications for benefits and grant programs
+- Program evaluations, such as looking at the outcomes of a subsidized housing initiative for seniors.
+- Research studies and focus groups with a set of the same questions or tasks. 
+- Applications for benefits and grant programs.
 
 #### Doesn’t need PRA clearance
 
