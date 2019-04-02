@@ -65,6 +65,8 @@ Asking for information to be sent to the government, including:
 
 Some information collections are generally not subject to the PRA, including: federal investigations and civil actions, antitrust actions, and intelligence activities.
 
+Voluntary collections are not automatically exempt from PRA approval. 
+
 #### Information at public meetings and online
 
 The discussion and conversation that takes place at a public meeting has long been exempt from the PRA and using online interactive meeting tools such as public conferences calls, webinars, discussions board and forums, and chat sessions are considered the online equivalent of in-person public meetings and do not need PRA clearance.
