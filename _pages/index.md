@@ -32,7 +32,7 @@ no_top_link: true
     <h3>Protecting private information</h3>
     <ul>
       <li class="margin-bottom-2">To respect privacy, we avoid asking for personal information that’s not relevant or necessary.</li>
-      <li class="margin-bottom-2">The Office of Information and Regulatory Affairs (OIRA) asks for extra detail if you’re collecting personally identifying information (PII)</li>
+      <li class="margin-bottom-2">The Office of Information and Regulatory Affairs (OIRA) asks for extra detail if you’re collecting personally identifiable information (PII)</li>
     </ul>
   </div>
 </div>
