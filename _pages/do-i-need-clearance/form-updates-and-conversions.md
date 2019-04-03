@@ -1,6 +1,5 @@
 ---
 title: Converting forms from paper to digital
-permalink: /form-updates-and-conversions.md/
 ---
 
 Many existing, PRA-approved paper-based forms can benefit from a conversion to an interactive form, like a web-based form or an editable PDF. 
