@@ -10,7 +10,7 @@ no_top_link: true
     <div class="bg-primary text-white circle-10 display-flex flex-align-center flex-justify-center">
       <i class="fas fa-users font-body-2xl"></i>
     </div>
-    <h3>Managing information agencies request of the public</h3>
+    <h3>Managing the information agencies request of the public</h3>
     <ul>
       <li class="margin-bottom-2">We want to be good stewards of the public’s time, and not overwhelm them with unnecessary or duplicative requests for information.</li>
       <li class="margin-bottom-2">The PRA clearance process involves calculating burden hours. It’s important to understand how long it will take members of the public to complete your request.</li>
