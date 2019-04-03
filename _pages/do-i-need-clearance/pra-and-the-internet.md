@@ -3,7 +3,7 @@ title: PRA and the Web
 ---
 
  
-Using technology is an excellent way to reduce costs to the public while providing a useful service. Some social media and web-based technologies are not subject to PRA, and don’t need approval; broader [LWLE4] clarifications are in the 
+Using technology is an excellent way to reduce costs to the public while providing a useful service. Some social media and web-based technologies are not subject to PRA, and don’t need approval; broader clarifications are in the 
 [Social Media Guidance Memo](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/inforeg/SocialMediaGuidance_04072010.pdf).
  
 #### Email or text subscriptions to alerts and publications ####
