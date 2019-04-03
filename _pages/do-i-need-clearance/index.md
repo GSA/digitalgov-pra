@@ -14,6 +14,8 @@ Not every request or collection falls under the PRA’s scope, and you may not n
 - How will you be collecting it, and
 - Why you are collecting this information.
 
+**Voluntary collections are not automatically exempt.** 
+
 This is just a starting point to see if your collection needs PRA clearance. We encourage [getting in touch with your agency's PRA contact]({{'/contact/' | relative_url}}) to answer more in-depth questions.
 
 ### Who are you collecting information from?
@@ -65,11 +67,9 @@ Asking for information to be sent to the government, including:
 
 Some information collections are generally not subject to the PRA, including: federal investigations and civil actions, antitrust actions, and intelligence activities.
 
-Voluntary collections are not automatically exempt from PRA approval. 
-
 #### Information at public meetings and online
 
-The discussion and conversation that takes place at a public meeting has long been exempt from the PRA and using online interactive meeting tools such as public conferences calls, webinars, discussions board and forums, and chat sessions are considered the online equivalent of in-person public meetings and do not need PRA clearance.
+The discussion and conversation at a public meeting is exempt from PRA clearance. Using interactive meeting tools like public conferences calls, webinars, discussions board and forums, and chat sessions are considered the online equivalent of in-person public meetings and do not need clearance.
 
 
 
