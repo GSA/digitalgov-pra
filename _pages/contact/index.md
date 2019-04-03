@@ -41,4 +41,9 @@ Each agency has an OIRA desk officer who reviews the agency’s information requ
 - You are an agency PRA officer and have a question about guidance or a particular ICR
 - You are at a small agency who does not have a PRA officer
 
+OIRA is not the appropriate point of contact for PRA help if: 
+
+- Your agency has an office with PRA expertise
+- You are not an agency PRA officer 
+
 To find the desk officer assigned to your agency, you can [email OIRA](mailto:futureemailbox).
