@@ -1,4 +1,4 @@
 ---
 title: Estimating Burden
-permalink: /estimating-burden/
+permalink: /burden/
 ---
