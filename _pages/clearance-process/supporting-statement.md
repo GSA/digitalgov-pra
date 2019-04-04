@@ -4,6 +4,10 @@ title: Supporting Statements
 
 The Supporting Statement is a set of required questions that help provide a clear rationale for the why, what, how, who of the information collection. All Supporting Statements have a Part A, 18 questions which show compliance with the PRA and other associated laws. Collections that require statistical methods, like surveys or program evaluations, have additional requirements, called Part B. 
 
+## What makes a good supporting statement?
+
+A clear supporting statement will help OMB and the public better understand your collection and reduce the need for questions aimed at simply trying to understand the overall collection, Be sure to give information about the authority your agency has to collect the type of information in your proposal.
+
 A few of the criteria covered in the Supporting Statement include: 
 
 *	Agency purpose 
