@@ -1,20 +1,26 @@
 ---
 title: Types of PRA clearance
 permalink: /clearance-types/
+anchors:
+ - name: Normal clearance
+ - name: Common form clearance
+ - name: Generic clearance
+ - name: Expedited/Emergency clearance
+
 ---
 
 In addition to the [normal PRA clearances]({{'/clearance-process/'|relative_url}}), there are many other types of collections.  These labels can be confusing, but are used only in very specific circumstances.  We’re here to help get you on the right track to approval.   
 
 1.	Normal clearance, for new requests, Revision vs. Extension requests, and Reinstatement (with or without change) requests.
 2.	Common Form clearance, for a form already approved and in use by another agency.
-3.	Generic clearance, which includes the fast track process after its granted.
+3.	Generic clearance, which includes the fast-track process after it's granted.
 4.	Emergency/Expedited review and clearance (used in very limited cases).
 
 
-## Normal Request
+## Normal clearance
 The vast majority of PRA approval requests [go through our standard approval process]({{'/clearance-process/'|relative_url}}).
 
-## Common Form clearances
+## Common form clearance
 
 A “common form” is an information collection that can be used by two or more agencies, or government-wide, for the same purpose. One agency will host the collection to be used by themselves, and additional agencies can request to use that collection.  After OMB approves the primary collection, any agency that wishes to collect the same information and use it for the same purpose can obtain expedited approval by providing its agency-specific information to OMB (e.g., burden estimates and number of respondents).  
 
