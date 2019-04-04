@@ -32,4 +32,4 @@ Some examples of excessive burden include:
 -	Not considering an alternative approach to obtain the information.
 -	Requesting information in a different format than its usually maintained.
 
-If your collection involves activities seen as excessive, you must justify them in the purpose and need of the collection. [LINK TO SUPPORTING STATEMENT PAGE]
+If your collection involves activities seen as excessive, you must justify them in the purpose and need of the collection [in your supporting statement]({{'/clearance-process/supporting-statement/'| relative_url}}). 
