@@ -12,7 +12,7 @@ Do you need advice on the PRA? There are a few people who may be able to help.
 If you have a question about PRA, your first step should be to connect with someone in your agency with PRA expertise. Often agencies have their own requirements and processes around PRA that you’ll need to follow.
 
 ### Help planning an information request
-You’ll want to make sure you’re following your agency’s best practices around collecting and managing information [when you start developing your information collection request]({{'/clearance-process/#develop-the-information-collection-request-within-your-agency'|relative_url}}). Here are some people you may want to consult with.
+You’ll want to make sure you’re following your agency’s best practices around collecting and managing information [when you start developing your information collection request]({{'/clearance-process/#develop-the-information-collection-request-within-your-agency'|relative_url}}). Here are some people you may want to consult with:
 
 
 - **The Privacy Officer, if you’re collecting personally identifiable information (PII)**. Your privacy officer can help you determine if you are collecting PII and share agency guidance on how to properly store and use this information.
@@ -20,7 +20,7 @@ You’ll want to make sure you’re following your agency’s best practices aro
 - **A statistician or program evaluation expert, if you’re using statistical methodology**. If you are using statistical methods like sampling, you’ll need to detail your approach in a Supporting Statement Part B. An agency program evaluation expert or statistician can help you plan the correct approach and write the supporting statement.
 
 ### Help submitting an information request
-At larger agencies, there is often someone who is responsible for managing the agency’s PRA requests and submitting them for OIRA review through the ROCIS system. Often PRA officers are located in these offices.
+At larger agencies, there is often someone who is responsible for managing the agency’s PRA requests and submitting them for OIRA review through the ROCIS system. Often PRA officers are located in these offices:
 - Office of the General Counsel (OGC)
 - Chief Information Officer (CIO)
 - Regulatory Affairs / Regulatory Secretariat
