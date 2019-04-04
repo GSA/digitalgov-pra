@@ -1,6 +1,9 @@
 ---
 title: Types of PRA clearance
 permalink: /clearance-types/
+anchors:
+ - name: Normal Request
+
 ---
 
 In addition to the [normal PRA clearances]({{'/clearance-process/'|relative_url}}), there are many other types of collections.  These labels can be confusing, but are used only in very specific circumstances.  We’re here to help get you on the right track to approval.   
