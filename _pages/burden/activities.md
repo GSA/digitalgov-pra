@@ -26,7 +26,7 @@ Many activities count as burden. These questions can help you determine if a bur
 *	Will there be additional training for actual reporting and recordkeeping methods?
 
 ## Searching data sources
-*	Are there public or private data sources that can be used to respond to the collection? 
+*	Are there public or private data sources respondents can use to respond to the collection? 
 *	What would be the cost of creating new data sources?
 
 ## Completing and reviewing collected information
