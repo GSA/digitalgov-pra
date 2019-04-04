@@ -1,6 +1,12 @@
 ---
 title: Types of PRA clearance
 permalink: /clearance-types/
+anchors:
+  - name: Normal clearance
+  - name: Common Form clearance
+  - name: Generic clearance
+  - name: Generic clearance: Fast-track process
+  - name: Emergency/Expedited clearance
 ---
 
 In addition to the [normal PRA clearances]({{'/clearance-process/'|relative_url}}), there are many other types of collections.  These labels can be confusing, but are used only in very specific circumstances.  We’re here to help get you on the right track to approval.   
@@ -11,7 +17,7 @@ In addition to the [normal PRA clearances]({{'/clearance-process/'|relative_url}
 4.	Emergency/Expedited review and clearance (used in very limited cases).
 
 
-## Normal Request
+## Normal clearance
 The vast majority of PRA approval requests [go through our standard approval process]({{'/clearance-process/'|relative_url}}).
 
 ## Common Form clearances
