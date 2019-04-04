@@ -62,12 +62,6 @@ With your agency, you’ll submit an Information Clearance Request (ICR) for rev
 - Guides or instructions for interviewers,
 - Explanatory material to be given to prospective respondents, and prepared material to be given to members of the public who do not respond.
 
-## What makes a good supporting statement?
-
-A clear supporting statement will help OMB and the public better understand your collection and reduce the need for questions aimed at simply trying to understand the overall collection, Be sure to give information about the authority your agency has to collect the type of information in your proposal.
-
-The PRA approval process helps ensure the collection meets the standards of the PRA such as minimizing burden on the public and also helps to ensure it is being conducted in a way that uses appropriate methods and analysis.
-
 ## OMB review timeline and process
 
 OMB typically reviews ICR packages within sixty days, from the submission date or the publication of the 30-day Federal Register notice (whichever is later), but can take longer in some circumstances.
