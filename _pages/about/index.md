@@ -39,8 +39,7 @@ Some information collections are generally not subject to the PRA, including: fe
 
 ## What happens if I don't comply with PRA? 
 
-lorem ipsum dolor sit amet
-
+The PRA is a law, and compliance is mandatory. Collecting information or responses without clearance can result in the collections being revoked or expired, and the information gathered unusable. Violations are reported to Congress and the President in the Information Collection Budget.
 
 
 
