@@ -4,7 +4,6 @@ permalink: /do-i-need-clearance/
 anchors:
   - name: Who are you collecting information from?
   - name: What type of information are you collecting?
-  
 ---
 
 Not every request or collection falls under the PRA’s scope, and you may not need clearance at all. When figuring out if PRA clearance is needed, consider the following:
@@ -14,7 +13,7 @@ Not every request or collection falls under the PRA’s scope, and you may not n
 - How will you be collecting it, and
 - Why you are collecting this information.
 
-**Voluntary collections are not automatically exempt.** 
+**Voluntary collections are not automatically exempt.**
 
 This is just a starting point to see if your collection needs PRA clearance. We encourage [getting in touch with your agency's PRA contact]({{'/contact/' | relative_url}}) to answer more in-depth questions.
 
@@ -40,7 +39,6 @@ If you’re requesting information from fewer than ten people or groups, but the
 
 Regardless if your collection is voluntary, (i.e. the public is not required by law to provide information), or mandatory, the Paperwork Reduction Act treats the collections the same.
 
-
 ### What type of information are you collecting?
 
 The type of information you’re collecting will help determine if you need PRA clearance.
@@ -55,7 +53,7 @@ Asking for information to be sent to the government, including:
 - Recordkeeping requirements, such as small businesses keeping all tax-related documents for 3 years.
 - Third-party or public disclosures, such as nutrition labeling requirements for food.
 - Program evaluations, such as looking at the outcomes of a subsidized housing initiative for seniors.
-- Research studies and focus groups with a set of the same questions or tasks. 
+- Research studies and focus groups with a set of the same questions or tasks.
 - Applications for benefits and grant programs.
 
 #### Doesn’t need PRA clearance
@@ -69,7 +67,4 @@ Some information collections are generally not subject to the PRA, including: fe
 
 #### Information at public meetings and online
 
-The discussion and conversation at a public meeting is exempt from PRA clearance. Using interactive meeting tools like public conferences calls, webinars, discussions board and forums, and chat sessions are considered the online equivalent of in-person public meetings and do not need clearance.
-
-
-
+The discussion and conversation at a public meeting is exempt from PRA clearance. Using interactive meeting tools like public conferences calls, webinars, discussions board and forums, and chat sessions are considered the online equivalent of in-person public meetings and do not need clearance. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
