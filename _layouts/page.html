@@ -8,45 +8,7 @@ layout: default
       {% include sidenav.html %}
       <div class="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
         <h1>{{ page.title }}</h1>
-        {% assign _content = page.content | strip_newlines %} {% if _content !=
-        '' %} {{ content }} {% elsif page.anchors %} {% for _anchor in
-        page.anchors %}
-        <h2 id="{{_anchor.name | slugify}}">{{_anchor.name}}</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-          urna suscipit, ullamcorper risus vel, dignissim nisl. Nulla sed
-          facilisis orci. Suspendisse blandit mauris eget ultricies hendrerit.
-          Fusce eu massa elit. Duis at dui nibh. Proin dui mauris, sodales a ex
-          sit amet, porta ultrices dui. Nam lectus quam, congue sit amet
-          pulvinar vitae, vehicula sit amet ipsum. Vivamus a ligula posuere,
-          bibendum enim sed, porttitor nibh. Sed consequat elit sed risus
-          consequat imperdiet ac ut massa.
-        </p>
-        {% endfor %} {% else %}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-          urna suscipit, ullamcorper risus vel, dignissim nisl. Nulla sed
-          facilisis orci. Suspendisse blandit mauris eget ultricies hendrerit.
-          Fusce eu massa elit. Duis at dui nibh. Proin dui mauris, sodales a ex
-          sit amet, porta ultrices dui. Nam lectus quam, congue sit amet
-          pulvinar vitae, vehicula sit amet ipsum. Vivamus a ligula posuere,
-          bibendum enim sed, porttitor nibh. Sed consequat elit sed risus
-          consequat imperdiet ac ut massa.
-        </p>
-        <p>
-          Cras sed nisi lacus. Donec auctor, mauris ac ultricies aliquam, odio
-          urna ultrices felis, at commodo tellus tortor at lectus. Pellentesque
-          malesuada pellentesque neque vitae dapibus. Cras varius eget justo id
-          convallis. Vestibulum augue mi, ullamcorper non vestibulum non,
-          sagittis cursus ex. Nam sem libero, facilisis vitae laoreet non,
-          viverra eu erat. Curabitur vitae ante nec nisi fringilla semper ut
-          eget sem. Fusce enim mauris, malesuada vitae nisl sit amet, tempus
-          posuere elit. Maecenas a lorem non justo convallis tempor. Cras eget
-          euismod enim, at pharetra est. Vivamus et tellus sapien. In aliquam
-          urna eu urna blandit pretium sed ut eros. Quisque ullamcorper vel
-          velit eget euismod. In vitae mollis sem, euismod blandit diam.
-        </p>
-        {% endif %}
+        {{ content }}
       </div>
     </div>
   </div>
