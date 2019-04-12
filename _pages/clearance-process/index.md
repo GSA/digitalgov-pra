@@ -2,7 +2,7 @@
 title: PRA approval process
 permalink: /clearance-process/
 anchors:
-  - name: Process overview
+  - name: Process overview for standard clearance
   - name: Develop the information collection request within your agency
   - name: Issue 60-day request for comment in the Federal Register
   - name: Consider the public comments on the notice

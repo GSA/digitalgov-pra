@@ -10,7 +10,7 @@
         <ul class="usa-sidenav-sublist">
           {% for _anchor in page.anchors %}
           <li class="usa-sidenav-item">
-            <a href="#{{_anchor.name | slugify}}">{{_anchor.name}}</a>
+            <a href="#{{_anchor.name | replace: "'", '' | slugify}}">{{_anchor.name}}</a>
           </li>
           {% endfor %}
         </ul>
