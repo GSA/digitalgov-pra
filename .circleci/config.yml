@@ -2,9 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6.0-node-browsers
-        environment:
-          BUNDLER_VERSION: 2.0.1
+      - image: circleci/ruby:2.6.2-node-browsers
 
     working_directory: ~/repo
 
@@ -19,6 +17,13 @@ jobs:
 
       - run:
           command: npm install
+
+      - run:
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
 
       - run:
           name: Install dependencies
