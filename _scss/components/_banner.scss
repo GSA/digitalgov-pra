@@ -1,0 +1,21 @@
+.usa-banner-button {
+  @include at-media("tablet") {
+    @include add-icon("angle-arrow-down-hover", "after", 1, 1, 2px, "null");
+
+    &:hover::after {
+      @include add-background-svg("angle-arrow-down-hover");
+    }
+
+    &[aria-expanded="true"] {
+      &::after {
+        transform: rotate(180deg);
+      }
+
+      @include add-icon("angle-arrow-down-hover", "after", 1, 1, 2px, "null");
+
+      &:hover::after {
+        @include add-background-svg("angle-arrow-down-hover");
+      }
+    }
+  }
+}
