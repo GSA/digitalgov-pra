@@ -19,3 +19,10 @@
     }
   }
 }
+
+.usa-banner-header,
+.usa-banner-header-expanded {
+  @include at-media("tablet") {
+    @include u-bg("primary");
+  }
+}

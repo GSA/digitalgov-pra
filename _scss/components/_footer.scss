@@ -6,11 +6,7 @@
   @include u-font("sans", "xs");
 }
 
-.usa-footer-secondary-section {
-  @include u-bg("base-darkest");
-}
-
-.usa-footer-logo-img.digital-gov{
+.usa-footer-logo-img.digital-gov {
   max-width: 10rem;
 }
 

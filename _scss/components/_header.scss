@@ -1,0 +1,36 @@
+.usa-nav-primary > .usa-nav-primary-item > a {
+  @include at-media($theme-navigation-width) {
+    @include u-text("normal");
+  }
+}
+
+.usa-header-extended .usa-current:after,
+.usa-header-extended .usa-nav-link:hover:after {
+  @include at-media($theme-navigation-width) {
+    @include u-bg("secondary-light");
+  }
+}
+
+.usa-nav-primary > .usa-nav-primary-item > a.usa-current,
+.usa-nav-primary > .usa-nav-primary-item > a.usa-nav-link:hover {
+  @include at-media($theme-navigation-width) {
+    @include u-text("secondary");
+  }
+}
+
+.usa-nav-secondary-links {
+  a {
+    color: color("ink");
+    text-decoration: none;
+
+    &:hover {
+      color: color("primary");
+      text-decoration: none;
+    }
+
+    &: ;
+    after {
+      display: none !important;
+    }
+  }
+}
