@@ -27,10 +27,9 @@
       color: color("primary");
       text-decoration: none;
     }
-
-    &: ;
-    after {
-      display: none !important;
-    }
   }
+}
+
+.usa-nav-secondary-item::after {
+  display: none !important;
 }
