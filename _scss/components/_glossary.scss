@@ -2,7 +2,7 @@
   transition: right 0.2s;
 
   &[aria-hidden="true"] {
-    right: -15rem;
+    right: -20rem;
   }
 
   div[aria-hidden="true"] {
@@ -44,7 +44,16 @@
 
 [data-term] {
   border-bottom: 1px dotted;
+  border-color: color("secondary-light");
   color: inherit;
   cursor: pointer;
   text-decoration: none;
+  background-image: url("../../img/icon-glossary.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 17px;
+}
+
+[data-term]:hover {
+  @include u-bg("secondary-lightest");
 }

@@ -33,3 +33,11 @@
 .usa-nav-secondary-item::after {
   display: none !important;
 }
+
+.usa-header + .usa-section,
+.usa-header + main,
+.usa-header-extended .usa-nav {
+  @include at-media($theme-navigation-width) {
+    border-color: color("base");
+  }
+}
