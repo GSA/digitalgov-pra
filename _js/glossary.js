@@ -8,7 +8,7 @@ var body = document.querySelectorAll(
 if (body) {
   Object.keys(terms).forEach(function(key) {
     var term = terms[key].term;
-    var re = new RegExp("(\\b" + term + "\\b)(?![^<]*>|[^<>]*</)", "gi");
+    var re = new RegExp("(\\b" + term + "\\b)(?![^<]*>|[^<>]*</)", "i");
 
     for (var i = 0; i < body.length; i++) {
       if (re.test(body[i].innerHTML)) {
