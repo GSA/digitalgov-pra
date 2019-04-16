@@ -14,7 +14,7 @@ if (body) {
       if (re.test(body[i].innerHTML)) {
         body[i].innerHTML = body[i].innerHTML.replace(
           re,
-          `<span data-term=${term}>${term}</span>`
+          `<span data-term="${term}">${term}</span>`
         );
         break;
       }
