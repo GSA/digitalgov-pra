@@ -1,11 +1,11 @@
 ---
-title: What is the PRA?
+title: Home
 permalink: /
 layout: home
 no_top_link: true
 ---
 
-<h2>Get started with the PRA</h2>
+## Get started with the PRA
 
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col-4">
