@@ -30,13 +30,26 @@
   }
 }
 
+.usa-nav-secondary-links
+  .usa-nav-secondary-item
+  + .usa-nav-secondary-item:before {
+  @include at-media($theme-navigation-width) {
+    color: #d5d8db;
+  }
+}
+
 .usa-nav-secondary-item::after {
   display: none !important;
 }
 
-.usa-header + .usa-section,
-.usa-header + main,
 .usa-header-extended .usa-nav {
+  @include at-media($theme-navigation-width) {
+    border-color: transparent;
+  }
+}
+
+.usa-header + .usa-section,
+.usa-header + main {
   @include at-media($theme-navigation-width) {
     border-color: color("base");
   }
