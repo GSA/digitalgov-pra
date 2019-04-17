@@ -54,3 +54,21 @@
     border-color: color("base");
   }
 }
+
+.usa-navbar {
+  @include at-media-max("desktop") {
+    border-color: color("base");
+  }
+  @include u-height("10");
+}
+
+.usa-menu-btn,
+.usa-menu-btn:hover {
+  @include u-bg("secondary-lightest");
+  @include u-border(1px);
+  @include u-border("secondary-lighter") @include u-margin-right(2);
+  @include u-height("5");
+  @include u-radius("sm");
+  @include u-text("primary");
+  @include u-width("10");
+}

@@ -20,9 +20,11 @@
   }
 }
 
+.usa-banner-header-action {
+  @include add-icon("angle-arrow-down-hover", "after", 1, 1, 2px, "null");
+}
+
 .usa-banner-header,
 .usa-banner-header-expanded {
-  @include at-media("tablet") {
-    @include u-bg("primary");
-  }
+  @include u-bg("primary");
 }

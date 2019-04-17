@@ -1,3 +1,12 @@
 body {
   @include u-text("light");
 }
+
+.home #main-content {
+  @include at-media("tablet") {
+    background-image: url("../../img/form.png");
+    background-position: calc(50% + 420px) 50%;
+    background-repeat: no-repeat;
+    background-size: 336px;
+  }
+}

@@ -4,3 +4,15 @@
   background-repeat: no-repeat;
   padding-left: 20px;
 }
+
+.icon-arrow {
+  position: relative;
+
+  &:before {
+    content: url("../../img/icon-arrow.svg");
+    display: block;
+    left: -16px;
+    position: absolute;
+    top: 0;
+  }
+}

@@ -1,5 +1,5 @@
 .usa-footer-secondary-section a,
 .usa-footer-secondary-section a:hover,
 .usa-footer-secondary-section a:visited {
-  color: #ffffff;
+  @include u-text("white");
 }
