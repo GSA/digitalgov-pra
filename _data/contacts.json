@@ -7,5 +7,38 @@
     "phone": "202-501-4755",
     "email": "GSARegSec@gsa.gov",
     "approved": true
-  }
+  },
+  {
+    "agency": "U.S. Department of the Treasury",
+    "office": "Office of Privacy, Transparency and Records (PTR) under the Assistant Secretary for Management",
+    "website": "https://www.treasury.gov/about/organizational-structure/offices/Pages/Office-of-Privacy,-Transparency-and-Records.aspx",
+    "email": "PRA@treasury.gov",
+    "approved": true
+  },
+  {
+    "agency": "Board of Governors of the Federal Reserve System",
+    "office": "Information Collection Coordination Section under the Office of the Chief Data Officer",
+    "phone": "202-452-3829",
+    "email": "OCDO-ICC@frb.gov",
+    "approved": true
+  },
+  {
+    "agency": "U.S. Department of State",
+    "office": "Bureau of Administration, Global Information Services, Office of Directives Management",
+    "email": "eRegs@state.gov",
+    "approved": true
+  },
+  {
+    "agency": "Federal Energy Regulatory Commission",
+    "short": "FERC"
+    "office": "Information Collection Management Team, IT Policy and Resources Management Div., Office of the Chief Information Officer, in the Office of the Executive Director",
+    "website": "https://www.ferc.gov/docs-filing/info-collections.asp",
+    "email": "DataClearance@ferc.gov",
+    "approved": true
+  },
+{
+    "agency": "U.S. Office of Government Ethics",
+    "office": "The Legal, External Affairs and Performance Branch within the Program Counsel Division",
+    "approved": true
+  },
 ]
