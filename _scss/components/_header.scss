@@ -1,9 +1,3 @@
-.usa-nav__primary > .usa-nav__primary-item > a {
-  @include at-media($theme-navigation-width) {
-    @include u-text("normal");
-  }
-}
-
 .usa-header--extended .usa-current:after,
 .usa-header--extended .usa-nav__link:hover:after {
   @include at-media($theme-navigation-width) {
@@ -20,11 +14,11 @@
 
 .usa-nav__secondary-links {
   a {
-    color: color("ink");
+    @include u-text("ink");
     text-decoration: none;
 
     &:hover {
-      color: color("primary");
+      @include u-text("primary");
       text-decoration: none;
     }
   }
@@ -66,7 +60,8 @@
 .usa-menu-btn:hover {
   @include u-bg("secondary-lightest");
   @include u-border(1px);
-  @include u-border("secondary-lighter") @include u-margin-right(2);
+  @include u-border("secondary-lighter");
+  @include u-margin-right(2);
   @include u-height("5");
   @include u-radius("sm");
   @include u-text("primary");

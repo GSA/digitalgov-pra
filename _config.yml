@@ -2,10 +2,6 @@
 title: PRA.gov
 description: A resource to help federal employees comply with the Paperwork Reduction Act (PRA)
 email: placeholder@email.gov
-github:
-  organization: GSA
-  repository: pra.gov
-  default_branch: master
 
 footer:
   logos:
