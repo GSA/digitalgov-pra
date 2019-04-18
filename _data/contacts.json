@@ -62,4 +62,12 @@
     "email": "docpra@doc.gov",
     "approved": true
   },
+  {
+    "agency": "National Aeronautics Space Administration",
+    "short": "NASA",
+    "office": "Enterprise Services and Integration Division (ESID) within the Office of the CIO",
+    "website": "https://www.nasa.gov/content/nasa-s-paper-reduction-act-pra-program",
+    "email": "HQ-OCIO-PRA-Program@mail.nasa.gov",
+    "approved": true
+  },
 ]
