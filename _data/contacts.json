@@ -55,4 +55,11 @@
     "office": "The Legal, External Affairs and Performance Branch within the Program Counsel Division",
     "approved": true
   },
+  {
+    "agency": "U.S. Department of Commerce",
+    "short": "DOC",
+    "office": "Office of the Chief Information Officer",
+    "email": "docpra@doc.gov",
+    "approved": true
+  },
 ]
