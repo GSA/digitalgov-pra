@@ -1,4 +1,4 @@
-.usa-banner-button {
+.usa-banner__button {
   @include at-media("tablet") {
     @include add-icon("angle-arrow-down-hover", "after", 1, 1, 2px, "null");
 
@@ -20,11 +20,14 @@
   }
 }
 
-.usa-banner-header-action {
+.usa-banner__header-action {
   @include add-icon("angle-arrow-down-hover", "after", 1, 1, 2px, "null");
 }
 
-.usa-banner-header,
-.usa-banner-header-expanded {
+.usa-banner__header,
+.usa-banner__header--expanded {
   @include u-bg("primary");
+  @include at-media("tablet") {
+    @include u-bg("primary");
+  }
 }

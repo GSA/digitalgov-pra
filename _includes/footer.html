@@ -1,12 +1,12 @@
 <footer class="usa-footer usa-footer--slim" role="contentinfo">
   {% unless page.no_top_link %}
-  <div class="grid-container usa-footer-return-to-top">
+  <div class="grid-container usa-footer__return-to-top">
     <a href="#">Return to top</a>
   </div>
   {% endunless %}
-  <div class="usa-footer-primary-section font-sans-2xs">
-    <div class="grid-container">
-      <div class="measure-3 padding-y-4">
+  <div class="usa-footer__primary-section">
+    <div class="grid-container padding-y-4">
+      <div class="measure-5 font-sans-xs">
         <p>
           PRA.gov’s content is maintained by
           <a href="https://www.whitehouse.gov/omb/information-regulatory-affairs/">The Office of Information and Regulatory Affairs (OIRA)</a>
@@ -21,19 +21,16 @@
       </div>
     </div>
   </div>
-
-  <div class="usa-footer-secondary-section bg-primary">
+  <div class="usa-footer__secondary-section bg-primary">
     <div class="grid-container">
-      <div class="grid-row flex-align-center">
+      <div class="usa-footer__logo grid-row grid-gap-2">
         <div class="grid-col-auto">
           <a href="{{site.footer.omb.url}}"><img class="width-10" src="{{ '/assets/img/eop-omb.png' | relative_url }}" alt="" /></a>
         </div>
         <div class="grid-col-auto">
-          <div class="border-primary-light border-left padding-left-3 margin-left-3 padding-y-1 display-flex">
-            <a href="{{site.footer.digitalgov.url}}"><img class="height-3" src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}" alt="" /></a>
-          </div>
+          <a href="{{site.footer.digitalgov.url}}"><img class="height-3" src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}" alt="" /></a>
         </div>
-        <div class="tablet:grid-col font-sans-2xs">
+        <div class="grid-col-auto">
           <ul class="add-list-reset display-flex tablet:flex-justify-end margin-top-2 tablet:margin-top-0">
             <li class="margin-right-3"><a href="#">Privacy policy</a></li>
             <li><a href="mailto:placeholder@email.com?subject=PRA.gov:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">Send site feedback</a></li>
