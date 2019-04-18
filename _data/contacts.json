@@ -39,6 +39,19 @@
   },
 {
     "agency": "U.S. Office of Government Ethics",
+    "office": "Office of the Chief Information Officer",
+    "website":"https://www2.ed.gov/policy/gen/leg/pra.html",
+    "email":"ICDocketMgr@ed.gov",
+    "approved": true
+  },
+  {
+    "agency": "U.S. Office of Government Ethics",
+    "office": "The Legal, External Affairs and Performance Branch within the Program Counsel Division",
+    "approved": true
+  },
+{
+    "agency": "U.S. Department of Education",
+    "short": "DE"
     "office": "The Legal, External Affairs and Performance Branch within the Program Counsel Division",
     "approved": true
   },
