@@ -37,7 +37,7 @@
     "email": "DataClearance@ferc.gov",
     "approved": true
   },
-{
+  {
     "agency": "U.S. Department of Education",
     "office": "Office of the Chief Information Officer",
     "website":"https://www2.ed.gov/policy/gen/leg/pra.html",
@@ -88,5 +88,5 @@
     "office": "Office of the General Counsel",
     "email": "PRA@ftc.gov",
     "approved": true
-  },
+  }
 ]
