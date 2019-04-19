@@ -408,6 +408,12 @@ $theme-heading-line-height: 3;
 $theme-small-font-size: "2xs";
 $theme-title-font-size: "3xl";
 
+$theme-h1-mobile-font-size: $theme-h2-font-size;
+$theme-h2-mobile-font-size: $theme-h3-font-size;
+$theme-h3-mobile-font-size: $theme-h4-font-size;
+$theme-h4-mobile-font-size: $theme-h5-font-size;
+$theme-h5-mobile-font-size: $theme-h6-font-size;
+
 // Text and prose
 $theme-text-measure-narrow: 1;
 $theme-text-measure: 3;
@@ -416,6 +422,6 @@ $theme-prose-font-family: "body";
 
 // Lead text
 $theme-lead-font-family: "heading";
-$theme-lead-font-size: "sm";
+$theme-lead-font-size: "xl";
 $theme-lead-line-height: 4;
 $theme-lead-measure: 5;
