@@ -1,0 +1,21 @@
+.usa-sidenav a {
+  @include u-padding-y("2");
+  @include u-text("bold");
+
+  &.usa-current {
+    @include u-text("secondary");
+
+    &:after {
+      @include u-bg("secondary");
+    }
+  }
+}
+
+.usa-sidenav__sublist a {
+  @include u-padding-y("1");
+  @include u-text("normal");
+}
+
+.usa-sidenav__item {
+  @include u-border-top(0);
+}
