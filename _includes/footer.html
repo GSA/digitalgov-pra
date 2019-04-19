@@ -6,7 +6,7 @@
   {% endunless %}
   <div class="usa-footer__primary-section">
     <div class="grid-container padding-y-4">
-      <div class="measure-5 font-sans-xs">
+      <div class="measure-6 font-sans-2xs">
         <p>
           PRA.gov’s content is maintained by
           <a href="https://www.whitehouse.gov/omb/information-regulatory-affairs/">The Office of Information and Regulatory Affairs (OIRA)</a>
@@ -23,17 +23,21 @@
   </div>
   <div class="usa-footer__secondary-section bg-primary">
     <div class="grid-container">
-      <div class="usa-footer__logo grid-row grid-gap-2">
-        <div class="grid-col-auto">
-          <a href="{{site.footer.omb.url}}"><img class="width-10" src="{{ '/assets/img/eop-omb.png' | relative_url }}" alt="" /></a>
+      <div class="usa-footer__logo grid-row tablet:flex-justify">
+        <div class="tablet:grid-col-auto">
+          <div class="display-flex flex-align-center">
+            <a href="{{site.footer.omb.url}}"><img class="width-10 display-block" src="{{ '/assets/img/eop-omb.png' | relative_url }}" alt="" /></a>
+            <div class="separator display-flex flex-align-center">
+              <a href="{{site.footer.digitalgov.url}}"><img class="height-3 display-block" src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}" alt="" /></a>
+            </div>
+          </div>
         </div>
-        <div class="grid-col-auto">
-          <a href="{{site.footer.digitalgov.url}}"><img class="height-3" src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}" alt="" /></a>
-        </div>
-        <div class="grid-col-auto">
-          <ul class="add-list-reset display-flex tablet:flex-justify-end margin-top-2 tablet:margin-top-0">
-            <li class="margin-right-3"><a href="#">Privacy policy</a></li>
-            <li><a href="mailto:placeholder@email.com?subject=PRA.gov:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">Send site feedback</a></li>
+        <div class="tablet:grid-col-auto">
+          <ul class="add-list-reset tablet:display-flex margin-top-3 tablet:margin-top-0 font-sans-2xs">
+            <li class="margin-bottom-1 tablet:margin-bottom-0 tablet:margin-right-205"><a href="#">Privacy policy</a></li>
+            <li>
+              <a href="mailto:placeholder@email.com?subject=PRA.gov:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">Send site feedback</a>
+            </li>
           </ul>
         </div>
       </div>
