@@ -77,14 +77,14 @@
   {
     "agency": "U.S. Department of Justice",
     "short": "DOJ",
-    "office": "Office of the Chief Information Officer"
+    "office": "Office of the Chief Information Officer",
     "email": "PRAInbox@jmd.usdoj.gov",
     "approved": true
   },
   {
     "agency": "Federal Trade Commission",
     "short": "FTC",
-    "office": "Office of the General Counsel"
+    "office": "Office of the General Counsel",
     "email": "PRA@ftc.gov",
     "approved": true
   }
