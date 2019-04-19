@@ -46,6 +46,7 @@
   },
   {
     "agency": "U.S. Office of Government Ethics",
+    "short": "OGE",
     "office": "The Legal, External Affairs and Performance Branch within the Program Counsel Division",
     "website": "https://www.oge.gov/Web/OGE.nsf/Organization/Program%20Counsel%20Division",
     "email":"usoge@oge.gov",
@@ -67,4 +68,24 @@
     "email": "HQ-OCIO-PRA-Program@mail.nasa.gov",
     "approved": true
   },
+  {
+    "agency": "U.S. Department of Health and Human Services",
+    "short": "HHS",
+    "email": "PRA@hhs.gov",
+    "approved": true
+  },
+  {
+    "agency": "U.S. Department of Justice",
+    "short": "DOJ",
+    "office": "Office of the Chief Information Officer"
+    "email": "PRAInbox@jmd.usdoj.gov",
+    "approved": true
+  },
+  {
+    "agency": "Federal Trade Commission",
+    "short": "FTC",
+    "office": "Office of the General Counsel"
+    "email": "PRA@ftc.gov",
+    "approved": true
+  }
 ]
