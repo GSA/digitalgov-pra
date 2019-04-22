@@ -8,7 +8,7 @@
 .usa-nav__primary > .usa-nav__primary-item > a.usa-current,
 .usa-nav__primary > .usa-nav__primary-item > a.usa-nav__link:hover {
   @include at-media($theme-navigation-width) {
-    @include u-text("secondary");
+    @include u-text("ink");
   }
 }
 
