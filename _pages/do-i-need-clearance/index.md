@@ -62,7 +62,7 @@ Asking for information to be sent to the government, including:
 
 - Direct observation, such as watching how long it takes a person to complete a transaction, or how someone uses a new website to find answers.
 - General requests for public input and comments, such as a “Tell Us About Your Experience” sheet with open-ended space for someone to respond.
-- Voluntary commercial transactions such as information necessary and solely used for payment and delivery of an item.
+- Information for voluntary commercial transactions, like payment and delivery details.
 - Information asked for or received in connection to a public hearing or meeting.
 
 Some information collections are generally not subject to the PRA, including: federal investigations and civil actions, antitrust actions, and intelligence activities.
