@@ -32,6 +32,7 @@ The Paperwork Reduction Act (PRA) is a law governing how federal agencies collec
 The Office of Information and Regulatory Affairs (OIRA), under the Office of Management and Budget (OMB).
 
 ## When doesn't the PRA apply?
+{: #when-doesn-t-the-pra-apply}
 
 You don't need PRA approval every time you collect information from the public. Some of the more common exemptions to PRA include:
 
@@ -43,5 +44,6 @@ You don't need PRA approval every time you collect information from the public. 
 Some information collections are generally not subject to the PRA, including: federal investigations and civil actions, antitrust actions, and intelligence activities.
 
 ## What happens if I don't comply with PRA?
+{: #what-happens-if-i-don-t-comply-with-pra}
 
 The PRA is a law, and compliance is mandatory. Collecting information without clearance can open your work, including decisions made based on the data, to legal challenge. If uncleared collections or changes are discovered, OIRA may insist that they are stopped. OMB reports these violations to Congress and the President in the Information Collection Budget.

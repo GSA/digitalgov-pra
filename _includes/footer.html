@@ -1,35 +1,44 @@
 <footer class="usa-footer usa-footer--slim" role="contentinfo">
   {% unless page.no_top_link %}
-  <div class="grid-container usa-footer-return-to-top">
+  <div class="grid-container usa-footer__return-to-top">
     <a href="#">Return to top</a>
   </div>
   {% endunless %}
-  <div class="usa-footer-primary-section">
-    <div class="grid-container">
-      <div class="usa-footer-logo grid-row grid-gap-2">
-        <div class="grid-col-12 tablet:grid-col-9">
-          <p class="usa-footer--text">PRA.gov’s content is maintained by <a href="https://www.whitehouse.gov/omb/information-regulatory-affairs/">The Office of Information and Regulatory Affairs (OIRA)</a> and PRA officers across federal government.
-            This site is a product of <a href="https://10x.gsa.gov/">10x</a> and is supported by <a href="https://digital.gov/">Digital.gov.</a></p>
-          <p class="usa-footer--text">Help us improve this site <a href="https://github.com/GSA/pra.gov">on GitHub.</a></p>
-        </div>
-        <div class="grid-col-12 tablet:grid-col-3 usa-footer--feedback">
-          <p class="usa-footer--text" data-proofer-ignore>
-            <a href="mailto:placeholder@email.com?subject=PRA.gov:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">
-              Send us site feedback.</a>
-          </p>
-        </div>
+  <div class="usa-footer__primary-section">
+    <div class="grid-container padding-y-4">
+      <div class="measure-6 font-sans-2xs">
+        <p>
+          PRA.gov’s content is maintained by
+          <a href="https://www.whitehouse.gov/omb/information-regulatory-affairs/">The Office of Information and Regulatory Affairs (OIRA)</a>
+          and PRA officers across federal government. This site is a product of
+          <a href="https://10x.gsa.gov/">10x</a> and is supported by
+          <a href="https://digital.gov/">Digital.gov.</a>
+        </p>
+        <p>
+          Help us improve this site
+          <a href="https://github.com/GSA/pra.gov">on GitHub.</a>
+        </p>
       </div>
     </div>
   </div>
-
-  <div class="usa-footer-secondary-section">
+  <div class="usa-footer__secondary-section bg-primary">
     <div class="grid-container">
-      <div class="usa-footer-logo grid-row grid-gap-2">
-        <div class="grid-col-auto">
-          <img class="usa-footer-logo-img eop" src="{{ '/assets/img/eop-omb.png' | relative_url }}" alt="" />
+      <div class="usa-footer__logo grid-row tablet:flex-justify">
+        <div class="tablet:grid-col-auto">
+          <div class="display-flex flex-align-center">
+            <a href="{{site.footer.omb.url}}"><img class="width-10 display-block" src="{{ '/assets/img/eop-omb.png' | relative_url }}" alt="" /></a>
+            <div class="separator display-flex flex-align-center">
+              <a href="{{site.footer.digitalgov.url}}"><img class="height-3 display-block" src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}" alt="" /></a>
+            </div>
+          </div>
         </div>
-        <div class="grid-col-auto">
-          <img class="usa-footer-logo-img digital-gov" src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}" alt="" />
+        <div class="tablet:grid-col-auto">
+          <ul class="add-list-reset tablet:display-flex margin-top-3 tablet:margin-top-0 font-sans-2xs">
+            <li class="margin-bottom-1 tablet:margin-bottom-0 tablet:margin-right-205"><a href="#">Privacy policy</a></li>
+            <li>
+              <a href="mailto:placeholder@email.com?subject=PRA.gov:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">Send site feedback</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -7,4 +7,11 @@
 
 <meta name="robots" content="noindex">
 
-<title>{% if page.term %}Glossary Definition: {% endif %}{{ page.title | default: site.title }}</title>
+<title>{% if page.term %}Glossary Definition: {% endif %}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+{% assign description = page.description | default: site.description %}
+{% if description %}
+<meta name="description" content="{{ description }}">
+{% endif %}
+
+{% include favicon.html %}

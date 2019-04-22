@@ -22,7 +22,7 @@
     "lodash.assign": "^4.2.0",
     "path": "^0.12.7",
     "smooth-scroll": "^16.0.0",
-    "uswds": "2.0.0-beta.5",
+    "uswds": "^2.0.1",
     "uswds-gulp": "github:uswds/uswds-gulp",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",

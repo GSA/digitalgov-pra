@@ -1,19 +1,5 @@
-.usa-footer-primary-section {
-  padding: 1rem 0;
-}
-
-.usa-footer--text {
-  @include u-font("sans", "xs");
-}
-
-.usa-footer-secondary-section {
-  @include u-bg("base-darkest");
-}
-
-.usa-footer-logo-img.digital-gov{
-  max-width: 10rem;
-}
-
-.usa-footer--feedback {
-  padding: 1rem 0;
+.usa-footer__secondary-section a,
+.usa-footer__secondary-section a:hover,
+.usa-footer__secondary-section a:visited {
+  @include u-text("white");
 }

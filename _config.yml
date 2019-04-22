@@ -1,5 +1,16 @@
 # Site settings
 title: PRA.gov
+description: A resource to help federal employees comply with the Paperwork Reduction Act (PRA)
+email: placeholder@email.gov
+
+footer:
+  logos:
+    omb:
+      url: https://www.whitehouse.gov/omb/
+      image: digital-gov-logo--white.png
+    digitalgov:
+      url: https://digital.gov
+      image: eop-omb.png
 
 plugins:
   - jekyll-sitemap
