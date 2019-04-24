@@ -1,0 +1,19 @@
+.autocomplete {
+  background: white;
+  z-index: 1000;
+  overflow: auto;
+  box-sizing: border-box;
+  @include u-border("1px");
+  @include u-border("base");
+}
+
+.autocomplete > div {
+  @include u-padding(2);
+  @include u-border-bottom("1px");
+  @include u-border-bottom("base");
+}
+
+.autocomplete > div:hover:not(.group) {
+  @include u-bg("base-lightest");
+  cursor: pointer;
+}
