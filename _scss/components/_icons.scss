@@ -1,8 +1,17 @@
 .icon-glossary {
-  background-image: url("../../img/icon-glossary.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding-left: 20px;
+  position: relative;
+
+  svg {
+    @include u-text("secondary");
+    fill: currentColor;
+    left: -20px;
+    position: absolute;
+    top: 0;
+  }
+
+  &:hover svg {
+    @include u-text("primary");
+  }
 }
 
 .icon-arrow {
