@@ -1,60 +1,9 @@
 # Site settings
-title: PRA.gov
-description: A resource to help federal employees comply with the Paperwork Reduction Act (PRA)
-email: placeholder@email.gov
-
-footer:
-  logos:
-    omb:
-      url: https://www.whitehouse.gov/omb/
-      image: digital-gov-logo--white.png
-    digitalgov:
-      url: https://digital.gov
-      image: eop-omb.png
-
-plugins:
-  - jekyll-sitemap
-
-page_gen:
-  - index_files: false
-    data: terms
-    name: term
+title: PRA Guide
+new_url: https://federalist-proxy.app.cloud.gov/demo/gsa/pra.gov/
 
 defaults:
   - scope:
       path: ""
-      type: "pages"
     values:
-      layout: "page"
-      sitemap: false
-
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-
-# Build settings
-scripts:
-  - assets/uswds/js/uswds.min.js
-  - assets/js/bundle.js
-
-styles:
-  - assets/uswds/css/styles.css
-
-exclude:
-  - _js
-  - _scss
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.js
-  - node_modules
-  - package-lock.json
-  - package.json
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-keep_files:
-  - assets/js
-  - assets/uswds
+      layout: "default"
