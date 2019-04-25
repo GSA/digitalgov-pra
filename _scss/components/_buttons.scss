@@ -1,9 +1,0 @@
-.usa-button--secondary,
-.usa-button--secondary.usa-button--active,
-.usa-button--secondary.usa-button--hover,
-.usa-button--secondary:active,
-.usa-button--secondary:hover,
-.usa-button--secondary:visited {
-  @include u-text("primary");
-  @include u-bg("secondary-lightest");
-}
