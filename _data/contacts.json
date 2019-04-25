@@ -1,6 +1,6 @@
 [
   {
-    "label": "General Services Administration",
+    "agency": "General Services Administration",
     "short": "GSA",
     "office": "Regulatory Secretariat Division",
     "website": "https://www.gsa.gov/about-us/organization/office-of-governmentwide-policy/office-of-acquisition-policy/governmentwide-acq-policy/regulatory-secretariat-division",
@@ -9,7 +9,7 @@
     "approved": true
   },
   {
-    "label": "U.S. Department of the Treasury",
+    "agency": "U.S. Department of the Treasury",
     "short": "USDT",
     "office": "Office of Privacy, Transparency and Records (PTR) under the Assistant Secretary for Management",
     "website": "https://www.treasury.gov/about/organizational-structure/offices/Pages/Office-of-Privacy,-Transparency-and-Records.aspx",
@@ -17,20 +17,20 @@
     "approved": true
   },
   {
-    "label": "Board of Governors of the Federal Reserve System",
+    "agency": "Board of Governors of the Federal Reserve System",
     "office": "Information Collection Coordination Section under the Office of the Chief Data Officer",
     "phone": "202-452-3829",
     "email": "OCDO-ICC@frb.gov",
     "approved": true
   },
   {
-    "label": "U.S. Department of State",
+    "agency": "U.S. Department of State",
     "office": "Bureau of Administration, Global Information Services, Office of Directives Management",
     "email": "eRegs@state.gov",
     "approved": true
   },
   {
-    "label": "Federal Energy Regulatory Commission",
+    "agency": "Federal Energy Regulatory Commission",
     "short": "FERC",
     "office": "Information Collection Management Team, IT Policy and Resources Management Div., Office of the Chief Information Officer, in the Office of the Executive Director",
     "website": "https://www.ferc.gov/docs-filing/info-collections.asp",
@@ -38,14 +38,14 @@
     "approved": true
   },
   {
-    "label": "U.S. Department of Education",
+    "agency": "U.S. Department of Education",
     "office": "Office of the Chief Information Officer",
     "website": "https://www2.ed.gov/policy/gen/leg/pra.html",
     "email": "ICDocketMgr@ed.gov",
     "approved": true
   },
   {
-    "label": "U.S. Office of Government Ethics",
+    "agency": "U.S. Office of Government Ethics",
     "short": "OGE",
     "office": "The Legal, External Affairs and Performance Branch within the Program Counsel Division",
     "website": "https://www.oge.gov/Web/OGE.nsf/Organization/Program%20Counsel%20Division",
@@ -54,14 +54,14 @@
     "approved": true
   },
   {
-    "label": "U.S. Department of Commerce",
+    "agency": "U.S. Department of Commerce",
     "short": "DOC",
     "office": "Office of the Chief Information Officer",
     "email": "docpra@doc.gov",
     "approved": true
   },
   {
-    "label": "National Aeronautics Space Administration",
+    "agency": "National Aeronautics Space Administration",
     "short": "NASA",
     "office": "Enterprise Services and Integration Division (ESID) within the Office of the CIO",
     "website": "https://www.nasa.gov/content/nasa-s-paper-reduction-act-pra-program",
@@ -69,21 +69,21 @@
     "approved": true
   },
   {
-    "label": "U.S. Department of Health and Human Services",
+    "agency": "U.S. Department of Health and Human Services",
     "short": "HHS",
     "office": "Office of the Chief Information Officer",
     "email": "PRA@hhs.gov",
     "approved": true
   },
   {
-    "label": "U.S. Department of Justice",
+    "agency": "U.S. Department of Justice",
     "short": "DOJ",
     "office": "Office of the Chief Information Officer",
     "email": "PRAInbox@jmd.usdoj.gov",
     "approved": true
   },
   {
-    "label": "Federal Trade Commission",
+    "agency": "Federal Trade Commission",
     "short": "FTC",
     "office": "Office of the General Counsel",
     "email": "PRA@ftc.gov",

@@ -1,39 +1,91 @@
-var autocomplete = require("autocompleter");
+var accessibleAutocomplete = require("accessible-autocomplete");
 var contacts = require("../_data/contacts.json");
 
-var input = document.getElementById("contacts-search");
-var results = document.getElementById("contacts-results");
+var input = document.querySelector("#contacts-search");
+var container = document.querySelector("#contacts-search-container");
+var results = document.querySelector("#contacts-results");
 
-autocomplete({
-  input: input,
-  minLength: 1,
-  emptyMsg: "No results found",
-  fetch: function(text, update) {
-    text = text.toLowerCase();
-    var suggestions = contacts.filter(n => {
-      if (n.label.toLowerCase().includes(text)) {
-        return true;
-      }
-      if (n.short && n.short.toLowerCase().includes(text)) {
-        return true;
-      }
-      if (n.office && n.office.toLowerCase().includes(text)) {
-        return true;
-      }
-    });
-    update(suggestions);
-  },
-  onSelect: function(item) {
+function suggestions(query, populateResults) {
+  query = query.toLowerCase();
+  const suggestions = contacts.filter(n => {
+    if (
+      n.agency.toLowerCase().includes(query) ||
+      (n.short && n.short.toLowerCase().includes(query))
+    ) {
+      return true;
+    }
+    return false;
+  });
+  populateResults(suggestions);
+}
+
+accessibleAutocomplete({
+  element: document.querySelector("#contacts-search-container"),
+  id: "contacts-search",
+  source: suggestions,
+  autoselect: true,
+  confirmOnBlur: false,
+  onConfirm: result => {
     results.classList.remove("display-none");
-    input.value = item.label;
-    results.innerHTML = JSON.stringify(item);
+    results.innerHTML = `
+      <div class="bg-base-lightest padding-2 border-bottom border-base">
+        <h4 class="margin-y-0 font-serif-sm">${result.label}</h4>
+      </div>
+      <div class="padding-2">
+        ${
+          result.office
+            ? `<p>PRA requests are handled by the ${result.office}.</p>`
+            : ""
+        }
+        <p>Here is how you can contact this office:</p>
+        <ul class="add-list-reset">
+        ${
+          result.website
+            ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Online:</h5><span><a href="${
+                result.website
+              }" class="usa-link--external">Visit website</a></span></li>`
+            : ""
+        }
+        ${
+          result.phone
+            ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Phone:</h5><span>${
+                result.phone
+              }</span></li>`
+            : ""
+        }
+        ${
+          result.email
+            ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Email:</h5><span><a href="mailto:${
+                result.email
+              }">${result.email}</a></span></li>`
+            : ""
+        }
+        </ul>
+      </div>
+    `;
+  },
+  templates: {
+    inputValue: result => {
+      return (
+        result && `${result.label} ${result.short ? `(${result.short})` : ""}`
+      );
+    },
+    suggestion: result => {
+      return (
+        result && `${result.label} ${result.short ? `(${result.short})` : ""}`
+      );
+    }
   }
 });
 
-function clearfield() {
+function clearInput(input) {
   input.value = "";
   results.classList.add("display-none");
   results.innerHTML = "";
 }
 
-input.addEventListener("focus", clearfield);
+container.addEventListener("click", function(e) {
+  if (e.target && e.target.nodeName == "INPUT") {
+    clearInput(e.target);
+  }
+});
