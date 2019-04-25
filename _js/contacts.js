@@ -22,17 +22,21 @@ if (contactSearch) {
 
     if (results.length) {
       var markup = results.map(function(r) {
-        return `<h3 class="border-bottom">${
-          r.agency
-        }  (${r.short})</h3><h4>${r.office}</h4>
-        <div><span class="text-bold">Phone:</span> ${r.phone}</div>
-        <div><span class="text-bold">Email:</span> <a href="mailto:${
-          r.email
-        }">${r.email}</a></div>
-        <div><span class="text-bold">Website:</span> <a href="${
-          r.website
-        }">Visit website</a></div>`;
-      });
+        var template = `<h3 class="border-bottom">${r.agency} (${r.short})</h3>
+          <h4>${r.office}</h4>`;
+        if (r.phone) {
+          template += `<div><span class="text-bold">Phone: </span>${r.phone}</div>`;
+        }
+        if (r.email) {
+          template += `<div><span class="text-bold">Email: </span> 
+            <a href="mailto:${r.email}">${r.email}</a></div>`;
+        }
+        if (r.website) {
+          template += `<div><span class="text-bold">Website: </span>
+            <a href="${r.website}">Visit website</a></div>`;
+        }
+        return template;
+      }).join('');
 
       contactResults.innerHTML = markup;
       return;
