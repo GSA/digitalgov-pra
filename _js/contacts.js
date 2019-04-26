@@ -29,7 +29,7 @@ accessibleAutocomplete({
     results.classList.remove("display-none");
     results.innerHTML = `
       <div class="bg-base-lightest padding-2 border-bottom border-base">
-        <h4 class="margin-y-0 font-serif-sm">${result.label}</h4>
+        <h4 class="margin-y-0 font-serif-sm">${result.agency}</h4>
       </div>
       <div class="padding-2">
         ${
@@ -67,12 +67,12 @@ accessibleAutocomplete({
   templates: {
     inputValue: result => {
       return (
-        result && `${result.label} ${result.short ? `(${result.short})` : ""}`
+        result && `${result.agency} ${result.short ? `(${result.short})` : ""}`
       );
     },
     suggestion: result => {
       return (
-        result && `${result.label} ${result.short ? `(${result.short})` : ""}`
+        result && `${result.agency} ${result.short ? `(${result.short})` : ""}`
       );
     }
   }
