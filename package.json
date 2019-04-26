@@ -4,7 +4,6 @@
   "description": "",
   "dependencies": {
     "accessible-autocomplete": "^1.6.2",
-    "autocompleter": "^4.0.2",
     "autoprefixer": "^9.4.9",
     "browserify": "^16.2.3",
     "concurrently": "^4.1.0",
