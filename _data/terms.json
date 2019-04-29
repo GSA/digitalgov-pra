@@ -1,7 +1,19 @@
 [
   {
+    "term": "annualized cost",
+    "definition": "Cost per year with one-off costs distributed over the duration of the information collection."
+  },
+  {
     "term": "burden",
     "definition": "Time, effort, or financial resources required to generate, maintain, or provide information for a collection."
+  },
+  {
+    "term": "capital cost",
+    "definition": "One-time expenses, buying something needed to answer the information collection request."
+  },
+  {
+    "term": "contractor",
+    "definition": "Federal contractors are considered members of the public under the PRA."
   },
   {
     "term": "clearance",
@@ -12,8 +24,28 @@
     "definition": "Two four-digit numbers separated by a hyphen. The first four digits identify the sponsoring agency and bureau, and the last four identify the particular collection."
   },
   {
+    "term": "de minimis",
+    "definition": "Changes that are purely cosmetic in nature."
+  },
+  {
     "term": "desk officer",
     "definition": "The OIRA staff member reviewing an information collection request."
+  },
+  {
+    "term": "exempt",
+    "definition": "Status for collections that do not require OMB approval under specific statutory reasons, despite otherwise meeting the criteria."
+  },
+  {
+    "term": "fast track",
+    "definition": "The process for approval for a collection already covered by an existing generic clearance."
+  },
+  {
+    "term": "Federal Register",
+    "definition": "The daily journal of the United States Government. Its use is required by the PRA to gather comments from the public during the 60 and 30 day comment periods."
+  },
+  {
+    "term": "generic",
+    "definition": "A broad type of standard clearance issued in advance for a group of similar, low-burden collections. A good fit for surveys."
   },
   {
     "term": "IC",
@@ -24,12 +56,24 @@
     "definition": "OIRA's annual report sent to Congress summarizing the major activies under PRA, and the total burden of information collection"
   },
   {
+    "term": "information collection",
+    "definition": "A proposal and process for requesting information. PRA approval is granted to collections."
+  },
+  {
+    "term": "non-substantive change",
+    "definition": "A change made to an information collection that requires OIRA review and approval but does not require public comment."
+  },
+  {
     "term": "OIRA",
     "definition": "Office of Information and Regulatory Affairs, part of the Office of Management and Budget"
   },
   {
     "term": "OMB",
     "definition": "Office of Management and Budget"
+  },
+  {
+    "term": "person",
+    "definition": "An individual, partnership, association, corporation, legal representative, or a group of these. Also includes State, territorial, tribal, or local governments. "
   },
   {
     "term": "PRA",
@@ -40,7 +84,19 @@
     "definition": "Personally Identifiable Information"
   },
   {
+    "term": "the public",
+    "definition": "People or groups outside of the federal government. Federal employees and military personnel are not considered the public under the PRA."
+  },
+  {
+    "term": "recordkeeping",
+    "definition": "The practice and process of organizing and maintaining information, documents, or data as required by an agency's guidelines."
+  },
+  {
     "term": "ROCIS",
     "definition": "The digital platform used by agencies to submit PRA clearance requests to OIRA."
+  },
+    {
+    "term": "sponsor",
+    "definition": "To cause or trigger the collection of information. Agencies sponsor collections."
   }
 ]
