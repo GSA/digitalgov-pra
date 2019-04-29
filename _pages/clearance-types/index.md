@@ -8,7 +8,7 @@ anchors:
   - name: Expedited/Emergency clearance
 ---
 
-In addition to the [normal PRA clearances]({{'/clearance-process/'|relative_url}}), there are many other types of collections. These labels can be confusing, but are used only in very specific circumstances. We’re here to help get you on the right track to approval.
+In addition to the [normal PRA clearance]({{'/clearance-process/'|relative_url}}), there are many other types of clearances. These labels can be confusing, but are used only in very specific circumstances. We’re here to help get you on the right track to approval.
 
 1. Normal clearance, for new requests, Revision vs. Extension requests, and Reinstatement (with or without change) requests.
 2. Common Form clearance, for a form already approved and in use by another agency.
@@ -21,9 +21,11 @@ The vast majority of PRA approval requests [go through our standard approval pro
 
 ## Common form clearance
 
-A “common form” is an information collection that can be used by two or more agencies, or government-wide, for the same purpose. One agency will host the collection to be used by themselves, and additional agencies can request to use that collection. After OMB approves the primary collection, any agency that wishes to collect the same information and use it for the same purpose can obtain expedited approval by providing its agency-specific information to OMB (e.g., burden estimates and number of respondents).
+A “common form” is an information collection that can be used by two or more agencies, or government-wide, for the same purpose. One agency will host the collection to use itself, and additional agencies can request to use that collection.
 
-Since the hosting agency has already gone through the PRA approval process, an expedited 3-day approval is used for other agencies using the common form. Common Forms have been called “Standard Forms” (aka SF forms) as well.
+After OMB approves the primary collection, any agency that wishes to collect the same information and use it for the same purpose can obtain expedited approval by providing its agency-specific information to OMB (e.g., burden estimates and number of respondents).
+
+Because the hosting agency has already gone through the PRA approval process, an expedited 3-day approval is used for other agencies using the common form. Common Forms are called “Standard Forms” (aka “SF forms”) as well.
 
 ## Generic clearance
 
@@ -36,9 +38,9 @@ Generic clearance is best when you’ll have multiple collections which:
 - Don’t raise substantive or policy issues, and
 - Have details that won’t be known until shortly before you collect data.
 
-Customer satisfaction surveys, focus group tests, and website usability surveys are all good fits for generic clearance.
+Generic clearances almost always involve statistical methods and analysis and most information collections are not appropriate for generic clearances. Customer satisfaction surveys, focus group tests, and website usability surveys are all good fits for generic clearance.
 
-Generic clearances almost always involve statistical methods and analysis and most information collections are not appropriate for generic clearances. If you feel a generic might be suitable for your needs you should [work with your agency’s PRA office]({{'/contact/'|relative_url}}) who will work with OIRA to map out details of what information can and can’t be used under the generic clearance. This ensures the approval is not only a good fit for the current collections, but future collections too.
+If you feel a generic might be suitable for your needs you should [work with your agency’s PRA office]({{'/contact/'|relative_url}}) who will work with OIRA to map out details of what information can and can’t be used under the generic clearance. This ensures the approval is not only a good fit for the current collection, but future collections too.
 
 ### Generic clearance: Fast-track process
 
