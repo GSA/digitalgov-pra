@@ -14,7 +14,7 @@ If you have a question about PRA, your first step should be to connect with some
 
 ### Help planning an information request
 
-You’ll want to make sure you’re following your agency’s best practices around collecting and managing information [when you start developing your information collection request]({{'/clearance-process/#develop-the-information-collection-request-within-your-agency'|relative_url}}). Here are some people you may want to consult with:
+You’ll want to make sure you’re following your agency’s best practices for collecting and managing information [when you start developing your information collection request]({{'/clearance-process/#develop-the-information-collection-request-within-your-agency'|relative_url}}). Here are some people you may want to consult with:
 
 - **The Privacy Officer, if you’re collecting personally identifiable information (PII)**. Your privacy officer can help you determine if you are collecting PII and share agency guidance on how to properly store and use this information.
 
@@ -28,7 +28,6 @@ At larger agencies, there is often someone who is responsible for managing the a
 - Chief Information Officer (CIO)
 - Regulatory Affairs / Regulatory Secretariat
 
-In the future, PRA responsibilities may sit with a new Chief Data Officer position in accordance with The Foundations for Evidence-Based Policymaking Act.
 
 {% include contacts.html %}
 
