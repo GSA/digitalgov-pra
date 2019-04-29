@@ -13,18 +13,18 @@ A few of the criteria covered in the Supporting Statement include:
 *	Agency purpose 
 *	Need 
 *	Practical utility 
-*	Unnecessary duplication 
+*	Avoiding unnecessary duplication 
 
 ## Agency purpose
 This describes the general purpose of the collection to the sponsoring agency’s goals, and how the collection will achieve a stated results. A collection may have more than one purpose; each should be described in the Supporting Statement. 
 
 ## Need
-The collection must have a need for the information/data to be collected, based on a program or policy requirements. As the Federal Government, we need to help ensure we are careful when we impose burden on the public and it should be for very specific reasons. 
+The agency must have a need for the information/data to be collected, based on program or policy requirements. As the Federal Government, we need to help ensure we are careful when we impose burden on the public and it should be for very specific reasons.
 
 While “purpose” is how the collection fits with the agency goals, “need” involves how the results will help program operation or policy development. 
 
 ## Practical utility
-Does the information being collected meet the stated goals? Ask yourself, is the information accurate, adequate, and reliable for the agency to use for this purpose?. Proposals should consider how an agency can use the information in ways that are reasonable, practical, workable, timely, and reliable. 
+Does the information being collected meet the stated goals? Ask yourself, is the information accurate, adequate, and reliable enough for the agency to use for this purpose? Proposals should consider how an agency can use the information in ways that are reasonable, practical, workable, timely, and reliable.
 
 The practical utility of a collection needs to serve both the purpose and need. Requests must only collect information that’s needed for the stated purpose(s). 
 
@@ -38,7 +38,9 @@ Collections should maximize practical utility. Some examples of this include:
 *	Revising the selection of a control group to make analytical comparisons more meaningful.
 *	Clarifying questions to improve reliability of responses.
 
-## Unnecessary duplication
+## Avoidance of unnecessary duplication
 Before collecting more information, see if there’s already accessible information that could serve the same purpose or need. This can include information collected for another purpose, such as administrative records, other federal agencies and programs, or other public and private sources. 
 
-If existing information sources don’t have the level of detail needed to meet the purpose and need, or which can’t be meaningfully analyzed together with other collected responses, then the information gathered is necessary, not duplicative. 
+If existing information sources don’t have the level of detail needed to meet the purpose and need, or  can’t be meaningfully analyzed together with other collected responses, then the information gathered is necessary and not duplicative.
+
+
