@@ -88,5 +88,21 @@
     "office": "Office of the General Counsel",
     "email": "PRA@ftc.gov",
     "approved": true
+  },
+  {
+    "agency": "Department of the Interior",
+    "short": "DOI",
+    "office": "Office of the Secretary, Office of the Chief Information Officer, Planning and Performance Management Division",
+    "website": "https://www.doi.gov/ocio/pra_contacts",
+    "email": "doi-pra@ios.doi.gov",
+    "phone":"202-208-7072",
+    "approved": true
+  },
+  {
+    "agency": "National Credit Union Administration",
+    "short": "NCUA",
+    "office": "Information & Access Law Division (IAL), Office of General Counsel",
+    "email": "PRAComments@NCUA.gov",
+    "approved": true
   }
 ]
