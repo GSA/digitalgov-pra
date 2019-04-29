@@ -1,44 +1,91 @@
-var Fuse = require("fuse.js");
+var accessibleAutocomplete = require("accessible-autocomplete");
 var contacts = require("../_data/contacts.json");
 
-var contactSearch = document.querySelector("#contacts-search");
-var contactResults = document.querySelector("#contacts-results");
+var input = document.querySelector("#contacts-search");
+var container = document.querySelector("#contacts-search-container");
+var results = document.querySelector("#contacts-results");
 
-var contactsApproved = contacts.filter(function(contact) {
-  return contact.approved;
-});
-var options = {
-  keys: ["agency", "short", "office"]
-};
-var fuse = new Fuse(contactsApproved, options);
-
-if (contactSearch) {
-  contactSearch.addEventListener("input", function(evt) {
-    var results = fuse.search(this.value);
-
-    this.value
-      ? contactResults.classList.remove("display-none")
-      : contactResults.classList.add("display-none");
-
-    if (results.length) {
-      var markup = results.map(function(r) {
-        return `<h3 class="border-bottom">${
-          r.agency
-        }  (${r.short})</h3><h4>${r.office}</h4>
-        <div><span class="text-bold">Phone:</span> ${r.phone}</div>
-        <div><span class="text-bold">Email:</span> <a href="mailto:${
-          r.email
-        }">${r.email}</a></div>
-        <div><span class="text-bold">Website:</span> <a href="${
-          r.website
-        }">Visit website</a></div>`;
-      });
-
-      contactResults.innerHTML = markup;
-      return;
+function suggestions(query, populateResults) {
+  query = query.toLowerCase();
+  const suggestions = contacts.filter(n => {
+    if (
+      n.agency.toLowerCase().includes(query) ||
+      (n.short && n.short.toLowerCase().includes(query))
+    ) {
+      return true;
     }
-
-    contactResults.innerHTML =
-      '<span class="text-italic">No results found</span>';
+    return false;
   });
+  populateResults(suggestions);
 }
+
+accessibleAutocomplete({
+  element: document.querySelector("#contacts-search-container"),
+  id: "contacts-search",
+  source: suggestions,
+  autoselect: true,
+  confirmOnBlur: false,
+  onConfirm: result => {
+    results.classList.remove("display-none");
+    results.innerHTML = `
+      <div class="bg-base-lightest padding-2 border-bottom border-base">
+        <h4 class="margin-y-0 font-serif-sm">${result.agency}</h4>
+      </div>
+      <div class="padding-2">
+        ${
+          result.office
+            ? `<p>PRA requests are handled by the ${result.office}.</p>`
+            : ""
+        }
+        <p>Here is how you can contact this office:</p>
+        <ul class="add-list-reset">
+        ${
+          result.website
+            ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Online:</h5><span><a href="${
+                result.website
+              }" class="usa-link--external">Visit website</a></span></li>`
+            : ""
+        }
+        ${
+          result.phone
+            ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Phone:</h5><span>${
+                result.phone
+              }</span></li>`
+            : ""
+        }
+        ${
+          result.email
+            ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Email:</h5><span><a href="mailto:${
+                result.email
+              }">${result.email}</a></span></li>`
+            : ""
+        }
+        </ul>
+      </div>
+    `;
+  },
+  templates: {
+    inputValue: result => {
+      return (
+        result && `${result.agency} ${result.short ? `(${result.short})` : ""}`
+      );
+    },
+    suggestion: result => {
+      return (
+        result && `${result.agency} ${result.short ? `(${result.short})` : ""}`
+      );
+    }
+  }
+});
+
+function clearInput(input) {
+  input.value = "";
+  results.classList.add("display-none");
+  results.innerHTML = "";
+}
+
+container.addEventListener("click", function(e) {
+  if (e.target && e.target.nodeName == "INPUT") {
+    clearInput(e.target);
+  }
+});
