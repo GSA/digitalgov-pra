@@ -25,7 +25,7 @@ The Paperwork Reduction Act (PRA) is a law governing how federal agencies collec
 ### Protecting private information
 
 - To respect privacy, we avoid asking for personal information that’s not relevant or necessary.
-- OIRA asks for extra detail if you’re collecting personally identifying information (PII)
+- OIRA asks for extra details if you’re collecting personally identifying information (PII)
 
 ## Who approves PRA clearances?
 
@@ -39,7 +39,7 @@ You don't need PRA approval every time you collect information from the public. 
 - Requesting from fewer than 10 people,
 - Open-ended requests for comments or feedback,
 - Only collecting information from federal employees as part of their work duties, or
-- Discussions and questions at a public hearing, meeting, or online
+- Discussions and questions at a public hearing, meeting, or online.
 
 Some information collections are generally not subject to the PRA, including: federal investigations and civil actions, antitrust actions, and intelligence activities.
 
