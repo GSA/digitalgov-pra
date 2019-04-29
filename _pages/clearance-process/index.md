@@ -31,10 +31,10 @@ The Notice should include details about:
 - What information is being collected
 - Who you’re collecting it from
 - Why you’re collecting it
-- What is the estimated burden cost, i.e. the time (in hours), financial considerations, and paperwork needed for the collection
+- What is the estimated burden cost, i.e., the time (in hours), financial considerations, and paperwork needed for the collection
 - How will the information be used once you’ve collected it
 
-This information helps the public understand your collection during the comment period. It will be important in your writing of a strong supporting statement when requesting approval from OMB.
+This information helps the public understand your collection during the comment period. It will be important in writing a strong supporting statement when requesting approval from OMB.
 
 ### Issue 60-day request for comment in the Federal Register
 
@@ -51,23 +51,22 @@ request before submitting the collection to OMB for review. Part of your review 
 
 ### Issue a 30-day notice to the Federal Register
 
-The 30-day Federal Register notice lets the public know you’ve submitted the collection to OMB and they’re reviewing it. It includes all the information from the 60 day notice and any changes you have made from public comments. If the public has
-further comments, they’re sent to OMB directly instead of the agency.
+The 30-day Federal Register notice lets the public know you’ve submitted the collection to OMB and that OMB is reviewing it. It includes all the information from the 60 day notice and any changes you have made from public comments. If the public has further comments, they’re sent to OMB directly instead of the agency.
 
 ### Submit request to OMB for review
 
 With your agency, you’ll submit an Information Clearance Request (ICR) for review. ICR’s are submitted to OMB through a system called ROCIS. The package submitted into ROCIS contains:
 
-- Supporting statement (which includes the record supporting the certification), and other supporting documentation,
-- The instruments of the collection (copies of the forms, surveys, recordkeeping requirements, etc.)
-- A summary of any public comments, and the agency’s response(s),
+- Supporting statement (which includes the record supporting the certification), and other supporting documentation.
+- The instruments of the collection (copies of the forms, surveys, recordkeeping requirements, etc.).
+- A summary of any public comments, and the agency’s response(s).
 - Details about the 60-day and 30-day Federal Register notices, including date, page, expected or actual publishing date, and the full text of the 30-day notice.
 - A copy of the relevant statute and regulation mandating or authorizing the collection of information.
-- Guides or instructions for interviewers,
+- Guides or instructions for interviewers.
 - Explanatory material to be given to prospective respondents, and prepared material to be given to members of the public who do not respond.
 
 ## OMB review timeline and process
 
-OMB typically reviews ICR packages within sixty days, from the submission date or the publication of the 30-day Federal Register notice (whichever is later), but can take longer in some circumstances.
+OMB typically reviews ICR packages within sixty days, from the date of submission or publication of the 30-day Federal Register notice (whichever is later), but can take longer in some circumstances.
 
 During this time, your ICR package will be reviewed by an OIRA desk officer. They will look at how the collection’s supporting statement and documentation meet the standards of the PRA.
