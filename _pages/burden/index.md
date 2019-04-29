@@ -17,11 +17,11 @@ Some common burden activities include:
 -	Adjusting existing ways to comply with previous instructions and requirements.
 -	Searching data sources.
 -	Completing and reviewing collected information.
--	Compiling, sending, and disclosing information.
+-	Compiling and sending information.
 
 Overall burden can seem intimidating, especially in a large collection. Our [burden activity questions]({{'/burden/activities/'|relative_url}}) are a starting point to help you start thinking about scope.
 
-### Avoid excessive burden
+### Avoiding excessive burden
 
 Some examples of excessive burden include:
 
