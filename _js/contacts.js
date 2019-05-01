@@ -21,6 +21,7 @@ function suggestions(query, populateResults) {
     }
     return false;
   });
+  suggestions.sort((a, b) => (a.agency > b.agency) ? 1 : -1)
   populateResults(suggestions);
 }
 
