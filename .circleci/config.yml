@@ -3,12 +3,9 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.6.2-node-browsers
-
     working_directory: ~/repo
-
     steps:
       - checkout
-
       - restore_cache:
           keys:
             - v1-npm-{{ checksum "package-lock.json" }}
@@ -18,7 +15,6 @@ jobs:
           key: v1-npm-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
-
       - restore_cache:
           keys:
             - v1-bundle-{{ checksum "Gemfile.lock" }}
@@ -37,11 +33,9 @@ jobs:
           key: v1-bundle-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-
       - run:
           name: Build site
           command: npm run build && bundle exec jekyll build
-
       - run:
           name: Run tests
-          command: bundle exec htmlproofer ./_site
+          command: bundle exec htmlproofer ./_site --allow-hash-href --disable-external --check_html
