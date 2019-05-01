@@ -12,9 +12,6 @@ footer:
       url: https://digital.gov
       image: eop-omb.png
 
-plugins:
-  - jekyll-sitemap
-
 page_gen:
   - index_files: false
     data: terms
@@ -26,12 +23,23 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      sitemap: false
 
 collections:
   pages:
     output: true
     permalink: /:path/
+
+# Configuration for jekyll_pages_api_search plugin gem.
+jekyll_pages_api_search:
+  index_fields:
+    title:
+      boost: 10
+    tags:
+      boost: 10
+    url:
+      boost: 5
+    body:
+  results_page_title: Search results
 
 # Build settings
 scripts:
@@ -42,6 +50,9 @@ styles:
   - assets/uswds/css/styles.css
 
 exclude:
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md
   - _js
   - _scss
   - Gemfile
