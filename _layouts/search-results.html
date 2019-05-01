@@ -5,9 +5,9 @@ layout: default
 <main class="usa-layout-docs usa-section" id="main-content">
   <div class="grid-container">
     <div class="grid-row grid-gap">
-      {% include sidenav.html %}
-      <div class="usa-layout__docs-main desktop:grid-col-9 usa-prose">
-        <h1>{{ page.title }}</h1>
+      <div class="usa-layout__docs-main usa-prose">
+        <h1>{{ site.jekyll_pages_api_search.results_page_title }}</h1>
+        {% jekyll_pages_api_search_results %}
         {{ content }}
       </div>
     </div>
