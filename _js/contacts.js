@@ -1,7 +1,6 @@
 var accessibleAutocomplete = require("accessible-autocomplete");
 var contacts = require("../_data/contacts.json");
 
-var input = document.querySelector("#contacts-search");
 var container = document.querySelector("#contacts-search-container");
 var results = document.querySelector("#contacts-results");
 
@@ -22,13 +21,14 @@ function suggestions(query, populateResults) {
     }
     return false;
   });
+  suggestions.sort((a, b) => (a.agency > b.agency) ? 1 : -1)
   populateResults(suggestions);
 }
 
-if (input) {
+if (container) {
 
   accessibleAutocomplete({
-    element: document.querySelector("#contacts-search-container"),
+    element: container,
     id: "contacts-search",
     source: suggestions,
     autoselect: true,

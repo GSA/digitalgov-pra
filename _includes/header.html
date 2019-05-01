@@ -13,7 +13,7 @@
       <ul class="usa-nav__primary usa-accordion">
         {% for _section in primary_links %}
         <li class="usa-nav__primary-item">
-          <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if _section.href == page.permalink %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
+          <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if _section.href == page.permalink or page.url contains _section.href or page.permalink contains _section.href %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
             <span>{{ _section.text }}</span>
           </a>
         </li>
@@ -34,10 +34,10 @@
             <a href="{{ '/contact' | relative_url}}">Get PRA Help</a>
           </li>
         </ul>
-        <form class="usa-search usa-search--small ">
+        <form action="{{ '/search/' | relative_url}}" class="usa-search usa-search--small ">
           <div role="search">
             <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
-            <input class="usa-input" id="extended-search-field-small" type="search" name="search">
+            <input class="usa-input" id="search-input" type="search" name="q">
             <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
           </div>
         </form>
