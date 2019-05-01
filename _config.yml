@@ -23,7 +23,6 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      sitemap: false
 
 collections:
   pages:
@@ -51,6 +50,9 @@ styles:
   - assets/uswds/css/styles.css
 
 exclude:
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md
   - _js
   - _scss
   - Gemfile
