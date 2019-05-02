@@ -36,7 +36,7 @@
           <ul class="add-list-reset tablet:display-flex margin-top-3 tablet:margin-top-0 font-sans-2xs">
             <li class="margin-bottom-1 tablet:margin-bottom-0 tablet:margin-right-205"><a href="{{ '/privacy/' | relative_url }}">Privacy policy</a></li>
             <li>
-              <a href="mailto:{{site.email}}?subject=PRA.gov:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">Send site feedback</a>
+              <a href="{% include email.html %}?subject=PRA.gov:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">Send site feedback</a>
             </li>
           </ul>
         </div>
