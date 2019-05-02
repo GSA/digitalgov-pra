@@ -1,15 +1,6 @@
 ---
-layout: default
+layout: full
 ---
 
-<main class="usa-layout-docs usa-section" id="main-content">
-  <div class="grid-container">
-    <div class="grid-row grid-gap">
-      <div class="usa-layout__docs-main usa-prose">
-        <h1>{{ site.jekyll_pages_api_search.results_page_title }}</h1>
-        {% jekyll_pages_api_search_results %}
-        {{ content }}
-      </div>
-    </div>
-  </div>
-</main>
+{% jekyll_pages_api_search_results %}
+{{ content }}

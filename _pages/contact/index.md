@@ -31,7 +31,7 @@ At larger agencies, there is often someone who is responsible for managing the a
 
 {% include contacts.html %}
 
-If you know of a PRA office that should be added, [please email us](mailto:placeholder@email.com) so that we can add it to the list.
+If you know of a PRA office that should be added, [please email us](mailto:{{site.email}}) so that we can add it to the list.
 
 ## Connect with OIRA
 
@@ -47,4 +47,4 @@ OIRA is not the appropriate point of contact for PRA help if:
 - Your agency has an office with PRA expertise
 - You are not an agency PRA officer
 
-To find the desk officer assigned to your agency, you can [email OIRA](mailto:placeholder@email.com).
+To find the desk officer assigned to your agency, you can [email OIRA](mailto:{{site.email}}).
