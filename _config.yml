@@ -1,10 +1,10 @@
 # Site settings
-title: PRA.gov
+title: A Guide to the Paperwork Reduction Act
 description: A resource to help federal employees comply with the Paperwork Reduction Act (PRA)
 email: pra@omb.eop.gov
 github:
   organization: GSA
-  repository: pra.gov
+  repository: digitalgov-pra
   default_branch: demo
 
 page_gen:

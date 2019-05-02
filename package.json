@@ -1,5 +1,5 @@
 {
-  "name": "pra.gov",
+  "name": "digital.pra.gov",
   "version": "1.0.0",
   "description": "",
   "dependencies": {
@@ -39,13 +39,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GSA/pra.gov.git"
+    "url": "git+https://github.com/GSA/digitalgov-pra.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GSA/pra.gov/issues"
+    "url": "https://github.com/GSA/digitalgov-pra/issues"
   },
-  "homepage": "https://github.com/GSA/pra.gov#readme"
+  "homepage": "https://github.com/GSA/digitalgov-pra#readme"
 }
