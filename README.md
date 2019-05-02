@@ -1,6 +1,6 @@
-# PRA.gov
+# A Guide to the Paperwork Reduction Act
 
-This is the public repo for PRA.gov, which is an online resource to help federal employees understand and comply with the Paperwork Reduction Act (PRA).
+This is the public repo for PRA.digital.gov, which is an online resource to help federal employees understand and comply with the Paperwork Reduction Act (PRA).
 
 ## About the site
 
@@ -32,7 +32,7 @@ If all goes well, visit the site at `http://localhost:4000`.
 
 ## Contributing
 
-To provide feedback on PRA.gov, follow this repository and [open an issue in the repo](https://github.com/GSA/pra.gov/issues/new).
+To provide feedback, follow this repository and [open an issue in the repo](https://github.com/GSA/digitalgov-pra/issues/new).
 
 ### Public domain
 
