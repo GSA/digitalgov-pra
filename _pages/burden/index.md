@@ -5,9 +5,9 @@ permalink: /burden/
 
 ## Burden hours and cost
 
-One of the goals of the PRA is for the federal government to consider and account for the impact on the public when asking for information. This impact is called **burden**, and includes both the value of the time and effort required to fulfill a collection along with the financial cost. 
+One of the goals of the PRA is for the federal government to consider and account for the impact on the public when asking for information. This impact is called **burden**, and includes both the value of the time and effort required to fulfill a collection along with the financial cost.
 
-The PRA requires that agencies estimate burden to understand what is involved for the public to comply with a request. 
+The PRA requires that agencies estimate burden to understand what is involved for the public to comply with a request.
 
 Some common burden activities include:  
 
@@ -19,7 +19,7 @@ Some common burden activities include:
 -	Completing and reviewing collected information.
 -	Compiling and sending information.
 
-Overall burden can seem intimidating, especially in a large collection. Our [burden activity questions]({{'/burden/activities/'|relative_url}}) are a starting point to help you start thinking about scope.
+Overall burden can seem intimidating, especially in a large collection. Our [burden activity questions]({{'/burden/activities/' | relative_url}}) are a starting point to help you start thinking about scope.
 
 ### Avoiding excessive burden
 
@@ -32,4 +32,4 @@ Some examples of excessive burden include:
 -	Not considering an alternative approach to obtain the information.
 -	Requesting information in a different format than its usually maintained.
 
-If your collection involves activities seen as excessive, you must justify them in the purpose and need of the collection [in your supporting statement]({{'/clearance-process/supporting-statement/'| relative_url}}). 
+If your collection involves activities seen as excessive, you must justify them in the purpose and need of the collection [in your supporting statement]({{'/clearance-process/supporting-statement/' | relative_url}}).

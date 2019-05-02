@@ -8,7 +8,7 @@ anchors:
   - name: Expedited/Emergency clearance
 ---
 
-In addition to the [normal PRA clearance]({{'/clearance-process/'|relative_url}}), there are many other types of clearances. These labels can be confusing, but are used only in very specific circumstances. We’re here to help get you on the right track to approval.
+In addition to the [normal PRA clearance]({{'/clearance-process/' | relative_url}}), there are many other types of clearances. These labels can be confusing, but are used only in very specific circumstances. We’re here to help get you on the right track to approval.
 
 1. Normal clearance, for new requests, Revision vs. Extension requests, and Reinstatement (with or without change) requests.
 2. Common Form clearance, for a form already approved and in use by another agency.
@@ -17,7 +17,7 @@ In addition to the [normal PRA clearance]({{'/clearance-process/'|relative_url}}
 
 ## Normal clearance
 
-The vast majority of PRA approval requests [go through our standard approval process]({{'/clearance-process/'|relative_url}}).
+The vast majority of PRA approval requests [go through our standard approval process]({{'/clearance-process/' | relative_url}}).
 
 ## Common form clearance
 
@@ -29,7 +29,7 @@ Because the hosting agency has already gone through the PRA approval process, an
 
 ## Generic clearance
 
-Generic clearance is for a very specific type of collection, usually associated with surveys. It allows for conducting more than one information collection using very similar methods. Generic clearances still require the initial collection to go through the [normal PRA process]({{'/clearance-process/'|relative_url}}), but allows for quicker clearance of associated collections later on.
+Generic clearance is for a very specific type of collection, usually associated with surveys. It allows for conducting more than one information collection using very similar methods. Generic clearances still require the initial collection to go through the [normal PRA process]({{'/clearance-process/' | relative_url}}), but allows for quicker clearance of associated collections later on.
 
 Generic clearance is best when you’ll have multiple collections which:
 
@@ -40,13 +40,13 @@ Generic clearance is best when you’ll have multiple collections which:
 
 Generic clearances almost always involve statistical methods and analysis and most information collections are not appropriate for generic clearances. Customer satisfaction surveys, focus group tests, and website usability surveys are all good fits for generic clearance.
 
-If you feel a generic might be suitable for your needs you should [work with your agency’s PRA office]({{'/contact/'|relative_url}}) who will work with OIRA to map out details of what information can and can’t be used under the generic clearance. This ensures the approval is not only a good fit for the current collection, but future collections too.
+If you feel a generic might be suitable for your needs you should [work with your agency’s PRA office]({{'/contact/' | relative_url}}) who will work with OIRA to map out details of what information can and can’t be used under the generic clearance. This ensures the approval is not only a good fit for the current collection, but future collections too.
 
 ### Generic clearance: Fast-track process
 
 The fast-track process is not a type of approval that can be requested; but is a specific type of generic clearance primarily used for customer satisfaction surveys. Fast-track requests generally don’t have to undergo additional public comment, and are reviewed in five business days after submitting all materials.
 
-Many agencies have an approved fast-track generic clearance for customer satisfaction surveys. [Check with your agency’s PRA contact]({{'/contact/'|relative_url}}) to confirm if your agency has one and to see if your collection can be submitted under the fast-track process.
+Many agencies have an approved fast-track generic clearance for customer satisfaction surveys. [Check with your agency’s PRA contact]({{'/contact/' | relative_url}}) to confirm if your agency has one and to see if your collection can be submitted under the fast-track process.
 
 ## Expedited/Emergency clearance
 {: #expedited-emergency-clearance}

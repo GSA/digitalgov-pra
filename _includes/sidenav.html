@@ -18,7 +18,7 @@
         <ul class="usa-sidenav__sublist font-family-sans font-sans-2xs">
           {% for _anchor in page.anchors %}
           <li class="usa-sidenav__item">
-            <a href="#{{_anchor.name | slugify}}">{{_anchor.name}}</a>
+            <a href="#{{_anchor.name | remove: "'" | slugify}}">{{_anchor.name}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -33,7 +33,7 @@
         <ul class="usa-sidenav__sublist font-family-sans font-sans-2xs">
           {% for _anchor in page.anchors %}
           <li class="usa-sidenav__item">
-            <a href="#{{_anchor.name | slugify}}">{{_anchor.name}}</a>
+            <a href="#{{_anchor.name | remove: "'" | slugify}}">{{_anchor.name}}</a>
           </li>
           {% endfor %}
         </ul>

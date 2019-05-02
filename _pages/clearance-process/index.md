@@ -8,6 +8,30 @@ anchors:
 - name: Consider the public comments on the notice
 - name: Issue a 30-day notice to the Federal Register
 - name: Submit request to OMB for review
+
+## Page content:
+
+steps:
+- content: "[Agency develops the information request.](#develop-the-information-collection-request-within-your-agency) Your agency may have an internal approval process at this stage"
+  agency: true
+  public: false
+  omb: false
+- content: "[Agency publishes 60-day notice](#issue-60-day-request-for-comment-in-the-federal-register) to the Federal Registrar for comment"
+  agency: true
+  public: true
+  omb: false
+- content: "[Agency considers the public comment on the notice](#consider-the-public-comments-on-the-notice), and makes changes, if applicable"
+  agency: true
+  public: false
+  omb: false
+- content: "[Agency publishes 30-day notice](#issue-a-30-day-notice-to-the-federal-register) to the Federal Register for public comment and [concurrently submits final package to OMB for review](#submit-request-to-omb-for-review)"
+  agency: true
+  public: true
+  omb: true
+- content: "[OMB reviews and engages the agency on any questions/comment, then issues a decision](#submit-request-to-omb-for-review)"
+  agency: false
+  public: false
+  omb: true
 ---
 
 ## Plan ahead for PRA
@@ -19,7 +43,7 @@ request for OMB review.
 
 Most agencies estimate 6 to 9 months for PRA clearance from start to finish. By law, this process includes at least 3 months of public comment.
 
-{% include process.html %}
+{% include process.html steps=page.steps %}
 
 ### Develop the information collection request within your agency
 

@@ -18,7 +18,7 @@
   </div>
 
   <div class="tablet:border-base tablet:border-bottom">
-    {% for step in site.data.process %}
+    {% for step in include.steps %}
     <div class="grid-row border border-base tablet:border-base tablet:border-0 tablet:border-top margin-y-205 tablet:margin-y-0 padding-205">
       <div class="tablet:grid-col">
         <h5 class="font-sans-xs margin-y-0">Step {{forloop.index}}</h5>
