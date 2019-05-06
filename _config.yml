@@ -38,8 +38,8 @@ jekyll_pages_api_search:
 
 # Build settings
 scripts:
+  - assets/uswds/js/uswds.min.js
   - assets/js/bundle.js
-  - assets/uswds/js/uswds.js
 
 styles:
   - assets/uswds/css/styles.css

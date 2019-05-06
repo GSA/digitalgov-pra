@@ -10,10 +10,10 @@
     <div class="usa-nav__inner"><button class="usa-nav__close"><img src="{{ '/assets/uswds/img/close.svg' | relative_url }}" alt="close" /></button>
 
       {% assign primary_links = site.data.navigation %} {% if primary_links %}
-      <ul class="usa-nav__primary usa-accordion" id="fake-submenu">
+      <ul class="usa-nav__primary usa-accordion">
         {% for _section in primary_links %}
         <li class="usa-nav__primary-item">
-          <a aria-controls="fake-submenu" class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if _section.href == page.permalink or page.url contains _section.href or page.permalink contains _section.href %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
+          <a class="{% if _section.class %}{{ _section.class }}{% else %} usa-nav__link {% endif %} {% if _section.href == page.permalink or page.url contains _section.href or page.permalink contains _section.href %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
             <span>{{ _section.text }}</span>
           </a>
         </li>
