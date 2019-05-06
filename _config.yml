@@ -1,6 +1,6 @@
 # Site settings
 title: PRA Guide
-new_url: https://federalist-proxy.app.cloud.gov/demo/gsa/pra.gov/
+new_url: https://federalist-proxy.app.cloud.gov/demo/gsa/digitalgov-pra/
 
 defaults:
   - scope:
