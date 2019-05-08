@@ -6,10 +6,11 @@
 }
 
 .usa-nav__primary > .usa-nav__primary-item > a {
-  @include u-border(1px, "transparent");
+  @include at-media($theme-navigation-width) {
+    @include u-border(1px, "transparent");
+    @include u-text("semibold");
 
-  &.usa-nav__link:hover {
-    @include at-media($theme-navigation-width) {
+    &.usa-nav__link:hover {
       @include u-bg("base-lightest");
       @include u-text("primary");
       @include u-border(1px, "base-lighter");
@@ -18,10 +19,8 @@
         content: none;
       }
     }
-  }
 
-  &.usa-current {
-    @include at-media($theme-navigation-width) {
+    &.usa-current {
       @include u-text("ink");
     }
   }
