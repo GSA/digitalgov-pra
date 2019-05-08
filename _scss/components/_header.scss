@@ -5,10 +5,25 @@
   }
 }
 
-.usa-nav__primary > .usa-nav__primary-item > a.usa-current,
-.usa-nav__primary > .usa-nav__primary-item > a.usa-nav__link:hover {
-  @include at-media($theme-navigation-width) {
-    @include u-text("ink");
+.usa-nav__primary > .usa-nav__primary-item > a {
+  @include u-border(1px, "transparent");
+
+  &.usa-nav__link:hover {
+    @include at-media($theme-navigation-width) {
+      @include u-bg("base-lightest");
+      @include u-text("primary");
+      @include u-border(1px, "base-lighter");
+
+      &:not(.usa-current):after {
+        content: none;
+      }
+    }
+  }
+
+  &.usa-current {
+    @include at-media($theme-navigation-width) {
+      @include u-text("ink");
+    }
   }
 }
 
