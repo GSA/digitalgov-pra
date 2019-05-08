@@ -27,6 +27,7 @@ Generally, this means people or groups outside of the federal government. Some g
 - Individual people (including federal contractors)
 - Businesses and associations
 - State, tribal, and local governments
+- Foreign governments, businesses, and individual people
 
 If you’re only collecting information from federal employees or military personnel as part of their job, then you don’t need PRA clearance. If the information isn’t part of their job, you will need PRA clearance.
 
