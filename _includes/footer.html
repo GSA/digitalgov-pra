@@ -4,39 +4,59 @@
     <a href="#">Return to top</a>
   </div>
   {% endunless %}
-  <div class="usa-footer__primary-section">
-    <div class="grid-container padding-y-4">
-      <div class="measure-6 font-sans-2xs">
-        <p>
-          This site's content is maintained by
-          <a href="https://www.whitehouse.gov/omb/information-regulatory-affairs/">The Office of Information and Regulatory Affairs (OIRA)</a>
-          and PRA officers across federal government. This site is a product of
-          <a href="https://10x.gsa.gov/">10x</a> and is supported by
-          <a href="https://digital.gov/">Digital.gov.</a>
-        </p>
-        <p>
-          Help us improve this site
-          on <a href="https://github.com/{{ site.github.organization }}/{{ site.github.repository }}/edit/{{ site.github.default_branch }}/{{ page.path }}">GitHub</a>.
-        </p>
-      </div>
-    </div>
-  </div>
   <div class="usa-footer__secondary-section bg-primary">
     <div class="grid-container">
-      <div class="usa-footer__logo grid-row tablet:flex-justify">
-        <div class="tablet:grid-col-auto">
-          <div class="display-flex flex-align-center">
-            <a href="https://www.whitehouse.gov/omb/"><img class="width-10 display-block" src="{{ '/assets/img/eop-omb.png' | relative_url }}" alt="Office of Management and Budget" /></a>
-            <div class="separator display-flex flex-align-center">
-              <a href="https://digital.gov"><img class="height-3 display-block" src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}" alt="Digital.gov" /></a>
-            </div>
+      <div class="display-flex flex-align-center margin-bottom-4">
+        <a href="https://www.whitehouse.gov/omb/"
+          ><img
+            class="width-10 display-block"
+            src="{{ '/assets/img/eop-omb.png' | relative_url }}"
+            alt="Office of Management and Budget"
+        /></a>
+        <div class="separator display-flex flex-align-center">
+          <a href="https://digital.gov"
+            ><img
+              class="height-3 display-block"
+              src="{{ '/assets/img/digital-gov-logo--white.png' | relative_url }}"
+              alt="Digital.gov"
+          /></a>
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="desktop:grid-col-10">
+          <div class="measure-6 font-sans-2xs">
+            <p class="margin-top-0">
+              This site's content is maintained by
+              <a
+                href="https://www.whitehouse.gov/omb/information-regulatory-affairs/"
+                >The Office of Information and Regulatory Affairs (OIRA)</a
+              >
+              and PRA officers across federal government. This site is a product
+              of <a href="https://10x.gsa.gov/">10x</a> and is supported by
+              <a href="https://digital.gov/">Digital.gov.</a>
+            </p>
+            <p>
+              Help us improve this site on
+              <a
+                href="https://github.com/{{ site.github.organization }}/{{ site.github.repository }}/edit/{{ site.github.default_branch }}/{{ page.path }}"
+                >GitHub</a
+              >.
+            </p>
           </div>
         </div>
-        <div class="tablet:grid-col-auto">
-          <ul class="add-list-reset tablet:display-flex margin-top-3 tablet:margin-top-0 font-sans-2xs">
-            <li class="margin-bottom-1 tablet:margin-bottom-0 tablet:margin-right-205"><a href="{{ '/privacy/' | relative_url }}">Privacy policy</a></li>
-            <li>
-              <a href="{% include email.html %}?subject=PRA Website:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments">Send site feedback</a>
+        <div class="desktop:grid-col-2">
+          <ul class="add-list-reset font-sans-2xs">
+            <li class="margin-bottom-1">
+              <a href="{{ '/contact' | relative_url}}">Get PRA Help</a>
+            </li>
+            <li class="margin-bottom-1">
+              <a
+                href="{% include email.html %}?subject=PRA Website:%20Site%20Feedback&amp;body=Please%20fill%20out%20the%20information%20below%0A%0A%0AWhat%20were%20you%20trying%20to%20do?%0A%0A%0AGeneral%20Comments"
+                >Send site feedback</a
+              >
+            </li>
+            <li class="margin-bottom-1">
+              <a href="{{ '/privacy/' | relative_url }}">Privacy policy</a>
             </li>
           </ul>
         </div>
