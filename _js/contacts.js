@@ -91,6 +91,9 @@ if (container) {
           `${result.agency} ${result.short ? `(${result.short})` : ""}`
         );
       }
+    },
+    tNoResults: () => {
+      return `We don't have a listing for this agency yet. Often, the Office of the Chief Information Officer can point you in the right direction.`
     }
   });
 
