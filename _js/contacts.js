@@ -21,12 +21,11 @@ function suggestions(query, populateResults) {
     }
     return false;
   });
-  suggestions.sort((a, b) => (a.agency > b.agency) ? 1 : -1)
+  suggestions.sort((a, b) => (a.agency > b.agency ? 1 : -1));
   populateResults(suggestions);
 }
 
 if (container) {
-
   accessibleAutocomplete({
     element: container,
     id: "contacts-search",
@@ -55,6 +54,13 @@ if (container) {
               : ""
           }
           ${
+            result.internal
+              ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Online:</h5><span><a href="${
+                  result.internal
+                }" class="usa-link--external">Visit website (internal)</a></span></li>`
+              : ""
+          }
+          ${
             result.phone
               ? `<li class="margin-bottom-2"><h5 class="margin-y-0 font-sans-xs">Phone:</h5><span>${
                   result.phone
@@ -75,14 +81,19 @@ if (container) {
     templates: {
       inputValue: result => {
         return (
-          result && `${result.agency} ${result.short ? `(${result.short})` : ""}`
+          result &&
+          `${result.agency} ${result.short ? `(${result.short})` : ""}`
         );
       },
       suggestion: result => {
         return (
-          result && `${result.agency} ${result.short ? `(${result.short})` : ""}`
+          result &&
+          `${result.agency} ${result.short ? `(${result.short})` : ""}`
         );
       }
+    },
+    tNoResults: () => {
+      return `We don't have a listing for this agency yet. Often, the Office of the Chief Information Officer can point you in the right direction.`
     }
   });
 
@@ -91,5 +102,4 @@ if (container) {
       clearInput(e.target);
     }
   });
-
 }

@@ -2,7 +2,7 @@ var Glossary = require("glossary-panel");
 var terms = require("../_data/terms.json");
 
 var body = document.querySelectorAll(
-  ".usa-layout__docs-main.usa-prose p, .usa-layout__docs-main.usa-prose ul"
+  ".usa-layout__docs-main.usa-prose p, .usa-layout__docs-main.usa-prose li"
 );
 
 if (body) {
@@ -11,10 +11,12 @@ if (body) {
     var re = new RegExp("(\\b" + term + "\\b)(?![^<]*>|[^<>]*</)", "i");
 
     for (var i = 0; i < body.length; i++) {
-      if (re.test(body[i].innerHTML)) {
+      var match = re.exec(body[i].innerHTML);
+
+      if (match) {
         body[i].innerHTML = body[i].innerHTML.replace(
           re,
-          `<span data-term="${term}">${term}</span>`
+          `<span data-term="${term}">${match[0]}</span>`
         );
         break;
       }

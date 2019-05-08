@@ -11,6 +11,7 @@ page_gen:
   - index_files: false
     data: terms
     name: term
+    title: "Glossary: "
 
 defaults:
   - scope:

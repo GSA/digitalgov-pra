@@ -13,7 +13,7 @@
   &:before {
     content: "";
     @include u-border-left("1px");
-    @include u-border-left("primary-light");
+    @include u-border-left("white");
     @include u-height(6);
     @include u-margin-left("205");
     @include u-padding-left("205");
