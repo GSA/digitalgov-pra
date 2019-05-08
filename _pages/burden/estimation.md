@@ -4,6 +4,8 @@ title: How to estimate burden
 
 OMB has consistently held that measuring burden is “often difficult and imprecise in the absolute, but reliable and consistent measures of change are possible.”  These guidelines and resources are a good starting point for agencies to make the best estimates of burden for their collections.
 
+The Department of Health and Human Services' [Burden Calculator](https://repository.usaspending.gov/cder_library/authorized/burden_calculator) is a helpful resource for estimation.
+
 ## Time (burden hours)
 Estimates of burden hours need to include:
 
