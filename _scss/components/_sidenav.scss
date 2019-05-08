@@ -30,6 +30,8 @@
 }
 
 .usa-sidenav__sublist {
+  @include u-padding-bottom("1");
+
   a {
     @include u-padding-y("1");
     @include u-text("normal");
