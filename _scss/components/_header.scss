@@ -2,17 +2,20 @@
   img {
     width: 252px;
   }
-  
+
   @include at-media("mobile-lg") {
     img {
       width: auto;
     }
   }
 }
+
 .usa-header--extended .usa-current:after,
-.usa-header--extended .usa-nav__link:hover:after {
+.usa-header--extended .usa-nav__link:hover:after,
+.usa-header--extended [aria-expanded=true]:after {
   @include at-media($theme-navigation-width) {
     @include u-bg("secondary-light");
+    bottom: -1px;
   }
 }
 
