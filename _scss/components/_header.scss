@@ -98,6 +98,6 @@
   @include u-margin-right(2);
   @include u-height("5");
   @include u-radius("sm");
-  @include u-text("primary");
+  @include u-text("no-uppercase", "primary");
   @include u-width("10");
 }
