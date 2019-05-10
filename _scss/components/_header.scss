@@ -1,3 +1,14 @@
+.usa-logo {
+  img {
+    width: 252px;
+  }
+  
+  @include at-media("mobile-lg") {
+    img {
+      width: auto;
+    }
+  }
+}
 .usa-header--extended .usa-current:after,
 .usa-header--extended .usa-nav__link:hover:after {
   @include at-media($theme-navigation-width) {
