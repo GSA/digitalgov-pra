@@ -26,6 +26,12 @@
   }
 }
 
+.usa-nav__secondary {
+  @include at-media($theme-navigation-width) {
+    bottom: 4.5rem;
+  }
+}
+
 .usa-nav__secondary-links {
   a {
     @include u-text("ink");

@@ -1,22 +1,22 @@
-<div class="usa-banner bg-base-dark">
+<div class="usa-banner bg-base-lightest">
   <div class="usa-accordion">
     <header class="usa-banner__header">
-      <div class="usa-banner__inner">
+      <div class="usa-banner__inner flex-justify-center">
         <div class="grid-col-auto">
           <img class="usa-banner__header-flag" src="{{ '/assets/uswds/img/us_flag_small.png' | relative_url }}" alt="U.S. flag" />
         </div>
         <div class="grid-col-fill tablet:grid-col-auto">
-          <p class="usa-banner__header-text text-white">
+          <p class="usa-banner__header-text">
             An official website of the United States government
           </p>
-          <p class="usa-banner__header-action text-white" aria-hidden="true">Here’s how you know</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
         </div>
         <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
-          <span class="usa-banner__button-text text-white">Here's how you know</span>
+          <span class="usa-banner__button-text">Here's how you know</span>
         </button>
       </div>
     </header>
-    <div class="usa-banner__content usa-accordion__content  text-white" id="gov-banner">
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
       <div class="grid-row grid-gap-lg">
         <div class="usa-banner__guidance tablet:grid-col-6">
           <img class="usa-banner__icon usa-media-block__img bg-white circle-5" src="{{ '/assets/uswds/img/icon-dot-gov.svg' | relative_url }}" alt="Dot gov" />
@@ -38,5 +38,12 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="digital-banner">
+  <div class="grid-container padding-y-105 display-flex flex-justify flex-align-center">
+    <a href="https://digital.gov/resources"><img class="display-block" src="{{ '/assets/img/dg-logo.svg' | relative_url }}" alt="Digital.gov Guide" /></a>
+    <a href="https://digital.gov/resources" class="text-white text-no-underline">Explore <i class="fas fa-arrow-right margin-left-1"></i></a>
   </div>
 </div>
