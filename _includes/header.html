@@ -2,7 +2,7 @@
 <header class="usa-header usa-header--extended" role="banner">
   <div class="usa-navbar">
     <div class="usa-logo" id="extended-logo">
-      <em class="usa-logo__text"><a href="{{ '/' | relative_url }}" title="Home" aria-label="Home"><img src="{{ '/assets/img/guide-to-pra--desktop--light.svg' | relative_url }}" alt="{site.title}" width="348" class="display-block" /></a></em>
+      <em class="usa-logo__text"><a href="{{ '/' | relative_url }}" title="Home" aria-label="Home"><img src="{{ '/assets/img/guide-to-pra--desktop--light.svg' | relative_url }}" alt="{{site.title}}" class="display-block" /></a></em>
     </div>
     <button class="usa-menu-btn text-semibold">Menu</button>
   </div>
@@ -36,7 +36,7 @@
         </ul>
         <form action="{{ '/search/' | relative_url}}" class="usa-search usa-search--small ">
           <div role="search">
-            <label class="usa-sr-only" for="extended-search-field-small">Search small</label>
+            <label class="usa-sr-only" for="search-input">Search</label>
             <input class="usa-input" id="search-input" type="search" name="q">
             <button class="usa-button" type="submit"><span class="usa-sr-only">Search</span></button>
           </div>

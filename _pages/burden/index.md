@@ -7,7 +7,7 @@ permalink: /burden/
 
 One of the goals of the PRA is for the federal government to consider and account for the impact on the public when asking for information. This impact is called **burden**, and includes both the value of the time and effort required to fulfill a collection along with the financial cost.
 
-The PRA requires that agencies estimate burden to understand what is involved for the public to comply with a request.
+The PRA requires that agencies [estimate burden]({{'burden/estimation/' | relative_url}}) to understand what is involved for the public to comply with a request.
 
 Some common burden activities include:  
 
