@@ -43,12 +43,14 @@ h3,
 h4,
 .usa-prose > h4 {
   @include u-font($theme-font-role-heading, $theme-h4-mobile-font-size);
+  @include u-text("normal");
 }
 
 @include at-media("mobile-lg") {
   h4,
   .usa-prose > h4 {
     @include u-font($theme-font-role-heading, $theme-h4-font-size);
+    @include u-text("normal");
   }
 }
 
