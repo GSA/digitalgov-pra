@@ -1,6 +1,6 @@
 # A Guide to the Paperwork Reduction Act
 
-This is the public repo for PRA.digital.gov, which is an online resource to help federal employees understand and comply with the Paperwork Reduction Act (PRA).
+This is the public repo for pra.digital.gov, which is an online resource to help federal employees understand and comply with the Paperwork Reduction Act (PRA).
 
 ## About the site
 
