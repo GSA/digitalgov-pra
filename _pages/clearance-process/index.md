@@ -60,7 +60,7 @@ The Notice should include details about:
 
 This information helps the public understand your collection during the comment period. It will be important in writing a strong supporting statement when requesting approval from OMB.
 
-### Issue 60-day request for comment in the Federal Register
+### Issue a 60-day request for comment in the Federal Register
 
 Since you’ll be collecting information from the public, the PRA makes sure they have time to ask questions and offer comments or ideas. Your notice needs to have enough detail for the public to consider these questions:
 
@@ -81,7 +81,7 @@ The 30-day Federal Register notice lets the public know you’ve submitted the c
 
 With your agency, you’ll submit an Information Clearance Request (ICR) for review. ICR’s are submitted to OMB through a system called ROCIS. The package submitted into ROCIS contains:
 
-- Supporting statement (which includes the record supporting the certification), and other supporting documentation.
+- A supporting statement (which includes the record supporting the certification), and other supporting documentation.
 - The instruments of the collection (copies of the forms, surveys, recordkeeping requirements, etc.).
 - A summary of any public comments, and the agency’s response(s).
 - Details about the 60-day and 30-day Federal Register notices, including date, page, expected or actual publishing date, and the full text of the 30-day notice.
