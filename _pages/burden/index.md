@@ -5,7 +5,7 @@ permalink: /burden/
 
 ## Burden hours and cost
 
-One of the goals of the PRA is for the federal government to consider and account for the impact on the public when asking for information. This impact is called **burden**, and includes both the value of the time and effort required to fulfill a collection along with the financial cost.
+One of the goals of the PRA is for the federal government to consider and account for the impact on the public when asking for information. This impact is called **burden**, and includes the value of both the time and the effort required to fulfill a collection along with the financial cost.
 
 The PRA requires that agencies [estimate burden]({{'burden/estimation/' | relative_url}}) to understand what is involved for the public to comply with a request.
 
@@ -30,6 +30,6 @@ Some examples of excessive burden include:
     -	You must justify questions about personally sensitive matters like religious beliefs or political affiliation, or questions that may cause persons to incriminate themselves.
 -	Asking for a reporting frequency that is higher than necessary.
 -	Not considering an alternative approach to obtain the information.
--	Requesting information in a different format than its usually maintained.
+-	Requesting information in a different format than is usually maintained.
 
 If your collection involves activities seen as excessive, you must justify them in the purpose and need of the collection [in your supporting statement]({{'/clearance-process/supporting-statement/' | relative_url}}).
