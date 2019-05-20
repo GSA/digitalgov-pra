@@ -1,6 +1,7 @@
 ---
 title: Estimating Burden
 permalink: /burden/
+
 ---
 
 ## Burden hours and cost
@@ -32,4 +33,4 @@ Some examples of excessive burden include:
 -	Not considering an alternative approach to obtain the information.
 -	Requesting information in a different format than is usually maintained.
 
-If your collection involves activities seen as excessive, you must justify them in the purpose and need of the collection [in your supporting statement]({{'/clearance-process/supporting-statement/' | relative_url}}).
+If your collection involves activities seen as excessive, you must justify them in the _purpose_ and _need_ sections of the collection [in your supporting statement]({{'/clearance-process/supporting-statement/' | relative_url}}).
