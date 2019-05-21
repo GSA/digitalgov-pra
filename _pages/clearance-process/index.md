@@ -4,7 +4,7 @@ permalink: /clearance-process/
 anchors:
 - name: Process overview for standard clearance
 - name: Develop the information collection request within your agency
-- name: Issue 60-day request for comment in the Federal Register
+- name: Issue a 60-day request for comment in the Federal Register
 - name: Consider the public comments on the notice
 - name: Issue a 30-day notice to the Federal Register
 - name: Submit request to OMB for review
