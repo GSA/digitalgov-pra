@@ -1,9 +1,11 @@
 ---
 title: Additional resources
 permalink: /additional-resources/
+
 ---
 
 ## PRA Systems
+
 [ROCIS](https://www.rocis.gov/rocis/login.do) - where to submit PRA applications
 
 [RegInfo PRA Search](https://www.reginfo.gov/public/do/PRASearch) - find approved ICRs and supporting statements
@@ -11,16 +13,19 @@ permalink: /additional-resources/
 ## OMB Guidance Memoranda
 
 [Complete Collection of OIRA memos](https://www.whitehouse.gov/omb/information-regulatory-affairs/federal-collection-information/) - including sources on
- * [Flexibilities](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf)
- * [Web Technologies](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/memos/2014/web-based-interactive-technologies-data-search-tools-calculators-paperwork-reduction-act.pdf)
- * [PRA Primer](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/inforeg/PRAPrimer_04072010.pdf)
- * [Household Information Collection Moratorium Mar-Aug, 2020](https://www.whitehouse.gov/wp-content/uploads/2018/10/2020_Memo_Minimizing_Household_Surveys.pdf) notification for the Census
+ * [Flexibilities](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf) (PDF, 2.6 MB, 7 pages) 
+ * [Web Technologies](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/memos/2014/web-based-interactive-technologies-data-search-tools-calculators-paperwork-reduction-act.pdf) (PDF, 2.9 MB, 5 pages) 
+ * [PRA Primer](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/inforeg/PRAPrimer_04072010.pdf) (PDF, 97 kb, 8 pages) 
+ * [Household Information Collection Moratorium, March to August, 2020](https://www.whitehouse.gov/wp-content/uploads/2018/10/2020_Memo_Minimizing_Household_Surveys.pdf) (PDF, 368 kb, 1 page) — a notification for the 2020 Census
 
 ## PRA Full Text
-[Paperwork Reduction Act of 1995](https://www.govinfo.gov/content/pkg/PLAW-104publ13/html/PLAW-104publ13.htm)
+
+[Paperwork Reduction Act of 1995](https://www.congress.gov/bill/104th-congress/senate-bill/244/text) 
 
 ## Reports
-[Information Collection Budget](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/icb/icb_2016.pdf) - most recent report of total information collection burden (FY 2015)
+
+[Information Collection Budget](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/icb/icb_2016.pdf) (PDF, 712 kb, 55 pages) — most recent report of total information collection burden (Fiscal Year 2015) 
 
 ## Tools
-[Burden Calculator](https://repository.usaspending.gov/cder_library/authorized/burden_calculator) by the Department of Health and Human Services
+
+[Burden Calculator](https://repository.usaspending.gov/cder_library/authorized/burden_calculator) by the Department of Health and Human Services 
