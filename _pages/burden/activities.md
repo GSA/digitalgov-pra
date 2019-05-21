@@ -1,8 +1,9 @@
 ---
 title: Burden activities
+
 ---
 
-Many activities count as burden. These questions can help you determine if a burden activity should be factored in to your estimate. This isn’t a comprehensive list, but a starting point for you to begin thinking about the scope of burden in your collection.
+Many activities count as burden. These questions can help you to determine if a burden activity should be factored into your estimate. This isn’t a comprehensive list, but a starting point for you to begin thinking about the scope of burden in your collection.
 
 ## Reviewing instructions
 *	How much time, effort, and cost will it take for respondents to understand what information the agency is asking for and how to collect it?
