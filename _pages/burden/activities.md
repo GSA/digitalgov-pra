@@ -4,16 +4,16 @@ title: Burden activities
 
 Many activities count as burden. These questions can help you determine if a burden activity should be factored in to your estimate. This isn’t a comprehensive list, but a starting point for you to begin thinking about the scope of burden in your collection.
 
-## Reviewing Instructions
+## Reviewing instructions
 *	How much time, effort, and cost will it take for respondents to understand what information the agency is asking for and how to collect it?
 
 ## Compiling materials necessary for collection
 *	How much time, effort, and cost will it take for the respondents to locate, gather and compile necessary documentation required for the information collection?
 
-## Technology and Systems
+## Technology and systems
 *	What technology and systems do respondents need to gather, process, store, and send information?
 *	Is this new technology that needs to be bought?
-*	If it doesn’t exist at all, what’s the cost of development? Is there a cost associated with installation, or training? Are there one-time costs?
+*	If it doesn’t exist at all, what’s the cost of development? Is there a cost associated with installation or with training? Are there one-time costs?
 *	Is there a cost to use the technology, like a subscription?
 
 ## Adjusting existing methods
@@ -25,7 +25,7 @@ Many activities count as burden. These questions can help you determine if a bur
 *	Will there be additional training for actual reporting and recordkeeping methods?
 
 ## Searching data sources
-*	Are there public or private data sources respondents can use to respond to the collection?
+*	Are there public or private data sources that respondents can use to respond to the collection?
 *	What would be the cost of creating new data sources?
 
 ## Completing and reviewing collected information
