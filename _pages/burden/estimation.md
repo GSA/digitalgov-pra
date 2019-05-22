@@ -36,7 +36,7 @@ These types of burden need to be estimated in two separate categories:
 *	Non-recurring or capital cost: one-time investments to fulfill a collection request
 *	Recurring or annualized cost: ongoing costs, such as operating or maintaining a capital investment
 
-Burden calculation
+## Burden calculation
 When submitting burden estimate to OIRA the agency should be prepared to include:
 
 1.	Estimated burden hours per respondent;
