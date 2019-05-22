@@ -36,7 +36,7 @@ Allowing users to customize or influence the look of an agency website, such as 
 Social media tools that let users vote on, rank, sort, organize, or otherwise rate the value of ideas, questions, and comments don’t need PRA approval. For example, you generally don’t need PRA clearance to solicit a user rating for an agency’s mobile app. If the results of the ratings can be used for policy or planning purposes, however, this would need PRA approval.
 
 #### Voluntary commercial sales orders
-Information about choosing, paying for, and delivering an item sold by the U.S. Government doesn’t need PRA approval. For example the payment information and delivery address collected to allow a member of the public to order a national park pass online.
+Information about choosing, paying for, and delivering an item sold by the U.S. Government doesn’t need PRA approval. For example, the payment information and delivery address collected to allow a member of the public to order a national park pass online.
 
 #### Filtering agency data
 Methods that let users sort and filter agency data, like drop down menus and standardized text or numeric entries, don’t need PRA approval.
