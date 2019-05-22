@@ -36,26 +36,27 @@ steps:
 
 ## Plan ahead for PRA
 
-While the PRA approval process takes at least 90 days, you don’t have to extend your project timeline by 3 months. You can start the 60-day comment period in the Federal Register and consider public comments while developing the more detailed
-request for OMB review.
+Most agencies estimate six to nine months for PRA clearance from agency development to OIRA’s decision. By law, this process in most cases includes at least three months of public comment. 
+
+However, you don’t need to extend your project timeline for PRA! You can start the 60-day comment period in the Federal Register and consider public comments while simultaneously developing the more detailed request for OMB review. 
+
+PRA approval does take time, but it doesn’t have to all be done at the very end.  Please note that if you are dealing with a collection of information stemming from a proposed rule the process is slightly different.  Please reach out to your agency PRA officer to discuss this more.
+
 
 ## Process overview for standard clearance
-
-Most agencies estimate 6 to 9 months for PRA clearance from start to finish. By law, this process includes at least 3 months of public comment.
 
 {% include process.html steps=page.steps %}
 
 ### Develop the information collection request within your agency
 
-If [your collection needs PRA clearance]({{'do-i-need-clearance' | relative_url}}), it’s time to put together the basics of the information collection request (ICR). This first request won’t be reviewed by OMB, but it will require a Federal Register
-Notice for the public to review and comment on.
+If [your collection needs PRA clearance]({{'do-i-need-clearance' | relative_url}}), it’s time to put together the basics of the information collection request (ICR). This first request won’t be reviewed by OMB, but it will require a Federal Register Notice for the public to review and comment on.
 
 The Notice should include details about:
 
 - What information is being collected
 - Who you’re collecting it from
 - Why you’re collecting it
-- What is the estimated burden cost, i.e., the time (in hours), financial considerations, and paperwork needed for the collection
+- hat is the estimated burden cost, i.e., the time (in hours), financial considerations, and paperwork needed for the collection
 - How will the information be used once you’ve collected it
 
 This information helps the public understand your collection during the comment period. It will be important in writing a strong supporting statement when requesting approval from OMB.
@@ -79,18 +80,20 @@ The 30-day Federal Register notice lets the public know you’ve submitted the c
 
 ### Submit request to OMB for review
 
-With your agency, you’ll submit an Information Clearance Request (ICR) for review. ICR’s are submitted to OMB through a system called ROCIS. The package submitted into ROCIS contains:
+With your agency, you’ll submit an Information Clearance Request (ICR) package to OMB for review. ICR’s are submitted to OMB through a system called ROCIS. The ICR package submitted into ROCIS contains:
 
-- A supporting statement (which includes the record supporting the certification), and other supporting documentation.
+- Supporting statement and other supporting documentation.
 - The instruments of the collection (copies of the forms, surveys, recordkeeping requirements, etc.).
 - A summary of any public comments, and the agency’s response(s).
 - Details about the 60-day and 30-day Federal Register notices, including date, page, expected or actual publishing date, and the full text of the 30-day notice.
 - A copy of the relevant statute and regulation mandating or authorizing the collection of information.
 - Guides or instructions for interviewers.
-- Explanatory material to be given to prospective respondents, and prepared material to be given to members of the public who do not respond.
+- Explanatory material to be given to prospective respondents, and follow-up material to be given to members of the public who do not respond.
+
 
 ## OMB review timeline and process
 
 OMB typically reviews ICR packages within sixty days, from the date of submission or publication of the 30-day Federal Register notice (whichever is later), but can take longer in some circumstances.
 
-During this time, your ICR package will be reviewed by an OIRA desk officer. They will look at how the collection’s supporting statement and documentation meet the standards of the PRA.
+During this time, your ICR package should be reviewed by an OIRA desk officer. The desk officer will look at how the collection’s supporting statement and documentation meet the standards of the PRA.
+
