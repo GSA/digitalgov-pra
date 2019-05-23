@@ -90,5 +90,11 @@
     "short": "NCUA",
     "office": "Information & Access Law Division (IAL), Office of General Counsel",
     "email": "PRAComments@NCUA.gov"
-  }
+  },
+  {
+    "agency": "U.S. Department of Agriculture",
+    "short": "USDA",
+    "office": "Office of the Chief Information Officer, Information Resource Management Center",
+    "email": "USDA.PRA@usda.gov"
+  },
 ]
