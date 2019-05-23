@@ -19,7 +19,7 @@ A few of the criteria covered in the Supporting Statement include:
 This describes the general purpose of the collection to the sponsoring agency’s goals, and how the collection will achieve a stated results. A collection may have more than one purpose; each should be described in the Supporting Statement. 
 
 ### Need
-The agency must have a need for the information/data to be collected, based on program or policy requirements. As the Federal government, we need to help ensure we are careful when we impose burden on the public and it should be for very specific reasons.
+The agency must have a need for the information or data to be collected, based on program or policy requirements. As the Federal government, we need to help ensure we are careful when we impose burden on the public and it should be for very specific reasons.
 
 While “purpose” is how the collection fits with the agency goals, “need” involves how the results will help program operation or policy development. 
 
