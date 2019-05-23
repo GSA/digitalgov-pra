@@ -25,7 +25,7 @@ The Paperwork Reduction Act (PRA) is a law governing how federal agencies collec
 ### Protecting private information
 
 - To respect privacy, we avoid asking for personal information that’s not relevant or necessary.
-- OIRA asks for extra details if you’re collecting personally identifiable information (PII)
+- OIRA asks for extra details if you’re collecting personally identifying information (PII).
 
 ## Who approves PRA clearances?
 
@@ -38,10 +38,10 @@ You don't need PRA approval every time you collect information from the public. 
 - Requesting from fewer than 10 people,
 - Open-ended requests for comments or feedback,
 - Only collecting information from federal employees as part of their work duties, or
-- Discussions and questions at a public hearing, meeting, or online.
+- Dicussions and questions at a public hearing, meeting, or [online equivalent]({{'/do-i-need-clearance/pra-and-the-internet/' | relative_url}}).
 
-Some information collections are generally not subject to the PRA, including: federal investigations and civil actions, antitrust actions, and intelligence activities.
+Some information collections are generally not subject to the PRA, including: certain federal investigations and civil actions, antitrust actions, and intelligence activities.
 
 ## What happens if I don't comply with PRA?
 
-The [PRA is a law](https://www.congress.gov/bill/104th-congress/senate-bill/244), and compliance is mandatory. Collecting information without clearance can open your work, including decisions made based on the data, to legal challenge. If uncleared collections or changes are discovered, OIRA may insist that they are stopped. OMB reports these violations to Congress and the president in the Information Collection Budget.
+The [PRA is a law](https://www.congress.gov/bill/104th-congress/senate-bill/244), and compliance is mandatory. Collecting information without clearance can open your work, including decisions made based on the data to legal challenge. If uncleared collections or changes are discovered, OIRA may insist that the collections are stopped. OMB reports these violations to Congress and the President in the Information Collection Budget.

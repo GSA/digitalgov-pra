@@ -9,7 +9,7 @@
   },
   {
     "term": "capital cost",
-    "definition": "One-time expenses, buying something needed to answer the information collection request."
+    "definition": "A one-time expense to buy something needed to answer an information collection request."
   },
   {
     "term": "contractor",
@@ -36,15 +36,15 @@
     "definition": "Status for collections that do not require OMB approval under specific statutory reasons, despite otherwise meeting the criteria."
   },
   {
-    "term": "fast track",
+    "term": "fast-track",
     "definition": "The process for approval for a collection already covered by an existing generic clearance."
   },
   {
     "term": "Federal Register",
-    "definition": "The daily journal of the United States Government. Its use is required by the PRA to gather comments from the public during the 60 and 30 day comment periods."
+    "definition": "The daily journal of the United States government. Its use is required by the PRA to gather comments from the public during the 60- and 30-day comment periods. https://www.federalregister.gov/"
   },
   {
-    "term": "generic",
+    "term": "generic clearance",
     "definition": "A broad type of standard clearance issued in advance for a group of similar, low-burden collections. A good fit for surveys."
   },
   {
@@ -56,8 +56,16 @@
     "definition": "OIRA's annual report sent to Congress summarizing the major activies under PRA, and the total burden of information collection"
   },
   {
+    "term": "ICR",
+    "definition": "Details about a proposed collection to be reviewed by the agency, public, and OIRA desk officers."
+  },
+  {
     "term": "information collection",
     "definition": "A proposal and process for requesting information. PRA approval is granted to collections."
+  },
+  {
+    "term": "information collection request",
+    "definition": "Details about a proposed collection to be reviewed by the agency, public, and OIRA desk officers."
   },
   {
     "term": "non-substantive change",
@@ -73,7 +81,7 @@
   },
   {
     "term": "person",
-    "definition": "An individual, partnership, association, corporation, legal representative, or a group of these. Also includes State, territorial, tribal, or local governments. "
+    "definition": "For purposes regarding the Paperwork Reduction Act, a person can be an individual, individuals representing a partnership, association, corporation, legal representative—or any combination of these. Also includes state, territorial, tribal, or local governments."
   },
   {
     "term": "PRA",
@@ -93,7 +101,7 @@
   },
   {
     "term": "ROCIS",
-    "definition": "The digital platform used by agencies to submit PRA clearance requests to OIRA."
+    "definition": "Regulatory Information Service Center (RISC) RISC/OIRA Combined Information System (ROCIS) is the digital platform used by agencies to submit PRA clearance requests to OIRA."
   },
     {
     "term": "sponsor",

@@ -21,7 +21,7 @@ The vast majority of PRA approval requests [go through our standard approval pro
 
 ## Common Form clearance
 
-A “common form” is an information collection that can be used by two or more agencies, or government-wide, for the same purpose. One agency will host the collection to use itself, and additional agencies can request to use that collection.
+A “common form” is an information collection that can be used by two or more agencies, or government-wide, for the same purpose. One agency will host the collection to use itself, and additional agencies can request to use that collection. 
 
 After OMB approves the primary collection, any agency that wishes to collect the same information and use it for the same purpose can obtain expedited approval by providing its agency-specific information to OMB (e.g., burden estimates and number of respondents).
 
@@ -29,7 +29,7 @@ Because the hosting agency has already gone through the PRA approval process, an
 
 ## Generic clearance
 
-Generic clearance is for a very specific type of collection, usually associated with surveys. It allows for conducting more than one information collection using very similar methods. Generic clearances still require the initial collection to go through the [normal PRA process]({{'/clearance-process/' | relative_url}}), but allows for quicker clearance of associated collections later on.
+Generic clearance is for a very specific type of collection, usually associated with surveys. It allows for conducting more than one information collection using very similar methods. Generic clearances still require the initial generic collection to go through the [normal PRA process]({{'/clearance-process/' | relative_url}}), but allows for quicker clearance of associated collections later on.
 
 Generic clearance is best when you’ll have multiple collections which:
 
@@ -40,18 +40,18 @@ Generic clearance is best when you’ll have multiple collections which:
 
 Generic clearances almost always involve statistical methods and analysis and most information collections are not appropriate for generic clearances. Customer satisfaction surveys, focus group tests, and website usability surveys are all good fits for generic clearance.
 
-If you feel a generic might be suitable for your needs you should [work with your agency’s PRA office]({{'/contact/' | relative_url}}) who will work with OIRA to map out details of what information can and can’t be used under the generic clearance. This ensures the approval is not only a good fit for the current collection, but future collections too.
+If you feel a generic might be suitable for your needs, [work with your agency’s PRA office]({{'/contact/' | relative_url}}). They will work with OIRA to map out details of what information can and can’t be used under the generic clearance. This ensures the approval is not only a good fit for the current collection, but future collections too.
 
 ### Generic clearance: Fast-track process
 
-The fast-track process is not a type of approval that can be requested; but is a specific type of generic clearance primarily used for customer satisfaction surveys. Fast-track requests generally don’t have to undergo additional public comment, and are reviewed in five business days after submitting all materials.
+The fast-track process is not a type of approval that can be requested; but is a specific type of generic clearance primarily used for customer satisfaction surveys. Fast-track requests generally don’t have to undergo additional public comment, and are reviewed within five business days after submitting all materials.
 
 Many agencies have an approved fast-track generic clearance for customer satisfaction surveys. [Check with your agency’s PRA contact]({{'/contact/' | relative_url}}) to confirm if your agency has one and to see if your collection can be submitted under the fast-track process.
 
 ## Expedited/Emergency clearance
 {: #expedited-emergency-clearance}
 
-This is a rare type of approval granted only when there is a time-sensitive need for the collection based on very specific criteria for reasons outside of the agency’s control. Typically this type of approval is only granted if the standard PRA process would cause:
+This is a rare type of approval granted only when there is a time-sensitive need for the collection based on very specific criteria for reasons outside of the agency’s control. Typically, a collection is only eligible for this type of approval if the standard PRA approval process would cause:
 
 - Likely public harm (such as the delivery of resources after a natural disaster).
 - Missing a court-ordered or statutory deadline.
