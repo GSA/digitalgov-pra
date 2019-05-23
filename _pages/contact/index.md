@@ -10,7 +10,7 @@ Do you need advice on the PRA? There are a few people who may be able to help.
 
 ## Find PRA help in your agency
 
-If you have a question about PRA, your first step should be to connect with someone in your agency with PRA expertise. Often agencies have their own requirements and processes around PRA that you’ll need to follow.
+If you have a question about PRA, your first step should be to connect with someone in your agency with PRA expertise. Often agencies have their own requirements and processes around PRA that your collection may be subject to.
 
 ### Help planning an information request
 
@@ -28,6 +28,7 @@ At larger agencies, there is often someone who is responsible for managing the a
 - Chief Information Officer (CIO)
 - Regulatory Affairs / Regulatory Secretariat
 
+Search below to find the PRA office for larger agencies.
 
 {% include contacts.html %}
 
