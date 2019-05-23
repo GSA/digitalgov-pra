@@ -20,7 +20,7 @@ Some common burden activities include:
 -	Completing and reviewing collected information.
 -	Compiling and sending information.
 
-Overall, burden can seem intimidating, especially in a large collection. Our [burden activity questions]({{'/burden/activities/' | relative_url}}) are a starting point to help you start thinking about scope.
+Overall, burden can seem intimidating, especially in a large collection. Our [burden activity questions]({{'/burden/activities/' | relative_url}}) are a starting point to help you begin thinking about scope.
 
 ### Avoiding excessive burden
 
