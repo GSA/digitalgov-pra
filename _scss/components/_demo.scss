@@ -5,5 +5,14 @@
     @include u-margin(0);
     @include u-text('black');
     @include u-font('sans', 'md');
+    a{
+      @include u-text('blue-warm-60v');
+      @include u-text('no-underline');
+      @include u-text('semibold');
+      span{
+        @include u-border-bottom('2px', 'solid', 'blue-warm-60v');
+      }
+
+    }
   }
 }
