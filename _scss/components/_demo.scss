@@ -1,5 +1,5 @@
 .demo{
-  @include u-padding-y(3);
+  @include u-padding-y(4);
   @include u-bg('gold-20v');
   p{
     @include u-margin(0);
