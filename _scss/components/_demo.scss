@@ -1,15 +1,13 @@
 .demo{
-  @include u-padding-y(5);
+  @include u-padding-y(3);
   @include u-bg('gold-20v');
-  @include u-bg('red-cool-20v');
   p{
     @include u-margin(0);
     @include u-text('black');
-    @include u-text('center');
-    @include u-font('sans', 'sm');
+    @include u-font('sans', 'xs');
   }
   p:first-child{
     @include u-margin-bottom('105');
-    @include u-font('sans', 'xl');
+    @include u-font('sans', 'md');
   }
 }
