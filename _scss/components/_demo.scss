@@ -1,0 +1,15 @@
+.demo{
+  @include u-padding-y(5);
+  @include u-bg('gold-20v');
+  @include u-bg('red-cool-20v');
+  p{
+    @include u-margin(0);
+    @include u-text('black');
+    @include u-text('center');
+    @include u-font('sans', 'sm');
+  }
+  p:first-child{
+    @include u-margin-bottom('105');
+    @include u-font('sans', 'xl');
+  }
+}
