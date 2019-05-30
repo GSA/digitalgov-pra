@@ -45,3 +45,7 @@ Some information collections are generally not subject to the PRA, including: ce
 ## What happens if I don't comply with PRA?
 
 The [PRA is a law](https://www.congress.gov/bill/104th-congress/senate-bill/244), and compliance is mandatory. Collecting information without clearance can open your work, including decisions made based on the data to legal challenge. If uncleared collections or changes are discovered, OIRA may insist that the collections are stopped. OMB reports these violations to Congress and the President in the Information Collection Budget.
+
+## Feedback
+
+This is a preview of the new Guide to the PRA. We welcome your feedback to keep it useful and usable. Send any feedback to  [PRA@omb.eop.gov](mailto:PRA@omb.eop.gov?subject=Feedback%20on%20PRA)
