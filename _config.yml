@@ -1,6 +1,6 @@
 # Site settings
 title: PRA Guide
-new_url: https://demo.pra.digital.gov
+new_url: "https://demo.pra.digital.gov/"
 
 defaults:
   - scope:
