@@ -72,7 +72,7 @@ Since you’ll be collecting information from the public, the PRA makes sure the
 ### Consider the public comments on the notice
 
 Reviewing comments from the public is an excellent way to understand how the people actually responding to your information collection feel about it. Review and consideration of public comments is essential and allows you to adjust and improve the
-request before submitting the collection to OMB for review. Part of your review involves a summary of public comments, and if you made any changes based on them.
+request before submitting the collection to OMB for review. Part of the review involves a summary of public comments, and if you made any changes based on them.
 
 ### Issue a 30-day notice to the Federal Register
 
@@ -82,7 +82,7 @@ The 30-day Federal Register notice lets the public know you’ve submitted the c
 
 With your agency, you’ll submit an Information Clearance Request (ICR) package to OMB for review. ICR’s are submitted to OMB through a system called ROCIS. The ICR package submitted into ROCIS contains:
 
-- Supporting statement and other supporting documentation.
+- [Supporting Statement]({{'/clearance-process/supporting-statement' | relative_url}}) and other supporting documentation.
 - The instruments of the collection (copies of the forms, surveys, recordkeeping requirements, etc.).
 - A summary of any public comments, and the agency’s response(s).
 - Details about the 60-day and 30-day Federal Register notices, including date, page, expected or actual publishing date, and the full text of the 30-day notice.
