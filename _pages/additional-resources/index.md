@@ -18,9 +18,11 @@ permalink: /additional-resources/
  * [PRA Primer](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/inforeg/PRAPrimer_04072010.pdf) (PDF, 97 kb, 8 pages) 
  * [Household Information Collection Moratorium, March to August, 2020](https://www.whitehouse.gov/wp-content/uploads/2018/10/2020_Memo_Minimizing_Household_Surveys.pdf) (PDF, 368 kb, 1 page) — a notification for the 2020 Census
 
-## PRA Full Text
+## PRA Legal Text
 
-[Paperwork Reduction Act of 1995](https://www.congress.gov/bill/104th-congress/senate-bill/244/text) 
+Law: [Paperwork Reduction Act of 1995](https://www.congress.gov/bill/104th-congress/senate-bill/244/text) 
+
+Regulation: [5 CFR 1320](https://www.govinfo.gov/content/pkg/CFR-2018-title5-vol3/xml/CFR-2018-title5-vol3-part1320.xml)
 
 ## Reports
 
