@@ -3,7 +3,7 @@ title: Types of PRA clearance
 permalink: /clearance-types/
 anchors:
   - name: Normal clearance
-  - name: Common form clearance
+  - name: Common Form clearance
   - name: Generic clearance
   - name: Expedited/Emergency clearance
 ---
