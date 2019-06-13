@@ -56,7 +56,7 @@ The Notice should include details about:
 - What information is being collected
 - Who you’re collecting it from
 - Why you’re collecting it
-- hat is the estimated burden cost, i.e., the time (in hours), financial considerations, and paperwork needed for the collection
+- What is the estimated burden cost, i.e., the time (in hours), financial considerations, and paperwork needed for the collection
 - How will the information be used once you’ve collected it
 
 This information helps the public understand your collection during the comment period. It will be important in writing a strong supporting statement when requesting approval from OMB.
