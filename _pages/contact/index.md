@@ -26,6 +26,7 @@ At larger agencies, there is often someone who is responsible for managing the a
 
 - Office of the General Counsel (OGC)
 - Chief Information Officer (CIO)
+- Chief Data Officer (CDO)
 - Regulatory Affairs / Regulatory Secretariat
 
 Search below to find the PRA office for larger agencies.
