@@ -16,7 +16,7 @@ steps:
   agency: true
   public: false
   omb: false
-- content: "[Agency publishes 60-day notice](#issue-a-60-day-request-for-comment-in-the-federal-register) to the Federal Registrar for comment"
+- content: "[Agency publishes 60-day notice](#issue-a-60-day-request-for-comment-in-the-federal-register) to the Federal Register for comment"
   agency: true
   public: true
   omb: false
