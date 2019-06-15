@@ -1,6 +1,6 @@
 .demo{
   @include u-padding-y(4);
-  @include u-bg('gold-10v');
+  @include u-bg('gold-10');
   p{
     @include u-margin(0);
     @include u-text('black');
