@@ -6,7 +6,7 @@ no_top_link: true
 
 ## Page content:
 
-tagline: The Paperwork Reduction Act (PRA) is a law governing how federal agencies collect information from the American public.
+tagline: The Paperwork Reduction Act (PRA) is a law governing how federal agencies collect information from the public.
 button:
   text: Learn what the PRA does
   href: /about/
