@@ -30,5 +30,6 @@ Regulation: [5 CFR 1320](https://www.govinfo.gov/content/pkg/CFR-2018-title5-vol
 
 ## Tools & Templates
 
-[Burden Calculator](https://repository.usaspending.gov/cder_library/authorized/burden_calculator) by the Department of Health and Human Services 
+[Burden Calculator](https://repository.usaspending.gov/cder_library/authorized/burden_calculator) by the Department of Health and Human Services
+
 [Supporting Statement Part A 18 questions]({{'/uploads/supporting-statement-a-instructions.pdf' | relative_url}})
