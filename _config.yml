@@ -1,9 +1,66 @@
 # Site settings
-title: PRA Guide
-new_url: "https://demo.pra.digital.gov/"
+title: A Guide to the Paperwork Reduction Act
+description: A resource to help federal employees comply with the Paperwork Reduction Act (PRA)
+email: pra@omb.eop.gov
+github:
+  organization: GSA
+  repository: digitalgov-pra
+  default_branch: master
+
+page_gen:
+  - index_files: false
+    data: terms
+    name: term
+    title: "Glossary: "
 
 defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "page"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Configuration for jekyll_pages_api_search plugin gem.
+jekyll_pages_api_search:
+  index_fields:
+    title:
+      boost: 10
+    tags:
+      boost: 10
+    url:
+      boost: 5
+    body:
+  results_page_title: Search results
+
+# Build settings
+scripts:
+  - assets/uswds/js/uswds.min.js
+  - assets/js/bundle.js
+
+styles:
+  - assets/uswds/css/styles.css
+
+exclude:
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md
+  - _js
+  - _scss
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package-lock.json
+  - package.json
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+keep_files:
+  - assets/js
+  - assets/uswds
