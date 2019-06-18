@@ -104,4 +104,10 @@
     "phone": "202-898-3767",
     "email": "PRA@fdic.gov"
   },
+{
+    "agency": "Department of Homeland Security",
+    "short": "DHS",
+    "office": "Office of the Chief Information Officer",
+    "email": "dhs.pra@hq.dhs.gov"
+  },
 ]
