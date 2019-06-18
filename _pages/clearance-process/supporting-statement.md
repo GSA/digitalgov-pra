@@ -2,7 +2,7 @@
 title: Supporting Statements
 ---
 
-The Supporting Statement is a set of required questions that help provide a clear rationale for the why, what, how, and who of the information collection. All Supporting Statements have a Part A which shows compliance with the PRA requirements and other associated laws. Collections that require statistical methods, like surveys or program evaluations, have additional requirements, called Part B.
+The Supporting Statement is a set of required questions that help provide a clear rationale for the why, what, how, and who of the information collection. All Supporting Statements have a Part A - [a standard list of 18 questions]({{'/uploads/supporting-statement-a-instructions.pdf' | relative_url}}) - which shows compliance with the PRA requirements and other associated laws. Collections that require statistical methods, like surveys or program evaluations, have additional requirements, called Part B.
 
 ## What makes a good Supporting Statement?
 
