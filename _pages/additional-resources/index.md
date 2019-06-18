@@ -28,6 +28,8 @@ Regulation: [5 CFR 1320](https://www.govinfo.gov/content/pkg/CFR-2018-title5-vol
 
 [Information Collection Budget](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/inforeg/inforeg/icb/icb_2016.pdf) (PDF, 712 kb, 55 pages) — most recent report of total information collection burden (Fiscal Year 2015) 
 
-## Tools
+## Tools & Templates
 
 [Burden Calculator](https://repository.usaspending.gov/cder_library/authorized/burden_calculator) by the Department of Health and Human Services 
+
+[Supporting Statement Part A Questions]({{'/uploads/supporting-statement-a-instructions.pdf'|relative_url}})
