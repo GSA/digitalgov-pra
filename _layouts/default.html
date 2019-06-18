@@ -8,15 +8,20 @@
 <!-- <![endif] -->
 
 <head>
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <!-- Redirect =============== -->
-  <meta http-equiv="refresh" content="1; url={{ site.new_url | escape }}">
-  <script type="text/javascript">
-    window.location.href = "{{ site.new_url | escape }}"
-  </script>
+{% include google-analytics.html %}
+{% include meta.html %} {% include styles.html %}
 </head>
 
-<body>
-  {{ site.title | escape }} has moved to <a href="{{ site.new_url | escape }}" title="{{ site.title | escape }}">{{ site.new_url | escape }}</a>.
+<body class="{{ layout.class }} {{ page.class }}">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  {% include demo.html %}
+  {% include banner.html %}
+  {% include digital.html %}
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+  {% include glossary.html %}
+  {% include scripts.html %}
 </body>
+
 </html>
