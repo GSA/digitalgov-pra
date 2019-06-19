@@ -65,7 +65,7 @@ This information helps the public understand your collection during the comment 
 
 Since you’ll be collecting information from the public, the PRA makes sure they have time to ask questions and offer comments or ideas. Your notice needs to have enough detail for the public to consider these questions:
 
-- Do they feel collecting this information in necessary?
+- Do they feel collecting this information is necessary?
 - Does the burden estimate seem accurate and justified, and could it be lower?
 - How will you make sure the information collected is high quality, clear, and useful?
 

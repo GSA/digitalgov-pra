@@ -38,7 +38,7 @@ You don't need PRA approval every time you collect information from the public. 
 - Requesting from fewer than 10 people,
 - Open-ended requests for comments or feedback,
 - Only collecting information from federal employees as part of their work duties, or
-- Dicussions and questions at a public hearing, meeting, or [online equivalent]({{'/do-i-need-clearance/pra-and-the-internet/' | relative_url}}).
+- Discussions and questions at a public hearing, meeting, or [online equivalent]({{'/do-i-need-clearance/pra-and-the-internet/' | relative_url}}).
 
 Some information collections are generally not subject to the PRA, including: certain federal investigations and civil actions, antitrust actions, and intelligence activities.
 
