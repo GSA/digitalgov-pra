@@ -1,13 +1,13 @@
 .usa-banner__header,
 .usa-banner__header--expanded {
-  @include u-bg("indigo-warm-90");
+  @include u-bg("gray-cool-10");
   @include at-media("tablet") {
-    @include u-bg("indigo-warm-90");
+    @include u-bg("gray-cool-10");
   }
   .usa-banner__header-text{
-    @include u-text("white");
+    // @include u-text("white");
   }
   .usa-accordion__button{
-    @include u-text("white");
+    // @include u-text("white");
   }
 }
