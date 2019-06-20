@@ -1,8 +1,8 @@
 .usa-banner__header,
 .usa-banner__header--expanded {
-  @include u-bg("gray-cool-10");
+  @include u-bg("blue-5");
   @include at-media("tablet") {
-    @include u-bg("gray-cool-10");
+    @include u-bg("blue-5");
   }
   .usa-banner__header-text{
     // @include u-text("white");
