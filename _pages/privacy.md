@@ -37,7 +37,7 @@ If you do not want to accept cookies, you can edit your browser's options to sto
 
 ### Google Analytics
 
-the PRA Guide participates in the [U.S. Digital Analytics Program](https://www.digitalgov.gov/services/dap/), which uses a unified Google Analytics account for federal agencies. This program helps agencies understand how people find, access, and use government services online.
+The PRA Guide participates in the [U.S. Digital Analytics Program](https://www.digitalgov.gov/services/dap/), which uses a unified Google Analytics account for federal agencies. This program helps agencies understand how people find, access, and use government services online.
 
 The Digital Analytics Program is a hosted shared service provided by the GSA's [Office of Products and Platforms](https://www.gsa.gov/node/87579), and the protocol and information collected are the same for all websites participating in the program. As a participant in the program, this website's traffic data is automatically reported to GSA.
 
