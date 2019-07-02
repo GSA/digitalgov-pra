@@ -17,7 +17,7 @@ As with many federal websites, the PRA Guide is hosted by the General Services A
 - the pages you visit on the PRA Guide
 - your internet protocol (IP) address
 - the address of the website you came from if it linked you directly to the PRA Guide
-- search terms that you enter into the the PRA Guide search tool
+- search terms that you enter into the PRA Guide search tool
 
 ### Cookies
 
