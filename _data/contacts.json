@@ -116,4 +116,16 @@
     "office": "Office of Information Management and Technology",
     "email": "PRAStaff@fda.hhs.gov"
   },
+  {
+    "agency": "Federal Communications Commission",
+    "short": "FCC",
+    "office": "Office of Managing Director - Performance Evaluation and Records Management",
+    "email": "PRA@fcc.gov"
+  },
+   {
+    "agency": "Health Resources and Services Administration",
+    "short": "HRSA",
+    "office": "Office of Planning, Analysis and Evaluation",
+    "email": "InfoCollectOfficer@hrsa.gov"
+  },
 ]
