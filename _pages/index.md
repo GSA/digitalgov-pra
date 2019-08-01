@@ -20,4 +20,9 @@ cards:
 - heading: Get help with the PRA
   body: Find agency resources to help you prepare your request.
   href: /contact/
+
+redirect_from:
+  - /tools/
+  - /playbook/
+
 ---

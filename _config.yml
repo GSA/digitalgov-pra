@@ -37,6 +37,11 @@ jekyll_pages_api_search:
     body:
   results_page_title: Search results
 
+# The Jekyll Redirect From Plugin
+# https://github.com/jekyll/jekyll-redirect-from
+plugins:
+  - jekyll-redirect-from
+
 # Build settings
 scripts:
   - assets/uswds/js/uswds.min.js
