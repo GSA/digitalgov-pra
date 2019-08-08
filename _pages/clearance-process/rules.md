@@ -1,6 +1,5 @@
 ---
 title: PRA approval process associated with rules
-permalink: /clearance-process/rules
 anchors:
 - name: Develop the information collection request within your agency
 - name: Publish Proposed Rule in Federal Register and submit request to OMB
