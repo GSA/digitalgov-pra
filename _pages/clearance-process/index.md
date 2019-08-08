@@ -40,7 +40,7 @@ Most agencies estimate six to nine months for PRA clearance from agency developm
 
 However, you don’t need to extend your project timeline for PRA! You can start the 60-day comment period in the Federal Register and consider public comments while simultaneously developing the more detailed request for OMB review. 
 
-PRA approval does take time, but it doesn’t have to all be done at the very end.  Please note that if you are dealing with a collection of information stemming from a proposed rule the process is slightly different.  Please reach out to your agency PRA officer to discuss this more.
+PRA approval does take time, but it doesn’t have to all be done at the very end.  Please note that if you are dealing with a collection of information stemming from a [proposed rule]({{'/clearance-process/rules' | relative_url}})  the process is slightly different.
 
 
 ## Process overview for standard clearance
