@@ -36,9 +36,9 @@ steps:
 
 ## Plan ahead for PRA
 
-Most agencies estimate six to nine months for PRA clearance from agency development to OIRA’s decision. By law, this process in most cases includes at least three months of public comment. 
+Most agencies estimate six to nine months for PRA clearance from agency development to OIRA’s decision. By law, this process in most cases includes at least three months of public comment.
 
-However, you don’t need to extend your project timeline for PRA! You can start the 60-day comment period in the Federal Register and consider public comments while simultaneously developing the more detailed request for OMB review. 
+However, you don’t need to extend your project timeline for PRA! You can start the 60-day comment period in the Federal Register and consider public comments while simultaneously developing the more detailed request for OMB review.
 
 PRA approval does take time, but it doesn’t have to all be done at the very end.  Please note that if you are dealing with a collection of information stemming from a [proposed rule]({{'/clearance-process/rules' | relative_url}})  the process is slightly different.
 
@@ -96,4 +96,3 @@ With your agency, you’ll submit an Information Clearance Request (ICR) package
 OMB typically reviews ICR packages within sixty days, from the date of submission or publication of the 30-day Federal Register notice (whichever is later), but can take longer in some circumstances.
 
 During this time, your ICR package should be reviewed by an OIRA desk officer. The desk officer will look at how the collection’s supporting statement and documentation meet the standards of the PRA.
-
