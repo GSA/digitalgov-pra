@@ -4,7 +4,7 @@ anchors:
 - name: Develop the information collection request within your agency
 - name: Publish Proposed Rule in Federal Register and submit request to OMB
 - name: OMB reviews proposed collection
-- name: Consider the public comments on the proposed rule
+- name: Agency considers the public comments on the proposed rule
 - name: Publishes Final Rule and submits final request to OMB
 
 ## Page Content:
