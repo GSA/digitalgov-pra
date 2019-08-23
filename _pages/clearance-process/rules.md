@@ -14,19 +14,19 @@ steps:
   agency: true
   public: false
   omb: false
-- content: "[Agency publishes proposed rule in the Federal Register](#Publish-Proposed-Rule-in-Federal-Register-and-submit-request-to-OMB) and submits a PRA request to OMB"
+- content: "[Agency publishes proposed rule in the Federal Register](#publish-proposed-rule-in-federal-register-and-submit-request-to-omb) and submits a PRA request to OMB"
   agency: true
   public: true
   omb: true
-- content: "[OMB reviews proposed collection](#OMB-reviews-proposed-collection), and any comments received"
+- content: "[OMB reviews proposed collection](#omb-reviews-proposed-collection), and any comments received"
   agency: false
   public: false
   omb: true
-- content: "[Agency considers the public comments on the proposed rule](#Consider-the-public-comments-on-the-proposed-rule) and the information collection"
+- content: "[Agency considers the public comments on the proposed rule](#agency-considers-the-public-comments-on-the-proposed-rule) and the information collection"
   agency: true
   public: false
   omb: false
-- content: "[Publishes Final Rule and submits final request to OMB](#Publishes-Final-Rule-and-submits-final-request-to-OMB)"
+- content: "[Publishes Final Rule and submits final request to OMB](#publishes-final-rule-and-submits-final-request-to-omb)"
   agency: false
   public: false
   omb: true
@@ -34,7 +34,7 @@ steps:
 
 For information collections associated with proposed rules there is a slightly different process that an agency must go through to get OMB approval.
 
-## Process overview for information collections associated with proposed rules 
+## Process overview for information collections associated with proposed rules
 
 {% include process.html steps=page.steps %}
 
