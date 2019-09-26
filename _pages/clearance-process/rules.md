@@ -1,11 +1,11 @@
 ---
 title: PRA approval process associated with rules
 anchors:
-- name: Step 1: Develop the information collection request within your agency
-- name: Step 2: Publish Proposed Rule in Federal Register and submit request to OMB
-- name: Step 3: OMB reviews proposed collection
-- name: Step 4: Agency considers the public comments on the proposed rule
-- name: Step 5: Agency publishes Final Rule and submits final request to OMB
+- name: Step 1\: Develop the information collection request within your agency
+- name: Step 2\: Publish Proposed Rule in Federal Register and submit request to OMB
+- name: Step 3\: OMB reviews proposed collection
+- name: Step 4\: Agency considers the public comments on the proposed rule
+- name: Step 5\: Agency publishes Final Rule and submits final request to OMB
 
 ## Page Content:
 
