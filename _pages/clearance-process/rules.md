@@ -1,7 +1,7 @@
 ---
 title: PRA approval process associated with rules
 anchors:
-- name: Develop the information collection request within your agency
+- name: Step 1: Develop the information collection request within your agency
 - name: Publish Proposed Rule in Federal Register and submit request to OMB
 - name: OMB reviews proposed collection
 - name: Agency considers the public comments on the proposed rule
