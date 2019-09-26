@@ -10,23 +10,23 @@ anchors:
 ## Page Content:
 
 steps:
-- content: "[Agency develops the information request concurrently with the proposed rule.](#Step-1:-develop-the-information-collection-request-within-your-agency) Your agency may have an internal approval process at this stage"
+- content: "[Agency develops the information request concurrently with the proposed rule.](#Step-1\:-develop-the-information-collection-request-within-your-agency) Your agency may have an internal approval process at this stage"
   agency: true
   public: false
   omb: false
-- content: "[Agency publishes proposed rule in the Federal Register soliciting public comment on associated ICRs](#Step-2:-publish-proposed-rule-in-federal-register-and-submit-request-to-omb) and submits a PRA request to OMB"
+- content: "[Agency publishes proposed rule in the Federal Register soliciting public comment on associated ICRs](#Step-2\:-publish-proposed-rule-in-federal-register-and-submit-request-to-omb) and submits a PRA request to OMB"
   agency: true
   public: true
   omb: true
-- content: "[OMB reviews proposed collection](#Step-3:-omb-reviews-proposed-collection), and any comments received"
+- content: "[OMB reviews proposed collection](#Step-3\:-omb-reviews-proposed-collection), and any comments received"
   agency: false
   public: false
   omb: true
-- content: "[Agency considers the public comments on the proposed rule](#Step-4:-agency-considers-the-public-comments-on-the-proposed-rule) and the information collection"
+- content: "[Agency considers the public comments on the proposed rule](#Step-4\:-agency-considers-the-public-comments-on-the-proposed-rule) and the information collection"
   agency: true
   public: false
   omb: false
-- content: "[Agency publishes Final Rule and submits final request to OMB](#Step-5:-agency-publishes-final-rule-and-submits-final-request-to-omb)"
+- content: "[Agency publishes Final Rule and submits final request to OMB](#Step-5\:-agency-publishes-final-rule-and-submits-final-request-to-omb)"
   agency: True
   public: false
   omb: true
