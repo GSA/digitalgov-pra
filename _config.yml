@@ -41,6 +41,7 @@ jekyll_pages_api_search:
 # https://github.com/jekyll/jekyll-redirect-from
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 # Build settings
 scripts:
