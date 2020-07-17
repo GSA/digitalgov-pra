@@ -62,6 +62,7 @@ Asking for information to be sent to the government, for example:
 
 - Direct observation, such as watching how long it takes someone to complete a transaction, or how someone uses a new website to find answers.
 - General requests for public input and comments, such as a “Tell Us About Your Experience” sheet with open-ended space for someone to respond.
+- User research interviews asking the same set of questions to less than ten people.
 - Information for voluntary commercial transactions, like payment and delivery details.
 - Information asked for or received in connection with a public hearing or meeting.
 
