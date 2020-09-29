@@ -10,4 +10,4 @@ group :jekyll_plugins do
   gem 'jekyll-email-protect'
 end
 
-gem "html-proofer"
+gem 'html-proofer', '~> 3.16'
