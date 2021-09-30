@@ -20,7 +20,9 @@ permalink: /additional-resources/
 
 ## PRA Legal Text
 
-Law: [Paperwork Reduction Act of 1995](https://www.congress.gov/bill/104th-congress/senate-bill/244/text) 
+Law: [44 USC Chapter 35](https://www.law.cornell.edu/uscode/text/44/chapter-35)
+
+Legislation: [Paperwork Reduction Act of 1995](https://www.congress.gov/bill/104th-congress/senate-bill/244/text); [Evidence Act of 2018](https://www.congress.gov/bill/115th-congress/house-bill/4174/text)
 
 Regulation: [5 CFR 1320](https://www.govinfo.gov/content/pkg/CFR-2018-title5-vol3/xml/CFR-2018-title5-vol3-part1320.xml)
 
