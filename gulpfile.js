@@ -1,5 +1,4 @@
 var autoprefixer = require("autoprefixer");
-var autoprefixerOptions = require("./node_modules/uswds-gulp/config/browsers");
 var cssnano = require("cssnano");
 var gulp = require("gulp");
 var mqpacker = require("css-mqpacker");
@@ -60,9 +59,11 @@ gulp.task("copy-uswds-js", () => {
 
 gulp.task("build-sass", function(done) {
   var plugins = [
-    autoprefixer(autoprefixerOptions),
+    autoprefixer({
+      cascade: false,
+      grid: true
+    }),
     mqpacker({ sort: true }),
-    cssnano({ autoprefixer: { browsers: autoprefixerOptions } })
   ];
   return gulp
     .src(`${PROJECT_SASS_SRC}/styles.scss`)
