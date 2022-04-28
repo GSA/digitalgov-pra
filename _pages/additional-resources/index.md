@@ -7,7 +7,7 @@ permalink: /additional-resources/
 ## OMB Guidance Memoranda
 
 [Complete Collection of OIRA memos](https://www.whitehouse.gov/omb/information-regulatory-affairs/federal-collection-information/) - including sources on
- * [M-22-10: Lowering Burden to Improve Public Benefits Access](https://www.whitehouse.gov/wp-content/uploads/2022/04/M-22-10.pdf) (PDF, 605 KB, 18 pages) 
+ * [M-22-10: Improving Access to Public Benefits Programs](https://www.whitehouse.gov/wp-content/uploads/2022/04/M-22-10.pdf) (PDF, 605 KB, 18 pages) 
  * [Flexibilities](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/inforeg/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf) (PDF, 2.6 MB, 7 pages) 
  * [Web Technologies](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/inforeg/inforeg/memos/2014/web-based-interactive-technologies-data-search-tools-calculators-paperwork-reduction-act.pdf) (PDF, 2.9 MB, 5 pages) 
  * [PRA Primer](https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/inforeg/PRAPrimer_04072010.pdf) (PDF, 97 kb, 8 pages) 
