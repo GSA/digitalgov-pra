@@ -14,6 +14,8 @@ analytics:
     agency: GSA
     subagency: TTS
 
+url: "https://pra.digital.gov" # the base hostname to generate the sitemap.xml via the jekyll-sitemap plugin
+
 page_gen:
   - index_files: false
     data: terms
