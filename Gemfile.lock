@@ -95,6 +95,7 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer (~> 3.16)
+  jekyll (~> 3.9.2)
   jekyll-email-protect
   jekyll-redirect-from
   jekyll-sitemap
@@ -104,4 +105,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.22
+   2.3.15
