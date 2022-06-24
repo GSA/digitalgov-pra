@@ -1,0 +1,23 @@
+.usa-identifier {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@include at-media("tablet") {
+  .usa-identifier {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.usa-identifier__section--required-links {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@include at-media("desktop") {
+  .usa-identifier__section--required-links {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
