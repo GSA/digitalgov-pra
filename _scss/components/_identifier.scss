@@ -1,23 +1,30 @@
 .usa-identifier {
   font-size: 1rem;
   line-height: 1.5;
+  @include u-bg('indigo-warm-80');
 }
 
-@include at-media("tablet") {
-  .usa-identifier {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+.usa-identifier__identity-disclaimer a {
+  @include u-text("gray-20");
 }
 
-.usa-identifier__section--required-links {
-  font-size: 1rem;
-  line-height: 1.5;
+.usa-identifier__usagov-description a {
+  @include u-text("gray-20");
 }
 
-@include at-media("desktop") {
-  .usa-identifier__section--required-links {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+.usa-identifier__identity-disclaimer a:hover,
+.usa-identifier__identity-disclaimer a:visited,
+.usa-identifier__usagov-description a:hover,
+.usa-identifier__usagov-description a:visited {
+  @include u-text("white");
+}
+
+.usa-identifier__required-links-item,
+.usa-identifier__required-links-item a {
+  @include u-text("gray-20");
+}
+
+.usa-identifier__required-links-item a:hover,
+.usa-identifier__required-links-item a:visited {
+  @include u-text("white");
 }
