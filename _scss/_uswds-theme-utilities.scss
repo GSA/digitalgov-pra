@@ -18,8 +18,12 @@ https://v2.designsystem.digital.gov/utilities
 */
 
 $utilities-use-important:     false;
-$output-all-utilities:        true;
-
+$output-these-utilities: (
+  "add-list-reset",
+  "display",
+  "font",
+  "order"
+);
 /*
 ----------------------------------------
 Utility breakpoints

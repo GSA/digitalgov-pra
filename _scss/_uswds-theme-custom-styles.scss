@@ -20,17 +20,17 @@ i.e.
 ----------------------------------------
 */
 
-@import "components/banner";
-@import "components/buttons";
-@import "components/contacts";
-@import "components/demo";
-@import "components/digital";
-@import "components/footer";
-@import "components/forms";
-@import "components/global";
-@import "components/glossary";
-@import "components/header";
-@import "components/icons";
-@import "components/identifier";
-@import "components/sidenav";
-@import "components/typography";
+@forward "components/banner";
+@forward "components/buttons";
+@forward "components/contacts";
+@forward "components/demo";
+@forward "components/digital";
+@forward "components/footer";
+@forward "components/forms";
+@forward "components/global";
+@forward "components/glossary";
+@forward "components/header";
+@forward "components/icons";
+@forward "components/identifier";
+@forward "components/sidenav";
+@forward "components/typography";
