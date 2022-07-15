@@ -46,6 +46,12 @@ Some information collections are generally not subject to the PRA, including: ce
 
 The [PRA is a law](https://www.congress.gov/bill/104th-congress/senate-bill/244), and compliance is mandatory. Collecting information without clearance can open your work, including decisions made based on the data to legal challenge. If uncleared collections or changes are discovered, OIRA may insist that the collections are stopped. OMB reports these violations to Congress and the President in the Information Collection Budget.
 
+## About
+
+The PRA Guide’s content is maintained by the [Office of Information and Regulatory Affairs (OIRA)](https://www.whitehouse.gov/omb/information-regulatory-affairs/), part of the [Office of Management and Budget (OMB)](https://www.whitehouse.gov/omb/).
+
+This site is a product of [10x investments](https://10x.gsa.gov/), made in collaboration with [18F](https://18f.gsa.gov/) and PRA officers across the federal government, and supported by [Digital.gov](https://digital.gov/).
+
 ## Feedback
 
 This is a preview of the new Guide to the PRA. We welcome your feedback to keep it useful and usable. Send any feedback to  [PRA@omb.eop.gov](mailto:PRA@omb.eop.gov?subject=Feedback%20on%20PRA)
