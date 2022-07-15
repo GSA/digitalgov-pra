@@ -12,5 +12,5 @@
 
 .usa-button--secondary:active,
 .usa-button--secondary.usa-button--active {
-  @include u-bg("secondary-light");
+  @include u-bg("secondary-darker");
 }
