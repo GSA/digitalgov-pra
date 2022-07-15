@@ -7,6 +7,13 @@ github:
   repository: digitalgov-pra
   default_branch: master
 
+analytics:
+  google:
+    code: UA-48605964-53
+  dap:
+    agency: GSA
+    subagency: TTS
+
 url: "https://pra.digital.gov" # the base hostname to generate the sitemap.xml via the jekyll-sitemap plugin
 
 page_gen:
