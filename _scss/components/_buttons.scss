@@ -8,6 +8,7 @@
 .usa-button--secondary.usa-button--hover,
 .usa-button--secondary:focus {
   @include u-bg("secondary-lighter");
+  @include u-text("blue-70v");
 }
 
 .usa-button--secondary:active,
