@@ -3,11 +3,12 @@ var cssnano = require("cssnano");
 var gulp = require("gulp");
 var mqpacker = require("css-mqpacker");
 var path = require("path");
-var pkg = require("./node_modules/uswds/package.json");
+var pkg = require("./node_modules/@uswds/uswds/package.json");
 var postcss = require("gulp-postcss");
 var rename = require("gulp-rename");
 var replace = require("gulp-replace");
-var sass = require("gulp-dart-sass");
+// var sass = require("gulp-dart-sass");
+var sass = require("gulp-sass")(require("sass"));
 var sourcemaps = require("gulp-sourcemaps");
 var uswds = require("./node_modules/uswds-gulp/config/uswds");
 
