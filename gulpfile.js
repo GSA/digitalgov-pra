@@ -10,7 +10,8 @@ var replace = require("gulp-replace");
 // var sass = require("gulp-dart-sass");
 var sass = require("gulp-sass")(require("sass"));
 var sourcemaps = require("gulp-sourcemaps");
-var uswds = require("./node_modules/uswds-gulp/config/uswds");
+// var uswds = require("./node_modules/uswds-gulp/config/uswds");
+var uswds = require("./node_modules/@uswds/uswds");
 
 var watchify = require("watchify");
 var browserify = require("browserify");
