@@ -48,15 +48,15 @@ TASKS
 */
 
 gulp.task("copy-uswds-fonts", () => {
-  return gulp.src(`${uswds}/fonts/**/**`).pipe(gulp.dest(`${FONTS_DEST}`));
+  return gulp.src(`${uswds}/dist/fonts/**/**`).pipe(gulp.dest(`${FONTS_DEST}`));
 });
 
 gulp.task("copy-uswds-images", () => {
-  return gulp.src(`${uswds}/img/**/**`).pipe(gulp.dest(`${IMG_DEST}`));
+  return gulp.src(`${uswds}/dist/img/**/**`).pipe(gulp.dest(`${IMG_DEST}`));
 });
 
 gulp.task("copy-uswds-js", () => {
-  return gulp.src(`${uswds}/js/**/**`).pipe(gulp.dest(`${JS_DEST}`));
+  return gulp.src(`${uswds}/dist/js/**/**`).pipe(gulp.dest(`${JS_DEST}`));
 });
 
 gulp.task("build-sass", function(done) {
@@ -74,8 +74,8 @@ gulp.task("build-sass", function(done) {
       sass({
         includePaths: [
           PROJECT_SASS_SRC,
-          `${uswds}/scss`,
-          `${uswds}/scss/packages`
+          `${uswds}`,
+          `${uswds}/packages`
         ]
       })
     )
