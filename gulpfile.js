@@ -19,6 +19,7 @@ uswds.paths.dist.img = "./assets/uswds/img"
 
 
 exports.init = uswds.init;
+exports.copyFonts = uswds.copyFonts;
 exports.copyImages = uswds.copyImages;
 exports.compile = uswds.compile;
 exports.watch = uswds.watch;
