@@ -1,17 +1,11 @@
 var autoprefixer = require("autoprefixer");
+var sourcemaps = require("gulp-sourcemaps");
 var cssnano = require("cssnano");
 var gulp = require("gulp");
 var mqpacker = require("css-mqpacker");
 var path = require("path");
 var pkg = require("./node_modules/@uswds/uswds/package.json");
-var postcss = require("gulp-postcss");
-var rename = require("gulp-rename");
-var replace = require("gulp-replace");
-// var sass = require("gulp-dart-sass");
 var sass = require("gulp-sass")(require("sass"));
-var sourcemaps = require("gulp-sourcemaps");
-// var uswds = require("./node_modules/uswds-gulp/config/uswds");
-var uswds = require("./node_modules/@uswds/uswds");
 
 var watchify = require("watchify");
 var browserify = require("browserify");
@@ -19,6 +13,13 @@ var source = require("vinyl-source-stream");
 var buffer = require("vinyl-buffer");
 var log = require("gulplog");
 var assign = require("lodash.assign");
+
+// compile
+var uswds = require("@uswds/compile");
+uswds.settings.version = 3;
+uswds.paths.dist.theme = './_scss';
+uswds.paths.dist.css = "./_site/assets/uswds/css";
+
 
 // Project Javascript source directory
 const PROJECT_JS_SRC = "./_js";
@@ -86,7 +87,8 @@ gulp.task("build-sass", function(done) {
 });
 
 var customOpts = {
-  entries: [`${PROJECT_JS_SRC}/index.js`]
+  entries: [`${PROJECT_JS_SRC}/index.js`],
+  detectGlobals: true
 };
 var opts = assign({}, watchify.args, customOpts);
 var b = function() {
@@ -107,22 +109,24 @@ var bundle = function(pkg) {
 
 gulp.task("build-js", bundle.bind(null, b()));
 
-gulp.task(
-  "init",
-  gulp.series(
-    "copy-uswds-fonts",
-    "copy-uswds-images",
-    "copy-uswds-js",
-    "build-js",
-    "build-sass"
-  )
-);
+// gulp.task(
+//   "init",
+//   gulp.series(
+//     "copy-uswds-fonts",
+//     "copy-uswds-images",
+//     "copy-uswds-js",
+//     "build-sass"
+//   )
+// );
 
-gulp.task("watch-js", function() {
-  bundle(w);
-  w.on("update", bundle.bind(null, w));
-  w.on("log", log.info);
-});
+// gulp.task("watch-js", function() {
+//   bundle(w);
+//   w.on("update", bundle.bind(null, w));
+//   w.on("log", log.info);
+// });
+
+exports.init = uswds.init;
+exports.compile = uswds.compile;
 
 gulp.task("watch-sass", function() {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));

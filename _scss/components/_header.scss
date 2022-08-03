@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .usa-logo {
   img {
     width: 252px;
@@ -89,6 +92,11 @@
   }
   @include u-height(10);
 }
+
+.usa-navbar {
+  height: 5rem;
+}
+
 
 .usa-menu-btn,
 .usa-menu-btn:hover {

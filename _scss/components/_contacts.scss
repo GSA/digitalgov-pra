@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .autocomplete__wrapper {
   position: relative;
 }

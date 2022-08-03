@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .usa-sidenav {
   @include u-border-bottom("base");
 

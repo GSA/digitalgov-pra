@@ -20,17 +20,19 @@ i.e.
 ----------------------------------------
 */
 
-@import "components/banner";
-@import "components/buttons";
-@import "components/contacts";
-@import "components/demo";
-@import "components/digital";
-@import "components/footer";
-@import "components/forms";
-@import "components/global";
-@import "components/glossary";
-@import "components/header";
-@import "components/icons";
-@import "components/identifier";
-@import "components/sidenav";
-@import "components/typography";
+@use "uswds-core" as *;
+
+@use "components/banner";
+@use "components/buttons";
+@use "components/contacts";
+@use "components/demo";
+@use "components/digital";
+@use "components/footer";
+@use "components/forms";
+@use "components/global";
+@use "components/glossary";
+@use "components/header";
+@use "components/icons";
+@use "components/identifier";
+@use "components/sidenav";
+@use "components/typography";
