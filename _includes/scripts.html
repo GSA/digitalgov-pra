@@ -20,7 +20,6 @@
 | uniq %}
 {% for _list in _scripts %}{% for _script in _list %}
 {% assign _src = _script.src | default: _script %}
-<script src="{{ /assets/uswds/js/uswds-init.min.js | relative_url }}"></script>
 <script src="{{ _src | replace: _async_marker, '' | relative_url }}" {% if _script.async or _src contains _async_marker %} async{% endif %}></script>
 {% endfor %}{% endfor %}
 

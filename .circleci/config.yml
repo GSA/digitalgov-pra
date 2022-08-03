@@ -35,7 +35,7 @@ jobs:
             - vendor/bundle
       - run:
           name: Build site
-          command: npm run build && bundle exec jekyll build
+          command: bundle exec jekyll build
       - run:
           name: Run tests
           command: bundle exec htmlproofer ./_site --allow-hash-href --disable-external --check_html
