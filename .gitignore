@@ -3,3 +3,11 @@ _site
 .sass-cache
 .jekyll-metadata
 .DS_store
+
+
+assets/uswds/img/material-icons-deprecated/
+assets/uswds/img/material-icons/
+assets/uswds/img/usa-icons-bg/
+assets/uswds/img/usa-icons/
+assets/uswds/img/uswds-icons/
+
