@@ -1,6 +1,7 @@
 @forward "uswds-theme";
-// @forward "uswds";
 
+@forward "uswds-utilities";
+@forward "uswds-global";
 
 @forward "usa-accordion";
 @forward "usa-banner";
@@ -8,22 +9,17 @@
 @forward "usa-footer";
 @forward "usa-header";
 @forward "usa-identifier";
-@forward "usa-nav";
-@forward "usa-sidenav";
-@forward "usa-media-block";
-@forward "usa-search";
-
 @forward "usa-input";
-@forward "usa-range";
-@forward "usa-textarea";
-@forward "usa-select";
-@forward "usa-prose";
-@forward "usa-section";
 @forward "usa-layout-docs";
 @forward "usa-link";
-
-@forward "uswds-utilities";
-@forward "uswds-global";
-
+@forward "usa-media-block";
+@forward "usa-nav";
+@forward "usa-prose";
+@forward "usa-range";
+@forward "usa-search";
+@forward "usa-section";
+@forward "usa-select";
+@forward "usa-sidenav";
+@forward "usa-textarea";
 
 @forward "uswds-theme-custom-styles";
