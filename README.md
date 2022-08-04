@@ -32,6 +32,15 @@ To run the site locally, from the project folder, run:
 npm start
 ```
 
+If you are missing fonts or images, install assets for local development with:
+
+```
+npm build
+```
+
+
+
+
 If all goes well, visit the site at `http://localhost:4000`.
 
 ## Accessibility tests
