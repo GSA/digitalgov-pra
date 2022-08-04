@@ -39,8 +39,6 @@ npm build
 ```
 
 
-
-
 If all goes well, visit the site at `http://localhost:4000`.
 
 ## Accessibility tests
