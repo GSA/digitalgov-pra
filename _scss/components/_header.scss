@@ -109,3 +109,7 @@
   @include u-text("no-uppercase", "primary");
   @include u-width(10);
 }
+
+#search_form {
+  justify-content: end;
+}

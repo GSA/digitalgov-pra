@@ -34,8 +34,9 @@
             <a href="{{ '/contact' | relative_url}}">Get PRA Help</a>
           </li>
         </ul>
-        <form action="{{ '/search/' | relative_url}}" class="usa-search usa-search--small" role="search">
-          <label class="usa-sr-only" for="search-field-en-small">Search</label>
+        <!-- <form id="search_form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get" class="usa-search usa-search--small" role="search">
+          <input type="hidden" name="affiliate" id="affiliate" value="digitalgov-pra" autocomplete="off" />
+          <label class="usa-sr-only" for="search">Search</label>
           <input
             class="usa-input"
             id="search-field-en-small"
@@ -49,7 +50,34 @@
               alt="Search"
             />
           </button>
+        </form> -->
+
+        <form class="usa-search usa-search--small" role="search" id="search_form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
+          <input type="hidden" name="affiliate" id="affiliate" value="digitalgov-pra" autocomplete="off" />
+          <label for="query" class="usa-sr-only"></label>
+          <input type="text" name="query" id="query" autocomplete="off" class="usagov-search-autocomplete" />
+          <!-- <input type="submit" name="commit" value="" data-disable-with="Search" /> -->
+          <button class="usa-button" type="submit">
+            <img
+              src="{{ '/assets/uswds/img/usa-icons-bg/search--white.svg' | relative_url }}"
+              class="usa-search__submit-icon"
+              alt="Search"
+            />
+          </button>
         </form>
+
+        <!-- <form action="https://search.usa.gov/search" accept-charset="UTF-8" method="get" class="usa-search usa-search--small" role="search">
+          <input type="hidden" name="affiliate" id="affiliate" value="digitalgov-pra" autocomplete="off" />
+          <label class="usa-sr-only" for="query">Search</label>
+          <input type="text" name="query" id="query" autocomplete="off" class="usa-input" />
+          <button class="usa-button" type="submit" name="commit">
+            <img
+              src="{{ '/assets/uswds/img/usa-icons-bg/search--white.svg' | relative_url }}"
+              class="usa-search__submit-icon"
+              alt="Search"
+            />
+          </button>
+        </form> -->
       </div>
     </div>
   </nav>
