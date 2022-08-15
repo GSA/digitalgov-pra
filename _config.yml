@@ -56,7 +56,6 @@ plugins:
 # Build settings
 scripts:
   - assets/uswds/js/uswds.min.js
-  - assets/js/bundle.js
 
 sass:
   sass_dir: ./_scss
