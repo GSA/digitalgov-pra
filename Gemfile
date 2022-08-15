@@ -5,7 +5,6 @@ gem "jekyll", "~> 3.9.2"
 gem "jekyll-redirect-from"
 
 group :jekyll_plugins do
-  gem 'jekyll_pages_api_search'
   gem 'jekyll-sitemap'
   gem 'jekyll-email-protect'
 end
