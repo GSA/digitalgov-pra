@@ -57,10 +57,6 @@ plugins:
 scripts:
   - assets/uswds/js/uswds.min.js
 
-sass:
-  sass_dir: ./_scss
-  style: compressed
-
 styles:
   - assets/uswds/css/styles.css
 

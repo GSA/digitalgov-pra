@@ -7,7 +7,7 @@
 
 .usa-sidenav {
   @include u-border-bottom("base");
-  font-size: .88rem;
+  font-size: 0.88rem;
 
   a {
     @include u-padding-y(2);

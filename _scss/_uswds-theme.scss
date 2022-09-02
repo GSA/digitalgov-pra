@@ -17,35 +17,39 @@ in the form $setting: value,
    $theme-color-base-darker: "blue-warm-80",
    $theme-color-base-darkest: "blue-warm-90",
    $theme-color-base-ink: "blue-warm-90",
+
    $theme-color-primary-lightest: "blue-5",
    $theme-color-primary-light: "blue-60",
    $theme-color-primary: "blue-70v",
-
    $theme-color-primary-dark: "blue-70v",
    $theme-color-primary-darker: "blue-70v",
    $theme-color-primary-darkest: "blue-90",
+   $theme-color-primary-vivid: "blue-60v",
+
    $theme-color-secondary-family: "gold",
    $theme-color-secondary-lightest: "gold-5",
    $theme-color-secondary-lighter: "gold-10",
    $theme-color-secondary-light: "gold-30",
    $theme-color-secondary: "gold-50v",
-
    $theme-color-secondary-dark: "gold-50v",
    $theme-color-secondary-darker: "gold-50v",
+
    $theme-color-success-dark:   'green-cool-50',
    $theme-color-success-darker:  'green-cool-60',
+
    $theme-link-color: "blue-60v",
    $theme-link-visited-color: "blue-60v",
    $theme-link-hover-color: "primary",
    $theme-link-active-color: "primary",
 
-   $theme-layout-grid-use-important: false,
+   
    $theme-focus-color: 'secondary-light',
    $theme-focus-offset: 0,
    $theme-focus-style: dotted,
    $theme-focus-width: '2px',
 
    $theme-site-margins-breakpoint:   'desktop',
+   $theme-layout-grid-use-important: false,
 
    $theme-global-link-styles: true,
    $theme-font-type-sans: "public-sans",

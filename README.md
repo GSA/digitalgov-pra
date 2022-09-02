@@ -35,7 +35,7 @@ npm start
 If you are missing fonts or images, install assets for local development with:
 
 ```
-npm build
+npm run build
 ```
 
 

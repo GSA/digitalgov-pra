@@ -93,11 +93,6 @@
   @include u-height(10);
 }
 
-.usa-navbar {
-  height: 5rem;
-}
-
-
 .usa-menu-btn,
 .usa-menu-btn:hover {
   @include u-bg("secondary-lightest");
@@ -110,6 +105,6 @@
   @include u-width(10);
 }
 
-#search_form {
+.site-search {
   justify-content: end;
 }

@@ -27,6 +27,8 @@
   },
   "scripts": {
     "build": "npx gulp updateUswds",
+    "copy-assets": "npx gulp copyAssets",
+    "compile": "npx gulp compile",
     "federalist": "npm run build",
     "prestart": "npm run build",
     "start": "concurrently \"npx gulp watch\" \"bundle exec jekyll serve\"",
