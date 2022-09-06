@@ -3,3 +3,6 @@ _site
 .sass-cache
 .jekyll-metadata
 .DS_store
+
+assets/uswds/img/
+assets/uswds/fonts/

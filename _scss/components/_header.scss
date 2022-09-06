@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .usa-logo {
   img {
     width: 252px;
@@ -100,4 +103,8 @@
   @include u-radius("sm");
   @include u-text("no-uppercase", "primary");
   @include u-width(10);
+}
+
+.site-search {
+  justify-content: end;
 }

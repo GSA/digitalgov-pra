@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 h1,
 .usa-prose > h1 {
   @include u-font($theme-font-role-heading, $theme-h1-mobile-font-size);

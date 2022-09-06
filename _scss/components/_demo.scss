@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .demo{
   @include u-padding-y(4);
   @include u-bg('gold-10');

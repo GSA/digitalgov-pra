@@ -1,0 +1,82 @@
+/*
+----------------------------------------
+USWDS with settings overrides
+----------------------------------------
+Uncomment the following lines and add a list of changed settings
+in the form $setting: value,
+----------------------------------------
+*/
+
+ @use "uswds-core" with (
+   $theme-color-base-family: "gray-cool",
+   $theme-color-base-lightest: "gray-cool-2",
+   $theme-color-base-lighter: "gray-cool-4",
+   $theme-color-base-light: "gray-cool-5",
+   $theme-color-base: "gray-cool-20",
+   $theme-color-base-dark: "blue-warm-80",
+   $theme-color-base-darker: "blue-warm-80",
+   $theme-color-base-darkest: "blue-warm-90",
+   $theme-color-base-ink: "blue-warm-90",
+
+   $theme-color-primary-lightest: "blue-5",
+   $theme-color-primary-light: "blue-60",
+   $theme-color-primary: "blue-70v",
+   $theme-color-primary-dark: "blue-70v",
+   $theme-color-primary-darker: "blue-70v",
+   $theme-color-primary-darkest: "blue-90",
+   $theme-color-primary-vivid: "blue-60v",
+
+   $theme-color-secondary-family: "gold",
+   $theme-color-secondary-lightest: "gold-5",
+   $theme-color-secondary-lighter: "gold-10",
+   $theme-color-secondary-light: "gold-30",
+   $theme-color-secondary: "gold-50v",
+   $theme-color-secondary-dark: "gold-50v",
+   $theme-color-secondary-darker: "gold-50v",
+
+   $theme-color-success-dark:   'green-cool-50',
+   $theme-color-success-darker:  'green-cool-60',
+
+   $theme-link-color: "blue-60v",
+   $theme-link-visited-color: "blue-60v",
+   $theme-link-hover-color: "primary",
+   $theme-link-active-color: "primary",
+
+   
+   $theme-focus-color: 'secondary-light',
+   $theme-focus-offset: 0,
+   $theme-focus-style: dotted,
+   $theme-focus-width: '2px',
+
+   $theme-site-margins-breakpoint:   'desktop',
+   $theme-layout-grid-use-important: false,
+
+   $theme-global-link-styles: true,
+   $theme-font-type-sans: "public-sans",
+   $theme-type-scale-xs: 6,
+   $theme-type-scale-sm: 8,
+   $theme-type-scale-md: 10,
+   $theme-type-scale-lg: 11,
+   $theme-font-weight-semibold: 600,
+   $theme-body-font-size: "xs",
+   $theme-body-line-height: 4,
+   $theme-h4-font-size: "md",
+   $theme-h5-font-size: "sm",
+   $theme-h6-font-size: "xs",
+   $theme-heading-line-height: 3,
+
+   $theme-text-measure: 3,
+   $theme-text-measure-wide: 4,
+   $theme-lead-font-size: "xl",
+   $theme-lead-line-height: 4,
+   $theme-lead-measure: 5,
+
+   $width-settings: (
+     output:    true,
+     responsive:  false,
+     active:    false,
+     focus:    false,
+     hover:    false,
+     visited:   false
+   ),
+  );

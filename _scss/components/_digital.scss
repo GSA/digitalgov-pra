@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .digital-banner {
   @include u-bg("indigo-warm-80");
 

@@ -52,10 +52,10 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 
+
 # Build settings
 scripts:
   - assets/uswds/js/uswds.min.js
-  - assets/js/bundle.js
 
 styles:
   - assets/uswds/css/styles.css

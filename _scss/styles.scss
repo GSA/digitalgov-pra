@@ -1,37 +1,26 @@
-/*
-* * * * * ==============================
-* * * * * ==============================
-* * * * * ==============================
-* * * * * ==============================
-========================================
-========================================
-========================================
-*/
+@forward "uswds-theme";
+@forward "uswds";
 
-// -------------------------------------
-// Import individual theme settings
+// @forward "uswds-utilities";
+// @forward "uswds-global";
+//
+// @forward "usa-accordion";
+// @forward "usa-banner";
+// @forward "usa-button";
+// @forward "usa-footer";
+// @forward "usa-header";
+// @forward "usa-identifier";
+// @forward "usa-input";
+// @forward "usa-layout-docs";
+// @forward "usa-link";
+// @forward "usa-media-block";
+// @forward "usa-nav";
+// @forward "usa-prose";
+// @forward "usa-range";
+// @forward "usa-search";
+// @forward "usa-section";
+// @forward "usa-select";
+// @forward "usa-sidenav";
+// @forward "usa-textarea";
 
-@import 'uswds-theme-general';
-@import 'uswds-theme-typography';
-@import 'uswds-theme-spacing';
-@import 'uswds-theme-color';
-@import 'uswds-theme-utilities';
-@import 'uswds-theme-overrides';
-
-// -------------------------------------
-// Import individual USWDS modules...
-
-// @import 'uswds-fonts';
-// @import 'uswds-layout-grid';
-// @import 'uswds-components';
-// @import 'uswds-utilities';
-
-// -------------------------------------
-// ...or import all USWDS modules
-
-@import 'uswds';
-
-// -------------------------------------
-// Import theme custom styles
-
-@import 'uswds-theme-custom-styles';
+@forward "uswds-theme-custom-styles";

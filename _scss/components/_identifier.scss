@@ -1,4 +1,8 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .usa-identifier {
   font-size: 1rem;
   line-height: 1.5;
+  @include u-bg("indigo-warm-80");
 }

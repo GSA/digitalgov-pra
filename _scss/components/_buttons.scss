@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .usa-button--secondary,
 .usa-button--secondary:visited {
   @include u-text("primary");

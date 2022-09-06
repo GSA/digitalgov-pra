@@ -1,3 +1,6 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
 .home #main-content {
   @include at-media("tablet") {
     background-image: url("../../img/form.png");
