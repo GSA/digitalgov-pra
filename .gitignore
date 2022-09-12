@@ -2,6 +2,7 @@ node_modules
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 .DS_store
 
 assets/uswds/img/
