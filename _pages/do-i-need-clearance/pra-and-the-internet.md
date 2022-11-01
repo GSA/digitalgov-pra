@@ -2,7 +2,7 @@
 title: PRA and the Web
 ---
 
-Using technology is an excellent way to reduce costs to the public while providing a useful service. Some social media and web-based technologies are not subject to the PRA, and don’t need approval; broader clarifications are in the [Social Media Guidance Memo](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/assets/inforeg/SocialMediaGuidance_04072010.pdf).
+Using technology is an excellent way to reduce costs to the public while providing a useful service. Some social media and web-based technologies are not subject to the PRA, and don’t need approval; broader clarifications are in the [Social Media Guidance Memo](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/assets/inforeg/SocialMediaGuidance_04072010.pdf).
 
 ## Email or text subscriptions to alerts and publications
 The collection of mailing addresses, email addresses, or mobile numbers for newsletters, text alerts, agency updates, and other publications doesn’t need PRA approval.
