@@ -1,6 +1,6 @@
 <aside class="usa-layout__docs-sidenav desktop:grid-col-3 margin-top-4 desktop:margin-top-0 padding-top-4 order-last desktop:padding-top-0 desktop:order-first border-base border-top desktop:border-top-0">
   <div class="font-serif-xs margin-bottom-205">In this section:</div>
-  <nav>
+  <nav aria-label="Secondary navigation">
     {% assign _url = page.url | split: '/' %}
     {% assign _parent_dir = _url[1] %}
     {% assign _parent_url = _parent_dir | relative_url | append: '/' %}
