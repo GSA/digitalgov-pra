@@ -5,7 +5,7 @@ email: pra@omb.eop.gov
 github:
   organization: GSA
   repository: digitalgov-pra
-  default_branch: master
+  default_branch: main
 
 analytics:
   google:
