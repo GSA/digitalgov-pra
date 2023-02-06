@@ -97,14 +97,14 @@
     "office": "Office of the Chief Information Officer, Information Resource Management Center",
     "email": "USDA.PRA@usda.gov"
   },
-{
+  {
     "agency": "Federal Deposit Insurance Corporation",
     "short": "FDIC",
     "office": "Legal Division",
     "phone": "202-898-3767",
     "email": "PRA@fdic.gov"
   },
-{
+  {
     "agency": "Department of Homeland Security",
     "short": "DHS",
     "office": "Office of the Chief Information Officer",
@@ -122,7 +122,7 @@
     "office": "Office of Managing Director - Performance Evaluation and Records Management",
     "email": "PRA@fcc.gov"
   },
-   {
+  {
     "agency": "Health Resources and Services Administration",
     "short": "HRSA",
     "office": "Office of Planning, Analysis and Evaluation",
@@ -133,11 +133,11 @@
     "short": "NIH",
     "office": "Office of Policy for Extramural Research Administration, Project Clearance Branch",
     "email": "projectclearancebranch@mail.nih.gov"
-  }, 
+  },
   {
     "agency": "National Archives & Records Administration",
     "short": "NARA",
     "office": "Office of the Chief of Management and Administration",
     "email": "surveys@nara.gov"
-  },
+  }
 ]
