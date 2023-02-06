@@ -27,6 +27,7 @@
   },
   "scripts": {
     "build": "npx gulp updateUswds",
+    "build:js": "esbuild _js/index.js --bundle --outfile=assets/uswds/js/bundle.js",
     "copy-assets": "npx gulp copyAssets",
     "compile": "npx gulp compile",
     "federalist": "npm run build",
@@ -44,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/GSA/digitalgov-pra/issues"
   },
-  "homepage": "https://github.com/GSA/digitalgov-pra#readme"
+  "homepage": "https://github.com/GSA/digitalgov-pra#readme",
+  "devDependencies": {
+    "esbuild": "0.17.5"
+  }
 }
