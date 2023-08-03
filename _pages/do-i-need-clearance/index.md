@@ -52,6 +52,7 @@ Asking for information to be sent to the government, for example:
 - Forms, such as the IRS 1040.
 - Written reports, such as grantee performance reports.
 - Surveys, such as customer satisfaction or behavioral surveys.
+- User research screeners. Even if you plan on recruiting 9 or fewer participants, there is a chance that more than 9 people will fill out your screener.
 - Recordkeeping requirements, such as small businesses keeping all tax-related documents for 3 years.
 - Third-party or public disclosures, such as nutrition labeling requirements for food.
 - Program evaluations, such as looking at the outcomes of a subsidized housing initiative for seniors.
