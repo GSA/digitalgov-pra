@@ -33,7 +33,7 @@ In general, the PRA applies even when information is collected from non-US citiz
 
 ### Ten or more people or groups
 
-Over a 12-month period, if you are requesting the same information from ten or more people or entities, you need PRA clearance.
+Over a 12-month period, if you are requesting the same information from ten or more people or entities, you need PRA clearance. If you are only seeking 9 respondents, but more than 10 people can respond, you may also need clearance. 
 
 If you’re requesting information from fewer than ten people or groups, but they represent the majority or all of an industry or sector, you may need PRA clearance.
 
