@@ -37,7 +37,8 @@
     "underscore": "^1.13.6"
   },
   "devDependencies": {
-    "esbuild": "0.19.6"
+    "esbuild": "0.19.6",
+    "snyk": "^1.1274.0"
   },
   "overrides": {
     "glob-parent": "6.0.2"
