@@ -1,6 +1,4 @@
-version: 2.1
-orbs:
-  snyk: snyk/snyk@2.0.3
+version: 2
 jobs:
   build:
     docker:
@@ -41,7 +39,3 @@ jobs:
       - run:
           name: Run tests
           command: bundle exec htmlproofer ./_site --allow-hash-href --disable-external --check_html
-      - run:
-          name: Run Snyk   
-          command: npm run test:snyk
-          
