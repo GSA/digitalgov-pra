@@ -36,6 +36,10 @@
     "definition": "Status for collections that do not require OMB approval under specific statutory reasons, despite otherwise meeting the criteria."
   },
   {
+    "term": "extension request",
+    "definition": "A request to extend the approval of a currently approved collection without making any material changes."
+  },
+  {
     "term": "fast-track",
     "definition": "The process for approval for a collection already covered by an existing generic clearance."
   },
@@ -98,6 +102,14 @@
   {
     "term": "recordkeeping",
     "definition": "The practice and process of organizing and maintaining information, documents, or data as required by an agency's guidelines."
+  },
+  {
+    "term": "reinstatement request",
+    "definition": "A request for OMB approval of a previously approved collection that either was discontinued or expired."
+  },
+  {
+    "term": "revision request",
+    "definition": "A request to materially change a currently approved collection, such as updating the collection instrument, instructions, or its frequency. Also requests to extend the approval period."
   },
   {
     "term": "ROCIS",
