@@ -197,12 +197,12 @@
             return Object.prototype.hasOwnProperty.call(e, t);
           }, o.p = "/", o(o.s = 37);
         }([function(e, t, n) {
-          var m = n(1), v = n(6), y = n(7), _3 = n(16), b = n(18), g = "prototype", x = function(e2, t2, n2) {
-            var r, o, i, u, l = e2 & x.F, a = e2 & x.G, s = e2 & x.S, c = e2 & x.P, p = e2 & x.B, f = a ? m : s ? m[t2] || (m[t2] = {}) : (m[t2] || {})[g], d = a ? v : v[t2] || (v[t2] = {}), h = d[g] || (d[g] = {});
-            for (r in a && (n2 = t2), n2)
-              i = ((o = !l && f && f[r] !== void 0) ? f : n2)[r], u = p && o ? b(i, m) : c && "function" == typeof i ? b(Function.call, i) : i, f && _3(f, r, i, e2 & x.U), d[r] != i && y(d, r, u), c && h[r] != i && (h[r] = i);
+          var m = n(1), v = n(6), y = n(7), g = n(16), _3 = n(18), b = "prototype", w = function(e2, t2, n2) {
+            var r, o, i, u, a = e2 & w.F, s = e2 & w.G, l = e2 & w.S, c = e2 & w.P, p = e2 & w.B, f = s ? m : l ? m[t2] || (m[t2] = {}) : (m[t2] || {})[b], d = s ? v : v[t2] || (v[t2] = {}), h = d[b] || (d[b] = {});
+            for (r in s && (n2 = t2), n2)
+              i = ((o = !a && f && f[r] !== void 0) ? f : n2)[r], u = p && o ? _3(i, m) : c && "function" == typeof i ? _3(Function.call, i) : i, f && g(f, r, i, e2 & w.U), d[r] != i && y(d, r, u), c && h[r] != i && (h[r] = i);
           };
-          m.core = v, x.F = 1, x.G = 2, x.S = 4, x.P = 8, x.B = 16, x.W = 32, x.U = 64, x.R = 128, e.exports = x;
+          m.core = v, w.F = 1, w.G = 2, w.S = 4, w.P = 8, w.B = 16, w.W = 32, w.U = 64, w.R = 128, e.exports = w;
         }, function(e, t) {
           var n = e.exports = "undefined" != typeof window && window.Math == Math ? window : "undefined" != typeof self && self.Math == Math ? self : Function("return this")();
           "number" == typeof __g && (__g = n);
@@ -233,40 +233,40 @@
           }), n.d(t, "cloneElement", function() {
             return i;
           }), n.d(t, "Component", function() {
-            return _3;
+            return g;
           }), n.d(t, "render", function() {
-            return b;
+            return _3;
           }), n.d(t, "rerender", function() {
             return f;
           }), n.d(t, "options", function() {
             return E;
           });
-          var a = function a2() {
-          }, E = {}, s = [], c = [];
+          var s = function s2() {
+          }, E = {}, l = [], c = [];
           function r(e2, t2) {
             var n2, r2, o2, i2, u2 = c;
             for (i2 = arguments.length; 2 < i2--; )
-              s.push(arguments[i2]);
-            for (t2 && null != t2.children && (s.length || s.push(t2.children), delete t2.children); s.length; )
-              if ((r2 = s.pop()) && r2.pop !== void 0)
+              l.push(arguments[i2]);
+            for (t2 && null != t2.children && (l.length || l.push(t2.children), delete t2.children); l.length; )
+              if ((r2 = l.pop()) && r2.pop !== void 0)
                 for (i2 = r2.length; i2--; )
-                  s.push(r2[i2]);
+                  l.push(r2[i2]);
               else
                 "boolean" == typeof r2 && (r2 = null), (o2 = "function" != typeof e2) && (null == r2 ? r2 = "" : "number" == typeof r2 ? r2 = String(r2) : "string" != typeof r2 && (o2 = false)), o2 && n2 ? u2[u2.length - 1] += r2 : u2 === c ? u2 = [r2] : u2.push(r2), n2 = o2;
-            var l2 = new a();
-            return l2.nodeName = e2, l2.children = u2, l2.attributes = null == t2 ? void 0 : t2, l2.key = null == t2 ? void 0 : t2.key, E.vnode !== void 0 && E.vnode(l2), l2;
+            var a2 = new s();
+            return a2.nodeName = e2, a2.children = u2, a2.attributes = null == t2 ? void 0 : t2, a2.key = null == t2 ? void 0 : t2.key, E.vnode !== void 0 && E.vnode(a2), a2;
           }
-          function N(e2, t2) {
+          function M(e2, t2) {
             for (var n2 in t2)
               e2[n2] = t2[n2];
             return e2;
           }
           var o = "function" == typeof Promise ? Promise.resolve().then.bind(Promise.resolve()) : setTimeout;
           function i(e2, t2) {
-            return r(e2.nodeName, N(N({}, e2.attributes), t2), 2 < arguments.length ? [].slice.call(arguments, 2) : e2.children);
+            return r(e2.nodeName, M(M({}, e2.attributes), t2), 2 < arguments.length ? [].slice.call(arguments, 2) : e2.children);
           }
           var p = /acit|ex(?:s|g|n|p|$)|rph|ows|mnc|ntw|ine[ch]|zoo|^ord/i, u = [];
-          function l(e2) {
+          function a(e2) {
             !e2._dirty && (e2._dirty = true) && 1 == u.push(e2) && (E.debounceRendering || o)(f);
           }
           function f() {
@@ -274,11 +274,11 @@
             for (u = []; e2 = t2.pop(); )
               e2._dirty && V(e2);
           }
-          function k(e2, t2) {
+          function N(e2, t2) {
             return e2.normalizedNodeName === t2 || e2.nodeName.toLowerCase() === t2.toLowerCase();
           }
           function I(e2) {
-            var t2 = N({}, e2.attributes);
+            var t2 = M({}, e2.attributes);
             t2.children = e2.children;
             var n2 = e2.nodeName.defaultProps;
             if (n2 !== void 0)
@@ -286,7 +286,7 @@
                 t2[r2] === void 0 && (t2[r2] = n2[r2]);
             return t2;
           }
-          function P(e2) {
+          function k(e2) {
             var t2 = e2.parentNode;
             t2 && t2.removeChild(e2);
           }
@@ -312,12 +312,12 @@
               } else if ("list" !== t2 && "type" !== t2 && !o2 && t2 in e2) {
                 try {
                   e2[t2] = null == r2 ? "" : r2;
-                } catch (a2) {
+                } catch (s2) {
                 }
                 null != r2 && false !== r2 || "spellcheck" == t2 || e2.removeAttribute(t2);
               } else {
-                var l2 = o2 && t2 !== (t2 = t2.replace(/^xlink:?/, ""));
-                null == r2 || false === r2 ? l2 ? e2.removeAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase()) : e2.removeAttribute(t2) : "function" != typeof r2 && (l2 ? e2.setAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase(), r2) : e2.setAttribute(t2, r2));
+                var a2 = o2 && t2 !== (t2 = t2.replace(/^xlink:?/, ""));
+                null == r2 || false === r2 ? a2 ? e2.removeAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase()) : e2.removeAttribute(t2) : "function" != typeof r2 && (a2 ? e2.setAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase(), r2) : e2.setAttribute(t2, r2));
               }
             else
               e2.className = r2 || "";
@@ -325,93 +325,93 @@
           function d(e2) {
             return this._listeners[e2.type](E.event && E.event(e2) || e2);
           }
-          var M = [], j = 0, A = false, T = false;
-          function L() {
-            for (var e2; e2 = M.pop(); )
+          var A = [], P = 0, j = false, L = false;
+          function T() {
+            for (var e2; e2 = A.pop(); )
               E.afterMount && E.afterMount(e2), e2.componentDidMount && e2.componentDidMount();
           }
           function B(e2, t2, n2, r2, o2, i2) {
-            j++ || (A = null != o2 && o2.ownerSVGElement !== void 0, T = null != e2 && !("__preactattr_" in e2));
-            var u2 = F(e2, t2, n2, r2, i2);
-            return o2 && u2.parentNode !== o2 && o2.appendChild(u2), --j || (T = false, i2 || L()), u2;
+            P++ || (j = null != o2 && o2.ownerSVGElement !== void 0, L = null != e2 && !("__preactattr_" in e2));
+            var u2 = D(e2, t2, n2, r2, i2);
+            return o2 && u2.parentNode !== o2 && o2.appendChild(u2), --P || (L = false, i2 || T()), u2;
           }
-          function F(e2, t2, n2, r2, o2) {
-            var i2 = e2, u2 = A;
+          function D(e2, t2, n2, r2, o2) {
+            var i2 = e2, u2 = j;
             if (null != t2 && "boolean" != typeof t2 || (t2 = ""), "string" == typeof t2 || "number" == typeof t2)
-              return e2 && e2.splitText !== void 0 && e2.parentNode && (!e2._component || o2) ? e2.nodeValue != t2 && (e2.nodeValue = t2) : (i2 = document.createTextNode(t2), e2 && (e2.parentNode && e2.parentNode.replaceChild(i2, e2), D(e2, true))), i2["__preactattr_"] = true, i2;
-            var l2 = t2.nodeName;
-            if ("function" == typeof l2)
+              return e2 && e2.splitText !== void 0 && e2.parentNode && (!e2._component || o2) ? e2.nodeValue != t2 && (e2.nodeValue = t2) : (i2 = document.createTextNode(t2), e2 && (e2.parentNode && e2.parentNode.replaceChild(i2, e2), F(e2, true))), i2["__preactattr_"] = true, i2;
+            var a2 = t2.nodeName;
+            if ("function" == typeof a2)
               return function d2(e3, t3, n3, r3) {
-                var o3 = e3 && e3._component, i3 = o3, u3 = e3, l3 = o3 && e3._componentConstructor === t3.nodeName, a3 = l3, s3 = I(t3);
-                for (; o3 && !a3 && (o3 = o3._parentComponent); )
-                  a3 = o3.constructor === t3.nodeName;
-                o3 && a3 && (!r3 || o3._component) ? (U(o3, s3, 3, n3, r3), e3 = o3.base) : (i3 && !l3 && (q(i3), e3 = u3 = null), o3 = R(t3.nodeName, s3, n3), e3 && !o3.nextBase && (o3.nextBase = e3, u3 = null), U(o3, s3, 1, n3, r3), e3 = o3.base, u3 && e3 !== u3 && (u3._component = null, D(u3, false)));
+                var o3 = e3 && e3._component, i3 = o3, u3 = e3, a3 = o3 && e3._componentConstructor === t3.nodeName, s3 = a3, l3 = I(t3);
+                for (; o3 && !s3 && (o3 = o3._parentComponent); )
+                  s3 = o3.constructor === t3.nodeName;
+                o3 && s3 && (!r3 || o3._component) ? (U(o3, l3, 3, n3, r3), e3 = o3.base) : (i3 && !a3 && (q(i3), e3 = u3 = null), o3 = R(t3.nodeName, l3, n3), e3 && !o3.nextBase && (o3.nextBase = e3, u3 = null), U(o3, l3, 1, n3, r3), e3 = o3.base, u3 && e3 !== u3 && (u3._component = null, F(u3, false)));
                 return e3;
               }(e2, t2, n2, r2);
-            if (A = "svg" === l2 || "foreignObject" !== l2 && A, l2 = String(l2), (!e2 || !k(e2, l2)) && (i2 = function h2(e3, t3) {
+            if (j = "svg" === a2 || "foreignObject" !== a2 && j, a2 = String(a2), (!e2 || !N(e2, a2)) && (i2 = function h2(e3, t3) {
               var n3 = t3 ? document.createElementNS("http://www.w3.org/2000/svg", e3) : document.createElement(e3);
               return n3.normalizedNodeName = e3, n3;
-            }(l2, A), e2)) {
+            }(a2, j), e2)) {
               for (; e2.firstChild; )
                 i2.appendChild(e2.firstChild);
-              e2.parentNode && e2.parentNode.replaceChild(i2, e2), D(e2, true);
+              e2.parentNode && e2.parentNode.replaceChild(i2, e2), F(e2, true);
             }
-            var a2 = i2.firstChild, s2 = i2["__preactattr_"], c2 = t2.children;
-            if (null == s2) {
-              s2 = i2["__preactattr_"] = {};
+            var s2 = i2.firstChild, l2 = i2["__preactattr_"], c2 = t2.children;
+            if (null == l2) {
+              l2 = i2["__preactattr_"] = {};
               for (var p2 = i2.attributes, f2 = p2.length; f2--; )
-                s2[p2[f2].name] = p2[f2].value;
+                l2[p2[f2].name] = p2[f2].value;
             }
-            return !T && c2 && 1 === c2.length && "string" == typeof c2[0] && null != a2 && a2.splitText !== void 0 && null == a2.nextSibling ? a2.nodeValue != c2[0] && (a2.nodeValue = c2[0]) : (c2 && c2.length || null != a2) && function S(e3, t3, n3, r3, o3) {
-              var i3, u3, l3, a3, s3, c3 = e3.childNodes, p3 = [], f3 = {}, d2 = 0, h2 = 0, m2 = c3.length, v2 = 0, y2 = t3 ? t3.length : 0;
+            return !L && c2 && 1 === c2.length && "string" == typeof c2[0] && null != s2 && s2.splitText !== void 0 && null == s2.nextSibling ? s2.nodeValue != c2[0] && (s2.nodeValue = c2[0]) : (c2 && c2.length || null != s2) && function S(e3, t3, n3, r3, o3) {
+              var i3, u3, a3, s3, l3, c3 = e3.childNodes, p3 = [], f3 = {}, d2 = 0, h2 = 0, m2 = c3.length, v2 = 0, y2 = t3 ? t3.length : 0;
               if (0 !== m2)
-                for (var _4 = 0; _4 < m2; _4++) {
-                  var b2 = c3[_4], g2 = b2["__preactattr_"], x = y2 && g2 ? b2._component ? b2._component.__key : g2.key : null;
-                  null != x ? (d2++, f3[x] = b2) : (g2 || (b2.splitText !== void 0 ? !o3 || b2.nodeValue.trim() : o3)) && (p3[v2++] = b2);
+                for (var g2 = 0; g2 < m2; g2++) {
+                  var _4 = c3[g2], b2 = _4["__preactattr_"], w = y2 && b2 ? _4._component ? _4._component.__key : b2.key : null;
+                  null != w ? (d2++, f3[w] = _4) : (b2 || (_4.splitText !== void 0 ? !o3 || _4.nodeValue.trim() : o3)) && (p3[v2++] = _4);
                 }
               if (0 !== y2)
-                for (var _4 = 0; _4 < y2; _4++) {
-                  a3 = t3[_4], s3 = null;
-                  var x = a3.key;
-                  if (null != x)
-                    d2 && f3[x] !== void 0 && (s3 = f3[x], f3[x] = void 0, d2--);
+                for (var g2 = 0; g2 < y2; g2++) {
+                  s3 = t3[g2], l3 = null;
+                  var w = s3.key;
+                  if (null != w)
+                    d2 && f3[w] !== void 0 && (l3 = f3[w], f3[w] = void 0, d2--);
                   else if (h2 < v2) {
                     for (i3 = h2; i3 < v2; i3++)
-                      if (p3[i3] !== void 0 && (w = u3 = p3[i3], C = o3, "string" == typeof (O = a3) || "number" == typeof O ? w.splitText !== void 0 : "string" == typeof O.nodeName ? !w._componentConstructor && k(w, O.nodeName) : C || w._componentConstructor === O.nodeName)) {
-                        s3 = u3, p3[i3] = void 0, i3 === v2 - 1 && v2--, i3 === h2 && h2++;
+                      if (p3[i3] !== void 0 && (x = u3 = p3[i3], C = o3, "string" == typeof (O = s3) || "number" == typeof O ? x.splitText !== void 0 : "string" == typeof O.nodeName ? !x._componentConstructor && N(x, O.nodeName) : C || x._componentConstructor === O.nodeName)) {
+                        l3 = u3, p3[i3] = void 0, i3 === v2 - 1 && v2--, i3 === h2 && h2++;
                         break;
                       }
                   }
-                  s3 = F(s3, a3, n3, r3), l3 = c3[_4], s3 && s3 !== e3 && s3 !== l3 && (null == l3 ? e3.appendChild(s3) : s3 === l3.nextSibling ? P(l3) : e3.insertBefore(s3, l3));
+                  l3 = D(l3, s3, n3, r3), a3 = c3[g2], l3 && l3 !== e3 && l3 !== a3 && (null == a3 ? e3.appendChild(l3) : l3 === a3.nextSibling ? k(a3) : e3.insertBefore(l3, a3));
                 }
-              var w, O, C;
+              var x, O, C;
               if (d2)
-                for (var _4 in f3)
-                  f3[_4] !== void 0 && D(f3[_4], false);
+                for (var g2 in f3)
+                  f3[g2] !== void 0 && F(f3[g2], false);
               for (; h2 <= v2; )
-                (s3 = p3[v2--]) !== void 0 && D(s3, false);
-            }(i2, c2, n2, r2, T || null != s2.dangerouslySetInnerHTML), function m2(e3, t3, n3) {
+                (l3 = p3[v2--]) !== void 0 && F(l3, false);
+            }(i2, c2, n2, r2, L || null != l2.dangerouslySetInnerHTML), function m2(e3, t3, n3) {
               var r3;
               for (r3 in n3)
-                t3 && null != t3[r3] || null == n3[r3] || v(e3, r3, n3[r3], n3[r3] = void 0, A);
+                t3 && null != t3[r3] || null == n3[r3] || v(e3, r3, n3[r3], n3[r3] = void 0, j);
               for (r3 in t3)
-                "children" === r3 || "innerHTML" === r3 || r3 in n3 && t3[r3] === ("value" === r3 || "checked" === r3 ? e3[r3] : n3[r3]) || v(e3, r3, n3[r3], n3[r3] = t3[r3], A);
-            }(i2, t2.attributes, s2), A = u2, i2;
+                "children" === r3 || "innerHTML" === r3 || r3 in n3 && t3[r3] === ("value" === r3 || "checked" === r3 ? e3[r3] : n3[r3]) || v(e3, r3, n3[r3], n3[r3] = t3[r3], j);
+            }(i2, t2.attributes, l2), j = u2, i2;
           }
-          function D(e2, t2) {
+          function F(e2, t2) {
             var n2 = e2._component;
-            n2 ? q(n2) : (null != e2["__preactattr_"] && e2["__preactattr_"].ref && e2["__preactattr_"].ref(null), false !== t2 && null != e2["__preactattr_"] || P(e2), h(e2));
+            n2 ? q(n2) : (null != e2["__preactattr_"] && e2["__preactattr_"].ref && e2["__preactattr_"].ref(null), false !== t2 && null != e2["__preactattr_"] || k(e2), h(e2));
           }
           function h(e2) {
             for (e2 = e2.lastChild; e2; ) {
               var t2 = e2.previousSibling;
-              D(e2, true), e2 = t2;
+              F(e2, true), e2 = t2;
             }
           }
           var m = [];
           function R(e2, t2, n2) {
             var r2, o2 = m.length;
-            for (e2.prototype && e2.prototype.render ? (r2 = new e2(t2, n2), _3.call(r2, t2, n2)) : ((r2 = new _3(t2, n2)).constructor = e2, r2.render = y); o2--; )
+            for (e2.prototype && e2.prototype.render ? (r2 = new e2(t2, n2), g.call(r2, t2, n2)) : ((r2 = new g(t2, n2)).constructor = e2, r2.render = y); o2--; )
               if (m[o2].constructor === e2)
                 return r2.nextBase = m[o2].nextBase, m.splice(o2, 1), r2;
             return r2;
@@ -420,36 +420,36 @@
             return this.constructor(e2, n2);
           }
           function U(e2, t2, n2, r2, o2) {
-            e2._disable || (e2._disable = true, e2.__ref = t2.ref, e2.__key = t2.key, delete t2.ref, delete t2.key, "undefined" == typeof e2.constructor.getDerivedStateFromProps && (!e2.base || o2 ? e2.componentWillMount && e2.componentWillMount() : e2.componentWillReceiveProps && e2.componentWillReceiveProps(t2, r2)), r2 && r2 !== e2.context && (e2.prevContext || (e2.prevContext = e2.context), e2.context = r2), e2.prevProps || (e2.prevProps = e2.props), e2.props = t2, e2._disable = false, 0 !== n2 && (1 !== n2 && false === E.syncComponentUpdates && e2.base ? l(e2) : V(e2, 1, o2)), e2.__ref && e2.__ref(e2));
+            e2._disable || (e2._disable = true, e2.__ref = t2.ref, e2.__key = t2.key, delete t2.ref, delete t2.key, "undefined" == typeof e2.constructor.getDerivedStateFromProps && (!e2.base || o2 ? e2.componentWillMount && e2.componentWillMount() : e2.componentWillReceiveProps && e2.componentWillReceiveProps(t2, r2)), r2 && r2 !== e2.context && (e2.prevContext || (e2.prevContext = e2.context), e2.context = r2), e2.prevProps || (e2.prevProps = e2.props), e2.props = t2, e2._disable = false, 0 !== n2 && (1 !== n2 && false === E.syncComponentUpdates && e2.base ? a(e2) : V(e2, 1, o2)), e2.__ref && e2.__ref(e2));
           }
           function V(e2, t2, n2, r2) {
             if (!e2._disable) {
-              var o2, i2, u2, l2 = e2.props, a2 = e2.state, s2 = e2.context, c2 = e2.prevProps || l2, p2 = e2.prevState || a2, f2 = e2.prevContext || s2, d2 = e2.base, h2 = e2.nextBase, m2 = d2 || h2, v2 = e2._component, y2 = false, _4 = f2;
-              if (e2.constructor.getDerivedStateFromProps && (a2 = N(N({}, a2), e2.constructor.getDerivedStateFromProps(l2, a2)), e2.state = a2), d2 && (e2.props = c2, e2.state = p2, e2.context = f2, 2 !== t2 && e2.shouldComponentUpdate && false === e2.shouldComponentUpdate(l2, a2, s2) ? y2 = true : e2.componentWillUpdate && e2.componentWillUpdate(l2, a2, s2), e2.props = l2, e2.state = a2, e2.context = s2), e2.prevProps = e2.prevState = e2.prevContext = e2.nextBase = null, e2._dirty = false, !y2) {
-                o2 = e2.render(l2, a2, s2), e2.getChildContext && (s2 = N(N({}, s2), e2.getChildContext())), d2 && e2.getSnapshotBeforeUpdate && (_4 = e2.getSnapshotBeforeUpdate(c2, p2));
-                var b2, g2, x = o2 && o2.nodeName;
-                if ("function" == typeof x) {
-                  var w = I(o2);
-                  (i2 = v2) && i2.constructor === x && w.key == i2.__key ? U(i2, w, 1, s2, false) : (b2 = i2, e2._component = i2 = R(x, w, s2), i2.nextBase = i2.nextBase || h2, i2._parentComponent = e2, U(i2, w, 0, s2, false), V(i2, 1, n2, true)), g2 = i2.base;
+              var o2, i2, u2, a2 = e2.props, s2 = e2.state, l2 = e2.context, c2 = e2.prevProps || a2, p2 = e2.prevState || s2, f2 = e2.prevContext || l2, d2 = e2.base, h2 = e2.nextBase, m2 = d2 || h2, v2 = e2._component, y2 = false, g2 = f2;
+              if (e2.constructor.getDerivedStateFromProps && (s2 = M(M({}, s2), e2.constructor.getDerivedStateFromProps(a2, s2)), e2.state = s2), d2 && (e2.props = c2, e2.state = p2, e2.context = f2, 2 !== t2 && e2.shouldComponentUpdate && false === e2.shouldComponentUpdate(a2, s2, l2) ? y2 = true : e2.componentWillUpdate && e2.componentWillUpdate(a2, s2, l2), e2.props = a2, e2.state = s2, e2.context = l2), e2.prevProps = e2.prevState = e2.prevContext = e2.nextBase = null, e2._dirty = false, !y2) {
+                o2 = e2.render(a2, s2, l2), e2.getChildContext && (l2 = M(M({}, l2), e2.getChildContext())), d2 && e2.getSnapshotBeforeUpdate && (g2 = e2.getSnapshotBeforeUpdate(c2, p2));
+                var _4, b2, w = o2 && o2.nodeName;
+                if ("function" == typeof w) {
+                  var x = I(o2);
+                  (i2 = v2) && i2.constructor === w && x.key == i2.__key ? U(i2, x, 1, l2, false) : (_4 = i2, e2._component = i2 = R(w, x, l2), i2.nextBase = i2.nextBase || h2, i2._parentComponent = e2, U(i2, x, 0, l2, false), V(i2, 1, n2, true)), b2 = i2.base;
                 } else
-                  u2 = m2, (b2 = v2) && (u2 = e2._component = null), (m2 || 1 === t2) && (u2 && (u2._component = null), g2 = function B2(t3, n3, r3, o3, i3, u3) {
-                    j++ || (A = null != i3 && i3.ownerSVGElement !== void 0, T = null != t3 && !("__preactattr_" in t3));
-                    var l3 = F(t3, n3, r3, o3, u3);
-                    return i3 && l3.parentNode !== i3 && i3.appendChild(l3), --j || (T = false, u3 || L()), l3;
-                  }(u2, o2, s2, n2 || !d2, m2 && m2.parentNode, true));
-                if (m2 && g2 !== m2 && i2 !== v2) {
+                  u2 = m2, (_4 = v2) && (u2 = e2._component = null), (m2 || 1 === t2) && (u2 && (u2._component = null), b2 = function B2(t3, n3, r3, o3, i3, u3) {
+                    P++ || (j = null != i3 && i3.ownerSVGElement !== void 0, L = null != t3 && !("__preactattr_" in t3));
+                    var a3 = D(t3, n3, r3, o3, u3);
+                    return i3 && a3.parentNode !== i3 && i3.appendChild(a3), --P || (L = false, u3 || T()), a3;
+                  }(u2, o2, l2, n2 || !d2, m2 && m2.parentNode, true));
+                if (m2 && b2 !== m2 && i2 !== v2) {
                   var O = m2.parentNode;
-                  O && g2 !== O && (O.replaceChild(g2, m2), b2 || (m2._component = null, D(m2, false)));
+                  O && b2 !== O && (O.replaceChild(b2, m2), _4 || (m2._component = null, F(m2, false)));
                 }
-                if (b2 && q(b2), (e2.base = g2) && !r2) {
+                if (_4 && q(_4), (e2.base = b2) && !r2) {
                   for (var C = e2, S = e2; S = S._parentComponent; )
-                    (C = S).base = g2;
-                  g2._component = C, g2._componentConstructor = C.constructor;
+                    (C = S).base = b2;
+                  b2._component = C, b2._componentConstructor = C.constructor;
                 }
               }
-              for (!d2 || n2 ? M.unshift(e2) : y2 || (e2.componentDidUpdate && e2.componentDidUpdate(c2, p2, _4), E.afterUpdate && E.afterUpdate(e2)); e2._renderCallbacks.length; )
+              for (!d2 || n2 ? A.unshift(e2) : y2 || (e2.componentDidUpdate && e2.componentDidUpdate(c2, p2, g2), E.afterUpdate && E.afterUpdate(e2)); e2._renderCallbacks.length; )
                 e2._renderCallbacks.pop().call(e2);
-              j || r2 || L();
+              P || r2 || T();
             }
           }
           function q(e2) {
@@ -457,22 +457,22 @@
             var t2 = e2.base;
             e2._disable = true, e2.componentWillUnmount && e2.componentWillUnmount(), e2.base = null;
             var n2 = e2._component;
-            n2 ? q(n2) : t2 && (t2["__preactattr_"] && t2["__preactattr_"].ref && t2["__preactattr_"].ref(null), P(e2.nextBase = t2), m.push(e2), h(t2)), e2.__ref && e2.__ref(null);
+            n2 ? q(n2) : t2 && (t2["__preactattr_"] && t2["__preactattr_"].ref && t2["__preactattr_"].ref(null), k(e2.nextBase = t2), m.push(e2), h(t2)), e2.__ref && e2.__ref(null);
           }
-          function _3(e2, t2) {
+          function g(e2, t2) {
             this._dirty = true, this.context = t2, this.props = e2, this.state = this.state || {}, this._renderCallbacks = [];
           }
-          function b(e2, t2, n2) {
+          function _3(e2, t2, n2) {
             return B(n2, e2, {}, false, t2, false);
           }
-          N(_3.prototype, { setState: function(e2, t2) {
-            this.prevState || (this.prevState = this.state), this.state = N(N({}, this.state), "function" == typeof e2 ? e2(this.state, this.props) : e2), t2 && this._renderCallbacks.push(t2), l(this);
+          M(g.prototype, { setState: function(e2, t2) {
+            this.prevState || (this.prevState = this.state), this.state = M(M({}, this.state), "function" == typeof e2 ? e2(this.state, this.props) : e2), t2 && this._renderCallbacks.push(t2), a(this);
           }, forceUpdate: function(e2) {
             e2 && this._renderCallbacks.push(e2), V(this, 2);
-          }, render: function b2() {
+          }, render: function _4() {
           } });
-          var g = { h: r, createElement: r, cloneElement: i, Component: _3, render: b, rerender: f, options: E };
-          t["default"] = g;
+          var b = { h: r, createElement: r, cloneElement: i, Component: g, render: _3, rerender: f, options: E };
+          t["default"] = b;
         }, function(e, t) {
           var n = e.exports = { version: "2.5.7" };
           "number" == typeof __e && (__e = n);
@@ -484,11 +484,11 @@
             return e2[t2] = n2, e2;
           };
         }, function(e, t, n) {
-          var o = n(9), i = n(38), u = n(39), l = Object.defineProperty;
+          var o = n(9), i = n(38), u = n(39), a = Object.defineProperty;
           t.f = n(3) ? Object.defineProperty : function(e2, t2, n2) {
             if (o(e2), t2 = u(t2, true), o(n2), i)
               try {
-                return l(e2, t2, n2);
+                return a(e2, t2, n2);
               } catch (r) {
               }
             if ("get" in n2 || "set" in n2)
@@ -536,14 +536,14 @@
             return i ? o.createElement(e2) : {};
           };
         }, function(e, t, n) {
-          var i = n(1), u = n(7), l = n(17), a = n(10)("src"), r = "toString", o = Function[r], s = ("" + o).split(r);
+          var i = n(1), u = n(7), a = n(17), s = n(10)("src"), r = "toString", o = Function[r], l = ("" + o).split(r);
           n(6).inspectSource = function(e2) {
             return o.call(e2);
           }, (e.exports = function(e2, t2, n2, r2) {
             var o2 = "function" == typeof n2;
-            o2 && (l(n2, "name") || u(n2, "name", t2)), e2[t2] !== n2 && (o2 && (l(n2, a) || u(n2, a, e2[t2] ? "" + e2[t2] : s.join(String(t2)))), e2 === i ? e2[t2] = n2 : r2 ? e2[t2] ? e2[t2] = n2 : u(e2, t2, n2) : (delete e2[t2], u(e2, t2, n2)));
+            o2 && (a(n2, "name") || u(n2, "name", t2)), e2[t2] !== n2 && (o2 && (a(n2, s) || u(n2, s, e2[t2] ? "" + e2[t2] : l.join(String(t2)))), e2 === i ? e2[t2] = n2 : r2 ? e2[t2] ? e2[t2] = n2 : u(e2, t2, n2) : (delete e2[t2], u(e2, t2, n2)));
           })(Function.prototype, r, function() {
-            return "function" == typeof this && this[a] || o.call(this);
+            return "function" == typeof this && this[s] || o.call(this);
           });
         }, function(e, t) {
           var n = {}.hasOwnProperty;
@@ -595,19 +595,19 @@
             return n.call(e2).slice(8, -1);
           };
         }, function(e, t, n) {
-          var a = n(21), s = n(24), c = n(43);
-          e.exports = function(l) {
+          var s = n(21), l = n(24), c = n(43);
+          e.exports = function(a) {
             return function(e2, t2, n2) {
-              var r, o = a(e2), i = s(o.length), u = c(n2, i);
-              if (l && t2 != t2) {
+              var r, o = s(e2), i = l(o.length), u = c(n2, i);
+              if (a && t2 != t2) {
                 for (; u < i; )
                   if ((r = o[u++]) != r)
                     return true;
               } else
                 for (; u < i; u++)
-                  if ((l || u in o) && o[u] === t2)
-                    return l || u || 0;
-              return !l && -1;
+                  if ((a || u in o) && o[u] === t2)
+                    return a || u || 0;
+              return !a && -1;
             };
           };
         }, function(e, t, n) {
@@ -653,14 +653,14 @@
             return o(this, e2, arguments[1]);
           } });
         }, function(e, t, n) {
-          var b = n(18), g = n(11), x = n(29), w = n(24), r = n(47);
+          var _3 = n(18), b = n(11), w = n(29), x = n(24), r = n(47);
           e.exports = function(p, e2) {
-            var f = 1 == p, d = 2 == p, h = 3 == p, m = 4 == p, v = 6 == p, y = 5 == p || v, _3 = e2 || r;
+            var f = 1 == p, d = 2 == p, h = 3 == p, m = 4 == p, v = 6 == p, y = 5 == p || v, g = e2 || r;
             return function(e3, t2, n2) {
-              for (var r2, o, i = x(e3), u = g(i), l = b(t2, n2, 3), a = w(u.length), s = 0, c = f ? _3(e3, a) : d ? _3(e3, 0) : void 0; s < a; s++)
-                if ((y || s in u) && (o = l(r2 = u[s], s, i), p)) {
+              for (var r2, o, i = w(e3), u = b(i), a = _3(t2, n2, 3), s = x(u.length), l = 0, c = f ? g(e3, s) : d ? g(e3, 0) : void 0; l < s; l++)
+                if ((y || l in u) && (o = a(r2 = u[l], l, i), p)) {
                   if (f)
-                    c[s] = o;
+                    c[l] = o;
                   else if (o)
                     switch (p) {
                       case 3:
@@ -668,7 +668,7 @@
                       case 5:
                         return r2;
                       case 6:
-                        return s;
+                        return l;
                       case 2:
                         c.push(r2);
                     }
@@ -700,7 +700,7 @@
         }, function(e, t, n) {
           "use strict";
           t.__esModule = true, t["default"] = void 0, n(14), n(30), n(31), n(35), n(49), n(50);
-          var r = n(5), o = function a(e2) {
+          var r = n(5), o = function s(e2) {
             return e2 && e2.__esModule ? e2 : { "default": e2 };
           }(n(51));
           function i(e2) {
@@ -740,11 +740,11 @@
               n2.defaultValue = t2.textContent || t2.innerText;
             }
             n2.name === void 0 && (n2.name = ""), n2.id === void 0 && (n2.selectElement.id === void 0 ? n2.id = "" : n2.id = n2.selectElement.id), n2.autoselect === void 0 && (n2.autoselect = true);
-            var r2 = document.createElement("span");
+            var r2 = document.createElement("div");
             n2.selectElement.parentNode.insertBefore(r2, n2.selectElement), i(Object.assign({}, n2, { element: r2 })), n2.selectElement.style.display = "none", n2.selectElement.id = n2.selectElement.id + "-select";
           };
-          var l = i;
-          t["default"] = l;
+          var a = i;
+          t["default"] = a;
         }, function(e, t, n) {
           e.exports = !n(3) && !n(4)(function() {
             return 7 != Object.defineProperty(n(15)("div"), "a", { get: function() {
@@ -779,18 +779,18 @@
             }), 7 != o({}, e2)[n2] || Object.keys(o({}, t2)).join("") != r;
           }) ? function(e2, t2) {
             for (var n2 = m(e2), r = arguments.length, o2 = 1, i = d.f, u = h.f; o2 < r; )
-              for (var l, a = v(arguments[o2++]), s = i ? f(a).concat(i(a)) : f(a), c = s.length, p = 0; p < c; )
-                u.call(a, l = s[p++]) && (n2[l] = a[l]);
+              for (var a, s = v(arguments[o2++]), l = i ? f(s).concat(i(s)) : f(s), c = l.length, p = 0; p < c; )
+                u.call(s, a = l[p++]) && (n2[a] = s[a]);
             return n2;
           } : o;
         }, function(e, t, n) {
-          var u = n(17), l = n(21), a = n(23)(false), s = n(26)("IE_PROTO");
+          var u = n(17), a = n(21), s = n(23)(false), l = n(26)("IE_PROTO");
           e.exports = function(e2, t2) {
-            var n2, r = l(e2), o = 0, i = [];
+            var n2, r = a(e2), o = 0, i = [];
             for (n2 in r)
-              n2 != s && u(r, n2) && i.push(n2);
+              n2 != l && u(r, n2) && i.push(n2);
             for (; t2.length > o; )
-              u(r, n2 = t2[o++]) && (~a(i, n2) || i.push(n2));
+              u(r, n2 = t2[o++]) && (~s(i, n2) || i.push(n2));
             return i;
           };
         }, function(e, t, n) {
@@ -826,13 +826,13 @@
           r(r.S, "Array", { isArray: n(33) });
         }, function(e, t, n) {
           "use strict";
-          t.__esModule = true, t["default"] = void 0, n(14), n(36), n(31), n(35), n(30), n(55), n(58);
-          var $ = n(5), H = o(n(60)), r = o(n(61));
+          t.__esModule = true, t["default"] = void 0, n(14), n(36), n(30), n(31), n(35), n(55), n(58);
+          var $ = n(5), J = o(n(60)), r = o(n(61));
           function o(e2) {
             return e2 && e2.__esModule ? e2 : { "default": e2 };
           }
-          function Q() {
-            return (Q = Object.assign || function(e2) {
+          function X() {
+            return (X = Object.assign || function(e2) {
               for (var t2 = 1; t2 < arguments.length; t2++) {
                 var n2 = arguments[t2];
                 for (var r2 in n2)
@@ -846,23 +846,28 @@
               throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return e2;
           }
-          var u, l = { 13: "enter", 27: "escape", 32: "space", 38: "up", 40: "down" }, z = ((u = document.createElement("x")).style.cssText = "pointer-events:auto", "auto" === u.style.pointerEvents);
-          function f() {
-            return !(!navigator.userAgent.match(/(iPod|iPhone|iPad)/g) || !navigator.userAgent.match(/AppleWebKit/g));
+          var u = { 13: "enter", 27: "escape", 32: "space", 38: "up", 40: "down" };
+          function Y() {
+            return "undefined" != typeof navigator && !(!navigator.userAgent.match(/(iPod|iPhone|iPad)/g) || !navigator.userAgent.match(/AppleWebKit/g));
           }
           var a = function(n2) {
             function e2(e3) {
               var t3;
-              return (t3 = n2.call(this, e3) || this).elementReferences = {}, t3.state = { focused: null, hovered: null, clicked: null, menuOpen: false, options: e3.defaultValue ? [e3.defaultValue] : [], query: e3.defaultValue, selected: null }, t3.handleComponentBlur = t3.handleComponentBlur.bind(i(i(t3))), t3.handleKeyDown = t3.handleKeyDown.bind(i(i(t3))), t3.handleUpArrow = t3.handleUpArrow.bind(i(i(t3))), t3.handleDownArrow = t3.handleDownArrow.bind(i(i(t3))), t3.handleEnter = t3.handleEnter.bind(i(i(t3))), t3.handlePrintableKey = t3.handlePrintableKey.bind(i(i(t3))), t3.handleListMouseLeave = t3.handleListMouseLeave.bind(i(i(t3))), t3.handleOptionBlur = t3.handleOptionBlur.bind(i(i(t3))), t3.handleOptionClick = t3.handleOptionClick.bind(i(i(t3))), t3.handleOptionFocus = t3.handleOptionFocus.bind(i(i(t3))), t3.handleOptionMouseEnter = t3.handleOptionMouseEnter.bind(i(i(t3))), t3.handleInputBlur = t3.handleInputBlur.bind(i(i(t3))), t3.handleInputChange = t3.handleInputChange.bind(i(i(t3))), t3.handleInputFocus = t3.handleInputFocus.bind(i(i(t3))), t3.pollInputElement = t3.pollInputElement.bind(i(i(t3))), t3.getDirectInputChanges = t3.getDirectInputChanges.bind(i(i(t3))), t3;
+              return (t3 = n2.call(this, e3) || this).elementReferences = {}, t3.state = { focused: null, hovered: null, menuOpen: false, options: e3.defaultValue ? [e3.defaultValue] : [], query: e3.defaultValue, validChoiceMade: false, selected: null, ariaHint: true }, t3.handleComponentBlur = t3.handleComponentBlur.bind(i(i(t3))), t3.handleKeyDown = t3.handleKeyDown.bind(i(i(t3))), t3.handleUpArrow = t3.handleUpArrow.bind(i(i(t3))), t3.handleDownArrow = t3.handleDownArrow.bind(i(i(t3))), t3.handleEnter = t3.handleEnter.bind(i(i(t3))), t3.handlePrintableKey = t3.handlePrintableKey.bind(i(i(t3))), t3.handleListMouseLeave = t3.handleListMouseLeave.bind(i(i(t3))), t3.handleOptionBlur = t3.handleOptionBlur.bind(i(i(t3))), t3.handleOptionClick = t3.handleOptionClick.bind(i(i(t3))), t3.handleOptionFocus = t3.handleOptionFocus.bind(i(i(t3))), t3.handleOptionMouseDown = t3.handleOptionMouseDown.bind(i(i(t3))), t3.handleOptionMouseEnter = t3.handleOptionMouseEnter.bind(i(i(t3))), t3.handleInputBlur = t3.handleInputBlur.bind(i(i(t3))), t3.handleInputChange = t3.handleInputChange.bind(i(i(t3))), t3.handleInputFocus = t3.handleInputFocus.bind(i(i(t3))), t3.pollInputElement = t3.pollInputElement.bind(i(i(t3))), t3.getDirectInputChanges = t3.getDirectInputChanges.bind(i(i(t3))), t3;
             }
             (function r2(e3, t3) {
               e3.prototype = Object.create(t3.prototype), (e3.prototype.constructor = e3).__proto__ = t3;
             })(e2, n2);
             var t2 = e2.prototype;
-            return t2.componentDidMount = function() {
+            return t2.isQueryAnOption = function(e3, t3) {
+              var n3 = this;
+              return -1 !== t3.map(function(e4) {
+                return n3.templateInputValue(e4).toLowerCase();
+              }).indexOf(e3.toLowerCase());
+            }, t2.componentDidMount = function() {
               this.pollInputElement();
             }, t2.componentWillUnmount = function() {
-              clearTimeout(this.$pollInput), clearTimeout(this.$blurInput);
+              clearTimeout(this.$pollInput);
             }, t2.pollInputElement = function() {
               var e3 = this;
               this.getDirectInputChanges(), this.$pollInput = setTimeout(function() {
@@ -872,15 +877,15 @@
               var e3 = this.elementReferences[-1];
               e3 && e3.value !== this.state.query && this.handleInputChange({ target: { value: e3.value } });
             }, t2.componentDidUpdate = function(e3, t3) {
-              var n3 = this.state, r2 = n3.focused, o2 = n3.clicked, i2 = null === r2, u2 = t3.focused !== r2;
-              (u2 && !i2 || null !== o2) && this.elementReferences[r2].focus();
-              var l2 = -1 === r2, a2 = u2 && null === t3.focused;
-              if (l2 && a2) {
-                var s = this.elementReferences[r2];
-                s.setSelectionRange(0, s.value.length);
+              var n3 = this.state.focused, r2 = null === n3, o2 = t3.focused !== n3;
+              o2 && !r2 && this.elementReferences[n3].focus();
+              var i2 = -1 === n3, u2 = o2 && null === t3.focused;
+              if (i2 && u2) {
+                var a2 = this.elementReferences[n3];
+                a2.setSelectionRange(0, a2.value.length);
               }
             }, t2.hasAutoselect = function() {
-              return !f() && this.props.autoselect;
+              return !Y() && this.props.autoselect;
             }, t2.templateInputValue = function(e3) {
               var t3 = this.props.templates && this.props.templates.inputValue;
               return t3 ? t3(e3) : e3;
@@ -889,40 +894,44 @@
               return t3 ? t3(e3) : e3;
             }, t2.handleComponentBlur = function(e3) {
               var t3, n3 = this.state, r2 = n3.options, o2 = n3.query, i2 = n3.selected;
-              this.props.confirmOnBlur ? (t3 = e3.query || o2, this.props.onConfirm(r2[i2])) : t3 = o2, this.setState({ focused: null, clicked: null, menuOpen: e3.menuOpen || false, query: t3, selected: null });
+              this.props.confirmOnBlur ? (t3 = e3.query || o2, this.props.onConfirm(r2[i2])) : t3 = o2, this.setState({ focused: null, menuOpen: e3.menuOpen || false, query: t3, selected: null, validChoiceMade: this.isQueryAnOption(t3, r2) });
             }, t2.handleListMouseLeave = function(e3) {
               this.setState({ hovered: null });
             }, t2.handleOptionBlur = function(e3, t3) {
-              var n3 = this.state, r2 = n3.focused, o2 = n3.clicked, i2 = n3.menuOpen, u2 = n3.options, l2 = n3.selected, a2 = null === e3.relatedTarget && null === o2, s = e3.relatedTarget === this.elementReferences[-1], c = r2 !== t3 && -1 !== r2;
-              if (!c && a2 || !(c || s)) {
-                var p = i2 && f();
-                this.handleComponentBlur({ menuOpen: p, query: this.templateInputValue(u2[l2]) });
+              var n3 = this.state, r2 = n3.focused, o2 = n3.menuOpen, i2 = n3.options, u2 = n3.selected, a2 = null === e3.relatedTarget, s = e3.relatedTarget === this.elementReferences[-1], l = r2 !== t3 && -1 !== r2;
+              if (!l && a2 || !(l || s)) {
+                var c = o2 && Y();
+                this.handleComponentBlur({ menuOpen: c, query: this.templateInputValue(i2[u2]) });
               }
             }, t2.handleInputBlur = function(e3) {
-              var t3 = this, n3 = this.state, r2 = n3.focused, o2 = n3.menuOpen, i2 = n3.options, u2 = n3.query, l2 = n3.selected, a2 = -1 !== r2;
-              if (clearTimeout(this.$blurInput), !a2) {
-                var s = o2 && f(), c = f() ? u2 : this.templateInputValue(i2[l2]);
-                this.$blurInput = setTimeout(function() {
-                  return t3.handleComponentBlur({ menuOpen: s, query: c });
-                }, 200);
+              var t3 = this.state, n3 = t3.focused, r2 = t3.menuOpen, o2 = t3.options, i2 = t3.query, u2 = t3.selected;
+              if (!(-1 !== n3)) {
+                var a2 = r2 && Y(), s = Y() ? i2 : this.templateInputValue(o2[u2]);
+                this.handleComponentBlur({ menuOpen: a2, query: s });
               }
             }, t2.handleInputChange = function(e3) {
-              var n3 = this, t3 = this.props, r2 = t3.minLength, o2 = t3.source, i2 = t3.showAllValues, u2 = this.hasAutoselect(), l2 = e3.target.value, a2 = 0 === l2.length, s = this.state.query.length !== l2.length, c = l2.length >= r2;
-              this.setState({ query: l2 }), i2 || !a2 && s && c ? o2(l2, function(e4) {
+              var n3 = this, t3 = this.props, r2 = t3.minLength, o2 = t3.source, i2 = t3.showAllValues, u2 = this.hasAutoselect(), a2 = e3.target.value, s = 0 === a2.length, l = this.state.query.length !== a2.length, c = a2.length >= r2;
+              this.setState({ query: a2, ariaHint: s }), i2 || !s && l && c ? o2(a2, function(e4) {
                 var t4 = 0 < e4.length;
-                n3.setState({ menuOpen: t4, options: e4, selected: u2 && t4 ? 0 : -1 });
-              }) : !a2 && c || this.setState({ menuOpen: false, options: [] });
+                n3.setState({ menuOpen: t4, options: e4, selected: u2 && t4 ? 0 : -1, validChoiceMade: false });
+              }) : !s && c || this.setState({ menuOpen: false, options: [] });
             }, t2.handleInputClick = function(e3) {
               this.handleInputChange(e3);
             }, t2.handleInputFocus = function(e3) {
-              this.setState({ focused: -1 });
+              var t3 = this.state, n3 = t3.query, r2 = t3.validChoiceMade, o2 = t3.options, i2 = this.props.minLength, u2 = !r2 && n3.length >= i2 && 0 < o2.length;
+              u2 ? this.setState(function(e4) {
+                var t4 = e4.menuOpen;
+                return { focused: -1, menuOpen: u2 || t4, selected: -1 };
+              }) : this.setState({ focused: -1 });
             }, t2.handleOptionFocus = function(e3) {
               this.setState({ focused: e3, hovered: null, selected: e3 });
             }, t2.handleOptionMouseEnter = function(e3, t3) {
-              f() || this.setState({ hovered: t3 });
+              Y() || this.setState({ hovered: t3 });
             }, t2.handleOptionClick = function(e3, t3) {
               var n3 = this.state.options[t3], r2 = this.templateInputValue(n3);
-              clearTimeout(this.$blurInput), this.props.onConfirm(n3), this.setState({ focused: -1, clicked: t3, hovered: null, menuOpen: false, query: r2, selected: -1 }), this.forceUpdate();
+              this.props.onConfirm(n3), this.setState({ focused: -1, hovered: null, menuOpen: false, query: r2, selected: -1, validChoiceMade: true }), this.forceUpdate();
+            }, t2.handleOptionMouseDown = function(e3) {
+              e3.preventDefault();
             }, t2.handleUpArrow = function(e3) {
               e3.preventDefault();
               var t3 = this.state, n3 = t3.menuOpen, r2 = t3.selected;
@@ -948,7 +957,7 @@
               var t3 = this.elementReferences[-1];
               e3.target === t3 || t3.focus();
             }, t2.handleKeyDown = function(e3) {
-              switch (l[e3.keyCode]) {
+              switch (u[e3.keyCode]) {
                 case "up":
                   this.handleUpArrow(e3);
                   break;
@@ -970,50 +979,52 @@
                   })(e3.keyCode) && this.handlePrintableKey(e3);
               }
             }, t2.render = function() {
-              var e3, o2 = this, t3 = this.props, n3 = t3.cssNamespace, r2 = t3.displayMenu, i2 = t3.id, u2 = t3.minLength, l2 = t3.name, a2 = t3.placeholder, s = t3.required, c = t3.showAllValues, p = t3.tNoResults, f2 = t3.tStatusQueryTooShort, d = t3.tStatusNoResults, h = t3.tStatusSelectedOption, m = t3.tStatusResults, v = t3.dropdownArrow, y = this.state, _3 = y.focused, b = y.hovered, g = y.menuOpen, x = y.options, w = y.query, O = y.selected, C = this.hasAutoselect(), S = -1 === _3, E = 0 === x.length, N = 0 !== w.length, k = w.length >= u2, I = this.props.showNoOptionsFound && S && E && N && k, P = n3 + "__wrapper", M = n3 + "__input", j = null !== _3 ? " " + M + "--focused" : "", A = this.props.showAllValues ? " " + M + "--show-all-values" : " " + M + "--default", T = n3 + "__dropdown-arrow-down", L = -1 !== _3 && null !== _3, B = n3 + "__menu", F = B + "--" + r2, D = B + "--" + (g || I ? "visible" : "hidden"), R = n3 + "__option", U = n3 + "__hint", V = this.templateInputValue(x[O]), q = V && 0 === V.toLowerCase().indexOf(w.toLowerCase()) && C ? w + V.substr(w.length) : "", W = z && q;
-              return c && "string" == typeof (e3 = v({ className: T })) && (e3 = (0, $.createElement)("div", { className: n3 + "__dropdown-arrow-down-wrapper", dangerouslySetInnerHTML: { __html: e3 } })), (0, $.createElement)("div", { className: P, onKeyDown: this.handleKeyDown, role: "combobox", "aria-expanded": g ? "true" : "false" }, (0, $.createElement)(H["default"], { length: x.length, queryLength: w.length, minQueryLength: u2, selectedOption: this.templateInputValue(x[O]), selectedOptionIndex: O, tQueryTooShort: f2, tNoResults: d, tSelectedOption: h, tResults: m }), W && (0, $.createElement)("span", null, (0, $.createElement)("input", { className: U, readonly: true, tabIndex: "-1", value: q })), (0, $.createElement)("input", Q({ "aria-activedescendant": !!L && i2 + "__option--" + _3, "aria-owns": i2 + "__listbox", autoComplete: "off", className: "" + M + j + A, id: i2, onClick: function(e4) {
-                return o2.handleInputClick(e4);
-              }, onBlur: this.handleInputBlur }, function K(e4) {
+              var e3, i2 = this, t3 = this.props, n3 = t3.cssNamespace, r2 = t3.displayMenu, u2 = t3.id, o2 = t3.minLength, a2 = t3.name, s = t3.placeholder, l = t3.required, c = t3.showAllValues, p = t3.tNoResults, f = t3.tStatusQueryTooShort, d = t3.tStatusNoResults, h = t3.tStatusSelectedOption, m = t3.tStatusResults, v = t3.tAssistiveHint, y = t3.dropdownArrow, g = this.state, _3 = g.focused, b = g.hovered, w = g.menuOpen, x = g.options, O = g.query, C = g.selected, S = g.ariaHint, E = g.validChoiceMade, M = this.hasAutoselect(), N = -1 === _3, I = 0 === x.length, k = 0 !== O.length, A = O.length >= o2, P = this.props.showNoOptionsFound && N && I && k && A, j = n3 + "__wrapper", L = n3 + "__input", T = null !== _3 ? " " + L + "--focused" : "", B = this.props.showAllValues ? " " + L + "--show-all-values" : " " + L + "--default", D = n3 + "__dropdown-arrow-down", F = -1 !== _3 && null !== _3, R = n3 + "__menu", U = R + "--" + r2, V = R + "--" + (w || P ? "visible" : "hidden"), q = n3 + "__option", W = n3 + "__hint", H = this.templateInputValue(x[C]), K = H && 0 === H.toLowerCase().indexOf(O.toLowerCase()) && M ? O + H.substr(O.length) : "", Q = u2 + "__assistiveHint", z = S ? { "aria-describedby": Q } : null;
+              return c && "string" == typeof (e3 = y({ className: D })) && (e3 = (0, $.createElement)("div", { className: n3 + "__dropdown-arrow-down-wrapper", dangerouslySetInnerHTML: { __html: e3 } })), (0, $.createElement)("div", { className: j, onKeyDown: this.handleKeyDown }, (0, $.createElement)(J["default"], { id: u2, length: x.length, queryLength: O.length, minQueryLength: o2, selectedOption: this.templateInputValue(x[C]), selectedOptionIndex: C, validChoiceMade: E, isInFocus: null !== this.state.focused, tQueryTooShort: f, tNoResults: d, tSelectedOption: h, tResults: m }), K && (0, $.createElement)("span", null, (0, $.createElement)("input", { className: W, readonly: true, tabIndex: "-1", value: K })), (0, $.createElement)("input", X({ "aria-expanded": w ? "true" : "false", "aria-activedescendant": !!F && u2 + "__option--" + _3, "aria-owns": u2 + "__listbox", "aria-autocomplete": this.hasAutoselect() ? "both" : "list" }, z, { autoComplete: "off", className: "" + L + T + B, id: u2, onClick: function(e4) {
+                return i2.handleInputClick(e4);
+              }, onBlur: this.handleInputBlur }, /* @__PURE__ */ function G(e4) {
                 return { onInput: e4 };
-              }(this.handleInputChange), { onFocus: this.handleInputFocus, name: l2, placeholder: a2, ref: function(e4) {
-                o2.elementReferences[-1] = e4;
-              }, type: "text", role: "textbox", required: s, value: w })), e3, (0, $.createElement)("ul", { className: B + " " + F + " " + D, onMouseLeave: function(e4) {
-                return o2.handleListMouseLeave(e4);
-              }, id: i2 + "__listbox", role: "listbox" }, x.map(function(e4, t4) {
-                var n4 = (-1 === _3 ? O === t4 : _3 === t4) && null === b ? " " + R + "--focused" : "", r3 = t4 % 2 ? " " + R + "--odd" : "";
-                return (0, $.createElement)("li", { "aria-selected": _3 === t4, className: "" + R + n4 + r3, dangerouslySetInnerHTML: { __html: o2.templateSuggestion(e4) }, id: i2 + "__option--" + t4, key: t4, onBlur: function(e5) {
-                  return o2.handleOptionBlur(e5, t4);
+              }(this.handleInputChange), { onFocus: this.handleInputFocus, name: a2, placeholder: s, ref: function(e4) {
+                i2.elementReferences[-1] = e4;
+              }, type: "text", role: "combobox", required: l, value: O })), e3, (0, $.createElement)("ul", { className: R + " " + U + " " + V, onMouseLeave: function(e4) {
+                return i2.handleListMouseLeave(e4);
+              }, id: u2 + "__listbox", role: "listbox" }, x.map(function(e4, t4) {
+                var n4 = (-1 === _3 ? C === t4 : _3 === t4) && null === b ? " " + q + "--focused" : "", r3 = t4 % 2 ? " " + q + "--odd" : "", o3 = Y() ? "<span id=" + u2 + "__option-suffix--" + t4 + ' style="border:0;clip:rect(0 0 0 0);height:1px;marginBottom:-1px;marginRight:-1px;overflow:hidden;padding:0;position:absolute;whiteSpace:nowrap;width:1px"> ' + (t4 + 1) + " of " + x.length + "</span>" : "";
+                return (0, $.createElement)("li", { "aria-selected": _3 === t4 ? "true" : "false", className: "" + q + n4 + r3, dangerouslySetInnerHTML: { __html: i2.templateSuggestion(e4) + o3 }, id: u2 + "__option--" + t4, key: t4, onBlur: function(e5) {
+                  return i2.handleOptionBlur(e5, t4);
                 }, onClick: function(e5) {
-                  return o2.handleOptionClick(e5, t4);
-                }, onMouseEnter: function(e5) {
-                  return o2.handleOptionMouseEnter(e5, t4);
+                  return i2.handleOptionClick(e5, t4);
+                }, onMouseDown: i2.handleOptionMouseDown, onMouseEnter: function(e5) {
+                  return i2.handleOptionMouseEnter(e5, t4);
                 }, ref: function(e5) {
-                  o2.elementReferences[t4] = e5;
-                }, role: "option", tabIndex: "-1" });
-              }), I && (0, $.createElement)("li", { className: R + " " + R + "--no-results" }, p())));
+                  i2.elementReferences[t4] = e5;
+                }, role: "option", tabIndex: "-1", "aria-posinset": t4 + 1, "aria-setsize": x.length });
+              }), P && (0, $.createElement)("li", { className: q + " " + q + "--no-results" }, p())), (0, $.createElement)("span", { id: Q, style: { display: "none" } }, v()));
             }, e2;
           }($.Component);
           (t["default"] = a).defaultProps = { autoselect: false, cssNamespace: "autocomplete", defaultValue: "", displayMenu: "inline", minLength: 0, name: "input-autocomplete", placeholder: "", onConfirm: function() {
           }, confirmOnBlur: true, showNoOptionsFound: true, showAllValues: false, required: false, tNoResults: function() {
             return "No results found";
+          }, tAssistiveHint: function() {
+            return "When autocomplete results are available use up and down arrows to review and enter to select.  Touch device users, explore by touch or with swipe gestures.";
           }, dropdownArrow: r["default"] };
         }, function(e, t, r) {
-          var o = r(9), i = r(53), u = r(28), l = r(26)("IE_PROTO"), a = function() {
-          }, s = "prototype", c = function() {
+          var o = r(9), i = r(53), u = r(28), a = r(26)("IE_PROTO"), s = function() {
+          }, l = "prototype", c = function() {
             var e2, t2 = r(15)("iframe"), n = u.length;
             for (t2.style.display = "none", r(54).appendChild(t2), t2.src = "javascript:", (e2 = t2.contentWindow.document).open(), e2.write("<script>document.F=Object<\/script>"), e2.close(), c = e2.F; n--; )
-              delete c[s][u[n]];
+              delete c[l][u[n]];
             return c();
           };
           e.exports = Object.create || function(e2, t2) {
             var n;
-            return null !== e2 ? (a[s] = o(e2), n = new a(), a[s] = null, n[l] = e2) : n = c(), t2 === void 0 ? n : i(n, t2);
+            return null !== e2 ? (s[l] = o(e2), n = new s(), s[l] = null, n[a] = e2) : n = c(), t2 === void 0 ? n : i(n, t2);
           };
         }, function(e, t, n) {
-          var u = n(8), l = n(9), a = n(20);
+          var u = n(8), a = n(9), s = n(20);
           e.exports = n(3) ? Object.defineProperties : function(e2, t2) {
-            l(e2);
-            for (var n2, r = a(t2), o = r.length, i = 0; i < o; )
+            a(e2);
+            for (var n2, r = s(t2), o = r.length, i = 0; i < o; )
               u.f(e2, n2 = r[i++], t2[n2]);
             return e2;
           };
@@ -1025,18 +1036,18 @@
           r(r.P, "Function", { bind: n(56) });
         }, function(e, t, n) {
           "use strict";
-          var i = n(19), u = n(2), l = n(57), a = [].slice, s = {};
+          var i = n(19), u = n(2), a = n(57), s = [].slice, l = {};
           e.exports = Function.bind || function(t2) {
-            var n2 = i(this), r = a.call(arguments, 1), o = function() {
-              var e2 = r.concat(a.call(arguments));
+            var n2 = i(this), r = s.call(arguments, 1), o = function() {
+              var e2 = r.concat(s.call(arguments));
               return this instanceof o ? function(e3, t3, n3) {
-                if (!(t3 in s)) {
+                if (!(t3 in l)) {
                   for (var r2 = [], o2 = 0; o2 < t3; o2++)
                     r2[o2] = "a[" + o2 + "]";
-                  s[t3] = Function("F,a", "return new F(" + r2.join(",") + ")");
+                  l[t3] = Function("F,a", "return new F(" + r2.join(",") + ")");
                 }
-                return s[t3](e3, n3);
-              }(n2, e2.length, e2) : l(n2, e2, t2);
+                return l[t3](e3, n3);
+              }(n2, e2.length, e2) : a(n2, e2, t2);
             };
             return u(n2.prototype) && (o.prototype = n2.prototype), o;
           };
@@ -1067,15 +1078,15 @@
           });
         }, function(e, t, n) {
           "use strict";
-          var l = n(7), a = n(16), s = n(4), c = n(12), p = n(34);
+          var a = n(7), s = n(16), l = n(4), c = n(12), p = n(34);
           e.exports = function(t2, e2, n2) {
             var r = p(t2), o = n2(c, r, ""[t2]), i = o[0], u = o[1];
-            s(function() {
+            l(function() {
               var e3 = {};
               return e3[r] = function() {
                 return 7;
               }, 7 != ""[t2](e3);
-            }) && (a(String.prototype, t2, i), l(RegExp.prototype, r, 2 == e2 ? function(e3, t3) {
+            }) && (s(String.prototype, t2, i), a(RegExp.prototype, r, 2 == e2 ? function(e3, t3) {
               return u.call(e3, this, t3);
             } : function(e3) {
               return u.call(e3, this);
@@ -1084,32 +1095,49 @@
         }, function(e, t, n) {
           "use strict";
           t.__esModule = true, t["default"] = void 0, n(36);
-          var m = n(5);
-          var r = function(o) {
+          var _3 = n(5);
+          var r = function r2(o2, i, u) {
+            var a;
+            return function() {
+              var e2 = this, t2 = arguments, n2 = function n3() {
+                a = null, u || o2.apply(e2, t2);
+              }, r3 = u && !a;
+              clearTimeout(a), a = setTimeout(n2, i), r3 && o2.apply(e2, t2);
+            };
+          }, o = function(o2) {
             function e2() {
               for (var e3, t3 = arguments.length, n2 = new Array(t3), r2 = 0; r2 < t3; r2++)
                 n2[r2] = arguments[r2];
-              return (e3 = o.call.apply(o, [this].concat(n2)) || this).state = { bump: false }, e3;
+              return (e3 = o2.call.apply(o2, [this].concat(n2)) || this).state = { bump: false, debounced: false }, e3;
             }
             (function n2(e3, t3) {
               e3.prototype = Object.create(t3.prototype), (e3.prototype.constructor = e3).__proto__ = t3;
-            })(e2, o);
+            })(e2, o2);
             var t2 = e2.prototype;
-            return t2.componentWillReceiveProps = function(e3) {
-              e3.queryLength !== this.props.queryLength && this.setState(function(e4) {
-                return { bump: !e4.bump };
-              });
+            return t2.componentWillMount = function() {
+              var e3 = this;
+              this.debounceStatusUpdate = r(function() {
+                if (!e3.state.debounced) {
+                  var t3 = !e3.props.isInFocus || e3.props.validChoiceMade;
+                  e3.setState(function(e4) {
+                    return { bump: !e4.bump, debounced: true, silenced: t3 };
+                  });
+                }
+              }, 1400);
+            }, t2.componentWillReceiveProps = function(e3) {
+              e3.queryLength;
+              this.setState({ debounced: false });
             }, t2.render = function() {
-              var e3 = this.props, t3 = e3.length, n2 = e3.queryLength, r2 = e3.minQueryLength, o2 = e3.selectedOption, i = e3.selectedOptionIndex, u = e3.tQueryTooShort, l = e3.tNoResults, a = e3.tSelectedOption, s = e3.tResults, c = this.state.bump, p = n2 < r2, f = 0 === t3, d = o2 ? a(o2, t3, i) : "", h = null;
-              return h = p ? u(r2) : f ? l() : s(t3, d), (0, m.createElement)("div", { "aria-atomic": "true", "aria-live": "polite", role: "status", style: { border: "0", clip: "rect(0 0 0 0)", height: "1px", marginBottom: "-1px", marginRight: "-1px", overflow: "hidden", padding: "0", position: "absolute", whiteSpace: "nowrap", width: "1px" } }, h, (0, m.createElement)("span", null, c ? "," : ",,"));
+              var e3 = this.props, t3 = e3.id, n2 = e3.length, r2 = e3.queryLength, o3 = e3.minQueryLength, i = e3.selectedOption, u = e3.selectedOptionIndex, a = e3.tQueryTooShort, s = e3.tNoResults, l = e3.tSelectedOption, c = e3.tResults, p = this.state, f = p.bump, d = p.debounced, h = p.silenced, m = r2 < o3, v = 0 === n2, y = i ? l(i, n2, u) : "", g = null;
+              return g = m ? a(o3) : v ? s() : c(n2, y), this.debounceStatusUpdate(), (0, _3.createElement)("div", { style: { border: "0", clip: "rect(0 0 0 0)", height: "1px", marginBottom: "-1px", marginRight: "-1px", overflow: "hidden", padding: "0", position: "absolute", whiteSpace: "nowrap", width: "1px" } }, (0, _3.createElement)("div", { id: t3 + "__status--A", role: "status", "aria-atomic": "true", "aria-live": "polite" }, !h && d && f ? g : ""), (0, _3.createElement)("div", { id: t3 + "__status--B", role: "status", "aria-atomic": "true", "aria-live": "polite" }, h || !d || f ? "" : g));
             }, e2;
-          }(m.Component);
-          (t["default"] = r).defaultProps = { tQueryTooShort: function(e2) {
-            return "Type in " + e2 + " or more characters for results.";
+          }(_3.Component);
+          (t["default"] = o).defaultProps = { tQueryTooShort: function(e2) {
+            return "Type in " + e2 + " or more characters for results";
           }, tNoResults: function() {
-            return "No search results.";
+            return "No search results";
           }, tSelectedOption: function(e2, t2, n2) {
-            return e2 + " (" + (n2 + 1) + " of " + t2 + ") is selected.";
+            return e2 + " " + (n2 + 1) + " of " + t2 + " is highlighted";
           }, tResults: function(e2, t2) {
             return e2 + " " + (1 === e2 ? "result" : "results") + " " + (1 === e2 ? "is" : "are") + " available. " + t2;
           } };
@@ -5885,6 +5913,10 @@
           definition: "Status for collections that do not require OMB approval under specific statutory reasons, despite otherwise meeting the criteria."
         },
         {
+          term: "extension request",
+          definition: "A request to extend the approval of a currently approved collection without making any material changes."
+        },
+        {
           term: "fast-track",
           definition: "The process for approval for a collection already covered by an existing generic clearance."
         },
@@ -5947,6 +5979,14 @@
         {
           term: "recordkeeping",
           definition: "The practice and process of organizing and maintaining information, documents, or data as required by an agency's guidelines."
+        },
+        {
+          term: "reinstatement request",
+          definition: "A request for OMB approval of a previously approved collection that either was discontinued or expired."
+        },
+        {
+          term: "revision request",
+          definition: "A request to materially change a currently approved collection, such as updating the collection instrument, instructions, or its frequency. Also requests to extend the approval period."
         },
         {
           term: "ROCIS",
