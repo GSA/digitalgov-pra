@@ -1,2 +1,3 @@
-# User-agent: *
-# Disallow: /
+User-agent: *
+Disallow: /
+Sitemap: https://pra.digital.gov/
