@@ -139,5 +139,17 @@
     "short": "NARA",
     "office": "Office of the Chief of Management and Administration",
     "email": "surveys@nara.gov"
+  },
+    {
+    "agency": "U.S. Securities and Exchange Commission",
+    "short": "SEC",
+    "office": "Office of the Chief Data Officer",
+    "email": "#OCDOPRA@sec.gov"
+  },
+    {
+    "agency": "U.S. Department of Veterans Affairs",
+    "short": "VA",
+    "office": "Office of Enterprise Integration",
+    "email": "VACOPaperworkReduAct@va.gov"
   }
 ]
