@@ -118,5 +118,9 @@
   {
     "term": "sponsor",
     "definition": "To cause or trigger the collection of information. Agencies sponsor collections."
+  },
+    {
+    "term": "usability testing",
+    "definition": "For the purposes of the PRA, a type of user research that consists of asking users to navigate or perform tasks while observing them that may include semi-structured or open-ended questions."
   }
 ]
