@@ -35,7 +35,7 @@
     "underscore": "^1.13.6"
   },
   "devDependencies": {
-    "esbuild": "0.19.11"
+    "esbuild": "0.25.0"
   },
   "overrides": {
     "glob-parent": "6.0.2"
