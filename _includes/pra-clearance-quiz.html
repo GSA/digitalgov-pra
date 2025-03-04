@@ -1,0 +1,161 @@
+<div class="usa-form questions-box">
+    <div class="grid-row grid-gap question-box-intro">
+        <h3 class="site-preview-heading margin-bottom-0 text-center">Take a quiz to find out if you need PRA clearance.</h3>
+        <p class="text-center header-text">What do you think you might need PRA clearance for?</p>
+        <div class="tablet:grid-col-6 margin-bottom-2">
+            <div class="content-row height-full">
+                <button class="usa-button icon-button open-recruitment-quiz open-quiz-button text-bold padding-3 radius-md" type="button">
+                    <img src="{{ '/assets/img/recruitment-icon-small.webp' | relative_url }}" alt="" width="125" height="125" />
+                    <span>Recruitment</span>   
+                </button>
+            </div>
+        </div>
+        <div class="tablet:grid-col-6 margin-bottom-2">
+            <div class="content-row height-full">
+                <button class="usa-button icon-button open-research-quiz open-quiz-button text-bold padding-3 radius-md" type="button">
+                    <img src="{{ '/assets/img/research-icon-small.webp' | relative_url }}" alt="" width="125" height="125" />
+                    <span>Research</span> 
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <form id="pra-recruitment-quiz">
+        <p class="text-center"><img src="{{ '/assets/img/recruitment-icon-small.webp' | relative_url }}" alt="" width="150" height="150" /></p>
+        <h3 class="text-center">Find out if you will need PRA clearance for RECRUITMENT</h3>
+        <p class="header-text margin-bottom-105 text-bold">Answer the following questions about your RECRUITMENT activities:</p>
+        <fieldset class="usa-fieldset grid-row">
+            <div class="tablet:grid-col-7">
+                <legend class="usa-legend"><span class="text-bold">Will you be recruiting 10 or more participants for your research?</span><br> (Regardless of how many will actually participate in the research.)</legend>
+            </div>
+            <div class="tablet:text-right yesNoWrapper tablet:grid-col-5">
+                <span class="usa-radio display-inline-block text-middle margin-top-05 margin-right-2">
+                    <input class="usa-radio__input" id="recruiting-10-or-more-yes" type="radio" name="recruiting-10-or-more" value="yes" />
+                    <label class="usa-radio__label" for="recruiting-10-or-more-yes">Yes</label>
+                </span>
+                <span class="usa-radio display-inline-block text-middle margin-top-05">
+                    <input class="usa-radio__input" id="recruiting-10-or-more-no" type="radio" name="recruiting-10-or-more" value="no" />
+                    <label class="usa-radio__label" for="recruiting-10-or-more-no">No</label>
+                </span>
+            </div>
+        </fieldset>
+        <fieldset class="usa-fieldset grid-row">
+            <div class="tablet:grid-col-7">
+                <legend class="usa-legend text-bold">Are you planning to recruit any members of the public?</legend>
+            </div>
+            <div class="tablet:text-right yesNoWrapper tablet:grid-col-5">
+                <span class="usa-radio display-inline-block text-middle margin-top-05 margin-right-2">
+                    <input class="usa-radio__input" id="recruiting-public-yes" type="radio" name="recruiting-public" value="yes" />
+                    <label class="usa-radio__label" for="recruiting-public-yes">Yes</label>
+                </span>
+                <span class="usa-radio display-inline-block text-middle margin-top-05">
+                    <input class="usa-radio__input" id="recruiting-public-no" type="radio" name="recruiting-public" value="no" />
+                    <label class="usa-radio__label" for="recruiting-public-no">No</label>
+                </span>
+            </div>
+        </fieldset>   
+        <fieldset class="usa-fieldset grid-row">
+            <div class="tablet:grid-col-7">
+                <legend class="usa-legend"><span class="text-bold">Will you be collecting Personally Identifiable Information (PII) other than a participant's contact information (email address or phone number)?</span><br> PII includes (but is not limited to), demographic characteristics like age, gender, race/ethnicity, etc. <a class="usa-link usa-link--external" rel="noreferrer" target="_blank" href="https://www.gsa.gov/directives-library/gsa-rules-of-behavior-for-handling-personally-identifiable-information-pii-2">Learn more <span
+                    class="usa-sr-only">about Personally Identifiable Information (PII)</span></a>.</legend>
+            </div>
+            <div class="yesNoWrapper tablet:grid-col-5">
+                <span class="usa-radio display-inline-block text-middle margin-top-05 margin-right-2">
+                    <input class="usa-radio__input" id="collecting-pii-yes" type="radio" name="collecting-pii" value="yes" />
+                    <label class="usa-radio__label" for="collecting-pii-yes">Yes</label>
+                </span>
+                <span class="usa-radio display-inline-block text-middle margin-top-05">
+                    <input class="usa-radio__input" id="collecting-pii-no" type="radio" name="collecting-pii" value="no" />
+                    <label class="usa-radio__label" for="collecting-pii-no">No</label>
+                </span>
+            </div>
+        </fieldset>
+        <p class="quidance-container guidance-gray text-base-light">Guidance will appear here</p>
+        <div class="switch-reset-button-wrapper grid-row">
+            <div class="tablet:grid-col-6">
+                <button class="usa-button usa-button--unstyled switch-to-research-form text-bold" type="button">Switch to PRA for RESEARCH quiz</button>
+            </div>
+            <div class="reset-form-wrapper tablet:grid-col-6">
+                <button class="usa-button usa-button--unstyled reset-form text-bold" type="button">Reset</button>
+            </div>   
+        </div>
+    </form>
+
+    <form id="pra-researcher-quiz">
+        <p class="text-center"><img src="{{ '/assets/img/research-icon-small.webp' | relative_url }}" alt="" width="150" height="150" /></p>
+        <h3 class="text-center">Find out if you will need PRA clearance for RESEARCH</h3>
+        <p class="header-text margin-bottom-105 text-bold">Answer the following questions about your RESEARCH PARTICIPANTS:</p>
+        <fieldset class="usa-fieldset grid-row">
+            <div class="tablet:grid-col-7">
+                <legend class="usa-legend"><span class="text-bold">Will you be conducting research with 10 or more participants (per "round" of research)?</span><br> For example, if you are interviewing participants, conducting usability testing and then sending out a post-launch feedback survey in the course of developing a new product, each of these activities would be considered different "rounds" of research because they are intended to collect different information. </legend>
+            </div>
+            <div class="tablet:text-right yesNoWrapper tablet:grid-col-5">
+                <span class="usa-radio display-inline-block text-middle margin-top-05 margin-right-2">
+                    <input class="usa-radio__input" id="research-10-or-more-yes" type="radio" name="research-10-or-more" value="yes" />
+                    <label class="usa-radio__label" for="research-10-or-more-yes">Yes</label>
+                </span>
+                <span class="usa-radio display-inline-block text-middle margin-top-05">
+                    <input class="usa-radio__input" id="research-10-or-more-no" type="radio" name="research-10-or-more" value="no" />
+                    <label class="usa-radio__label" for="research-10-or-more-no">No</label>
+                </span>
+            </div>
+        </fieldset>
+        <fieldset class="usa-fieldset grid-row">
+            <div class="tablet:grid-col-7">
+                <legend class="usa-legend"><span class="text-bold">Will ANY of your research participants be members of the public?</span><br> A member of the public is anyone who is not a federal employee or contractor acting within the scope of their employment.</legend>
+            </div>
+            <div class="tablet:text-right yesNoWrapper tablet:grid-col-5">
+                <span class="usa-radio display-inline-block text-middle margin-top-05 margin-right-2">
+                    <input class="usa-radio__input" id="research-public-yes" type="radio" name="research-public" value="yes" />
+                    <label class="usa-radio__label" for="research-public-yes">Yes</label>
+                </span>
+                <span class="usa-radio display-inline-block text-middle margin-top-05">
+                    <input class="usa-radio__input" id="research-public-no" type="radio" name="research-public" value="no" />
+                    <label class="usa-radio__label" for="research-public-no">No</label>
+                </span>
+            </div>
+        </fieldset>   
+        <p class="header-text margin-bottom-105 text-bold">Answer the following questions about your RESEARCH METHODS:</p>
+        <fieldset class="usa-fieldset grid-row">
+            <div class="tablet:grid-col-7">
+                <legend class="usa-legend"><span class="text-bold">Will your research involve direct observation?</span><br> That is, will you or someone on your team gather information by observing participants in person, virtually or on a recording?</legend>
+            </div>
+            <div class="tablet:text-right yesNoWrapper tablet:grid-col-5">
+                <span class="usa-radio display-inline-block text-middle margin-top-05 margin-right-2">
+                    <input class="usa-radio__input" id="direct-observation-yes" type="radio" name="direct-observation" value="yes" />
+                    <label class="usa-radio__label" for="direct-observation-yes">Yes</label>
+                </span>
+                <span class="usa-radio display-inline-block text-middle margin-top-05">
+                    <input class="usa-radio__input" id="direct-observation-no" type="radio" name="direct-observation" value="no" />
+                    <label class="usa-radio__label" for="direct-observation-no">No</label>
+                </span>
+            </div>
+        </fieldset>  
+        <fieldset class="usa-fieldset grid-row">
+            <div class="tablet:grid-col-7">
+                <legend class="usa-legend"><span class="text-bold">Will you be posing a set of close-ended questions to participants?</span><br> Close-ended questions have a limited range of answers (for example, "How would you rate your experience on a scale of 1-5?"), while open-ended questions do not limit participant answers (for example, "Please provide feedback on your experience using this website.") </legend>
+            </div>
+            <div class="tablet:text-right yesNoWrapper tablet:grid-col-5">
+                <span class="usa-radio display-inline-block text-middle margin-top-05 margin-right-2">
+                    <input class="usa-radio__input" id="close-ended-question-yes" type="radio" name="close-ended-question" value="yes" />
+                    <label class="usa-radio__label" for="close-ended-question-yes">Yes</label>
+                </span>
+                <span class="usa-radio display-inline-block text-middle margin-top-05">
+                    <input class="usa-radio__input" id="close-ended-question-no" type="radio" name="close-ended-question" value="no" />
+                    <label class="usa-radio__label" for="close-ended-question-no">No</label>
+                </span>
+            </div>
+        </fieldset>
+
+        <p class="quidance-container guidance-gray">Guidance will appear here</p>
+
+        <div class="switch-reset-button-wrapper grid-row">
+            <div class="tablet:grid-col-6">
+                <button class="usa-button usa-button--unstyled switch-to-recruitment-form text-bold" type="button">Switch to PRA for RECRUITMENT quiz</button>
+            </div>
+            <div class="reset-form-wrapper tablet:grid-col-6">
+                <button class="usa-button usa-button--unstyled reset-form text-primary-lighter text-bold" type="button">Reset</button>
+            </div>   
+        </div>
+    </form>
+</div>

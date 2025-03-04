@@ -1,0 +1,203 @@
+@use "uswds-core" as *;
+@use "theme-variables" as *;
+
+/* Uitility Classes */
+.text-indigo-cool-50 {
+  color: color("indigo-cool-50");
+}
+
+.text-gray-cool-50 {
+  color: color("gray-cool-50");
+}
+
+.text-header-3 {
+  @include u-font($theme-font-role-heading, $theme-h3-mobile-font-size);
+  @include u-text("normal");
+  margin-bottom: units(3);
+}
+
+.vertical-center {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  line-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+/****/
+
+.icr-links {
+  .content-row {
+      border: units(1px) solid color("gray-cool-10");
+      background: white;
+      border-radius: units(0.5);
+      padding: units(2);
+  }
+
+  img {
+      margin: auto auto units(1);
+      display: block;
+  }
+
+  .usa-button {
+      padding: units(2);
+      margin: auto;
+
+  }
+}
+
+/* Question Boxes */
+
+.questions-box {
+  max-width: none;
+  border-radius: units(0.5);
+  background: color('blue-warm-70');
+  padding: units(3);
+  margin-bottom: units(4);
+  
+  form {
+      display: none;
+  }
+
+  h3,
+  .header-text {
+      color: color('indigo-cool-5');
+      width: 100%;
+  }
+
+  h3,
+  legend {
+      margin-top: 0;
+  }
+
+  h3 {
+      font-size: 1.375rem;
+  }
+
+  fieldset {   
+      border-radius: units(1);
+
+      .usa-radio {
+          background: none;
+      }
+
+      &.disabled {
+          legend,
+          label {
+              color: color('gray-cool-50');
+          }    
+      }
+  }
+
+  .usa-legend {
+      max-width: none;
+      margin: units(1.5) 0;
+      padding-right: 0;
+  }
+
+  fieldset,
+  .quidance-container {
+      padding: units(2);
+      margin-bottom: units(2);
+  }
+
+  fieldset,
+  .guidance-gray {
+      background: color('indigo-cool-5');
+  }
+
+  .yesNoWrapper {
+      @include at-media("tablet") {
+          text-align: right;
+      }        
+  }
+
+  .guidance-gray {
+      color: color('gray-cool-30');
+      text-align: center;
+      text-transform: uppercase;
+      padding: units(5);
+      font-weight: 600;
+  }
+  
+  .guidance-yellow {
+      background-color: color('yellow-5');
+      border-left: units(1) solid color('gold-20v');
+  }
+  
+  .guidance-green {
+      background-color: color('green-cool-5');
+      border-left: units(1) solid color('green-cool-40v');
+  }
+
+  .usa-button {
+      &:hover {
+          color: color('blue-10');
+      }
+  }
+
+  .switch-reset-button-wrapper {
+      .reset-form-wrapper { 
+          @include at-media("tablet") {
+              text-align: right;
+          }
+      }
+
+      .usa-button {
+          color: #BFE4F3;
+      }
+  }
+
+  .question-box-intro {
+      h3,
+      h4 {
+          text-align: center;
+      }
+
+      h3 {
+          font-size: units(4);
+      }
+
+      .content-row {
+          .usa-button {
+              width: 100%;
+              margin: 0;
+              font-size: 1.375rem;
+              background: white;
+              color: color('indigo-cool-70');
+              border-radius: 0.625rem;
+          }
+
+      }
+  }
+
+  .open-quiz-button {
+    display: block;
+
+    img,
+    span {
+      display: block;
+    }
+
+    img {
+        margin: auto auto units(2);
+    }
+
+    span {
+        margin: auto;
+
+    }
+  }
+}
+
+.usa-card-group {
+  &.common-research-methods {
+    margin-top: units(4);
+    
+    .usa-card__img {
+      background-color: transparent;
+      max-width: 4.688rem;
+      margin: 0 auto;
+    }
+  }
+}
