@@ -14,9 +14,9 @@ cards:
 - heading: When does the PRA apply?
   body: What kind of information needs PRA approval, and what’s exempt.
   href: /do-i-need-clearance/
-- heading: Learn about PRA for UX/CX research
-  body: Determine if you need PRA clearance for your UX/CX research, and how to get it.
-  href: /pra-process-for-ux-cx/
+- heading: View additional resources
+  body: Links to official OMB guidance, plus tools and templates.
+  href: /additional-resources/
 - heading: Get help with the PRA
   body: Find agency resources to help you prepare your request.
   href: /contact/

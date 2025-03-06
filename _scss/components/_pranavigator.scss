@@ -201,3 +201,18 @@
     }
   }
 }
+
+.usa-process-list__item, 
+.usa-prose .usa-process-list__item {
+    font-size: size('body', 6);
+}
+
+.usa-process-list__heading,
+.usa-process-list__item::before {
+    font-size: size('body', 9);
+}
+
+.usa-prose>table td, .usa-prose>table th, 
+.usa-table td, .usa-table th {
+    vertical-align: top;
+}

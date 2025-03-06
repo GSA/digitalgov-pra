@@ -46,7 +46,7 @@ Each of these methods involve direct observation of participants (in-person, vir
 
 {% include research-methods.html %}
 
-Close-ended UX/CX feedback surveys _will need_</span>_ PRA clearance and _are eligible_ for the Fast Track process.
+Close-ended UX/CX feedback surveys _will need_ PRA clearance and _are eligible_ for the Fast Track process.
 {:.text-header-3}
 
 **Quantitative feedback surveys**
