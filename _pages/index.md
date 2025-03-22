@@ -14,9 +14,9 @@ cards:
 - heading: When does the PRA apply?
   body: What kind of information needs PRA approval, and what’s exempt.
   href: /do-i-need-clearance/
-- heading: Plan ahead for the PRA process
-  body: The approval process often takes between 6-9 months; get your information organized early.
-  href: /clearance-process/
+- heading: View additional resources
+  body: Links to official OMB guidance, plus tools and templates.
+  href: /additional-resources/
 - heading: Get help with the PRA
   body: Find agency resources to help you prepare your request.
   href: /contact/

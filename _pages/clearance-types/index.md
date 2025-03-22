@@ -2,20 +2,20 @@
 title: Types of PRA clearance
 permalink: /clearance-types/
 anchors:
-  - name: Normal clearance
+  - name: Standard clearance
   - name: Common Form clearance
   - name: Generic clearance
   - name: Expedited/Emergency clearance
 ---
 
-In addition to the [normal PRA clearance]({{'/clearance-process/' | relative_url}}), there are many other types of clearances. These labels can be confusing, but are used only in very specific circumstances. We’re here to help get you on the right track to approval.
+In addition to the [standard PRA clearance]({{'/clearance-process/' | relative_url}}), there are many other types of clearances. These labels can be confusing, but are used only in very specific circumstances. We’re here to help get you on the right track to approval.
 
-1. **Normal** clearance, for New requests, Revision and Extension requests, and Reinstatement requests.
+1. **Standard** clearance, for New requests, Revision and Extension requests, and Reinstatement requests.
 2. **Common Form** clearance, for a form already approved and in use by another agency.
 3. **Generic** clearance, which includes the fast-track process after it's granted.
 4. **Emergency/Expedited** review and clearance (used in very limited cases).
 
-## Normal clearance
+## Standard clearance
 
 The vast majority of PRA approval requests [go through our standard approval process]({{'/clearance-process/' | relative_url}}).
 
@@ -29,7 +29,7 @@ Because the hosting agency has already gone through the PRA approval process, an
 
 ## Generic clearance
 
-Generic clearance is for a very specific type of collection, usually associated with surveys. It allows for conducting more than one information collection using very similar methods. Generic clearances still require the initial generic collection to go through the [normal PRA process]({{'/clearance-process/' | relative_url}}), but allows for quicker clearance of associated collections later on.
+Generic clearance is for a very specific type of collection, usually associated with surveys. It allows for conducting more than one information collection using very similar methods. Generic clearances still require the initial generic collection to go through the [standard PRA process]({{'/clearance-process/' | relative_url}}), but allows for quicker clearance of associated collections later on.
 
 Generic clearance is best when you’ll have multiple collections which:
 
@@ -60,4 +60,4 @@ This is a rare type of approval granted only when there is a time-sensitive need
 
 With this clearance, OMB will work with a more streamlined review process that still fits the purposes of the PRA. OMB may decide to modify or waive the public comment requirements, but you still need to make every possible effort to get public input about your collection.
 
-Emergency clearances can only be approved for a maximum of six months; after this, your agency needs to renew the collection using the normal PRA process.
+Emergency clearances can only be approved for a maximum of six months; after this, your agency needs to renew the collection using the standard PRA process.

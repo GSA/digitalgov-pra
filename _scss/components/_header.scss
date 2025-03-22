@@ -26,6 +26,7 @@
   @include at-media($theme-navigation-width) {
     @include u-border(1px, "transparent");
     @include u-text("semibold");
+    padding: 0.9rem;
 
     &.usa-nav__link:hover {
       @include u-bg("base-lightest");
