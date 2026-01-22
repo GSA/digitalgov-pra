@@ -14,6 +14,7 @@ GEM
     ffi (1.17.1-arm64-darwin)
     ffi (1.17.1-x86_64-darwin)
     ffi (1.17.1-x86_64-linux-gnu)
+    ffi (1.17.1-x86_64-linux-musl)
     forwardable-extended (2.6.0)
     html-proofer (3.19.4)
       addressable (~> 2.3)
@@ -65,6 +66,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.0-x86_64-linux-gnu)
       racc (~> 1.4)
+    nokogiri (1.19.0-x86_64-linux-musl)
+      racc (~> 1.4)
     parallel (1.26.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -94,6 +97,8 @@ PLATFORMS
   x86_64-darwin-20
   x86_64-darwin-21
   x86_64-linux
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   html-proofer (~> 3.16)
