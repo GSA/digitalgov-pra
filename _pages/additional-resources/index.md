@@ -1,8 +1,9 @@
 ---
-title: Additional resources
+title: Additional PRA resources
 permalink: /additional-resources/
 
 ---
+Find helpful documents, systems, legal information, and tools related to the Paperwork Reduction Act (PRA).
 
 ## OMB Guidance Memoranda
 
