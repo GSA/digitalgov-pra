@@ -29,13 +29,11 @@
       window.Element && !Element.prototype.closest && (Element.prototype.closest = function(e) {
         var t, n = (this.document || this.ownerDocument).querySelectorAll(e), o = this;
         do {
-          for (t = n.length; 0 <= --t && n.item(t) !== o; )
-            ;
+          for (t = n.length; 0 <= --t && n.item(t) !== o; ) ;
         } while (t < 0 && (o = o.parentElement));
         return o;
       }), function() {
-        if ("function" == typeof window.CustomEvent)
-          return;
+        if ("function" == typeof window.CustomEvent) return;
         function e(e2, t) {
           t = t || { bubbles: false, cancelable: false, detail: void 0 };
           var n = document.createEvent("CustomEvent");
@@ -43,8 +41,7 @@
         }
         e.prototype = window.Event.prototype, window.CustomEvent = e;
       }(), function() {
-        for (var r = 0, e = ["ms", "moz", "webkit", "o"], t = 0; t < e.length && !window.requestAnimationFrame; ++t)
-          window.requestAnimationFrame = window[e[t] + "RequestAnimationFrame"], window.cancelAnimationFrame = window[e[t] + "CancelAnimationFrame"] || window[e[t] + "CancelRequestAnimationFrame"];
+        for (var r = 0, e = ["ms", "moz", "webkit", "o"], t = 0; t < e.length && !window.requestAnimationFrame; ++t) window.requestAnimationFrame = window[e[t] + "RequestAnimationFrame"], window.cancelAnimationFrame = window[e[t] + "CancelAnimationFrame"] || window[e[t] + "CancelRequestAnimationFrame"];
         window.requestAnimationFrame || (window.requestAnimationFrame = function(e2, t2) {
           var n = (/* @__PURE__ */ new Date()).getTime(), o = Math.max(0, 16 - (n - r)), a = window.setTimeout(function() {
             e2(n + o);
@@ -63,16 +60,14 @@
           var n = {};
           return Array.prototype.forEach.call(arguments, function(e) {
             for (var t in e) {
-              if (!e.hasOwnProperty(t))
-                return;
+              if (!e.hasOwnProperty(t)) return;
               n[t] = e[t];
             }
           }), n;
         }, r = function(e) {
           "#" === e.charAt(0) && (e = e.substr(1));
           for (var t, n = String(e), o = n.length, a = -1, r2 = "", i = n.charCodeAt(0); ++a < o; ) {
-            if (0 === (t = n.charCodeAt(a)))
-              throw new InvalidCharacterError("Invalid character: the input contains U+0000.");
+            if (0 === (t = n.charCodeAt(a))) throw new InvalidCharacterError("Invalid character: the input contains U+0000.");
             1 <= t && t <= 31 || 127 == t || 0 === a && 48 <= t && t <= 57 || 1 === a && 48 <= t && t <= 57 && 45 === i ? r2 += "\\" + t.toString(16) + " " : r2 += 128 <= t || 45 === t || 95 === t || 48 <= t && t <= 57 || 65 <= t && t <= 90 || 97 <= t && t <= 122 ? n.charAt(a) : "\\" + n.charAt(a);
           }
           return "#" + r2;
@@ -101,16 +96,13 @@
               i.header && !A && (A = document.querySelector(i.header));
               var n2, o2, u, l, m, d, f, h, p = L(A), g = c ? a2 : function(e3, t3, n3, o3) {
                 var a3 = 0;
-                if (e3.offsetParent)
-                  for (; a3 += e3.offsetTop, e3 = e3.offsetParent; )
-                    ;
+                if (e3.offsetParent) for (; a3 += e3.offsetTop, e3 = e3.offsetParent; ) ;
                 return a3 = Math.max(a3 - t3 - n3, 0), o3 && (a3 = Math.min(a3, F() - M.innerHeight)), a3;
               }(t2, p, parseInt("function" == typeof i.offset ? i.offset(a2, r2) : i.offset, 10), i.clip), y = g - s, v = F(), w = 0, S = (n2 = y, u = (o2 = i).speedAsDuration ? o2.speed : Math.abs(n2 / 1e3 * o2.speed), o2.durationMax && u > o2.durationMax ? o2.durationMax : o2.durationMin && u < o2.durationMin ? o2.durationMin : parseInt(u, 10)), E = function(e3) {
                 var t3, n3, o3;
                 l || (l = e3), w += e3 - l, d = s + y * (n3 = m = 1 < (m = 0 === S ? 0 : w / S) ? 1 : m, "easeInQuad" === (t3 = i).easing && (o3 = n3 * n3), "easeOutQuad" === t3.easing && (o3 = n3 * (2 - n3)), "easeInOutQuad" === t3.easing && (o3 = n3 < 0.5 ? 2 * n3 * n3 : (4 - 2 * n3) * n3 - 1), "easeInCubic" === t3.easing && (o3 = n3 * n3 * n3), "easeOutCubic" === t3.easing && (o3 = --n3 * n3 * n3 + 1), "easeInOutCubic" === t3.easing && (o3 = n3 < 0.5 ? 4 * n3 * n3 * n3 : (n3 - 1) * (2 * n3 - 2) * (2 * n3 - 2) + 1), "easeInQuart" === t3.easing && (o3 = n3 * n3 * n3 * n3), "easeOutQuart" === t3.easing && (o3 = 1 - --n3 * n3 * n3 * n3), "easeInOutQuart" === t3.easing && (o3 = n3 < 0.5 ? 8 * n3 * n3 * n3 * n3 : 1 - 8 * --n3 * n3 * n3 * n3), "easeInQuint" === t3.easing && (o3 = n3 * n3 * n3 * n3 * n3), "easeOutQuint" === t3.easing && (o3 = 1 + --n3 * n3 * n3 * n3 * n3), "easeInOutQuint" === t3.easing && (o3 = n3 < 0.5 ? 16 * n3 * n3 * n3 * n3 * n3 : 1 + 16 * --n3 * n3 * n3 * n3 * n3), t3.customEasing && (o3 = t3.customEasing(n3)), o3 || n3), M.scrollTo(0, Math.floor(d)), function(e4, t4) {
                   var n4 = M.pageYOffset;
-                  if (e4 == t4 || n4 == t4 || (s < t4 && M.innerHeight + n4) >= v)
-                    return C.cancelScroll(true), x(a2, t4, c), H("scrollStop", i, a2, r2), !(O = l = null);
+                  if (e4 == t4 || n4 == t4 || (s < t4 && M.innerHeight + n4) >= v) return C.cancelScroll(true), x(a2, t4, c), H("scrollStop", i, a2, r2), !(O = l = null);
                 }(d, g) || (O = M.requestAnimationFrame(E), l = e3);
               };
               0 === M.pageYOffset && M.scrollTo(0, 0), f = a2, h = i, c || history.pushState && h.updateURL && history.pushState({ smoothScroll: JSON.stringify(h), anchor: f.id }, document.title, f === document.documentElement ? "#top" : "#" + f.id), "matchMedia" in M && M.matchMedia("(prefers-reduced-motion)").matches ? x(a2, Math.floor(g), false) : (H("scrollStart", i, a2, r2), C.cancelScroll(true), M.requestAnimationFrame(E));
@@ -125,11 +117,9 @@
                 t2 = r(a.hash);
               }
               if ("#" === t2) {
-                if (!b.topOnEmptyHash)
-                  return;
+                if (!b.topOnEmptyHash) return;
                 n2 = document.documentElement;
-              } else
-                n2 = document.querySelector(t2);
+              } else n2 = document.querySelector(t2);
               (n2 = n2 || "#top" !== t2 ? n2 : document.documentElement) && (e2.preventDefault(), function(e3) {
                 if (history.replaceState && e3.updateURL && !history.state) {
                   var t3 = M.location.hash;
@@ -147,8 +137,7 @@
             b && (document.removeEventListener("click", t, false), M.removeEventListener("popstate", n, false), C.cancelScroll(), O = A = a = b = null);
           };
           return function() {
-            if (!("querySelector" in document && "addEventListener" in M && "requestAnimationFrame" in M && "closest" in M.Element.prototype))
-              throw "Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.";
+            if (!("querySelector" in document && "addEventListener" in M && "requestAnimationFrame" in M && "closest" in M.Element.prototype)) throw "Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.";
             C.destroy(), b = I(q, e || {}), A = b.header ? document.querySelector(b.header) : null, document.addEventListener("click", t, false), b.updateURL && b.popstate && M.addEventListener("popstate", n, false);
           }(), C;
         };
@@ -165,8 +154,7 @@
         return function(n) {
           var r = {};
           function o(e) {
-            if (r[e])
-              return r[e].exports;
+            if (r[e]) return r[e].exports;
             var t = r[e] = { i: e, l: false, exports: {} };
             return n[e].call(t.exports, t, t.exports, o), t.l = true, t.exports;
           }
@@ -175,16 +163,12 @@
           }, o.r = function(e) {
             "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: true });
           }, o.t = function(t, e) {
-            if (1 & e && (t = o(t)), 8 & e)
-              return t;
-            if (4 & e && "object" == typeof t && t && t.__esModule)
-              return t;
+            if (1 & e && (t = o(t)), 8 & e) return t;
+            if (4 & e && "object" == typeof t && t && t.__esModule) return t;
             var n2 = /* @__PURE__ */ Object.create(null);
-            if (o.r(n2), Object.defineProperty(n2, "default", { enumerable: true, value: t }), 2 & e && "string" != typeof t)
-              for (var r2 in t)
-                o.d(n2, r2, function(e2) {
-                  return t[e2];
-                }.bind(null, r2));
+            if (o.r(n2), Object.defineProperty(n2, "default", { enumerable: true, value: t }), 2 & e && "string" != typeof t) for (var r2 in t) o.d(n2, r2, function(e2) {
+              return t[e2];
+            }.bind(null, r2));
             return n2;
           }, o.n = function(e) {
             var t = e && e.__esModule ? function() {
@@ -199,8 +183,7 @@
         }([function(e, t, n) {
           var m = n(1), v = n(6), y = n(7), g = n(16), _3 = n(18), b = "prototype", w = function(e2, t2, n2) {
             var r, o, i, u, a = e2 & w.F, s = e2 & w.G, l = e2 & w.S, c = e2 & w.P, p = e2 & w.B, f = s ? m : l ? m[t2] || (m[t2] = {}) : (m[t2] || {})[b], d = s ? v : v[t2] || (v[t2] = {}), h = d[b] || (d[b] = {});
-            for (r in s && (n2 = t2), n2)
-              i = ((o = !a && f && f[r] !== void 0) ? f : n2)[r], u = p && o ? _3(i, m) : c && "function" == typeof i ? _3(Function.call, i) : i, f && g(f, r, i, e2 & w.U), d[r] != i && y(d, r, u), c && h[r] != i && (h[r] = i);
+            for (r in s && (n2 = t2), n2) i = ((o = !a && f && f[r] !== void 0) ? f : n2)[r], u = p && o ? _3(i, m) : c && "function" == typeof i ? _3(Function.call, i) : i, f && g(f, r, i, e2 & w.U), d[r] != i && y(d, r, u), c && h[r] != i && (h[r] = i);
           };
           m.core = v, w.F = 1, w.G = 2, w.S = 4, w.P = 8, w.B = 16, w.W = 32, w.U = 64, w.R = 128, e.exports = w;
         }, function(e, t) {
@@ -245,20 +228,14 @@
           }, E = {}, l = [], c = [];
           function r(e2, t2) {
             var n2, r2, o2, i2, u2 = c;
-            for (i2 = arguments.length; 2 < i2--; )
-              l.push(arguments[i2]);
-            for (t2 && null != t2.children && (l.length || l.push(t2.children), delete t2.children); l.length; )
-              if ((r2 = l.pop()) && r2.pop !== void 0)
-                for (i2 = r2.length; i2--; )
-                  l.push(r2[i2]);
-              else
-                "boolean" == typeof r2 && (r2 = null), (o2 = "function" != typeof e2) && (null == r2 ? r2 = "" : "number" == typeof r2 ? r2 = String(r2) : "string" != typeof r2 && (o2 = false)), o2 && n2 ? u2[u2.length - 1] += r2 : u2 === c ? u2 = [r2] : u2.push(r2), n2 = o2;
+            for (i2 = arguments.length; 2 < i2--; ) l.push(arguments[i2]);
+            for (t2 && null != t2.children && (l.length || l.push(t2.children), delete t2.children); l.length; ) if ((r2 = l.pop()) && r2.pop !== void 0) for (i2 = r2.length; i2--; ) l.push(r2[i2]);
+            else "boolean" == typeof r2 && (r2 = null), (o2 = "function" != typeof e2) && (null == r2 ? r2 = "" : "number" == typeof r2 ? r2 = String(r2) : "string" != typeof r2 && (o2 = false)), o2 && n2 ? u2[u2.length - 1] += r2 : u2 === c ? u2 = [r2] : u2.push(r2), n2 = o2;
             var a2 = new s();
             return a2.nodeName = e2, a2.children = u2, a2.attributes = null == t2 ? void 0 : t2, a2.key = null == t2 ? void 0 : t2.key, E.vnode !== void 0 && E.vnode(a2), a2;
           }
           function M(e2, t2) {
-            for (var n2 in t2)
-              e2[n2] = t2[n2];
+            for (var n2 in t2) e2[n2] = t2[n2];
             return e2;
           }
           var o = "function" == typeof Promise ? Promise.resolve().then.bind(Promise.resolve()) : setTimeout;
@@ -271,8 +248,7 @@
           }
           function f() {
             var e2, t2 = u;
-            for (u = []; e2 = t2.pop(); )
-              e2._dirty && V(e2);
+            for (u = []; e2 = t2.pop(); ) e2._dirty && V(e2);
           }
           function N(e2, t2) {
             return e2.normalizedNodeName === t2 || e2.nodeName.toLowerCase() === t2.toLowerCase();
@@ -281,9 +257,7 @@
             var t2 = M({}, e2.attributes);
             t2.children = e2.children;
             var n2 = e2.nodeName.defaultProps;
-            if (n2 !== void 0)
-              for (var r2 in n2)
-                t2[r2] === void 0 && (t2[r2] = n2[r2]);
+            if (n2 !== void 0) for (var r2 in n2) t2[r2] === void 0 && (t2[r2] = n2[r2]);
             return t2;
           }
           function k(e2) {
@@ -291,44 +265,35 @@
             t2 && t2.removeChild(e2);
           }
           function v(e2, t2, n2, r2, o2) {
-            if ("className" === t2 && (t2 = "class"), "key" === t2)
-              ;
-            else if ("ref" === t2)
-              n2 && n2(null), r2 && r2(e2);
-            else if ("class" !== t2 || o2)
-              if ("style" === t2) {
-                if (r2 && "string" != typeof r2 && "string" != typeof n2 || (e2.style.cssText = r2 || ""), r2 && "object" == typeof r2) {
-                  if ("string" != typeof n2)
-                    for (var i2 in n2)
-                      i2 in r2 || (e2.style[i2] = "");
-                  for (var i2 in r2)
-                    e2.style[i2] = "number" == typeof r2[i2] && false === p.test(i2) ? r2[i2] + "px" : r2[i2];
-                }
-              } else if ("dangerouslySetInnerHTML" === t2)
-                r2 && (e2.innerHTML = r2.__html || "");
-              else if ("o" == t2[0] && "n" == t2[1]) {
-                var u2 = t2 !== (t2 = t2.replace(/Capture$/, ""));
-                t2 = t2.toLowerCase().substring(2), r2 ? n2 || e2.addEventListener(t2, d, u2) : e2.removeEventListener(t2, d, u2), (e2._listeners || (e2._listeners = {}))[t2] = r2;
-              } else if ("list" !== t2 && "type" !== t2 && !o2 && t2 in e2) {
-                try {
-                  e2[t2] = null == r2 ? "" : r2;
-                } catch (s2) {
-                }
-                null != r2 && false !== r2 || "spellcheck" == t2 || e2.removeAttribute(t2);
-              } else {
-                var a2 = o2 && t2 !== (t2 = t2.replace(/^xlink:?/, ""));
-                null == r2 || false === r2 ? a2 ? e2.removeAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase()) : e2.removeAttribute(t2) : "function" != typeof r2 && (a2 ? e2.setAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase(), r2) : e2.setAttribute(t2, r2));
+            if ("className" === t2 && (t2 = "class"), "key" === t2) ;
+            else if ("ref" === t2) n2 && n2(null), r2 && r2(e2);
+            else if ("class" !== t2 || o2) if ("style" === t2) {
+              if (r2 && "string" != typeof r2 && "string" != typeof n2 || (e2.style.cssText = r2 || ""), r2 && "object" == typeof r2) {
+                if ("string" != typeof n2) for (var i2 in n2) i2 in r2 || (e2.style[i2] = "");
+                for (var i2 in r2) e2.style[i2] = "number" == typeof r2[i2] && false === p.test(i2) ? r2[i2] + "px" : r2[i2];
               }
-            else
-              e2.className = r2 || "";
+            } else if ("dangerouslySetInnerHTML" === t2) r2 && (e2.innerHTML = r2.__html || "");
+            else if ("o" == t2[0] && "n" == t2[1]) {
+              var u2 = t2 !== (t2 = t2.replace(/Capture$/, ""));
+              t2 = t2.toLowerCase().substring(2), r2 ? n2 || e2.addEventListener(t2, d, u2) : e2.removeEventListener(t2, d, u2), (e2._listeners || (e2._listeners = {}))[t2] = r2;
+            } else if ("list" !== t2 && "type" !== t2 && !o2 && t2 in e2) {
+              try {
+                e2[t2] = null == r2 ? "" : r2;
+              } catch (s2) {
+              }
+              null != r2 && false !== r2 || "spellcheck" == t2 || e2.removeAttribute(t2);
+            } else {
+              var a2 = o2 && t2 !== (t2 = t2.replace(/^xlink:?/, ""));
+              null == r2 || false === r2 ? a2 ? e2.removeAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase()) : e2.removeAttribute(t2) : "function" != typeof r2 && (a2 ? e2.setAttributeNS("http://www.w3.org/1999/xlink", t2.toLowerCase(), r2) : e2.setAttribute(t2, r2));
+            }
+            else e2.className = r2 || "";
           }
           function d(e2) {
             return this._listeners[e2.type](E.event && E.event(e2) || e2);
           }
           var A = [], P = 0, j = false, L = false;
           function T() {
-            for (var e2; e2 = A.pop(); )
-              E.afterMount && E.afterMount(e2), e2.componentDidMount && e2.componentDidMount();
+            for (var e2; e2 = A.pop(); ) E.afterMount && E.afterMount(e2), e2.componentDidMount && e2.componentDidMount();
           }
           function B(e2, t2, n2, r2, o2, i2) {
             P++ || (j = null != o2 && o2.ownerSVGElement !== void 0, L = null != e2 && !("__preactattr_" in e2));
@@ -337,65 +302,51 @@
           }
           function D(e2, t2, n2, r2, o2) {
             var i2 = e2, u2 = j;
-            if (null != t2 && "boolean" != typeof t2 || (t2 = ""), "string" == typeof t2 || "number" == typeof t2)
-              return e2 && e2.splitText !== void 0 && e2.parentNode && (!e2._component || o2) ? e2.nodeValue != t2 && (e2.nodeValue = t2) : (i2 = document.createTextNode(t2), e2 && (e2.parentNode && e2.parentNode.replaceChild(i2, e2), F(e2, true))), i2["__preactattr_"] = true, i2;
+            if (null != t2 && "boolean" != typeof t2 || (t2 = ""), "string" == typeof t2 || "number" == typeof t2) return e2 && e2.splitText !== void 0 && e2.parentNode && (!e2._component || o2) ? e2.nodeValue != t2 && (e2.nodeValue = t2) : (i2 = document.createTextNode(t2), e2 && (e2.parentNode && e2.parentNode.replaceChild(i2, e2), F(e2, true))), i2["__preactattr_"] = true, i2;
             var a2 = t2.nodeName;
-            if ("function" == typeof a2)
-              return function d2(e3, t3, n3, r3) {
-                var o3 = e3 && e3._component, i3 = o3, u3 = e3, a3 = o3 && e3._componentConstructor === t3.nodeName, s3 = a3, l3 = I(t3);
-                for (; o3 && !s3 && (o3 = o3._parentComponent); )
-                  s3 = o3.constructor === t3.nodeName;
-                o3 && s3 && (!r3 || o3._component) ? (U(o3, l3, 3, n3, r3), e3 = o3.base) : (i3 && !a3 && (q(i3), e3 = u3 = null), o3 = R(t3.nodeName, l3, n3), e3 && !o3.nextBase && (o3.nextBase = e3, u3 = null), U(o3, l3, 1, n3, r3), e3 = o3.base, u3 && e3 !== u3 && (u3._component = null, F(u3, false)));
-                return e3;
-              }(e2, t2, n2, r2);
+            if ("function" == typeof a2) return function d2(e3, t3, n3, r3) {
+              var o3 = e3 && e3._component, i3 = o3, u3 = e3, a3 = o3 && e3._componentConstructor === t3.nodeName, s3 = a3, l3 = I(t3);
+              for (; o3 && !s3 && (o3 = o3._parentComponent); ) s3 = o3.constructor === t3.nodeName;
+              o3 && s3 && (!r3 || o3._component) ? (U(o3, l3, 3, n3, r3), e3 = o3.base) : (i3 && !a3 && (q(i3), e3 = u3 = null), o3 = R(t3.nodeName, l3, n3), e3 && !o3.nextBase && (o3.nextBase = e3, u3 = null), U(o3, l3, 1, n3, r3), e3 = o3.base, u3 && e3 !== u3 && (u3._component = null, F(u3, false)));
+              return e3;
+            }(e2, t2, n2, r2);
             if (j = "svg" === a2 || "foreignObject" !== a2 && j, a2 = String(a2), (!e2 || !N(e2, a2)) && (i2 = function h2(e3, t3) {
               var n3 = t3 ? document.createElementNS("http://www.w3.org/2000/svg", e3) : document.createElement(e3);
               return n3.normalizedNodeName = e3, n3;
             }(a2, j), e2)) {
-              for (; e2.firstChild; )
-                i2.appendChild(e2.firstChild);
+              for (; e2.firstChild; ) i2.appendChild(e2.firstChild);
               e2.parentNode && e2.parentNode.replaceChild(i2, e2), F(e2, true);
             }
             var s2 = i2.firstChild, l2 = i2["__preactattr_"], c2 = t2.children;
             if (null == l2) {
               l2 = i2["__preactattr_"] = {};
-              for (var p2 = i2.attributes, f2 = p2.length; f2--; )
-                l2[p2[f2].name] = p2[f2].value;
+              for (var p2 = i2.attributes, f2 = p2.length; f2--; ) l2[p2[f2].name] = p2[f2].value;
             }
             return !L && c2 && 1 === c2.length && "string" == typeof c2[0] && null != s2 && s2.splitText !== void 0 && null == s2.nextSibling ? s2.nodeValue != c2[0] && (s2.nodeValue = c2[0]) : (c2 && c2.length || null != s2) && function S(e3, t3, n3, r3, o3) {
               var i3, u3, a3, s3, l3, c3 = e3.childNodes, p3 = [], f3 = {}, d2 = 0, h2 = 0, m2 = c3.length, v2 = 0, y2 = t3 ? t3.length : 0;
-              if (0 !== m2)
-                for (var g2 = 0; g2 < m2; g2++) {
-                  var _4 = c3[g2], b2 = _4["__preactattr_"], w = y2 && b2 ? _4._component ? _4._component.__key : b2.key : null;
-                  null != w ? (d2++, f3[w] = _4) : (b2 || (_4.splitText !== void 0 ? !o3 || _4.nodeValue.trim() : o3)) && (p3[v2++] = _4);
-                }
-              if (0 !== y2)
-                for (var g2 = 0; g2 < y2; g2++) {
-                  s3 = t3[g2], l3 = null;
-                  var w = s3.key;
-                  if (null != w)
-                    d2 && f3[w] !== void 0 && (l3 = f3[w], f3[w] = void 0, d2--);
-                  else if (h2 < v2) {
-                    for (i3 = h2; i3 < v2; i3++)
-                      if (p3[i3] !== void 0 && (x = u3 = p3[i3], C = o3, "string" == typeof (O = s3) || "number" == typeof O ? x.splitText !== void 0 : "string" == typeof O.nodeName ? !x._componentConstructor && N(x, O.nodeName) : C || x._componentConstructor === O.nodeName)) {
-                        l3 = u3, p3[i3] = void 0, i3 === v2 - 1 && v2--, i3 === h2 && h2++;
-                        break;
-                      }
+              if (0 !== m2) for (var g2 = 0; g2 < m2; g2++) {
+                var _4 = c3[g2], b2 = _4["__preactattr_"], w = y2 && b2 ? _4._component ? _4._component.__key : b2.key : null;
+                null != w ? (d2++, f3[w] = _4) : (b2 || (_4.splitText !== void 0 ? !o3 || _4.nodeValue.trim() : o3)) && (p3[v2++] = _4);
+              }
+              if (0 !== y2) for (var g2 = 0; g2 < y2; g2++) {
+                s3 = t3[g2], l3 = null;
+                var w = s3.key;
+                if (null != w) d2 && f3[w] !== void 0 && (l3 = f3[w], f3[w] = void 0, d2--);
+                else if (h2 < v2) {
+                  for (i3 = h2; i3 < v2; i3++) if (p3[i3] !== void 0 && (x = u3 = p3[i3], C = o3, "string" == typeof (O = s3) || "number" == typeof O ? x.splitText !== void 0 : "string" == typeof O.nodeName ? !x._componentConstructor && N(x, O.nodeName) : C || x._componentConstructor === O.nodeName)) {
+                    l3 = u3, p3[i3] = void 0, i3 === v2 - 1 && v2--, i3 === h2 && h2++;
+                    break;
                   }
-                  l3 = D(l3, s3, n3, r3), a3 = c3[g2], l3 && l3 !== e3 && l3 !== a3 && (null == a3 ? e3.appendChild(l3) : l3 === a3.nextSibling ? k(a3) : e3.insertBefore(l3, a3));
                 }
+                l3 = D(l3, s3, n3, r3), a3 = c3[g2], l3 && l3 !== e3 && l3 !== a3 && (null == a3 ? e3.appendChild(l3) : l3 === a3.nextSibling ? k(a3) : e3.insertBefore(l3, a3));
+              }
               var x, O, C;
-              if (d2)
-                for (var g2 in f3)
-                  f3[g2] !== void 0 && F(f3[g2], false);
-              for (; h2 <= v2; )
-                (l3 = p3[v2--]) !== void 0 && F(l3, false);
+              if (d2) for (var g2 in f3) f3[g2] !== void 0 && F(f3[g2], false);
+              for (; h2 <= v2; ) (l3 = p3[v2--]) !== void 0 && F(l3, false);
             }(i2, c2, n2, r2, L || null != l2.dangerouslySetInnerHTML), function m2(e3, t3, n3) {
               var r3;
-              for (r3 in n3)
-                t3 && null != t3[r3] || null == n3[r3] || v(e3, r3, n3[r3], n3[r3] = void 0, j);
-              for (r3 in t3)
-                "children" === r3 || "innerHTML" === r3 || r3 in n3 && t3[r3] === ("value" === r3 || "checked" === r3 ? e3[r3] : n3[r3]) || v(e3, r3, n3[r3], n3[r3] = t3[r3], j);
+              for (r3 in n3) t3 && null != t3[r3] || null == n3[r3] || v(e3, r3, n3[r3], n3[r3] = void 0, j);
+              for (r3 in t3) "children" === r3 || "innerHTML" === r3 || r3 in n3 && t3[r3] === ("value" === r3 || "checked" === r3 ? e3[r3] : n3[r3]) || v(e3, r3, n3[r3], n3[r3] = t3[r3], j);
             }(i2, t2.attributes, l2), j = u2, i2;
           }
           function F(e2, t2) {
@@ -411,9 +362,7 @@
           var m = [];
           function R(e2, t2, n2) {
             var r2, o2 = m.length;
-            for (e2.prototype && e2.prototype.render ? (r2 = new e2(t2, n2), g.call(r2, t2, n2)) : ((r2 = new g(t2, n2)).constructor = e2, r2.render = y); o2--; )
-              if (m[o2].constructor === e2)
-                return r2.nextBase = m[o2].nextBase, m.splice(o2, 1), r2;
+            for (e2.prototype && e2.prototype.render ? (r2 = new e2(t2, n2), g.call(r2, t2, n2)) : ((r2 = new g(t2, n2)).constructor = e2, r2.render = y); o2--; ) if (m[o2].constructor === e2) return r2.nextBase = m[o2].nextBase, m.splice(o2, 1), r2;
             return r2;
           }
           function y(e2, t2, n2) {
@@ -431,24 +380,21 @@
                 if ("function" == typeof w) {
                   var x = I(o2);
                   (i2 = v2) && i2.constructor === w && x.key == i2.__key ? U(i2, x, 1, l2, false) : (_4 = i2, e2._component = i2 = R(w, x, l2), i2.nextBase = i2.nextBase || h2, i2._parentComponent = e2, U(i2, x, 0, l2, false), V(i2, 1, n2, true)), b2 = i2.base;
-                } else
-                  u2 = m2, (_4 = v2) && (u2 = e2._component = null), (m2 || 1 === t2) && (u2 && (u2._component = null), b2 = function B2(t3, n3, r3, o3, i3, u3) {
-                    P++ || (j = null != i3 && i3.ownerSVGElement !== void 0, L = null != t3 && !("__preactattr_" in t3));
-                    var a3 = D(t3, n3, r3, o3, u3);
-                    return i3 && a3.parentNode !== i3 && i3.appendChild(a3), --P || (L = false, u3 || T()), a3;
-                  }(u2, o2, l2, n2 || !d2, m2 && m2.parentNode, true));
+                } else u2 = m2, (_4 = v2) && (u2 = e2._component = null), (m2 || 1 === t2) && (u2 && (u2._component = null), b2 = function B2(t3, n3, r3, o3, i3, u3) {
+                  P++ || (j = null != i3 && i3.ownerSVGElement !== void 0, L = null != t3 && !("__preactattr_" in t3));
+                  var a3 = D(t3, n3, r3, o3, u3);
+                  return i3 && a3.parentNode !== i3 && i3.appendChild(a3), --P || (L = false, u3 || T()), a3;
+                }(u2, o2, l2, n2 || !d2, m2 && m2.parentNode, true));
                 if (m2 && b2 !== m2 && i2 !== v2) {
                   var O = m2.parentNode;
                   O && b2 !== O && (O.replaceChild(b2, m2), _4 || (m2._component = null, F(m2, false)));
                 }
                 if (_4 && q(_4), (e2.base = b2) && !r2) {
-                  for (var C = e2, S = e2; S = S._parentComponent; )
-                    (C = S).base = b2;
+                  for (var C = e2, S = e2; S = S._parentComponent; ) (C = S).base = b2;
                   b2._component = C, b2._componentConstructor = C.constructor;
                 }
               }
-              for (!d2 || n2 ? A.unshift(e2) : y2 || (e2.componentDidUpdate && e2.componentDidUpdate(c2, p2, g2), E.afterUpdate && E.afterUpdate(e2)); e2._renderCallbacks.length; )
-                e2._renderCallbacks.pop().call(e2);
+              for (!d2 || n2 ? A.unshift(e2) : y2 || (e2.componentDidUpdate && e2.componentDidUpdate(c2, p2, g2), E.afterUpdate && E.afterUpdate(e2)); e2._renderCallbacks.length; ) e2._renderCallbacks.pop().call(e2);
               P || r2 || T();
             }
           }
@@ -486,20 +432,17 @@
         }, function(e, t, n) {
           var o = n(9), i = n(38), u = n(39), a = Object.defineProperty;
           t.f = n(3) ? Object.defineProperty : function(e2, t2, n2) {
-            if (o(e2), t2 = u(t2, true), o(n2), i)
-              try {
-                return a(e2, t2, n2);
-              } catch (r) {
-              }
-            if ("get" in n2 || "set" in n2)
-              throw TypeError("Accessors not supported!");
+            if (o(e2), t2 = u(t2, true), o(n2), i) try {
+              return a(e2, t2, n2);
+            } catch (r) {
+            }
+            if ("get" in n2 || "set" in n2) throw TypeError("Accessors not supported!");
             return "value" in n2 && (e2[t2] = n2.value), e2;
           };
         }, function(e, t, n) {
           var r = n(2);
           e.exports = function(e2) {
-            if (!r(e2))
-              throw TypeError(e2 + " is not an object!");
+            if (!r(e2)) throw TypeError(e2 + " is not an object!");
             return e2;
           };
         }, function(e, t) {
@@ -514,8 +457,7 @@
           };
         }, function(e, t) {
           e.exports = function(e2) {
-            if (e2 == void 0)
-              throw TypeError("Can't call method on  " + e2);
+            if (e2 == void 0) throw TypeError("Can't call method on  " + e2);
             return e2;
           };
         }, function(e, t, n) {
@@ -553,8 +495,7 @@
         }, function(e, t, n) {
           var i = n(19);
           e.exports = function(r, o, e2) {
-            if (i(r), o === void 0)
-              return r;
+            if (i(r), o === void 0) return r;
             switch (e2) {
               case 1:
                 return function(e3) {
@@ -575,8 +516,7 @@
           };
         }, function(e, t) {
           e.exports = function(e2) {
-            if ("function" != typeof e2)
-              throw TypeError(e2 + " is not a function!");
+            if ("function" != typeof e2) throw TypeError(e2 + " is not a function!");
             return e2;
           };
         }, function(e, t, n) {
@@ -600,13 +540,8 @@
             return function(e2, t2, n2) {
               var r, o = s(e2), i = l(o.length), u = c(n2, i);
               if (a && t2 != t2) {
-                for (; u < i; )
-                  if ((r = o[u++]) != r)
-                    return true;
-              } else
-                for (; u < i; u++)
-                  if ((a || u in o) && o[u] === t2)
-                    return a || u || 0;
+                for (; u < i; ) if ((r = o[u++]) != r) return true;
+              } else for (; u < i; u++) if ((a || u in o) && o[u] === t2) return a || u || 0;
               return !a && -1;
             };
           };
@@ -657,24 +592,20 @@
           e.exports = function(p, e2) {
             var f = 1 == p, d = 2 == p, h = 3 == p, m = 4 == p, v = 6 == p, y = 5 == p || v, g = e2 || r;
             return function(e3, t2, n2) {
-              for (var r2, o, i = w(e3), u = b(i), a = _3(t2, n2, 3), s = x(u.length), l = 0, c = f ? g(e3, s) : d ? g(e3, 0) : void 0; l < s; l++)
-                if ((y || l in u) && (o = a(r2 = u[l], l, i), p)) {
-                  if (f)
-                    c[l] = o;
-                  else if (o)
-                    switch (p) {
-                      case 3:
-                        return true;
-                      case 5:
-                        return r2;
-                      case 6:
-                        return l;
-                      case 2:
-                        c.push(r2);
-                    }
-                  else if (m)
-                    return false;
+              for (var r2, o, i = w(e3), u = b(i), a = _3(t2, n2, 3), s = x(u.length), l = 0, c = f ? g(e3, s) : d ? g(e3, 0) : void 0; l < s; l++) if ((y || l in u) && (o = a(r2 = u[l], l, i), p)) {
+                if (f) c[l] = o;
+                else if (o) switch (p) {
+                  case 3:
+                    return true;
+                  case 5:
+                    return r2;
+                  case 6:
+                    return l;
+                  case 2:
+                    c.push(r2);
                 }
+                else if (m) return false;
+              }
               return v ? -1 : h || m ? m : c;
             };
           };
@@ -704,12 +635,9 @@
             return e2 && e2.__esModule ? e2 : { "default": e2 };
           }(n(51));
           function i(e2) {
-            if (!e2.element)
-              throw new Error("element is not defined");
-            if (!e2.id)
-              throw new Error("id is not defined");
-            if (!e2.source)
-              throw new Error("source is not defined");
+            if (!e2.element) throw new Error("element is not defined");
+            if (!e2.id) throw new Error("id is not defined");
+            if (!e2.source) throw new Error("source is not defined");
             Array.isArray(e2.source) && (e2.source = u(e2.source)), (0, r.render)((0, r.createElement)(o["default"], e2), e2.element);
           }
           var u = function u2(n2) {
@@ -720,8 +648,7 @@
             };
           };
           i.enhanceSelectElement = function(n2) {
-            if (!n2.selectElement)
-              throw new Error("selectElement is not defined");
+            if (!n2.selectElement) throw new Error("selectElement is not defined");
             if (!n2.source) {
               var e2 = [].filter.call(n2.selectElement.options, function(e3) {
                 return e3.value || n2.preserveNullOptions;
@@ -754,15 +681,11 @@
         }, function(e, t, n) {
           var o = n(2);
           e.exports = function(e2, t2) {
-            if (!o(e2))
-              return e2;
+            if (!o(e2)) return e2;
             var n2, r;
-            if (t2 && "function" == typeof (n2 = e2.toString) && !o(r = n2.call(e2)))
-              return r;
-            if ("function" == typeof (n2 = e2.valueOf) && !o(r = n2.call(e2)))
-              return r;
-            if (!t2 && "function" == typeof (n2 = e2.toString) && !o(r = n2.call(e2)))
-              return r;
+            if (t2 && "function" == typeof (n2 = e2.toString) && !o(r = n2.call(e2))) return r;
+            if ("function" == typeof (n2 = e2.valueOf) && !o(r = n2.call(e2))) return r;
+            if (!t2 && "function" == typeof (n2 = e2.toString) && !o(r = n2.call(e2))) return r;
             throw TypeError("Can't convert object to primitive value");
           };
         }, function(e, t) {
@@ -778,19 +701,15 @@
               t2[e3] = e3;
             }), 7 != o({}, e2)[n2] || Object.keys(o({}, t2)).join("") != r;
           }) ? function(e2, t2) {
-            for (var n2 = m(e2), r = arguments.length, o2 = 1, i = d.f, u = h.f; o2 < r; )
-              for (var a, s = v(arguments[o2++]), l = i ? f(s).concat(i(s)) : f(s), c = l.length, p = 0; p < c; )
-                u.call(s, a = l[p++]) && (n2[a] = s[a]);
+            for (var n2 = m(e2), r = arguments.length, o2 = 1, i = d.f, u = h.f; o2 < r; ) for (var a, s = v(arguments[o2++]), l = i ? f(s).concat(i(s)) : f(s), c = l.length, p = 0; p < c; ) u.call(s, a = l[p++]) && (n2[a] = s[a]);
             return n2;
           } : o;
         }, function(e, t, n) {
           var u = n(17), a = n(21), s = n(23)(false), l = n(26)("IE_PROTO");
           e.exports = function(e2, t2) {
             var n2, r = a(e2), o = 0, i = [];
-            for (n2 in r)
-              n2 != l && u(r, n2) && i.push(n2);
-            for (; t2.length > o; )
-              u(r, n2 = t2[o++]) && (~s(i, n2) || i.push(n2));
+            for (n2 in r) n2 != l && u(r, n2) && i.push(n2);
+            for (; t2.length > o; ) u(r, n2 = t2[o++]) && (~s(i, n2) || i.push(n2));
             return i;
           };
         }, function(e, t, n) {
@@ -835,15 +754,13 @@
             return (X = Object.assign || function(e2) {
               for (var t2 = 1; t2 < arguments.length; t2++) {
                 var n2 = arguments[t2];
-                for (var r2 in n2)
-                  Object.prototype.hasOwnProperty.call(n2, r2) && (e2[r2] = n2[r2]);
+                for (var r2 in n2) Object.prototype.hasOwnProperty.call(n2, r2) && (e2[r2] = n2[r2]);
               }
               return e2;
             }).apply(this, arguments);
           }
           function i(e2) {
-            if (void 0 === e2)
-              throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            if (void 0 === e2) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
             return e2;
           }
           var u = { 13: "enter", 27: "escape", 32: "space", 38: "up", 40: "down" };
@@ -938,10 +855,9 @@
               -1 !== r2 && n3 && this.handleOptionFocus(r2 - 1);
             }, t2.handleDownArrow = function(e3) {
               var t3 = this;
-              if (e3.preventDefault(), this.props.showAllValues && false === this.state.menuOpen)
-                e3.preventDefault(), this.props.source("", function(e4) {
-                  t3.setState({ menuOpen: true, options: e4, selected: 0, focused: 0, hovered: null });
-                });
+              if (e3.preventDefault(), this.props.showAllValues && false === this.state.menuOpen) e3.preventDefault(), this.props.source("", function(e4) {
+                t3.setState({ menuOpen: true, options: e4, selected: 0, focused: 0, hovered: null });
+              });
               else if (true === this.state.menuOpen) {
                 var n3 = this.state, r2 = n3.menuOpen, o2 = n3.options, i2 = n3.selected;
                 i2 !== o2.length - 1 && r2 && this.handleOptionFocus(i2 + 1);
@@ -1012,8 +928,7 @@
           var o = r(9), i = r(53), u = r(28), a = r(26)("IE_PROTO"), s = function() {
           }, l = "prototype", c = function() {
             var e2, t2 = r(15)("iframe"), n = u.length;
-            for (t2.style.display = "none", r(54).appendChild(t2), t2.src = "javascript:", (e2 = t2.contentWindow.document).open(), e2.write("<script>document.F=Object<\/script>"), e2.close(), c = e2.F; n--; )
-              delete c[l][u[n]];
+            for (t2.style.display = "none", r(54).appendChild(t2), t2.src = "javascript:", (e2 = t2.contentWindow.document).open(), e2.write("<script>document.F=Object<\/script>"), e2.close(), c = e2.F; n--; ) delete c[l][u[n]];
             return c();
           };
           e.exports = Object.create || function(e2, t2) {
@@ -1024,8 +939,7 @@
           var u = n(8), a = n(9), s = n(20);
           e.exports = n(3) ? Object.defineProperties : function(e2, t2) {
             a(e2);
-            for (var n2, r = s(t2), o = r.length, i = 0; i < o; )
-              u.f(e2, n2 = r[i++], t2[n2]);
+            for (var n2, r = s(t2), o = r.length, i = 0; i < o; ) u.f(e2, n2 = r[i++], t2[n2]);
             return e2;
           };
         }, function(e, t, n) {
@@ -1042,8 +956,7 @@
               var e2 = r.concat(s.call(arguments));
               return this instanceof o ? function(e3, t3, n3) {
                 if (!(t3 in l)) {
-                  for (var r2 = [], o2 = 0; o2 < t3; o2++)
-                    r2[o2] = "a[" + o2 + "]";
+                  for (var r2 = [], o2 = 0; o2 < t3; o2++) r2[o2] = "a[" + o2 + "]";
                   l[t3] = Function("F,a", "return new F(" + r2.join(",") + ")");
                 }
                 return l[t3](e3, n3);
@@ -1106,8 +1019,7 @@
             };
           }, o = function(o2) {
             function e2() {
-              for (var e3, t3 = arguments.length, n2 = new Array(t3), r2 = 0; r2 < t3; r2++)
-                n2[r2] = arguments[r2];
+              for (var e3, t3 = arguments.length, n2 = new Array(t3), r2 = 0; r2 < t3; r2++) n2[r2] = arguments[r2];
               return (e3 = o2.call.apply(o2, [this].concat(n2)) || this).state = { bump: false, debounced: false }, e3;
             }
             (function n2(e3, t3) {
@@ -1298,6 +1210,18 @@
           short: "NARA",
           office: "Office of the Chief of Management and Administration",
           email: "surveys@nara.gov"
+        },
+        {
+          agency: "U.S. Securities and Exchange Commission",
+          short: "SEC",
+          office: "Office of the Chief Data Officer",
+          email: "#OCDOPRA@sec.gov"
+        },
+        {
+          agency: "U.S. Department of Veterans Affairs",
+          short: "VA",
+          office: "Office of Enterprise Integration",
+          email: "VACOPaperworkReduAct@va.gov"
         }
       ];
     }
@@ -1753,8 +1677,7 @@
   // node_modules/underscore/modules/_collectNonEnumProps.js
   function emulatedSet(keys2) {
     var hash = {};
-    for (var l = keys2.length, i = 0; i < l; ++i)
-      hash[keys2[i]] = true;
+    for (var l = keys2.length, i = 0; i < l; ++i) hash[keys2[i]] = true;
     return {
       contains: function(key) {
         return hash[key] === true;
@@ -1771,8 +1694,7 @@
     var constructor = obj.constructor;
     var proto = isFunction_default(constructor) && constructor.prototype || ObjProto;
     var prop = "constructor";
-    if (has(obj, prop) && !keys2.contains(prop))
-      keys2.push(prop);
+    if (has(obj, prop) && !keys2.contains(prop)) keys2.push(prop);
     while (nonEnumIdx--) {
       prop = nonEnumerableProps[nonEnumIdx];
       if (prop in obj && obj[prop] !== proto[prop] && !keys2.contains(prop)) {
@@ -1790,16 +1712,11 @@
 
   // node_modules/underscore/modules/keys.js
   function keys(obj) {
-    if (!isObject(obj))
-      return [];
-    if (nativeKeys)
-      return nativeKeys(obj);
+    if (!isObject(obj)) return [];
+    if (nativeKeys) return nativeKeys(obj);
     var keys2 = [];
-    for (var key in obj)
-      if (has(obj, key))
-        keys2.push(key);
-    if (hasEnumBug)
-      collectNonEnumProps(obj, keys2);
+    for (var key in obj) if (has(obj, key)) keys2.push(key);
+    if (hasEnumBug) collectNonEnumProps(obj, keys2);
     return keys2;
   }
   var init_keys = __esm({
@@ -1813,11 +1730,9 @@
 
   // node_modules/underscore/modules/isEmpty.js
   function isEmpty(obj) {
-    if (obj == null)
-      return true;
+    if (obj == null) return true;
     var length = getLength_default(obj);
-    if (typeof length == "number" && (isArray_default(obj) || isString_default(obj) || isArguments_default(obj)))
-      return length === 0;
+    if (typeof length == "number" && (isArray_default(obj) || isString_default(obj) || isArguments_default(obj))) return length === 0;
     return getLength_default(keys(obj)) === 0;
   }
   var init_isEmpty = __esm({
@@ -1833,13 +1748,11 @@
   // node_modules/underscore/modules/isMatch.js
   function isMatch(object2, attrs) {
     var _keys = keys(attrs), length = _keys.length;
-    if (object2 == null)
-      return !length;
+    if (object2 == null) return !length;
     var obj = Object(object2);
     for (var i = 0; i < length; i++) {
       var key = _keys[i];
-      if (attrs[key] !== obj[key] || !(key in obj))
-        return false;
+      if (attrs[key] !== obj[key] || !(key in obj)) return false;
     }
     return true;
   }
@@ -1851,10 +1764,8 @@
 
   // node_modules/underscore/modules/underscore.js
   function _(obj) {
-    if (obj instanceof _)
-      return obj;
-    if (!(this instanceof _))
-      return new _(obj);
+    if (obj instanceof _) return obj;
+    if (!(this instanceof _)) return new _(obj);
     this._wrapped = obj;
   }
   var init_underscore = __esm({
@@ -1887,37 +1798,30 @@
 
   // node_modules/underscore/modules/isEqual.js
   function eq(a, b, aStack, bStack) {
-    if (a === b)
-      return a !== 0 || 1 / a === 1 / b;
-    if (a == null || b == null)
-      return false;
-    if (a !== a)
-      return b !== b;
+    if (a === b) return a !== 0 || 1 / a === 1 / b;
+    if (a == null || b == null) return false;
+    if (a !== a) return b !== b;
     var type = typeof a;
-    if (type !== "function" && type !== "object" && typeof b != "object")
-      return false;
+    if (type !== "function" && type !== "object" && typeof b != "object") return false;
     return deepEq(a, b, aStack, bStack);
   }
   function deepEq(a, b, aStack, bStack) {
-    if (a instanceof _)
-      a = a._wrapped;
-    if (b instanceof _)
-      b = b._wrapped;
+    if (a instanceof _) a = a._wrapped;
+    if (b instanceof _) b = b._wrapped;
     var className = toString.call(a);
-    if (className !== toString.call(b))
-      return false;
+    if (className !== toString.call(b)) return false;
     if (hasStringTagBug && className == "[object Object]" && isDataView_default(a)) {
-      if (!isDataView_default(b))
-        return false;
+      if (!isDataView_default(b)) return false;
       className = tagDataView;
     }
     switch (className) {
+      // These types are compared by value.
       case "[object RegExp]":
+      // RegExps are coerced to strings for comparison (Note: '' + /a/i === '/a/i')
       case "[object String]":
         return "" + a === "" + b;
       case "[object Number]":
-        if (+a !== +a)
-          return +b !== +b;
+        if (+a !== +a) return +b !== +b;
         return +a === 0 ? 1 / +a === 1 / b : +a === +b;
       case "[object Date]":
       case "[object Boolean]":
@@ -1931,15 +1835,12 @@
     var areArrays = className === "[object Array]";
     if (!areArrays && isTypedArray_default(a)) {
       var byteLength = getByteLength_default(a);
-      if (byteLength !== getByteLength_default(b))
-        return false;
-      if (a.buffer === b.buffer && a.byteOffset === b.byteOffset)
-        return true;
+      if (byteLength !== getByteLength_default(b)) return false;
+      if (a.buffer === b.buffer && a.byteOffset === b.byteOffset) return true;
       areArrays = true;
     }
     if (!areArrays) {
-      if (typeof a != "object" || typeof b != "object")
-        return false;
+      if (typeof a != "object" || typeof b != "object") return false;
       var aCtor = a.constructor, bCtor = b.constructor;
       if (aCtor !== bCtor && !(isFunction_default(aCtor) && aCtor instanceof aCtor && isFunction_default(bCtor) && bCtor instanceof bCtor) && ("constructor" in a && "constructor" in b)) {
         return false;
@@ -1949,28 +1850,23 @@
     bStack = bStack || [];
     var length = aStack.length;
     while (length--) {
-      if (aStack[length] === a)
-        return bStack[length] === b;
+      if (aStack[length] === a) return bStack[length] === b;
     }
     aStack.push(a);
     bStack.push(b);
     if (areArrays) {
       length = a.length;
-      if (length !== b.length)
-        return false;
+      if (length !== b.length) return false;
       while (length--) {
-        if (!eq(a[length], b[length], aStack, bStack))
-          return false;
+        if (!eq(a[length], b[length], aStack, bStack)) return false;
       }
     } else {
       var _keys = keys(a), key;
       length = _keys.length;
-      if (keys(b).length !== length)
-        return false;
+      if (keys(b).length !== length) return false;
       while (length--) {
         key = _keys[length];
-        if (!(has(b, key) && eq(a[key], b[key], aStack, bStack)))
-          return false;
+        if (!(has(b, key) && eq(a[key], b[key], aStack, bStack))) return false;
       }
     }
     aStack.pop();
@@ -1999,13 +1895,10 @@
 
   // node_modules/underscore/modules/allKeys.js
   function allKeys(obj) {
-    if (!isObject(obj))
-      return [];
+    if (!isObject(obj)) return [];
     var keys2 = [];
-    for (var key in obj)
-      keys2.push(key);
-    if (hasEnumBug)
-      collectNonEnumProps(obj, keys2);
+    for (var key in obj) keys2.push(key);
+    if (hasEnumBug) collectNonEnumProps(obj, keys2);
     return keys2;
   }
   var init_allKeys = __esm({
@@ -2020,14 +1913,11 @@
   function ie11fingerprint(methods) {
     var length = getLength_default(methods);
     return function(obj) {
-      if (obj == null)
-        return false;
+      if (obj == null) return false;
       var keys2 = allKeys(obj);
-      if (getLength_default(keys2))
-        return false;
+      if (getLength_default(keys2)) return false;
       for (var i = 0; i < length; i++) {
-        if (!isFunction_default(obj[methods[i]]))
-          return false;
+        if (!isFunction_default(obj[methods[i]])) return false;
       }
       return methods !== weakMapMethods || !isFunction_default(obj[forEachName]);
     };
@@ -2141,8 +2031,7 @@
   function functions(obj) {
     var names = [];
     for (var key in obj) {
-      if (isFunction_default(obj[key]))
-        names.push(key);
+      if (isFunction_default(obj[key])) names.push(key);
     }
     return names.sort();
   }
@@ -2156,16 +2045,13 @@
   function createAssigner(keysFunc, defaults) {
     return function(obj) {
       var length = arguments.length;
-      if (defaults)
-        obj = Object(obj);
-      if (length < 2 || obj == null)
-        return obj;
+      if (defaults) obj = Object(obj);
+      if (length < 2 || obj == null) return obj;
       for (var index = 1; index < length; index++) {
         var source = arguments[index], keys2 = keysFunc(source), l = keys2.length;
         for (var i = 0; i < l; i++) {
           var key = keys2[i];
-          if (!defaults || obj[key] === void 0)
-            obj[key] = source[key];
+          if (!defaults || obj[key] === void 0) obj[key] = source[key];
         }
       }
       return obj;
@@ -2212,10 +2098,8 @@
     };
   }
   function baseCreate(prototype) {
-    if (!isObject(prototype))
-      return {};
-    if (nativeCreate)
-      return nativeCreate(prototype);
+    if (!isObject(prototype)) return {};
+    if (nativeCreate) return nativeCreate(prototype);
     var Ctor = ctor();
     Ctor.prototype = prototype;
     var result2 = new Ctor();
@@ -2232,8 +2116,7 @@
   // node_modules/underscore/modules/create.js
   function create(prototype, props) {
     var result2 = baseCreate(prototype);
-    if (props)
-      extendOwn_default(result2, props);
+    if (props) extendOwn_default(result2, props);
     return result2;
   }
   var init_create = __esm({
@@ -2245,8 +2128,7 @@
 
   // node_modules/underscore/modules/clone.js
   function clone(obj) {
-    if (!isObject(obj))
-      return obj;
+    if (!isObject(obj)) return obj;
     return isArray_default(obj) ? obj.slice() : extend_default({}, obj);
   }
   var init_clone = __esm({
@@ -2294,8 +2176,7 @@
   function deepGet(obj, path) {
     var length = path.length;
     for (var i = 0; i < length; i++) {
-      if (obj == null)
-        return void 0;
+      if (obj == null) return void 0;
       obj = obj[path[i]];
     }
     return length ? obj : void 0;
@@ -2324,8 +2205,7 @@
     var length = path.length;
     for (var i = 0; i < length; i++) {
       var key = path[i];
-      if (!has(obj, key))
-        return false;
+      if (!has(obj, key)) return false;
       obj = obj[key];
     }
     return !!length;
@@ -2376,13 +2256,13 @@
 
   // node_modules/underscore/modules/_optimizeCb.js
   function optimizeCb(func, context, argCount) {
-    if (context === void 0)
-      return func;
+    if (context === void 0) return func;
     switch (argCount == null ? 3 : argCount) {
       case 1:
         return function(value) {
           return func.call(context, value);
         };
+      // The 2-argument case is omitted because we’re not using it.
       case 3:
         return function(value, index, collection) {
           return func.call(context, value, index, collection);
@@ -2403,12 +2283,9 @@
 
   // node_modules/underscore/modules/_baseIteratee.js
   function baseIteratee(value, context, argCount) {
-    if (value == null)
-      return identity;
-    if (isFunction_default(value))
-      return optimizeCb(value, context, argCount);
-    if (isObject(value) && !isArray_default(value))
-      return matcher(value);
+    if (value == null) return identity;
+    if (isFunction_default(value)) return optimizeCb(value, context, argCount);
+    if (isObject(value) && !isArray_default(value)) return matcher(value);
     return property(value);
   }
   var init_baseIteratee = __esm({
@@ -2437,8 +2314,7 @@
 
   // node_modules/underscore/modules/_cb.js
   function cb(value, context, argCount) {
-    if (_.iteratee !== iteratee)
-      return _.iteratee(value, context);
+    if (_.iteratee !== iteratee) return _.iteratee(value, context);
     return baseIteratee(value, context, argCount);
   }
   var init_cb = __esm({
@@ -2476,8 +2352,7 @@
 
   // node_modules/underscore/modules/propertyOf.js
   function propertyOf(obj) {
-    if (obj == null)
-      return noop;
+    if (obj == null) return noop;
     return function(path) {
       return get(obj, path);
     };
@@ -2493,8 +2368,7 @@
   function times(n, iteratee2, context) {
     var accum = Array(Math.max(0, n));
     iteratee2 = optimizeCb(iteratee2, context, 1);
-    for (var i = 0; i < n; i++)
-      accum[i] = iteratee2(i);
+    for (var i = 0; i < n; i++) accum[i] = iteratee2(i);
     return accum;
   }
   var init_times = __esm({
@@ -2608,8 +2482,7 @@
     return "\\" + escapes[match];
   }
   function template(text, settings, oldSettings) {
-    if (!settings && oldSettings)
-      settings = oldSettings;
+    if (!settings && oldSettings) settings = oldSettings;
     settings = defaults_default({}, settings, _.templateSettings);
     var matcher2 = RegExp([
       (settings.escape || noMatch).source,
@@ -2633,10 +2506,9 @@
     source += "';\n";
     var argument = settings.variable;
     if (argument) {
-      if (!bareIdentifier.test(argument))
-        throw new Error(
-          "variable is not a bare identifier: " + argument
-        );
+      if (!bareIdentifier.test(argument)) throw new Error(
+        "variable is not a bare identifier: " + argument
+      );
     } else {
       source = "with(obj||{}){\n" + source + "}\n";
       argument = "obj";
@@ -2725,12 +2597,10 @@
 
   // node_modules/underscore/modules/_executeBound.js
   function executeBound(sourceFunc, boundFunc, context, callingContext, args) {
-    if (!(callingContext instanceof boundFunc))
-      return sourceFunc.apply(context, args);
+    if (!(callingContext instanceof boundFunc)) return sourceFunc.apply(context, args);
     var self2 = baseCreate(sourceFunc.prototype);
     var result2 = sourceFunc.apply(self2, args);
-    if (isObject(result2))
-      return result2;
+    if (isObject(result2)) return result2;
     return self2;
   }
   var init_executeBound = __esm({
@@ -2755,8 +2625,7 @@
           for (var i = 0; i < length; i++) {
             args[i] = boundArgs[i] === placeholder ? arguments[position++] : boundArgs[i];
           }
-          while (position < arguments.length)
-            args.push(arguments[position++]);
+          while (position < arguments.length) args.push(arguments[position++]);
           return executeBound(func, bound, this, this, args);
         };
         return bound;
@@ -2774,8 +2643,7 @@
       init_isFunction();
       init_executeBound();
       bind_default = restArguments(function(func, context, args) {
-        if (!isFunction_default(func))
-          throw new TypeError("Bind must be called on a function");
+        if (!isFunction_default(func)) throw new TypeError("Bind must be called on a function");
         var bound = restArguments(function(callArgs) {
           return executeBound(func, bound, context, this, args.concat(callArgs));
         });
@@ -2811,8 +2679,7 @@
           idx = output.length;
         } else {
           var j = 0, len = value.length;
-          while (j < len)
-            output[idx++] = value[j++];
+          while (j < len) output[idx++] = value[j++];
         }
       } else if (!strict) {
         output[idx++] = value;
@@ -2839,8 +2706,7 @@
       bindAll_default = restArguments(function(obj, keys2) {
         keys2 = flatten(keys2, false, false);
         var index = keys2.length;
-        if (index < 1)
-          throw new Error("bindAll must be passed function names");
+        if (index < 1) throw new Error("bindAll must be passed function names");
         while (index--) {
           var key = keys2[index];
           obj[key] = bind_default(obj[key], obj);
@@ -2855,8 +2721,7 @@
     var memoize2 = function(key) {
       var cache = memoize2.cache;
       var address = "" + (hasher ? hasher.apply(this, arguments) : key);
-      if (!has(cache, address))
-        cache[address] = func.apply(this, arguments);
+      if (!has(cache, address)) cache[address] = func.apply(this, arguments);
       return cache[address];
     };
     memoize2.cache = {};
@@ -2896,19 +2761,16 @@
   function throttle(func, wait, options) {
     var timeout, context, args, result2;
     var previous = 0;
-    if (!options)
-      options = {};
+    if (!options) options = {};
     var later = function() {
       previous = options.leading === false ? 0 : now_default();
       timeout = null;
       result2 = func.apply(context, args);
-      if (!timeout)
-        context = args = null;
+      if (!timeout) context = args = null;
     };
     var throttled = function() {
       var _now = now_default();
-      if (!previous && options.leading === false)
-        previous = _now;
+      if (!previous && options.leading === false) previous = _now;
       var remaining = wait - (_now - previous);
       context = this;
       args = arguments;
@@ -2919,8 +2781,7 @@
         }
         previous = _now;
         result2 = func.apply(context, args);
-        if (!timeout)
-          context = args = null;
+        if (!timeout) context = args = null;
       } else if (!timeout && options.trailing !== false) {
         timeout = setTimeout(later, remaining);
       }
@@ -2948,10 +2809,8 @@
         timeout = setTimeout(later, wait - passed);
       } else {
         timeout = null;
-        if (!immediate)
-          result2 = func.apply(context, args);
-        if (!timeout)
-          args = context = null;
+        if (!immediate) result2 = func.apply(context, args);
+        if (!timeout) args = context = null;
       }
     };
     var debounced = restArguments(function(_args) {
@@ -2960,8 +2819,7 @@
       previous = now_default();
       if (!timeout) {
         timeout = setTimeout(later, wait);
-        if (immediate)
-          result2 = func.apply(context, args);
+        if (immediate) result2 = func.apply(context, args);
       }
       return result2;
     });
@@ -3006,8 +2864,7 @@
     return function() {
       var i = start;
       var result2 = args[start].apply(this, arguments);
-      while (i--)
-        result2 = args[i].call(this, result2);
+      while (i--) result2 = args[i].call(this, result2);
       return result2;
     };
   }
@@ -3036,8 +2893,7 @@
       if (--times2 > 0) {
         memo = func.apply(this, arguments);
       }
-      if (times2 <= 1)
-        func = null;
+      if (times2 <= 1) func = null;
       return memo;
     };
   }
@@ -3062,8 +2918,7 @@
     var _keys = keys(obj), key;
     for (var i = 0, length = _keys.length; i < length; i++) {
       key = _keys[i];
-      if (predicate(obj[key], key, obj))
-        return key;
+      if (predicate(obj[key], key, obj)) return key;
     }
   }
   var init_findKey = __esm({
@@ -3080,8 +2935,7 @@
       var length = getLength_default(array);
       var index = dir > 0 ? 0 : length - 1;
       for (; index >= 0 && index < length; index += dir) {
-        if (predicate(array[index], index, array))
-          return index;
+        if (predicate(array[index], index, array)) return index;
       }
       return -1;
     };
@@ -3118,10 +2972,8 @@
     var low = 0, high = getLength_default(array);
     while (low < high) {
       var mid = Math.floor((low + high) / 2);
-      if (iteratee2(array[mid]) < value)
-        low = mid + 1;
-      else
-        high = mid;
+      if (iteratee2(array[mid]) < value) low = mid + 1;
+      else high = mid;
     }
     return low;
   }
@@ -3151,8 +3003,7 @@
         return idx >= 0 ? idx + i : -1;
       }
       for (idx = dir > 0 ? i : length - 1; idx >= 0 && idx < length; idx += dir) {
-        if (array[idx] === item)
-          return idx;
+        if (array[idx] === item) return idx;
       }
       return -1;
     };
@@ -3190,8 +3041,7 @@
   function find(obj, predicate, context) {
     var keyFinder = isArrayLike_default(obj) ? findIndex_default : findKey;
     var key = keyFinder(obj, predicate, context);
-    if (key !== void 0 && key !== -1)
-      return obj[key];
+    if (key !== void 0 && key !== -1) return obj[key];
   }
   var init_find = __esm({
     "node_modules/underscore/modules/find.js"() {
@@ -3304,8 +3154,7 @@
     var results = [];
     predicate = cb(predicate, context);
     each(obj, function(value, index, list) {
-      if (predicate(value, index, list))
-        results.push(value);
+      if (predicate(value, index, list)) results.push(value);
     });
     return results;
   }
@@ -3334,8 +3183,7 @@
     var _keys = !isArrayLike_default(obj) && keys(obj), length = (_keys || obj).length;
     for (var index = 0; index < length; index++) {
       var currentKey = _keys ? _keys[index] : index;
-      if (!predicate(obj[currentKey], currentKey, obj))
-        return false;
+      if (!predicate(obj[currentKey], currentKey, obj)) return false;
     }
     return true;
   }
@@ -3353,8 +3201,7 @@
     var _keys = !isArrayLike_default(obj) && keys(obj), length = (_keys || obj).length;
     for (var index = 0; index < length; index++) {
       var currentKey = _keys ? _keys[index] : index;
-      if (predicate(obj[currentKey], currentKey, obj))
-        return true;
+      if (predicate(obj[currentKey], currentKey, obj)) return true;
     }
     return false;
   }
@@ -3368,10 +3215,8 @@
 
   // node_modules/underscore/modules/contains.js
   function contains(obj, item, fromIndex, guard) {
-    if (!isArrayLike_default(obj))
-      obj = values(obj);
-    if (typeof fromIndex != "number" || guard)
-      fromIndex = 0;
+    if (!isArrayLike_default(obj)) obj = values(obj);
+    if (typeof fromIndex != "number" || guard) fromIndex = 0;
     return indexOf_default(obj, item, fromIndex) >= 0;
   }
   var init_contains = __esm({
@@ -3406,8 +3251,7 @@
             if (contextPath && contextPath.length) {
               context = deepGet(context, contextPath);
             }
-            if (context == null)
-              return void 0;
+            if (context == null) return void 0;
             method = context[path];
           }
           return method == null ? method : method.apply(context, args);
@@ -3504,15 +3348,12 @@
 
   // node_modules/underscore/modules/toArray.js
   function toArray(obj) {
-    if (!obj)
-      return [];
-    if (isArray_default(obj))
-      return slice.call(obj);
+    if (!obj) return [];
+    if (isArray_default(obj)) return slice.call(obj);
     if (isString_default(obj)) {
       return obj.match(reStrSymbol);
     }
-    if (isArrayLike_default(obj))
-      return map(obj, identity);
+    if (isArrayLike_default(obj)) return map(obj, identity);
     return values(obj);
   }
   var reStrSymbol;
@@ -3532,8 +3373,7 @@
   // node_modules/underscore/modules/sample.js
   function sample(obj, n, guard) {
     if (n == null || guard) {
-      if (!isArrayLike_default(obj))
-        obj = values(obj);
+      if (!isArrayLike_default(obj)) obj = values(obj);
       return obj[random(obj.length - 1)];
     }
     var sample2 = toArray(obj);
@@ -3582,10 +3422,8 @@
       var a = left.criteria;
       var b = right.criteria;
       if (a !== b) {
-        if (a > b || a === void 0)
-          return 1;
-        if (a < b || b === void 0)
-          return -1;
+        if (a > b || a === void 0) return 1;
+        if (a < b || b === void 0) return -1;
       }
       return left.index - right.index;
     }), "value");
@@ -3624,10 +3462,8 @@
       init_group();
       init_has();
       groupBy_default = group(function(result2, value, key) {
-        if (has(result2, key))
-          result2[key].push(value);
-        else
-          result2[key] = [value];
+        if (has(result2, key)) result2[key].push(value);
+        else result2[key] = [value];
       });
     }
   });
@@ -3650,10 +3486,8 @@
       init_group();
       init_has();
       countBy_default = group(function(result2, value, key) {
-        if (has(result2, key))
-          result2[key]++;
-        else
-          result2[key] = 1;
+        if (has(result2, key)) result2[key]++;
+        else result2[key] = 1;
       });
     }
   });
@@ -3671,8 +3505,7 @@
 
   // node_modules/underscore/modules/size.js
   function size(obj) {
-    if (obj == null)
-      return 0;
+    if (obj == null) return 0;
     return isArrayLike_default(obj) ? obj.length : keys(obj).length;
   }
   var init_size = __esm({
@@ -3703,11 +3536,9 @@
       init_flatten();
       pick_default = restArguments(function(obj, keys2) {
         var result2 = {}, iteratee2 = keys2[0];
-        if (obj == null)
-          return result2;
+        if (obj == null) return result2;
         if (isFunction_default(iteratee2)) {
-          if (keys2.length > 1)
-            iteratee2 = optimizeCb(iteratee2, keys2[1]);
+          if (keys2.length > 1) iteratee2 = optimizeCb(iteratee2, keys2[1]);
           keys2 = allKeys(obj);
         } else {
           iteratee2 = keyInObj;
@@ -3717,8 +3548,7 @@
         for (var i = 0, length = keys2.length; i < length; i++) {
           var key = keys2[i];
           var value = obj[key];
-          if (iteratee2(value, key, obj))
-            result2[key] = value;
+          if (iteratee2(value, key, obj)) result2[key] = value;
         }
         return result2;
       });
@@ -3740,8 +3570,7 @@
         var iteratee2 = keys2[0], context;
         if (isFunction_default(iteratee2)) {
           iteratee2 = negate(iteratee2);
-          if (keys2.length > 1)
-            context = keys2[1];
+          if (keys2.length > 1) context = keys2[1];
         } else {
           keys2 = map(flatten(keys2, false, false), String);
           iteratee2 = function(value, key) {
@@ -3765,10 +3594,8 @@
 
   // node_modules/underscore/modules/first.js
   function first(array, n, guard) {
-    if (array == null || array.length < 1)
-      return n == null || guard ? void 0 : [];
-    if (n == null || guard)
-      return array[0];
+    if (array == null || array.length < 1) return n == null || guard ? void 0 : [];
+    if (n == null || guard) return array[0];
     return initial(array, array.length - n);
   }
   var init_first = __esm({
@@ -3789,10 +3616,8 @@
 
   // node_modules/underscore/modules/last.js
   function last(array, n, guard) {
-    if (array == null || array.length < 1)
-      return n == null || guard ? void 0 : [];
-    if (n == null || guard)
-      return array[array.length - 1];
+    if (array == null || array.length < 1) return n == null || guard ? void 0 : [];
+    if (n == null || guard) return array[array.length - 1];
     return rest(array, Math.max(0, array.length - n));
   }
   var init_last = __esm({
@@ -3857,15 +3682,13 @@
       iteratee2 = isSorted;
       isSorted = false;
     }
-    if (iteratee2 != null)
-      iteratee2 = cb(iteratee2, context);
+    if (iteratee2 != null) iteratee2 = cb(iteratee2, context);
     var result2 = [];
     var seen = [];
     for (var i = 0, length = getLength_default(array); i < length; i++) {
       var value = array[i], computed = iteratee2 ? iteratee2(value, i, array) : value;
       if (isSorted && !iteratee2) {
-        if (!i || seen !== computed)
-          result2.push(value);
+        if (!i || seen !== computed) result2.push(value);
         seen = computed;
       } else if (iteratee2) {
         if (!contains(seen, computed)) {
@@ -3906,15 +3729,12 @@
     var argsLength = arguments.length;
     for (var i = 0, length = getLength_default(array); i < length; i++) {
       var item = array[i];
-      if (contains(result2, item))
-        continue;
+      if (contains(result2, item)) continue;
       var j;
       for (j = 1; j < argsLength; j++) {
-        if (!contains(arguments[j], item))
-          break;
+        if (!contains(arguments[j], item)) break;
       }
-      if (j === argsLength)
-        result2.push(item);
+      if (j === argsLength) result2.push(item);
     }
     return result2;
   }
@@ -3993,8 +3813,7 @@
 
   // node_modules/underscore/modules/chunk.js
   function chunk(array, count) {
-    if (count == null || count < 1)
-      return [];
+    if (count == null || count < 1) return [];
     var result2 = [];
     var i = 0, length = array.length;
     while (i < length) {
@@ -4065,8 +3884,7 @@
         var method = ArrayProto[name];
         _.prototype[name] = function() {
           var obj = this._wrapped;
-          if (obj != null)
-            obj = method.apply(obj, arguments);
+          if (obj != null) obj = method.apply(obj, arguments);
           return chainResult(this, obj);
         };
       });
@@ -4577,8 +4395,7 @@
       module.exports = function extend(object2) {
         var args = Array.prototype.slice.call(arguments, 1);
         for (var i = 0, source; source = args[i]; i++) {
-          if (!source)
-            continue;
+          if (!source) continue;
           for (var property2 in source) {
             object2[property2] = source[property2];
           }
@@ -4593,11 +4410,9 @@
     "node_modules/list.js/src/utils/index-of.js"(exports, module) {
       var indexOf = [].indexOf;
       module.exports = function(arr, obj) {
-        if (indexOf)
-          return arr.indexOf(obj);
+        if (indexOf) return arr.indexOf(obj);
         for (var i = 0; i < arr.length; ++i) {
-          if (arr[i] === obj)
-            return i;
+          if (arr[i] === obj) return i;
         }
         return -1;
       };
@@ -4608,28 +4423,20 @@
   var require_to_array = __commonJS({
     "node_modules/list.js/src/utils/to-array.js"(exports, module) {
       module.exports = function toArray2(collection) {
-        if (typeof collection === "undefined")
-          return [];
-        if (collection === null)
-          return [null];
-        if (collection === window)
-          return [window];
-        if (typeof collection === "string")
-          return [collection];
-        if (isArray(collection))
-          return collection;
-        if (typeof collection.length != "number")
-          return [collection];
-        if (typeof collection === "function" && collection instanceof Function)
-          return [collection];
+        if (typeof collection === "undefined") return [];
+        if (collection === null) return [null];
+        if (collection === window) return [window];
+        if (typeof collection === "string") return [collection];
+        if (isArray(collection)) return collection;
+        if (typeof collection.length != "number") return [collection];
+        if (typeof collection === "function" && collection instanceof Function) return [collection];
         var arr = [];
         for (var i = 0; i < collection.length; i++) {
           if (Object.prototype.hasOwnProperty.call(collection, i) || i in collection) {
             arr.push(collection[i]);
           }
         }
-        if (!arr.length)
-          return [];
+        if (!arr.length) return [];
         return arr;
       };
       function isArray(arr) {
@@ -4732,8 +4539,7 @@
         }
         var arr = this.array();
         var i = index(arr, name);
-        if (!~i)
-          arr.push(name);
+        if (!~i) arr.push(name);
         this.el.className = arr.join(" ");
         return this;
       };
@@ -4747,8 +4553,7 @@
         }
         var arr = this.array();
         var i = index(arr, name);
-        if (~i)
-          arr.splice(i, 1);
+        if (~i) arr.splice(i, 1);
         this.el.className = arr.join(" ");
         return this;
       };
@@ -4791,8 +4596,7 @@
         var className = this.el.getAttribute("class") || "";
         var str = className.replace(/^\s+|\s+$/g, "");
         var arr = str.split(re);
-        if ("" === arr[0])
-          arr.shift();
+        if ("" === arr[0]) arr.shift();
         return arr;
       };
       ClassList.prototype.has = ClassList.prototype.contains = function(name) {
@@ -5129,8 +4933,7 @@
             }
           },
           setColumns: function() {
-            if (list.items.length === 0)
-              return;
+            if (list.items.length === 0) return;
             if (columns === void 0) {
               columns = list.searchColumns === void 0 ? prepare.toArray(list.items[0].values()) : list.searchColumns;
             }
@@ -5557,8 +5360,7 @@
       var extend = function(out) {
         out = out || {};
         for (var i = 1; i < arguments.length; i++) {
-          if (!arguments[i])
-            continue;
+          if (!arguments[i]) continue;
           for (var key in arguments[i]) {
             if (arguments[i].hasOwnProperty(key)) {
               out[key] = arguments[i][key];
@@ -5995,6 +5797,10 @@
         {
           term: "sponsor",
           definition: "To cause or trigger the collection of information. Agencies sponsor collections."
+        },
+        {
+          term: "usability testing",
+          definition: "For the purposes of the PRA, a type of user research that consists of asking users to navigate or perform tasks while observing them that may include semi-structured or open-ended questions."
         }
       ];
     }
@@ -6029,8 +5835,7 @@
         accordion.opts.collapseOthers = true;
         accordion.collapse = function(button) {
           var content = document.getElementById(button.getAttribute("aria-controls"));
-          if (!content)
-            return;
+          if (!content) return;
           button.setAttribute("aria-expanded", "false");
           content.setAttribute("aria-hidden", "true");
           this.setStyles(content);
@@ -6041,10 +5846,239 @@
     }
   });
 
+  // _js/pra-form.js
+  var require_pra_form = __commonJS({
+    "_js/pra-form.js"() {
+      (function() {
+        function handleFormLogic(formId, logicFn) {
+          const form = document.querySelector(formId);
+          if (!form) {
+            console.warn(`Form not found: ${formId}`);
+            return;
+          }
+          const radios = form.querySelectorAll('input[type="radio"]');
+          const guidanceContainer = form.querySelector(".quidance-container");
+          const fieldsets = form.querySelectorAll("fieldset");
+          const resetButton = form.querySelector(".reset-form");
+          function updateGuidance() {
+            logicFn(form, guidanceContainer);
+          }
+          if (radios.length > 0) {
+            radios.forEach((radio) => {
+              radio.addEventListener("change", updateGuidance);
+            });
+          }
+          if (resetButton) {
+            resetButton.addEventListener("click", () => {
+              form.reset();
+              radios.forEach((radio) => {
+                radio.disabled = false;
+              });
+              fieldsets.forEach((fieldset) => {
+                fieldset.className = "usa-fieldset grid-row";
+              });
+              guidanceContainer.innerHTML = "Guidance will appear here";
+              guidanceContainer.className = "quidance-container guidance-gray";
+            });
+          }
+        }
+        function setBaseUrl() {
+          const baseUrl = window.location.origin;
+          document.querySelectorAll("a.dynamic-base-url").forEach(function(element) {
+            const relativePath = element.getAttribute("href");
+            if (relativePath.startsWith("/")) {
+              element.href = baseUrl + relativePath;
+            }
+          });
+        }
+        function recruitmentFormLogic(form, guidanceContainer) {
+          const answers = Array.from(form.querySelectorAll('input[type="radio"]:checked')).map((input) => input.value);
+          const allQuestions = Array.from(form.querySelectorAll("fieldset"));
+          const recruit10OrMore = form.querySelector('input[name="recruiting-10-or-more"]:checked')?.value;
+          const recruitPublic = form.querySelector('input[name="recruiting-public"]:checked')?.value;
+          let lastUnanswered = null;
+          const baseUrl = window.location.origin;
+          const praClearancealink = baseUrl + "/pra-process-for-ux-cx/";
+          guidanceContainer.innerHTML = "Guidance will appear here";
+          guidanceContainer.className = "quidance-container guidance-gray";
+          function disableQuestionsAfter(triggerFieldset) {
+            let disableNext = false;
+            allQuestions.forEach((fieldset) => {
+              if (fieldset === triggerFieldset) {
+                disableNext = true;
+              } else if (disableNext) {
+                fieldset.classList.add("disabled");
+                fieldset.querySelectorAll('input[type="radio"]').forEach((radio) => {
+                  radio.disabled = true;
+                });
+              }
+            });
+          }
+          function enableAllQuestions() {
+            allQuestions.forEach((fieldset) => {
+              fieldset.classList.remove("disabled");
+              fieldset.querySelectorAll('input[type="radio"]').forEach((radio) => radio.disabled = false);
+            });
+          }
+          enableAllQuestions();
+          if (answers.length === 3 && answers.every((answer) => answer === "yes")) {
+            guidanceContainer.innerHTML = '<span class="text-bold">If you answered YES to ALL of these questions, you will need PRA clearance for RECRUITMENT activities.</span> <a href="' + praClearancealink + '">Find out how to get PRA clearance</a>. If you are still unsure whether you need clearance, please consult <a href="mailto:tts-research@gsa.gov">tts-research@gsa.gov</a> for further clarification.';
+            guidanceContainer.className = "quidance-container guidance-yellow";
+          }
+          if (answers.some((answer) => answer === "no")) {
+            guidanceContainer.innerHTML = '<span class="text-bold">If you answered NO to ANY of these questions, you will NOT need PRA clearance for RECRUITMENT activities.</span> If you are still unsure whether you need clearance, please consult <a href="mailto:tts-research@gsa.gov">tts-research@gsa.gov</a> for further clarification.';
+            guidanceContainer.className = "quidance-container guidance-green";
+          }
+          if (recruit10OrMore === "no") {
+            disableQuestionsAfter(form.querySelector('input[name="recruiting-10-or-more"]').closest("fieldset"));
+          }
+          if (recruitPublic === "no") {
+            disableQuestionsAfter(form.querySelector('input[name="recruiting-public"]').closest("fieldset"));
+          }
+        }
+        function researchFormLogic(form, guidanceContainer) {
+          const research10OrMore = form.querySelector('input[name="research-10-or-more"]:checked')?.value;
+          const researchPublic = form.querySelector('input[name="research-public"]:checked')?.value;
+          const closeEndedQuestion = form.querySelector('input[name="close-ended-question"]:checked')?.value;
+          const directObservation = form.querySelector('input[name="direct-observation"]:checked')?.value;
+          const allQuestions = Array.from(form.querySelectorAll("fieldset"));
+          const baseUrl = window.location.origin;
+          const praClearancealink = baseUrl + "/pra-process-for-ux-cx/";
+          guidanceContainer.innerHTML = "Guidance will appear here";
+          guidanceContainer.className = "quidance-container guidance-gray";
+          function disableQuestionsAfter(triggerFieldset) {
+            let disableNext = false;
+            allQuestions.forEach((fieldset) => {
+              if (fieldset === triggerFieldset) {
+                disableNext = true;
+              } else if (disableNext) {
+                fieldset.classList.add("disabled");
+                fieldset.querySelectorAll('input[type="radio"]').forEach((radio) => {
+                  radio.disabled = true;
+                });
+              }
+            });
+          }
+          function enableAllQuestions() {
+            allQuestions.forEach((fieldset) => {
+              fieldset.classList.remove("disabled");
+              fieldset.querySelectorAll('input[type="radio"]').forEach((radio) => radio.disabled = false);
+            });
+          }
+          enableAllQuestions();
+          if (research10OrMore === "no") {
+            guidanceContainer.innerHTML = '<span class="text-bold">If you are conducting research with fewer than 10 participants, you will NOT need PRA clearance for RESEARCH activities.</span> If you are still unsure whether you need clearance, please consult <a href="mailto:tts-research@gsa.gov">tts-research@gsa.gov</a> for further clarification.';
+            guidanceContainer.className = "quidance-container guidance-green";
+            disableQuestionsAfter(form.querySelector('input[name="research-10-or-more"]').closest("fieldset"));
+          }
+          if (researchPublic === "no") {
+            guidanceContainer.innerHTML = '<span class="text-bold">If you are conducting research with federal employees and contractors ONLY, you will NOT need PRA clearance for RESEARCH activities.</span> If you are still unsure whether you need clearance, please consult <a href="mailto:tts-research@gsa.gov">tts-research@gsa.gov</a> for further clarification.';
+            guidanceContainer.className = "quidance-container guidance-green";
+            disableQuestionsAfter(form.querySelector('input[name="research-public"]').closest("fieldset"));
+          }
+          if (directObservation === "yes") {
+            guidanceContainer.innerHTML = `<span class="text-bold">Direct observation is excluded from the definition of "information collection" and therefore not subject to PRA. If you are directly observing participants, you will NOT need PRA clearance for RESEARCH activities.</span> If you are still unsure, please consult <a href="mailto:tts-research@gsa.gov">tts-research@gsa.gov</a> for further clarification.`;
+            guidanceContainer.className = "quidance-container guidance-green";
+            disableQuestionsAfter(form.querySelector('input[name="direct-observation"]').closest("fieldset"));
+          }
+          if (directObservation === "no" && closeEndedQuestion === "yes") {
+            guidanceContainer.innerHTML = '<span class="text-bold">A set of close-ended, identical questions is considered an "information collection" under PRA. If you are posing a set of close-ended, identical questions to 10 or more members of the public, it is <span class="text-italic">likely</span> that you will need PRA clearance for RESEARCH activities. </span> <a href="' + praClearancealink + '">Find out how to get PRA clearance</a>. If you are still unsure, please consult <a href="mailto:tts-research@gsa.gov">tts-research@gsa.gov</a> for further clarification.';
+            guidanceContainer.className = "quidance-container guidance-yellow";
+          } else if (directObservation === "no" && closeEndedQuestion === "no") {
+            guidanceContainer.innerHTML = '<span class="text-bold">"General solicitations" (i.e. open-ended questions that do not specify a set of answers) are not considered "information collections" under PRA. If you are not directly observing participants NOR are you posing a set of identical, close-ended questions (for example, with an open-ended website feedback form), it is <span class="text-italic">likely</span> that you will NOT need PRA clearance for RESEARCH activities.</span> If you are still unsure, please consult <a href="mailto:tts-research@gsa.gov">tts-research@gsa.gov</a> for further clarification.';
+            guidanceContainer.className = "quidance-container guidance-green";
+          }
+        }
+        function resetFormOnLoad(formId) {
+          const form = document.querySelector(formId);
+          if (!form) {
+            console.warn(`Form not found: ${formId}`);
+            return;
+          }
+          if (typeof form.reset === "function") {
+            form.reset();
+          } else {
+            console.warn(`Reset function not found for ${formId}`);
+          }
+          const guidanceContainer = form.querySelector(".quidance-container");
+          if (guidanceContainer && guidanceContainer.innerHTML !== void 0) {
+            guidanceContainer.innerHTML = "Guidance will appear here";
+            guidanceContainer.className = "quidance-container guidance-gray";
+          }
+        }
+        function switchQuiz() {
+          const quizOptions = document.querySelector(".question-box-intro");
+          const showResearchQuizButton = document.querySelector(".open-research-quiz");
+          const showRecruitQuizButton = document.querySelector(".open-recruitment-quiz");
+          const switchToResearchQuizButton = document.querySelector(".switch-to-research-form");
+          const switchToRecruitQuizButton = document.querySelector(".switch-to-recruitment-form");
+          const recruitQuiz = document.getElementById("pra-recruitment-quiz");
+          const researchQuiz = document.getElementById("pra-researcher-quiz");
+          if (showResearchQuizButton) {
+            showResearchQuizButton.addEventListener("click", () => {
+              if (quizOptions) quizOptions.style.display = "none";
+              if (recruitQuiz) recruitQuiz.style.display = "none";
+              if (researchQuiz) {
+                researchQuiz.style.display = "block";
+                handleFormLogic("#pra-researcher-quiz", researchFormLogic);
+              }
+            });
+          }
+          if (showRecruitQuizButton) {
+            showRecruitQuizButton.addEventListener("click", () => {
+              if (quizOptions) quizOptions.style.display = "none";
+              if (researchQuiz) researchQuiz.style.display = "none";
+              if (recruitQuiz) {
+                recruitQuiz.style.display = "block";
+                handleFormLogic("#pra-recruitment-quiz", recruitmentFormLogic);
+              }
+            });
+          }
+          if (switchToResearchQuizButton) {
+            switchToResearchQuizButton.addEventListener("click", () => {
+              if (recruitQuiz) recruitQuiz.style.display = "none";
+              if (researchQuiz) {
+                researchQuiz.style.display = "block";
+                handleFormLogic("#pra-researcher-quiz", researchFormLogic);
+              }
+            });
+          }
+          if (switchToRecruitQuizButton) {
+            switchToRecruitQuizButton.addEventListener("click", () => {
+              if (researchQuiz) researchQuiz.style.display = "none";
+              if (recruitQuiz) {
+                recruitQuiz.style.display = "block";
+                handleFormLogic("#pra-recruitment-quiz", recruitmentFormLogic);
+              }
+            });
+          }
+        }
+        window.addEventListener("pageshow", () => {
+          if (document.querySelector("#pra-recruitment-quiz")) {
+            resetFormOnLoad("#pra-recruitment-quiz");
+          }
+          if (document.querySelector("#pra-researcher-quiz")) {
+            resetFormOnLoad("#pra-researcher-quiz");
+          }
+          switchQuiz();
+        });
+        if (document.querySelector("#pra-recruitment-quiz")) {
+          handleFormLogic("#pra-recruitment-quiz", recruitmentFormLogic);
+          setBaseUrl();
+        }
+        if (document.querySelector("#pra-researcher-quiz")) {
+          handleFormLogic("#pra-researcher-quiz", researchFormLogic);
+          setBaseUrl();
+        }
+      })();
+    }
+  });
+
   // _js/index.js
   var SmoothScroll = require_smooth_scroll_polyfills_min();
   require_contacts2();
   require_glossary2();
+  require_pra_form();
   new SmoothScroll('a[href*="#"]');
 })();
 /*! Bundled license information:
