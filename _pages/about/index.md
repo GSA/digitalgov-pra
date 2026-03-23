@@ -50,8 +50,8 @@ The [PRA is a law](https://www.congress.gov/bill/104th-congress/senate-bill/244)
 
 The PRA Guide’s content is maintained by the [Office of Information and Regulatory Affairs (OIRA)](https://www.whitehouse.gov/omb/information-regulatory-affairs/), part of the [Office of Management and Budget (OMB)](https://www.whitehouse.gov/omb/).
 
-This site is a product of [10x investments](https://10x.gsa.gov/), made in collaboration with [18F](https://18f.gsa.gov/) and PRA officers across the federal government, and supported by [Digital.gov](https://digital.gov/).
+This site is a product of [10x investments](https://10x.gsa.gov/), made in collaboration with 18F and PRA officers across the federal government, and supported by [Digital.gov](https://digital.gov/).
 
 ## Feedback
 
-This is a preview of the new Guide to the PRA. We welcome your feedback to keep it useful and usable. Send any feedback to  [PRA@omb.eop.gov](mailto:PRA@omb.eop.gov?subject=Feedback%20on%20PRA)
+This is a preview of the new Guide to the PRA. We welcome your feedback to keep it useful and usable. Send any feedback to [PRA@omb.eop.gov](mailto:PRA@omb.eop.gov?subject=Feedback%20on%20PRA).
