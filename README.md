@@ -1,18 +1,18 @@
 # A Guide to the Paperwork Reduction Act
 
-The PRA Guide is a plain language guide which answers the most common questions like, “What is the PRA for?”, “Do I need clearance?”, and “What’s the process?”
+This PRA guide is a plain language guide which answers the most common questions like, “What is the PRA for?”, “Do I need clearance?”, and “What’s the process?”
 
-It aims to give federal employees confidence working with the PRA—and through this, lower the barriers to working effectively with the public.
+It aims to give federal employees confidence working with the PRA — and through this, lower the barriers to working effectively with the public.
 
-Learn more at https://pra.digital.gov
+Learn more at https://digital.gov/guides/pra.
 
-## About the site
+## About this repo
 
-- This site uses [Jekyll](https://jekyllrb.com), a Ruby-based static site generator. For more information about using Jekyll, refer to the [Jekyll documentation](http://jekyllrb.com/docs/home/).
+- This site used to use [Jekyll](https://jekyllrb.com), a Ruby-based static site generator. For more information about using Jekyll, refer to the [Jekyll documentation](http://jekyllrb.com/docs/home/).
 
-- The site is built with the [U.S. Web Design System](https://designsystem.digital.gov/), a set of reusable, high-quality components for modern websites.
+- The site was built with the [U.S. Web Design System](https://designsystem.digital.gov/), a set of reusable, high-quality components for modern websites.
 
-- The site is optimized for deployment on 18F's [Federalist](https://federalist.18f.gov) publishing service.
+- The site was optimized for deployment on 18F's [Federalist](https://federalist.18f.gov) publishing service.
 
 ## Running the site locally
 
@@ -43,11 +43,11 @@ If all goes well, visit the site at `http://localhost:4000`.
 
 ## Accessibility tests
 
-We follow the WCAG2AA standard, and one of the ways we check that we're following the right rules is through automated tools, like [**pa11y**](https://github.com/pa11y/pa11y/). For more info on the rules being tested checkout the [pa11y wiki](https://github.com/pa11y/pa11y/wiki/HTML-CodeSniffer-Rules).
+We followed the WCAG2AA standard, and one of the ways we check that we're following the right rules is through automated tools, like [**pa11y**](https://github.com/pa11y/pa11y/). For more info on the rules being tested checkout the [pa11y wiki](https://github.com/pa11y/pa11y/wiki/HTML-CodeSniffer-Rules).
 
 ### Running tests
 
-To run a web accessibility test on digital.gov do the following:
+To run a web accessibility test, do the following:
 
 1. Install and run the site locally following the `Running the site locally` instructions above. *Site must be running locally to perform the scan.*
 
@@ -55,12 +55,7 @@ To run a web accessibility test on digital.gov do the following:
 
 2. In a separate terminal window, run `npm run test:pa11y` to initiate the accessibility checker.
 
-*Note:* Accessibility testing configuration is located in the .pa11yci file.
-
-
-## Contributing
-
-To provide feedback, follow this repository and [open an issue in the repo](https://github.com/GSA/digitalgov-pra/issues/new).
+Note: Accessibility testing configuration is located in the .pa11yci file.
 
 ### Public domain
 

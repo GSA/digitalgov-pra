@@ -1,5 +1,6 @@
 ---
 title: Converting forms from paper to digital
+redirect_to: https://digital.gov/guides/pra/do-i-need-clearance#converting-forms-from-paper-to-digital
 ---
 
 Many existing, PRA-approved paper-based forms can benefit from a conversion to an interactive form, like a web-based form or an editable PDF.

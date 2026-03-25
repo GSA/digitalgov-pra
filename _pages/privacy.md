@@ -2,6 +2,7 @@
 title: Privacy policy
 permalink: /privacy/
 layout: full
+redirect_to: https://digital.gov/guides/pra
 ---
 
 Thank you for visiting the PRA Guide. We are committed to respecting your right to privacy and will protect it when you visit our website.

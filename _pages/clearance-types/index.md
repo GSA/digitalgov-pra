@@ -6,6 +6,7 @@ anchors:
   - name: Common Form clearance
   - name: Generic clearance
   - name: Expedited/Emergency clearance
+redirect_to: https://digital.gov/guides/pra/types-pra-clearance
 ---
 
 In addition to the [normal PRA clearance]({{'/clearance-process/' | relative_url}}), there are many other types of clearances. These labels can be confusing, but are used only in very specific circumstances. We’re here to help get you on the right track to approval.

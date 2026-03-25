@@ -1,7 +1,7 @@
 ---
 title: Additional PRA resources
 permalink: /additional-resources/
-
+redirect_to: https://digital.gov/guides/pra/help-resources#additional-pra-resources
 ---
 Find helpful documents, systems, legal information, and tools related to the Paperwork Reduction Act (PRA).
 

@@ -1,5 +1,7 @@
 ---
 title: How to estimate burden
+redirect_to: https://digital.gov/guides/pra/estimate-burden#how-to-estimate-burden
+
 ---
 
 OMB has consistently held that measuring burden is “often difficult and imprecise in the absolute, but reliable and consistent measures of change are possible.”  These guidelines and resources are a good starting point for agencies to make the best estimates of burden for their collections.

@@ -1,5 +1,6 @@
 ---
 title: Burden activities
+redirect_to: https://digital.gov/guides/pra/estimate-burden#burden-activities
 
 ---
 
