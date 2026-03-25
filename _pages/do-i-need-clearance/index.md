@@ -4,7 +4,7 @@ permalink: /do-i-need-clearance/
 anchors:
   - name: Who are you collecting information from?
   - name: What type of information are you collecting?
-
+redirect_to: https://digital.gov/guides/pra/do-i-need-clearance
 ---
 
 Not every request or collection falls under the PRA’s scope, and you may not need clearance at all. **Voluntary collections are not automatically exempt.**

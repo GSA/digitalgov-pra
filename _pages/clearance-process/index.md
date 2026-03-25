@@ -8,6 +8,7 @@ anchors:
 - name: Consider the public comments on the notice
 - name: Issue a 30-day notice to the Federal Register
 - name: Submit request to OMB for review
+redirect_to: https://digital.gov/guides/pra/pra-approval-process
 
 ## Page content:
 

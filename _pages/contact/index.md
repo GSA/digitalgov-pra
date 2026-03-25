@@ -4,6 +4,7 @@ permalink: /contact/
 anchors:
   - name: Find PRA help in your agency
   - name: Connect with OIRA
+redirect_to: https://digital.gov/guides/pra/help-resources
 ---
 
 Do you need advice on the PRA? There are a few people who may be able to help.

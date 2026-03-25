@@ -6,6 +6,7 @@ anchors:
 - name: OMB reviews proposed collection
 - name: Agency considers the public comments on the proposed rule
 - name: Agency publishes Final Rule and submits final request to OMB
+redirect_to: https://digital.gov/guides/pra/pra-approval-process#pra-approval-process-associated-with-rules
 
 ## Page Content:
 

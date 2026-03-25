@@ -6,6 +6,7 @@ anchors:
   - name: Who approves PRA clearances?
   - name: When doesn't the PRA apply?
   - name: What happens if I don't comply with PRA?
+redirect_to: https://digital.gov/guides/pra
 ---
 
 ## What is the PRA and why do we need it?

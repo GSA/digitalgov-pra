@@ -1,6 +1,7 @@
 ---
 title: Estimating Burden
 permalink: /burden/
+redirect_to: https://digital.gov/guides/pra/estimate-burden
 
 ---
 

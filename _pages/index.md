@@ -3,6 +3,7 @@ title: Home
 permalink: /
 layout: home
 no_top_link: true
+redirect_to: https://digital.gov/guides/pra
 
 ## Page content:
 

@@ -1,5 +1,6 @@
 ---
 title: PRA and the Web
+redirect_to: https://digital.gov/guides/pra/do-i-need-clearance#pra-and-the-web
 ---
 
 Using technology is an excellent way to reduce costs to the public while providing a useful service. Some social media and web-based technologies are not subject to the PRA, and don’t need approval; broader clarifications are in the [Social Media Guidance Memo](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/assets/inforeg/SocialMediaGuidance_04072010.pdf).
